@@ -1,9 +1,5 @@
 ---
-title: "About"
+title: "Welcome"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+This page contains materials related to computational neuroscience research
