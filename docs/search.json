@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Introduction.html",
+    "href": "Introduction.html",
+    "title": "Computational neuroscience",
+    "section": "",
+    "text": "Computational neuroscience\nComputational neuroscience is a facinating field"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "test",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Mesomodels/Introduction.html",
+    "href": "Mesomodels/Introduction.html",
+    "title": "Mesomodels",
+    "section": "",
+    "text": "Mesomodels"
+  }
+]
