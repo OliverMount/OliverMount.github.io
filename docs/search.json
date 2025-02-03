@@ -19,5 +19,12 @@
     "title": "About Me",
     "section": "Research Interests",
     "text": "Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This page contains materials related to computational neuroscience research"
   }
 ]
