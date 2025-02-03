@@ -5,6 +5,13 @@ project:
 website:
   title: "Welcome"
   description: "Oliver is aiming to become a computational (neuro)scientist"
+  sidebar: 
+    style: "docked"
+    search: true
+    contents: 
+      - text : "Research"
+      - section: "Basics"
+      
   navbar:
     left:
       - href: index.qmd
@@ -13,6 +20,11 @@ website:
         text: About
       - href: Transforms
         text: Trans
+    right: 
+      - text: "More"
+        menu: 
+          - text: "Talks"
+          - text: "Miscel"
   page-footer: 
     left: "(c) Oliver, 2025"
 

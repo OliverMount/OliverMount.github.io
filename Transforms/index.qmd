@@ -1,5 +1,0 @@
----
-title: "Transforms"
----
-
-# Transforms in signal processing
