@@ -1,10 +1,14 @@
 project:
   type: website
   output-dir: docs
+  
+  render: 
+    - index.qmd
+    - about.qmd
 
 website: 
   title: "Welcome"
-  description: "Oliver is aiming to become a computational (neuro)scientist"
+  description: "Oliver is aiming to become a computational neuroscientist"
   
   sidebar: 
     style: "docked"
