@@ -38,7 +38,7 @@ website:
       - text: "Neuron"
         menu: 
           - text: "Introduction"
-          - href: index.qmd
+          - href: Simulations/Neuron/Introduction.qmd
           
           - text: "Examples"
           - href: index.qmd

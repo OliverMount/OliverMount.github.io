@@ -1,0 +1,3 @@
+# Tricks for efficient coding
+
+Contains a few triks 
