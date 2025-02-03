@@ -3,18 +3,30 @@ project:
   output-dir: docs
 
 website:
-  title: "Oliver Mount's Webpage"
+  title: "Oliver's Webpage"
+  description: "Oliver is aiming to become a computational (neuro)scientist"
   navbar:
     left:
-      - index.qmd
-      - about.qmd
-      - 1_intro.qmd
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: 1_intro.qmd
+        text: Introduction
+  page-footer: 
+    left: "(c) Oliver, 2025"
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    toc_depth: 3
+    toc_float: true
+    toc_smooth_scroll: true
+    toc_highlight: true
+    fig-align: center
+    
 
 editor: visual
 
