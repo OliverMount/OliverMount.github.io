@@ -2,9 +2,10 @@ project:
   type: website
   output-dir: docs
 
-website:
+website: 
   title: "Welcome"
   description: "Oliver is aiming to become a computational (neuro)scientist"
+  
   sidebar: 
     style: "docked"
     search: true
@@ -17,16 +18,17 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About
-      - href: Transforms
-        text: Trans
+        text: About 
     right: 
       - text: "More"
         menu: 
           - text: "Talks"
           - text: "Miscel"
   page-footer: 
-    left: "(c) Oliver, 2025"
+    left: "Copyright Feb. 2025, Oliver"
+    right: 
+      - icon: github
+        href: https://github.com/OliverMount
 
 format:
   html:
