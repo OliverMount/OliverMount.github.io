@@ -28,6 +28,13 @@ website:
         menu: 
           - text: "Talks"
           - text: "Miscel"
+      - text: "R"
+        menu: 
+          - text: "SPCC package"
+          - text: "Spike package"
+      - text: "Python"
+        menu: 
+          - text: "dycompy package" 
   page-footer: 
     right: "Copyright Feb. 2025, Oliver"
     left: 
