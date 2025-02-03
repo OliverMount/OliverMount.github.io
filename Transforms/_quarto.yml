@@ -3,16 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "Welcome"
-  description: "Oliver is aiming to become a computational (neuro)scientist"
+  title: "Transforms"
+  description: "Signal Processing Transforms"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
-      - href: Transforms
-        text: Trans
+        text: Home 
   page-footer: 
     left: "(c) Oliver, 2025"
 
@@ -25,8 +21,7 @@ format:
     toc_float: true
     toc_smooth_scroll: true
     toc_highlight: true
-    fig-align: center
-    
+    fig-align: center 
 
 editor: visual
 
