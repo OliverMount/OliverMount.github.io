@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Oliver's Webpage"
+  title: "Welcome"
   description: "Oliver is aiming to become a computational (neuro)scientist"
   navbar:
     left:

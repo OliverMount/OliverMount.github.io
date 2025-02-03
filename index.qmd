@@ -15,3 +15,8 @@ comments: false
 I am a signal processing engineer and a aspiring computational (neuro)scientist for the rest of my life. A passionate explorer at the intersection of neuroscience, signal processing, and data science. My diverse interests span from analyzing neural signals to developing cutting-edge machine learning models for neuroscientific applications. When not immersed in code or scientific literature, you might find them contemplating the next big question in computational neuroscience over a cup of coffee.
 
 ## Research Interests
+
+1.  Computational Neuroscience
+2.  Signal Processing
+3.  Statistics and Probability
+4.  Data Science
