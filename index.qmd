@@ -13,11 +13,12 @@ comments: false
 
 ## BIO
 
-I am a computational neuroscience enthusiast with signal processing expertise. A passionate explorer at the intersection of computational neuroscience, signal processing, and data science. My diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. When not immersed in code or scientific literature, you might find me contemplating the next big question in computational neuroscience over a cup of tea.
+I am a computational neuroscience enthusiast with signal processing expertise. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me.
 
 ## Research Interests
 
 1.  Computational Neuroscience
+
 2.  Signal Processing
+
 3.  Statistics and Probability
-4.  Data Science
