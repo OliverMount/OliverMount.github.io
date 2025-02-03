@@ -31,6 +31,7 @@ website:
       - text: "R"
         menu: 
           - text: "SPCC package"
+            href: https://github.com/OliverMount/varSPCC.git
           - text: "Spike package"
       - text: "Python"
         menu: 
