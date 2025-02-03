@@ -23,19 +23,29 @@ website:
         text: Home
       - href: about.qmd
         text: About 
-    right: 
-      - text: "More"
-        menu: 
-          - text: "Talks"
-          - text: "Miscel"
+    right:  
+    
       - text: "R"
         menu: 
           - text: "SPCC package"
             href: https://github.com/OliverMount/varSPCC.git
           - text: "Spike package"
+          
       - text: "Python"
         menu: 
           - text: "dycompy package" 
+          
+      - text: "Neuron"
+        menu: 
+          - text: "Introduction"
+          - href: index.qmd
+          
+          - text: "Examples"
+          - href: index.qmd
+          
+          - text: "Tricks"
+          - href: index.qmd
+          
   page-footer: 
     right: "Copyright Feb. 2025, Oliver"
     left: 
