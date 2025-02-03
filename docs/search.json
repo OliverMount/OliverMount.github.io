@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This page contains materials related to computational neuroscience research"
-  },
-  {
-    "objectID": "Introduction.html",
-    "href": "Introduction.html",
-    "title": "Computational neuroscience",
-    "section": "",
-    "text": "Computational neuroscience\nComputational neuroscience is a facinating field"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About Me",
@@ -21,18 +7,11 @@
     "text": "I am a signal processing engineer and a aspiring computational (neuro)scientist for the rest of my life. A passionate explorer at the intersection of neuroscience, signal processing, and data science. My diverse interests span from analyzing neural signals to developing cutting-edge machine learning models for neuroscientific applications. When not immersed in code or scientific literature, you might find them contemplating the next big question in computational neuroscience over a cup of coffee."
   },
   {
-    "objectID": "Mesomodels/Introduction.html",
-    "href": "Mesomodels/Introduction.html",
-    "title": "Mesomodels",
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "About Me",
     "section": "",
-    "text": "Mesomodels"
-  },
-  {
-    "objectID": "1_intro.html",
-    "href": "1_intro.html",
-    "title": "Transforms",
-    "section": "",
-    "text": "Transformation are useful."
+    "text": "I am a signal processing engineer and a aspiring computational (neuro)scientist for the rest of my life. A passionate explorer at the intersection of neuroscience, signal processing, and data science. My diverse interests span from analyzing neural signals to developing cutting-edge machine learning models for neuroscientific applications. When not immersed in code or scientific literature, you might find them contemplating the next big question in computational neuroscience over a cup of coffee."
   },
   {
     "objectID": "index.html#research-interests",
@@ -40,12 +19,5 @@
     "title": "About Me",
     "section": "Research Interests",
     "text": "Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability\nData Science"
-  },
-  {
-    "objectID": "index.html#bio",
-    "href": "index.html#bio",
-    "title": "About Me",
-    "section": "",
-    "text": "I am a signal processing engineer and a aspiring computational (neuro)scientist for the rest of my life. A passionate explorer at the intersection of neuroscience, signal processing, and data science. My diverse interests span from analyzing neural signals to developing cutting-edge machine learning models for neuroscientific applications. When not immersed in code or scientific literature, you might find them contemplating the next big question in computational neuroscience over a cup of coffee."
   }
 ]
