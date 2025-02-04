@@ -23,8 +23,29 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Projects",
     "section": "",
-    "text": "This page contains materials related to computational neuroscience research"
+    "text": "This page contains materials related to projects"
+  },
+  {
+    "objectID": "Simulations/Neuron/Examples.html",
+    "href": "Simulations/Neuron/Examples.html",
+    "title": "Easy to advanced examples",
+    "section": "",
+    "text": "Easy to advanced examples"
+  },
+  {
+    "objectID": "Simulations/Neuron/Fundamentals.html",
+    "href": "Simulations/Neuron/Fundamentals.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nNeuron is a"
+  },
+  {
+    "objectID": "Simulations/Neuron/Tricks.html",
+    "href": "Simulations/Neuron/Tricks.html",
+    "title": "Tricks for efficient coding",
+    "section": "",
+    "text": "Tricks for efficient coding\nContains a few triks"
   }
 ]

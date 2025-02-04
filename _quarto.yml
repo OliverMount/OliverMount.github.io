@@ -1,15 +1,8 @@
 project:
   type: website
-  output-dir: docs
-  
-  render: 
-    - index.qmd
-    - about.qmd
+  output-dir: docs 
 
-website: 
-
-  site-path: "/docs/"  # is this necessary?
-
+website:  
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
   bread-crumbs: false
@@ -17,16 +10,11 @@ website:
   repo-url: https://github.com/OliverMount/OliverMount.github.io
   repo-actions: [edit, source, issue] 
   
-  sidebar:  
-    style: "docked"  # or "floated" 
-    search: true
-    background: light
-    foreground: dark
-    
-    contents: 
-      - text : "Research"
-      - section: "Basics"
-      
+  #-----------------------------------------------------------------------------
+  ## Top navigation bar
+  #-----------------------------------------------------------------------------
+  
+  
   navbar: 
     left:
       - href: index.qmd
@@ -45,17 +33,27 @@ website:
         menu: 
           - text: "dycompy package" 
           
-      - text: "Neuron"
-        menu: 
-          - text: "Introduction"
-          - href: Simulations/Neuron/Introduction.html
-          
-          - text: "Examples"
-          - href: index.qmd
-          
-          - text: "Tricks"
-          - href: index.qmd
-          
+      - text: "Neuron" 
+      - href: Simulations/Neuron/Introduction.qmd 
+      
+    #--------------------------------------------------------------------------- 
+    # Sidebar
+    #--------------------------------------------------------------------------- 
+    
+    sidebar:    
+    style: "docked"  # or "floated" 
+    search: true
+    background: light
+    foreground: dark
+    
+    contents: 
+      - text : "Research"
+      - section: "Basics"
+      
+    - title: "Neuron"
+      contents:
+        - Simulations/Neuron/Introduction.qmd 
+     
   page-footer: 
     right: "Copyright Feb. 2025, Oliver"
     left: 
