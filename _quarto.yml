@@ -8,7 +8,7 @@ project:
 
 website: 
 
-  site-path: "/docs/"
+  site-path: "/docs/"  # is this necessary?
 
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
