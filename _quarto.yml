@@ -12,7 +12,7 @@ website:
   bread-crumbs: false
   
   sidebar:  
-    style: "docked"  # or "floated"
+    style: "docked"  # or "floated" 
     search: true
     background: light
     foreground: dark
