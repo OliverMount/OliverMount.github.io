@@ -33,9 +33,9 @@ website:
         menu: 
           - text: "dycompy package" 
           
-      - text: "Neuron" 
       - href: Simulations/Neuron/Introduction.qmd 
-      
+        text: "Neuron" 
+        
     #--------------------------------------------------------------------------- 
     # Sidebar
     #--------------------------------------------------------------------------- 
