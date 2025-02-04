@@ -22,17 +22,6 @@ website:
       - href: about.qmd
         text: About 
     right:  
-    
-      - text: "R"
-        menu: 
-          - text: "SPCC package"
-            href: https://github.com/OliverMount/varSPCC.git
-          - text: "Spike package"
-          
-      - text: "Python"
-        menu: 
-          - text: "dycompy package" 
-          
       - href: Simulations/Neuron/Introduction.qmd 
         text: "Neuron" 
         
@@ -41,14 +30,10 @@ website:
     #--------------------------------------------------------------------------- 
     
     sidebar:    
-    style: "docked"  # or "floated" 
-    search: true
-    background: light
-    foreground: dark
-    
-    contents: 
-      - text : "Research"
-      - section: "Basics"
+      style: "docked"  # or "floated" 
+      search: true
+      background: light
+      foreground: dark
       
     - title: "Neuron"
       contents:
