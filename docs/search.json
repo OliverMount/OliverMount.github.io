@@ -2,21 +2,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "Welcome!",
     "section": "",
-    "text": "I am a computational neuroscience enthusiast with signal processing expertise. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me."
+    "text": "I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me."
   },
   {
     "objectID": "index.html#bio",
     "href": "index.html#bio",
-    "title": "About Me",
+    "title": "Welcome",
     "section": "",
     "text": "I am a computational neuroscience enthusiast with signal processing expertise. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me."
   },
   {
     "objectID": "index.html#research-interests",
     "href": "index.html#research-interests",
-    "title": "About Me",
+    "title": "Welcome!",
     "section": "Research Interests",
     "text": "Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
   },
@@ -47,5 +47,19 @@
     "title": "Tricks for efficient coding",
     "section": "",
     "text": "Tricks for efficient coding\nContains a few triks"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Welcome!",
+    "section": "Education",
+    "text": "Education\nPhD in Signal Processing\nMasters in Communication Engineering\nBachelors in Electronics and Communication Engineering"
+  },
+  {
+    "objectID": "index.html#current-research-interests",
+    "href": "index.html#current-research-interests",
+    "title": "Welcome!",
+    "section": "Current Research Interests",
+    "text": "Current Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
   }
 ]

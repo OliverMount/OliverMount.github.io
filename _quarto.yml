@@ -35,9 +35,9 @@ website:
       background: light
       foreground: dark
       
-    - title: "Neuron"
-      contents:
-        - Simulations/Neuron/Introduction.qmd 
+    #- title: "Neuron"
+    #  contents:
+    #    - Simulations/Neuron/Introduction.qmd 
      
   page-footer: 
     right: "Copyright Feb. 2025, Oliver"
