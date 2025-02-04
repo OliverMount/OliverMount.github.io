@@ -9,12 +9,14 @@ project:
 website: 
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
+  bread-crumbs: false
   
-  sidebar: 
-    title: "Contents"
+  sidebar:  
     style: "docked"  # or "floated"
     search: true
     background: light
+    foreground: dark
+    
     contents: 
       - text : "Research"
       - section: "Basics"
