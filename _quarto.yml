@@ -11,13 +11,15 @@ website:
   description: "Oliver is aiming to become a computational neuroscientist"
   
   sidebar: 
-    style: "docked"
+    title: "Contents"
+    style: "docked"  # or "floated"
     search: true
+    background: light
     contents: 
       - text : "Research"
       - section: "Basics"
       
-  navbar:
+  navbar: 
     left:
       - href: index.qmd
         text: Home
