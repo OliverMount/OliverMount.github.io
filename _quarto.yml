@@ -7,9 +7,15 @@ project:
     - about.qmd
 
 website: 
+
+  site-path: "/docs/"
+
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
   bread-crumbs: false
+  
+  repo-url: https://github.com/OliverMount/OliverMount.github.io
+  repo-actions: [edit, source, issue] 
   
   sidebar:  
     style: "docked"  # or "floated" 
