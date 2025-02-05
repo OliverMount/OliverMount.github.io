@@ -37,9 +37,9 @@
   {
     "objectID": "Simulations/Neuron/Fundamentals.html",
     "href": "Simulations/Neuron/Fundamentals.html",
-    "title": "Introduction",
+    "title": "Fundamentals",
     "section": "",
-    "text": "Introduction\nNeuron is a"
+    "text": "Fundamentals\nA few fundamentals"
   },
   {
     "objectID": "Simulations/Neuron/Tricks.html",
@@ -61,5 +61,26 @@
     "title": "Welcome!",
     "section": "Current Research Interests",
     "text": "Current Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
+  },
+  {
+    "objectID": "Simulations/R/R.html",
+    "href": "Simulations/R/R.html",
+    "title": "R",
+    "section": "",
+    "text": "R\nA few R packages"
+  },
+  {
+    "objectID": "Simulations/Neuron/Introduction.html",
+    "href": "Simulations/Neuron/Introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nIntroduction"
+  },
+  {
+    "objectID": "Simulations/Neuron/Neuron.html",
+    "href": "Simulations/Neuron/Neuron.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nNeuron is a"
   }
 ]

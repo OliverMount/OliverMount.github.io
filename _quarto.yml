@@ -22,8 +22,11 @@ website:
       - href: about.qmd
         text: "About"
     right:  
-      - href: Simulations/Neuron/Fundamentals.qmd 
+      - href: Simulations/R/R.qmd
+        text: "R" 
+      - href: Simulations/Neuron/Neuron.qmd 
         text: "Neuron" 
+
         
     #--------------------------------------------------------------------------- 
     # Sidebar
@@ -36,10 +39,16 @@ website:
         background: light
         foreground: dark
         contents:
-          - about.qmd
+          - about.qmd 
+          
+      - title: "R"
+        contents:
+          - Simulations/R/R.qmd  
       
       - title: "Neuron"
         contents:
+          - Simulations/Neuron/Neuron.qmd 
+          - Simulations/Neuron/Introduction.qmd 
           - Simulations/Neuron/Fundamentals.qmd 
      
   page-footer: 
