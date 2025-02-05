@@ -55,14 +55,30 @@ website:
         - Publications/Publications.qmd
           
     - title: "Tutorials"   
-      contents:
-        - section: "Random Processes"
+      contents:  
+        - text: "Tutorials"
+          file: Tutorials/Tutorials.qmd 
+        - section: "Random Processes" 
           contents: 
             - text: "Random Processes"
-              file: Tutorials/Tutorials.qmd 
+              file: Tutorials/RandomProcess/RandomProcessIntro.qmd 
+            - text: "AR"
+              file: Tutorials/RandomProcess/AR.qmd 
+            - text: "MA"
+              file: Tutorials/RandomProcess/MA.qmd
+            - text: "ARMA"
+              file: Tutorials/RandomProcess/ARMA.qmd
           
-    # For right-side  items   
-      
+        - section: "Estimation Theory"
+          contents: 
+            - text: "Estimation Theory"
+              file: Tutorials/EstimationTheory/EstimationTheoryIntro.qmd  
+            - text: "Estimation Theory"
+              file: Tutorials/EstimationTheory/PointEstimation.qmd 
+            - text: "Estimation Theory"
+              file: Tutorials/EstimationTheory/CramerRaoBound.qmd
+              
+    # For right-side  items    
     - title: "R"
       contents:
         - Simulations/R/R.qmd  
@@ -105,6 +121,10 @@ format:
       - brand 
     css: styles.css
     toc: true 
+    toc-title: Contents 
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
 
 editor: visual
 

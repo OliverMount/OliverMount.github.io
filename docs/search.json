@@ -1,119 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
-    "section": "",
-    "text": "I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me."
-  },
-  {
-    "objectID": "index.html#bio",
-    "href": "index.html#bio",
-    "title": "Welcome",
-    "section": "",
-    "text": "I am a computational neuroscience enthusiast with signal processing expertise. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me."
-  },
-  {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Welcome!",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Projects",
-    "section": "",
-    "text": "This page contains materials related to projects"
-  },
-  {
-    "objectID": "Simulations/Neuron/Examples.html",
-    "href": "Simulations/Neuron/Examples.html",
-    "title": "Easy to advanced examples",
-    "section": "",
-    "text": "Easy to advanced examples"
-  },
-  {
-    "objectID": "Simulations/Neuron/Fundamentals.html",
-    "href": "Simulations/Neuron/Fundamentals.html",
-    "title": "Fundamentals",
-    "section": "",
-    "text": "Fundamentals\nA few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.",
-    "crumbs": [
-      "Neuron",
-      "Fundamentals"
-    ]
-  },
-  {
-    "objectID": "Simulations/Neuron/Tricks.html",
-    "href": "Simulations/Neuron/Tricks.html",
-    "title": "Tricks for efficient coding",
-    "section": "",
-    "text": "Tricks for efficient coding\nContains a few triks"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Welcome!",
-    "section": "Education",
-    "text": "Education\nPhD in Signal Processing\nMasters in Communication Engineering\nBachelors in Electronics and Communication Engineering"
-  },
-  {
-    "objectID": "index.html#current-research-interests",
-    "href": "index.html#current-research-interests",
-    "title": "Welcome!",
-    "section": "Current Research Interests",
-    "text": "Current Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
-  },
-  {
-    "objectID": "Simulations/R/R.html",
-    "href": "Simulations/R/R.html",
-    "title": "R",
-    "section": "",
-    "text": "R\nA few R packages"
-  },
-  {
-    "objectID": "Simulations/Neuron/Introduction.html",
-    "href": "Simulations/Neuron/Introduction.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Introduction\nThe NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature.",
-    "crumbs": [
-      "Neuron",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "Simulations/Neuron/Neuron.html",
-    "href": "Simulations/Neuron/Neuron.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Introduction\nNEURON simulator excels at simulating complex, multi-compartmental models with detailed biophysics.",
-    "crumbs": [
-      "Neuron",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "Simulations/Brian2/Brian2.html",
-    "href": "Simulations/Brian2/Brian2.html",
-    "title": "Brian2",
-    "section": "",
-    "text": "Brian2\nBrian2 allows scientists to simulate spiking neural network models using simple and concise high-level descriptions. This makes it more accessible to researchers who may not have extensive programming experience.",
-    "crumbs": [
-      "Brian2",
-      "Brian2"
-    ]
-  },
-  {
-    "objectID": "Simulations/Python/Python.html",
-    "href": "Simulations/Python/Python.html",
-    "title": "Python codes",
-    "section": "",
-    "text": "Python codes"
-  },
-  {
     "objectID": "Research/Research.html",
     "href": "Research/Research.html",
     "title": "Research",
@@ -135,8 +21,87 @@
     ]
   },
   {
+    "objectID": "Simulations/Neuron/Neuron.html",
+    "href": "Simulations/Neuron/Neuron.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nNEURON simulator excels at simulating complex, multi-compartmental models with detailed biophysics.",
+    "crumbs": [
+      "Neuron",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "Simulations/Neuron/Fundamentals.html",
+    "href": "Simulations/Neuron/Fundamentals.html",
+    "title": "Fundamentals",
+    "section": "",
+    "text": "Fundamentals\nA few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.",
+    "crumbs": [
+      "Neuron",
+      "Fundamentals"
+    ]
+  },
+  {
+    "objectID": "Simulations/Python/Python.html",
+    "href": "Simulations/Python/Python.html",
+    "title": "Python codes",
+    "section": "",
+    "text": "Python codes",
+    "crumbs": [
+      "Python",
+      "Python codes"
+    ]
+  },
+  {
+    "objectID": "Tutorials/EstimationTheory/CramerRaoBound.html",
+    "href": "Tutorials/EstimationTheory/CramerRaoBound.html",
+    "title": "Cramer-Rao Lower Bound (CRLB)",
+    "section": "",
+    "text": "Cramer-Rao Lower Bound (CRLB)",
+    "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
+      "Estimation Theory"
+    ]
+  },
+  {
     "objectID": "Tutorials/Tutorials.html",
     "href": "Tutorials/Tutorials.html",
+    "title": "List of tutorials here",
+    "section": "",
+    "text": "List of tutorials here",
+    "crumbs": [
+      "Tutorials"
+    ]
+  },
+  {
+    "objectID": "Tutorials/RandomProcess/MA.html",
+    "href": "Tutorials/RandomProcess/MA.html",
+    "title": "Moving Average (MA) process",
+    "section": "",
+    "text": "Moving Average (MA) process",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "MA"
+    ]
+  },
+  {
+    "objectID": "Tutorials/RandomProcess/ARMA.html",
+    "href": "Tutorials/RandomProcess/ARMA.html",
+    "title": "Auto-regressive moving average (ARMA) processess",
+    "section": "",
+    "text": "Auto-regressive moving average (ARMA) processess",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "ARMA"
+    ]
+  },
+  {
+    "objectID": "Tutorials/RandomProcess/RandomProcessIntro.html",
+    "href": "Tutorials/RandomProcess/RandomProcessIntro.html",
     "title": "List of tutorials here",
     "section": "",
     "text": "List of tutorials here",
@@ -145,5 +110,94 @@
       "Random Processes",
       "Random Processes"
     ]
+  },
+  {
+    "objectID": "Tutorials/RandomProcess/AR.html",
+    "href": "Tutorials/RandomProcess/AR.html",
+    "title": "Auto-regressive (AR) processes",
+    "section": "",
+    "text": "Auto-regressive (AR) processes",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "AR"
+    ]
+  },
+  {
+    "objectID": "Tutorials/EstimationTheory/PointEstimation.html",
+    "href": "Tutorials/EstimationTheory/PointEstimation.html",
+    "title": "Point Estimation",
+    "section": "",
+    "text": "Point Estimation",
+    "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
+      "Estimation Theory"
+    ]
+  },
+  {
+    "objectID": "Tutorials/EstimationTheory/EstimationTheoryIntro.html",
+    "href": "Tutorials/EstimationTheory/EstimationTheoryIntro.html",
+    "title": "List of topics in estimation",
+    "section": "",
+    "text": "List of topics in estimation",
+    "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
+      "Estimation Theory"
+    ]
+  },
+  {
+    "objectID": "Simulations/Brian2/Brian2.html",
+    "href": "Simulations/Brian2/Brian2.html",
+    "title": "Brian2",
+    "section": "",
+    "text": "Brian2\nBrian2 allows scientists to simulate spiking neural network models using simple and concise high-level descriptions. This makes it more accessible to researchers who may not have extensive programming experience.",
+    "crumbs": [
+      "Brian2",
+      "Brian2"
+    ]
+  },
+  {
+    "objectID": "Simulations/Neuron/Introduction.html",
+    "href": "Simulations/Neuron/Introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nThe NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature.",
+    "crumbs": [
+      "Neuron",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "Simulations/R/R.html",
+    "href": "Simulations/R/R.html",
+    "title": "R",
+    "section": "",
+    "text": "R\nA few R packages",
+    "crumbs": [
+      "R"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me."
+  },
+  {
+    "objectID": "index.html#current-research-interests",
+    "href": "index.html#current-research-interests",
+    "title": "Welcome!",
+    "section": "Current Research Interests",
+    "text": "Current Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Welcome!",
+    "section": "Education",
+    "text": "Education\nPhD in Signal Processing\nMasters in Communication Engineering\nBachelors in Electronics and Communication Engineering"
   }
 ]
