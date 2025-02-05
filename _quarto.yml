@@ -79,9 +79,11 @@ website:
           
     - title: "Brian2"
       contents:
-        - Simulations/Brian2/Brian2.qmd 
-        - Simulations/Brian2/Introduction.qmd 
-        - Simulations/Brian2/Fundamentals.qmd
+        - section: "Brian2"
+          contents:
+            - Simulations/Brian2/Brian2.qmd 
+            - Simulations/Brian2/Introduction.qmd 
+            - Simulations/Brian2/Fundamentals.qmd
      
   page-footer: 
     right: "Copyright Feb. 2025, Oliver" 
