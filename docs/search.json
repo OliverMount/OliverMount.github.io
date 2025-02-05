@@ -106,14 +106,21 @@
     "href": "Research/Research.html",
     "title": "Research",
     "section": "",
-    "text": "My research results are constantly being updated here"
+    "text": "My research results are constantly being updated here",
+    "crumbs": [
+      "Research"
+    ]
   },
   {
     "objectID": "Publications/Publications.html",
     "href": "Publications/Publications.html",
     "title": "List of publications",
     "section": "",
-    "text": "This page contains materials related to projects"
+    "text": "This page contains materials related to projects",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
   },
   {
     "objectID": "Tutorials/Tutorials.html",
