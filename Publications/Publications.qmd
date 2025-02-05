@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "List of publications"
 ---
 
 This page contains materials related to projects

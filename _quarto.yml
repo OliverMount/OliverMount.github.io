@@ -5,58 +5,81 @@ project:
 website:  
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
-  bread-crumbs: false
+  
+  page-navigation: true
+  search: true
   
   repo-url: https://github.com/OliverMount/OliverMount.github.io
   repo-actions: [edit, source, issue] 
   
   #-----------------------------------------------------------------------------
   ## Top navigation bar
-  #-----------------------------------------------------------------------------
-  
-  
+  #-----------------------------------------------------------------------------  
   navbar: 
+    background: primary
     left:
-      - href: index.qmd
-        text: "Home"
-      - href: about.qmd
-        text: "About"
-    right:  
-      - href: Simulations/R/R.qmd
-        text: "R" 
-      - href: Simulations/Python/Python.qmd
-        text: "Python" 
-      - href: Simulations/Brian2/Brian2.qmd
-        text: "Brian2" 
-      - href: Simulations/Neuron/Neuron.qmd 
-        text: "Neuron" 
-
+      - text: "Home"
+        href: index.qmd 
+      - text: "Research"
+        href: Research/Research.qmd 
+      - text: "Publications"
+        href: Publications/Publications.qmd
+      - text: "Tutorials"
+        href: Tutorials/Tutorials.qmd
+    right:
+      - text: "R"
+        href: Simulations/R/R.qmd 
+      - text: "Python"
+        href: Simulations/Python/Python.qmd 
+      - text: "Brian2" 
+        href: Simulations/Brian2/Brian2.qmd 
+      - text: "Neuron" 
+        href: Simulations/Neuron/Neuron.qmd  
         
     #--------------------------------------------------------------------------- 
     # Sidebar
     #--------------------------------------------------------------------------- 
     
-    sidebar:    
-      - title: "About"
-        style: "docked"  # or "floated" 
-        search: true
-        background: light 
-        contents:
-          - about.qmd 
+  sidebar:    
+    
+    # For left-side items
+    - title: "Research"
+      style: "docked"  # or "floated" 
+      search: true
+      background: light 
+      contents:
+        - Research/Research.qmd 
           
-      - title: "R"
-        contents:
-          - Simulations/R/R.qmd  
+    - title: "Publications"   
+      contents:
+        - Publications/Publications.qmd
           
-      - title: "Python"
-        contents:
-          - Simulations/Python/Python.qmd   
+    - title: "Tutorials"   
+      contents:
+        - Tutorials/Tutorials.qmd 
+          
+    # For right-side  items   
       
-      - title: "Neuron"
-        contents:
-          - Simulations/Neuron/Neuron.qmd 
-          - Simulations/Neuron/Introduction.qmd 
-          - Simulations/Neuron/Fundamentals.qmd 
+    - title: "R"
+      contents:
+        - Simulations/R/R.qmd  
+          
+    - title: "Python"
+      contents:
+        - Simulations/Python/Python.qmd   
+      
+ 
+    - title: "Neuron"
+      contents:
+        - Simulations/Neuron/Neuron.qmd 
+        - Simulations/Neuron/Introduction.qmd 
+        - Simulations/Neuron/Fundamentals.qmd 
+          
+    - title: "Brian2"
+      contents:
+        - Simulations/Brian2/Brian2.qmd 
+        - Simulations/Brian2/Introduction.qmd 
+        - Simulations/Brian2/Fundamentals.qmd
      
   page-footer: 
     right: "Copyright Feb. 2025, Oliver" 
@@ -67,15 +90,11 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+      - brand 
     css: styles.css
-    toc: true
-    toc_depth: 3
-    toc_float: true
-    toc_smooth_scroll: true
-    toc_highlight: true
-    fig-align: center
-    
+    toc: true 
 
 editor: visual
 

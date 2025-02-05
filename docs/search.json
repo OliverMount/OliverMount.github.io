@@ -39,7 +39,7 @@
     "href": "Simulations/Neuron/Fundamentals.html",
     "title": "Fundamentals",
     "section": "",
-    "text": "Fundamentals\nA few fundamentals"
+    "text": "Fundamentals\nA few fundamentals would help the beginners aiming to use the NEURON simulator via python interface."
   },
   {
     "objectID": "Simulations/Neuron/Tricks.html",
@@ -74,21 +74,25 @@
     "href": "Simulations/Neuron/Introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "Introduction\nIntroduction"
+    "text": "Introduction\nThe NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature."
   },
   {
     "objectID": "Simulations/Neuron/Neuron.html",
     "href": "Simulations/Neuron/Neuron.html",
     "title": "Introduction",
     "section": "",
-    "text": "Introduction\nNeuron is a"
+    "text": "Introduction\nNEURON simulator excels at simulating complex, multi-compartmental models with detailed biophysics.",
+    "crumbs": [
+      "Neuron",
+      "Introduction"
+    ]
   },
   {
     "objectID": "Simulations/Brian2/Brian2.html",
     "href": "Simulations/Brian2/Brian2.html",
-    "title": "Brian2 Simulations here",
+    "title": "Brian2",
     "section": "",
-    "text": "Brian2 Simulations here"
+    "text": "Brian2\nBrian2 allows scientists to simulate spiking neural network models using simple and concise high-level descriptions. This makes it more accessible to researchers who may not have extensive programming experience."
   },
   {
     "objectID": "Simulations/Python/Python.html",
@@ -96,5 +100,26 @@
     "title": "Python codes",
     "section": "",
     "text": "Python codes"
+  },
+  {
+    "objectID": "Research/Research.html",
+    "href": "Research/Research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research results are constantly being updated here"
+  },
+  {
+    "objectID": "Publications/Publications.html",
+    "href": "Publications/Publications.html",
+    "title": "List of publications",
+    "section": "",
+    "text": "This page contains materials related to projects"
+  },
+  {
+    "objectID": "Tutorials/Tutorials.html",
+    "href": "Tutorials/Tutorials.html",
+    "title": "List of tutorials here",
+    "section": "",
+    "text": "List of tutorials here"
   }
 ]
