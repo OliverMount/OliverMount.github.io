@@ -56,7 +56,10 @@ website:
           
     - title: "Tutorials"   
       contents:
-        - Tutorials/Tutorials.qmd 
+        - section: "Random Processes"
+          contents: 
+            - text: "Random Processes"
+              file: Tutorials/Tutorials.qmd 
           
     # For right-side  items   
       
@@ -73,9 +76,12 @@ website:
       contents:
         - section: "Neuron"
           contents:
-            - Simulations/Neuron/Neuron.qmd 
-            - Simulations/Neuron/Introduction.qmd 
-            - Simulations/Neuron/Fundamentals.qmd 
+            - text : "Overview"
+              file: Simulations/Neuron/Neuron.qmd 
+            - text: "Introduction"
+              file: Simulations/Neuron/Introduction.qmd
+            - text: "Fundamentals"
+              file: Simulations/Neuron/Fundamentals.qmd 
           
     - title: "Brian2"
       contents:

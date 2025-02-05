@@ -92,7 +92,7 @@
     "text": "Introduction\nNEURON simulator excels at simulating complex, multi-compartmental models with detailed biophysics.",
     "crumbs": [
       "Neuron",
-      "Introduction"
+      "Overview"
     ]
   },
   {
@@ -100,7 +100,11 @@
     "href": "Simulations/Brian2/Brian2.html",
     "title": "Brian2",
     "section": "",
-    "text": "Brian2\nBrian2 allows scientists to simulate spiking neural network models using simple and concise high-level descriptions. This makes it more accessible to researchers who may not have extensive programming experience."
+    "text": "Brian2\nBrian2 allows scientists to simulate spiking neural network models using simple and concise high-level descriptions. This makes it more accessible to researchers who may not have extensive programming experience.",
+    "crumbs": [
+      "Brian2",
+      "Brian2"
+    ]
   },
   {
     "objectID": "Simulations/Python/Python.html",
@@ -135,6 +139,11 @@
     "href": "Tutorials/Tutorials.html",
     "title": "List of tutorials here",
     "section": "",
-    "text": "List of tutorials here"
+    "text": "List of tutorials here",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "Random Processes"
+    ]
   }
 ]
