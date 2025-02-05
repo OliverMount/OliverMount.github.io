@@ -24,6 +24,10 @@ website:
     right:  
       - href: Simulations/R/R.qmd
         text: "R" 
+      - href: Simulations/Python/Python.qmd
+        text: "Python" 
+      - href: Simulations/Brian2/Brian2.qmd
+        text: "Brian2" 
       - href: Simulations/Neuron/Neuron.qmd 
         text: "Neuron" 
 
@@ -36,14 +40,17 @@ website:
       - title: "About"
         style: "docked"  # or "floated" 
         search: true
-        background: light
-        foreground: dark
+        background: light 
         contents:
           - about.qmd 
           
       - title: "R"
         contents:
           - Simulations/R/R.qmd  
+          
+      - title: "Python"
+        contents:
+          - Simulations/Python/Python.qmd   
       
       - title: "Neuron"
         contents:
@@ -52,10 +59,11 @@ website:
           - Simulations/Neuron/Fundamentals.qmd 
      
   page-footer: 
-    right: "Copyright Feb. 2025, Oliver"
+    right: "Copyright Feb. 2025, Oliver" 
     left: 
       - icon: github
         href: https://github.com/OliverMount
+        
 
 format:
   html:
