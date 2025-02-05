@@ -71,9 +71,11 @@ website:
  
     - title: "Neuron"
       contents:
-        - Simulations/Neuron/Neuron.qmd 
-        - Simulations/Neuron/Introduction.qmd 
-        - Simulations/Neuron/Fundamentals.qmd 
+        - section: "Neuron"
+          contents:
+            - Simulations/Neuron/Neuron.qmd 
+            - Simulations/Neuron/Introduction.qmd 
+            - Simulations/Neuron/Fundamentals.qmd 
           
     - title: "Brian2"
       contents:

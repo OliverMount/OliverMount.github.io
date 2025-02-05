@@ -39,7 +39,11 @@
     "href": "Simulations/Neuron/Fundamentals.html",
     "title": "Fundamentals",
     "section": "",
-    "text": "Fundamentals\nA few fundamentals would help the beginners aiming to use the NEURON simulator via python interface."
+    "text": "Fundamentals\nA few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.",
+    "crumbs": [
+      "Neuron",
+      "Fundamentals"
+    ]
   },
   {
     "objectID": "Simulations/Neuron/Tricks.html",
@@ -74,7 +78,11 @@
     "href": "Simulations/Neuron/Introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "Introduction\nThe NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature."
+    "text": "Introduction\nThe NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature.",
+    "crumbs": [
+      "Neuron",
+      "Introduction"
+    ]
   },
   {
     "objectID": "Simulations/Neuron/Neuron.html",
