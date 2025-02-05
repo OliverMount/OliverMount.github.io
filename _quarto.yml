@@ -18,11 +18,11 @@ website:
   navbar: 
     left:
       - href: index.qmd
-        text: Home
+        text: "Home"
       - href: about.qmd
-        text: About 
+        text: "About"
     right:  
-      - href: Simulations/Neuron/Introduction.qmd 
+      - href: Simulations/Neuron/Fundamentals.qmd 
         text: "Neuron" 
         
     #--------------------------------------------------------------------------- 
@@ -30,14 +30,17 @@ website:
     #--------------------------------------------------------------------------- 
     
     sidebar:    
-      style: "docked"  # or "floated" 
-      search: true
-      background: light
-      foreground: dark
+      - title: "About"
+        style: "docked"  # or "floated" 
+        search: true
+        background: light
+        foreground: dark
+        contents:
+          - about.qmd
       
-    #- title: "Neuron"
-    #  contents:
-    #    - Simulations/Neuron/Introduction.qmd 
+      - title: "Neuron"
+        contents:
+          - Simulations/Neuron/Fundamentals.qmd 
      
   page-footer: 
     right: "Copyright Feb. 2025, Oliver"
