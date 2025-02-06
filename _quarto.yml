@@ -89,10 +89,10 @@ website:
       
  
     - title: "Neuron"
-      contents:
-        - section: "Neuron"
+      contents: 
+        - section: "Neuron" 
           contents:
-            - text : "Overview"
+            - text: "Overview"
               file: Simulations/Neuron/Neuron.qmd 
             - text: "Introduction"
               file: Simulations/Neuron/Introduction.qmd

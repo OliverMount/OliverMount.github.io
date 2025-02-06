@@ -1,3 +1,3 @@
 # Introduction
 
-The NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature.
+Recently, NEURON simulator has python interface, with excellent [beginners tutorials](https://nrn.readthedocs.io/en/8.2.6/tutorials/index.html).
