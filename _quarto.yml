@@ -123,8 +123,8 @@ format:
     toc: true 
     toc-title: Contents 
     html-math-method: katex
-    code-fold: true
-    code-summary: "Show the code"
+    #code-fold: true
+    #code-summary: "Show the code"
 
 editor: visual
 

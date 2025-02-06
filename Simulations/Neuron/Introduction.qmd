@@ -1,3 +1,22 @@
 # Introduction
 
 Recently, NEURON simulator has python interface, with excellent [beginners tutorials](https://nrn.readthedocs.io/en/8.2.6/tutorials/index.html).
+
+# [**Ball and stick 1: Basic cell**](https://nrn.readthedocs.io/en/8.2.6/tutorials/ball-and-stick-1.html)
+
+Load the necessary modules
+
+```{python}
+
+from neuron import h
+from neuron.units import ms, mV, µm 
+
+h.load_file("stdrun.hoc") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):
+```
+
+Define one cell with soma and dendrite (with necessary parameters, morphology) using python class
+
+```{python}
+
+soma=h.Section("soma")
+```

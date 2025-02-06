@@ -163,7 +163,7 @@
     "href": "Simulations/Neuron/Introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "Introduction\nRecently, NEURON simulator has python interface, with excellent beginners tutorials.",
+    "text": "Recently, NEURON simulator has python interface, with excellent beginners tutorials.\n\nBall and stick 1: Basic cell\nLoad the necessary modules\n\nfrom neuron import h\nfrom neuron.units import ms, mV, µm \n\nh.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):\n\n1.0\n\n\nDefine one cell with soma and dendrite (with necessary parameters, morphology) using python class\n\nsoma=h.Section(\"soma\")",
     "crumbs": [
       "Neuron",
       "Introduction"
