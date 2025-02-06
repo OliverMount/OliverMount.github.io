@@ -259,18 +259,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ball-and-stick-1-basic-cell" class="level1">
 <h1><a href="https://nrn.readthedocs.io/en/8.2.6/tutorials/ball-and-stick-1.html"><strong>Ball and stick 1: Basic cell</strong></a></h1>
 <p>Load the necessary modules</p>
-<div id="2a053c8d" class="cell" data-execution_count="1">
+<div id="41475535" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> neuron <span class="im">import</span> h</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> neuron.units <span class="im">import</span> ms, mV, µm </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>h.load_file(<span class="st">"stdrun.hoc"</span>) <span class="co">#load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="1">
 <pre><code>1.0</code></pre>
 </div>
 </div>
 <p>Define one cell with soma and dendrite (with necessary parameters, morphology) using python class</p>
-<div id="ccbe943c" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>soma<span class="op">=</span>h.Section(<span class="st">"soma"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="5a24d538" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> BallAndStick:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, gid):</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>._gid <span class="op">=</span> gid</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>._setup_morphology()</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>._setup_biophysics()</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> _setup_morphology(<span class="va">self</span>):</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.soma <span class="op">=</span> h.Section(name<span class="op">=</span><span class="st">"soma"</span>, cell<span class="op">=</span><span class="va">self</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.dend <span class="op">=</span> h.Section(name<span class="op">=</span><span class="st">"dend"</span>, cell<span class="op">=</span><span class="va">self</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.dend.<span class="ex">connect</span>(<span class="va">self</span>.soma)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.<span class="bu">all</span> <span class="op">=</span> <span class="va">self</span>.soma.wholetree()</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.soma.L <span class="op">=</span> <span class="va">self</span>.soma.diam <span class="op">=</span> <span class="fl">12.6157</span> <span class="op">*</span> µm</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.dend.L <span class="op">=</span> <span class="dv">200</span> <span class="op">*</span> µm</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.dend.diam <span class="op">=</span> <span class="dv">1</span> <span class="op">*</span> µm</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> _setup_biophysics(<span class="va">self</span>):</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> sec <span class="kw">in</span> <span class="va">self</span>.<span class="bu">all</span>:</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>            sec.Ra <span class="op">=</span> <span class="dv">100</span>  <span class="co"># Axial resistance in Ohm * cm</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>            sec.cm <span class="op">=</span> <span class="dv">1</span>  <span class="co"># Membrane capacitance in micro Farads / cm^2</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.soma.insert(<span class="st">"hh"</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> seg <span class="kw">in</span> <span class="va">self</span>.soma:</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>            seg.hh.gnabar <span class="op">=</span> <span class="fl">0.12</span>  <span class="co"># Sodium conductance in S/cm2</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>            seg.hh.gkbar <span class="op">=</span> <span class="fl">0.036</span>  <span class="co"># Potassium conductance in S/cm2</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>            seg.hh.gl <span class="op">=</span> <span class="fl">0.0003</span>  <span class="co"># Leak conductance in S/cm2</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            seg.hh.el <span class="op">=</span> <span class="op">-</span><span class="fl">54.3</span> <span class="op">*</span> mV  <span class="co"># Reversal potential</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Insert passive current in the dendrite                       # &lt;-- NEW</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.dend.insert(<span class="st">"pas"</span>)  <span class="co"># &lt;-- NEW</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> seg <span class="kw">in</span> <span class="va">self</span>.dend:  <span class="co"># &lt;-- NEW</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>            seg.pas.g <span class="op">=</span> <span class="fl">0.001</span>  <span class="co"># Passive conductance in S/cm2        # &lt;-- NEW</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>            seg.pas.e <span class="op">=</span> <span class="op">-</span><span class="dv">65</span> <span class="op">*</span> mV  <span class="co"># Leak reversal potential             # &lt;-- NEW</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__repr__</span>(<span class="va">self</span>):</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"BallAndStick[</span><span class="sc">{}</span><span class="st">]"</span>.<span class="bu">format</span>(<span class="va">self</span>._gid)</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>my_cell <span class="op">=</span> BallAndStick(<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

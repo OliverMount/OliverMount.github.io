@@ -1,3 +1,15 @@
 # Fundamentals
 
 A few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.
+
+## section
+
+Parmeters: L  - L is the length of the entire section in microns),
+
+nseg - (L/nseg)
+
+diam -
+
+Ra (Axial resistivity in ohm-cm -
+
+connectivity -
