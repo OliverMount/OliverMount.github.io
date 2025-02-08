@@ -13,6 +13,7 @@ from neuron.units import ms, mV, µm
 
 import matplotlib.pyplot as plt   # For plotting using matplotlib
 
+  
 h.load_file("stdrun.hoc") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):
 ```
 
@@ -96,9 +97,11 @@ h.continuerun(25 * ms) # run until time 25 ms:
 ```
 
 ```{python}
- 
- 
 
-plt.plot(t.as_numpy(),soma_v.as_numpy(),'r-') 
+plt.figure()
+plt.plot(t, v)
+plt.xlabel("t (ms)")
+plt.ylabel("v (mV)")
 plt.show()
+ 
 ```

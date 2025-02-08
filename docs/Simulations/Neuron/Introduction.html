@@ -259,19 +259,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ball-and-stick-1-basic-cell" class="level1">
 <h1><a href="https://nrn.readthedocs.io/en/8.2.6/tutorials/ball-and-stick-1.html"><strong>Ball and stick 1: Basic cell</strong></a></h1>
 <p>Load the necessary modules</p>
-<div id="0294dc97" class="cell" data-execution_count="1">
+<div id="95b2ffff" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> neuron <span class="im">import</span> h</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> neuron.units <span class="im">import</span> ms, mV, µm </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt   <span class="co"># For plotting using matplotlib</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>h.load_file(<span class="st">"stdrun.hoc"</span>) <span class="co">#load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>h.load_file(<span class="st">"stdrun.hoc"</span>) <span class="co">#load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="1">
 <pre><code>1.0</code></pre>
 </div>
 </div>
 <p>Define one cell with soma and dendrite (with necessary parameters, morphology) using python class</p>
-<div id="72b14315" class="cell" data-execution_count="2">
+<div id="f5a43024" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> BallAndStick:</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, gid):</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>._gid <span class="op">=</span> gid</span>
@@ -308,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>my_cell <span class="op">=</span> BallAndStick(<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="37a19d25" class="cell" data-execution_count="3">
+<div id="1ab9504a" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make sure soma is hh and dendtrite is passive membrane</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sec <span class="kw">in</span> h.allsec():</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="sc">%s</span><span class="st">: </span><span class="sc">%s</span><span class="st">"</span> <span class="op">%</span> (sec, <span class="st">", "</span>.join(sec.psection()[<span class="st">"density_mechs"</span>].keys())))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -319,7 +320,7 @@ BallAndStick[0].dend: pas</code></pre>
 </div>
 <section id="stimulus" class="level4">
 <h4 class="anchored" data-anchor-id="stimulus">Stimulus</h4>
-<div id="b8410611" class="cell" data-execution_count="4">
+<div id="ebb98ffa" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>stim <span class="op">=</span> h.IClamp(my_cell.dend(<span class="dv">1</span>))  <span class="co"># at the origin of the dentrite</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>stim.delay <span class="op">=</span> <span class="dv">5</span> <span class="co">#ms</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>stim.dur <span class="op">=</span> <span class="dv">1</span> <span class="co">#ms</span></span>
@@ -328,14 +329,14 @@ BallAndStick[0].dend: pas</code></pre>
 </section>
 <section id="recording-soma-voltage" class="level4">
 <h4 class="anchored" data-anchor-id="recording-soma-voltage">Recording soma voltage</h4>
-<div id="847f01d5" class="cell" data-execution_count="5">
+<div id="042d3e4d" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>soma_v <span class="op">=</span> h.Vector().record(my_cell.soma(<span class="fl">0.5</span>)._ref_v)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> h.Vector().record(h._ref_t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="initialization" class="level4">
 <h4 class="anchored" data-anchor-id="initialization">Initialization</h4>
-<div id="98156b99" class="cell" data-execution_count="6">
+<div id="d1f89b65" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>h.finitialize(<span class="op">-</span><span class="dv">65</span> <span class="op">*</span> mV) <span class="co"># initialize membrane potential </span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>h.continuerun(<span class="dv">25</span> <span class="op">*</span> ms) <span class="co"># run until time 25 ms:</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -343,7 +344,7 @@ BallAndStick[0].dend: pas</code></pre>
 <pre><code>0.0</code></pre>
 </div>
 </div>
-<div id="99a369a2" class="cell" data-execution_count="7">
+<div id="7a0abccf" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>plt.plot(t.as_numpy(),soma_v.as_numpy(),<span class="st">'r-'</span>) </span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
