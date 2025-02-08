@@ -4,7 +4,7 @@ A few fundamentals would help the beginners aiming to use the NEURON simulator v
 
 ## section
 
-Parmeters: L  - L is the length of the entire section in microns),
+Parmeters: L - L is the length of the entire section in microns),
 
 nseg - (L/nseg)
 
