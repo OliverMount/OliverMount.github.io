@@ -13,3 +13,5 @@ diam -
 Ra (Axial resistivity in ohm-cm -
 
 connectivity -
+
+Section vs segment
