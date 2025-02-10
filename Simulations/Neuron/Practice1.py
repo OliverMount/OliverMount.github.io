@@ -3,6 +3,8 @@ from neuron.units import ms, mV, µm
 
 import matplotlib.pyplot as plt   # For plotting using matplotlib
 
+h.load_file("stdrun.hoc") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):
+
 
 class BallAndStick:
     def __init__(self, gid):
@@ -53,7 +55,8 @@ stim.dur = 1 #ms
 stim.amp = 0.1  # nA
 
 
-soma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)
+soma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)  # this can be plotted directly
+dend_v=h.Vector().record(my_cell.dend(0.5)._ref_v)
 t = h.Vector().record(h._ref_t)
 
 h.finitialize(-65 * mV) # initialize membrane potential  
@@ -65,3 +68,21 @@ plt.plot(t, soma_v)
 plt.xlabel("t (ms)")
 plt.ylabel("v (mV)")
 plt.show()
+
+
+## For differnt values of stimulus input current
+
+amps = [0.075 * i for i in range(1, 5)]  # [0.075, 0.15, 0.22499999999999998, 0.3]
+colors = ["green", "blue", "red", "black"]
+#amps = [0.02,0.05,0.075,0.1,0.15]
+#colors = ["gray","green", "blue", "red", "black"]
+for amp, color in zip(amps, colors):
+    stim.amp = amp
+    h.finitialize(-65 * mV)
+    h.continuerun(25 * ms)
+    plt.plot(t,list(soma_v),color=color) 
+plt.show()
+
+
+
+

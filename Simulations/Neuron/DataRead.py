@@ -1,3 +1,9 @@
+
+
+#Data set 
+#1 mm (249600 at 4 nm)  X 0.92 mm (230400 at 4 nm) X	48 μm (1200 at 40 nm)
+
+
 from intern import array
 import matplotlib.pyplot as plt
 
@@ -30,3 +36,7 @@ plt.imshow(my_cutout[5])
 
 # get a link to view the dataset on Neuroglancer
 bossdb_dataset.visualize
+
+
+# make it clickable
+display(HTML('<a href="{0}">link</a>'.format(bossdb_dataset.visualize)))
