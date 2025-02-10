@@ -103,5 +103,4 @@ plt.plot(t, v)
 plt.xlabel("t (ms)")
 plt.ylabel("v (mV)")
 plt.show()
- 
 ```

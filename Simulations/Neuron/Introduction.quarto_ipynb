@@ -10,9 +10,9 @@
         "\n",
         "# [**Ball and stick 1: Basic cell**](https://nrn.readthedocs.io/en/8.2.6/tutorials/ball-and-stick-1.html)\n",
         "\n",
-        "Load the necessary modules\n"
+        "Load the necessary modules"
       ],
-      "id": "f1c9c12b"
+      "id": "feb67662"
     },
     {
       "cell_type": "code",
@@ -26,7 +26,7 @@
         "  \n",
         "h.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):"
       ],
-      "id": "d6c7579a",
+      "id": "637492aa",
       "execution_count": null,
       "outputs": []
     },
@@ -34,9 +34,9 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "Define one cell with soma and dendrite (with necessary parameters, morphology) using python class\n"
+        "Define one cell with soma and dendrite (with necessary parameters, morphology) using python class"
       ],
-      "id": "7b947088"
+      "id": "c445b307"
     },
     {
       "cell_type": "code",
@@ -78,7 +78,7 @@
         "\n",
         "my_cell = BallAndStick(0)"
       ],
-      "id": "000d74fd",
+      "id": "0e14e5bc",
       "execution_count": null,
       "outputs": []
     },
@@ -90,7 +90,7 @@
         "for sec in h.allsec():\n",
         "    print(\"%s: %s\" % (sec, \", \".join(sec.psection()[\"density_mechs\"].keys())))\n"
       ],
-      "id": "8ea3970b",
+      "id": "e0e32a3e",
       "execution_count": null,
       "outputs": []
     },
@@ -98,9 +98,9 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "#### Stimulus\n"
+        "#### Stimulus"
       ],
-      "id": "3c514ba4"
+      "id": "fbd738a3"
     },
     {
       "cell_type": "code",
@@ -111,7 +111,7 @@
         "stim.dur = 1 #ms\n",
         "stim.amp = 0.1  # nA"
       ],
-      "id": "3c91eb7c",
+      "id": "85b1b15d",
       "execution_count": null,
       "outputs": []
     },
@@ -119,9 +119,9 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "#### Recording soma voltage\n"
+        "#### Recording soma voltage"
       ],
-      "id": "18ee519b"
+      "id": "ffa97498"
     },
     {
       "cell_type": "code",
@@ -130,7 +130,7 @@
         "soma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)\n",
         "t = h.Vector().record(h._ref_t)"
       ],
-      "id": "21841f1f",
+      "id": "ea929e43",
       "execution_count": null,
       "outputs": []
     },
@@ -138,9 +138,9 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "#### Initialization\n"
+        "#### Initialization"
       ],
-      "id": "d0c0fe28"
+      "id": "d93d7617"
     },
     {
       "cell_type": "code",
@@ -150,7 +150,7 @@
         "\n",
         "h.continuerun(25 * ms) # run until time 25 ms:\n"
       ],
-      "id": "477b7ded",
+      "id": "8c371611",
       "execution_count": null,
       "outputs": []
     },
@@ -164,17 +164,16 @@
         "plt.ylabel(\"v (mV)\")\n",
         "plt.show()\n"
       ],
-      "id": "beaf64c3",
+      "id": "cb9e7676",
       "execution_count": null,
       "outputs": []
     }
   ],
   "metadata": {
     "kernelspec": {
-      "name": "python3",
+      "display_name": "Python 3",
       "language": "python",
-      "display_name": "Python 3 (ipykernel)",
-      "path": "/home/oli/anaconda3/share/jupyter/kernels/python3"
+      "name": "python3"
     }
   },
   "nbformat": 4,
