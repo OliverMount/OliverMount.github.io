@@ -1,25 +1,8 @@
-# Introduction
-
-Recently, NEURON simulator has python interface, with excellent [beginners tutorials](https://nrn.readthedocs.io/en/8.2.6/tutorials/index.html).
-
-# [**Ball and stick 1: Basic cell**](https://nrn.readthedocs.io/en/8.2.6/tutorials/ball-and-stick-1.html)
-
-Load the necessary modules
-
-```{python}
-
 from neuron import h
 from neuron.units import ms, mV, µm 
 
 import matplotlib.pyplot as plt   # For plotting using matplotlib
 
-  
-h.load_file("stdrun.hoc") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):
-```
-
-Define one cell with soma and dendrite (with necessary parameters, morphology) using python class
-
-```{python}
 
 class BallAndStick:
     def __init__(self, gid):
@@ -56,51 +39,29 @@ class BallAndStick:
 
 
 my_cell = BallAndStick(0)
-```
 
-```{python}
 
 # Make sure soma is hh and dendtrite is passive membrane
 for sec in h.allsec():
     print("%s: %s" % (sec, ", ".join(sec.psection()["density_mechs"].keys())))
+    
 
-
-```
-
-#### Stimulus
-
-```{python}
-
+# Stimulus    
 stim = h.IClamp(my_cell.dend(1))  # at the origin of the dentrite
 stim.delay = 5 #ms
 stim.dur = 1 #ms
 stim.amp = 0.1  # nA
 
-```
-
-#### Recording soma voltage
-
-```{python}
 
 soma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)
 t = h.Vector().record(h._ref_t)
 
-```
-
-#### Initialization
-
-```{python}
-h.finitialize(-65 * mV) # initialize membrane potential 
-
+h.finitialize(-65 * mV) # initialize membrane potential  
 h.continuerun(25 * ms) # run until time 25 ms:
- 
-```
-
-```{python}
-
+    
+    
 plt.figure()
 plt.plot(t, soma_v)
 plt.xlabel("t (ms)")
 plt.ylabel("v (mV)")
 plt.show()
-```
