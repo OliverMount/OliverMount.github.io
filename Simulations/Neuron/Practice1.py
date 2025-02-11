@@ -101,7 +101,7 @@ for amp, color in zip(amps, colors):
     h.finitialize(-65 * mV)
     h.continuerun(25 * ms)
     plt.plot(t,list(soma_v),color=color) 
-    plt.plot(t,list(soma_v),color=color) 
+    plt.plot(t,list(dend_v),color=color,linestyle="--") 
 plt.show()
 
 
