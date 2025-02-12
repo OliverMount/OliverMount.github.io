@@ -128,6 +128,6 @@ stim.start = 9 #The time (in ms) at which the first spike is most likely to occu
 syn_ = h.ExpSyn(my_cells[0].dend(0.5)) 
 syn_.tau = 2 * ms
 
-ncstim = h.NetCon(stim, syn_)
+ncstim = h.NetCon(stim, syn_) # The time delay (in ms) between when the source generates an event and when it is delivered to the target.
 ncstim.delay = 1 * ms
 ncstim.weight[0] = 0.04  # NetCon weight is a vector.
