@@ -9,13 +9,11 @@ from matplotlib.lines import Line2D  # Import Line2D for custom legend entries
 
 h.load_file("stdrun.hoc") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):
 
+    
+# The only difference between the Practice1 and Practice 2 BallAndStick is the removal of init and repr class
 
 class BallAndStick:
-    def __init__(self, gid):
-        self._gid = gid
-        self._setup_morphology()
-        self._setup_biophysics()
-
+ 
     def _setup_morphology(self):
         self.soma = h.Section(name="soma", cell=self)
         self.dend = h.Section(name="dend", cell=self)
@@ -38,11 +36,7 @@ class BallAndStick:
         self.dend.insert("pas")  # # Insert passive current in the dendrite  
         for seg in self.dend:   
             seg.pas.g = 0.001  # Passive conductance in S/cm2        
-            seg.pas.e = -65 * mV  # Leak reversal potential             
-
-    def __repr__(self):
-        return "BallAndStick[{}]".format(self._gid)
-
+            seg.pas.e = -65 * mV  # Leak reversal potential    
 
 my_cell = BallAndStick(0)
 
