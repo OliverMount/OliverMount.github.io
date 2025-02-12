@@ -115,14 +115,18 @@ my_cells = create_n_BallAndStick(5, 50)
 ## For creating spikes () 
 
 stim = h.NetStim()  # Make a new stimulator
-stim.number = 1
-stim.start = 9
+stim.number = 1  # The total number of spikes to generate. 
+stim.start = 9 #The time (in ms) at which the first spike is most likely to occur.
+
+#noise: A fractional value between 0 and 1 that controls randomness in spike timing:
+#0: Deterministic, fixed intervals between spikes.
+#1: Fully random intervals with an exponential distribution.
 
 ## Attach it to a synapse in the middle of the dendrite
 ## of the first cell in the network. (Named 'syn_' to avoid
 ## being overwritten with the 'syn' var assigned later.)
-syn_ = h.ExpSyn(my_cells[0].dend(0.5))
-
+syn_ = h.ExpSyn(my_cells[0].dend(0.5)) 
+syn_.tau = 2 * ms
 
 ncstim = h.NetCon(stim, syn_)
 ncstim.delay = 1 * ms
