@@ -100,11 +100,9 @@ my_cells = create_n_BallAndStick(7, 50)
 ps = h.PlotShape(True)
 ps.show(0)
 
-my_cells = create_n_BallAndStick(5, 50)
-
+my_cells = create_n_BallAndStick(5, 50) 
 my_cells = create_n_BallAndStick(50, 1)
 
-  
 
 # Event-based communication between objects in NEURON takes place via network connection objects called NetCons. 
 # Each NetCon has a source and target, where the source is typically a spike threshold detector. When a spike is detected, the NetCon sends a message to a target, usually a synapse on a postsynaptic cell.
