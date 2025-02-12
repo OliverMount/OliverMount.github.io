@@ -155,6 +155,27 @@ for amp, color in zip(amps, colors):
 plt.show()
 
 
-# Exercise 1
+## Role of number of segments (nseg) 
 
+f = plt.figure(x_axis_label="t (ms)", y_axis_label="v (mV)")
+amps = [0.075 * i for i in range(1, 5)]
+colors = ["green", "blue", "red", "black"]
+for amp, color in zip(amps, colors):
+    stim.amp = amp
+    for my_cell.dend.nseg, width in [(1, 2), (101, 1)]:
+        h.finitialize(-65)
+        h.continuerun(25)
+        f.line(
+            t,
+            list(soma_v),
+            line_width=width,
+            legend_label="amp={:.3g}".format(amp) if my_cell.dend.nseg == 1 else "",
+            color=color,
+        )
+        f.line(t, list(dend_v), line_width=width, line_dash="dashed", color=color)
+plt.show(f)
+
+
+ 
+import bokeh.plotting as plt
 
