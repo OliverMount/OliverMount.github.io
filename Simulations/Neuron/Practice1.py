@@ -157,6 +157,8 @@ plt.show()
 
 ## Role of number of segments (nseg) 
 
+import bokeh.plotting as plt
+
 f = plt.figure(x_axis_label="t (ms)", y_axis_label="v (mV)")
 amps = [0.075 * i for i in range(1, 5)]
 colors = ["green", "blue", "red", "black"]
@@ -177,5 +179,5 @@ plt.show(f)
 
 
  
-import bokeh.plotting as plt
+
 
