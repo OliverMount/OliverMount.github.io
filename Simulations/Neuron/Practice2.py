@@ -107,7 +107,8 @@ my_cells = create_n_BallAndStick(5, 50)
 ## For connecting cells
 
 # Event-based communication between objects in NEURON takes place via network connection objects called NetCons. 
-# Each NetCon has a source and target, where the source is typically a spike threshold detector. When a spike is detected, the NetCon sends a message to a target, usually a synapse on a postsynaptic cell.
+# Each NetCon has a source and target, where the source is typically a spike threshold detector. 
+# When a spike is detected, the NetCon sends a message to a target, usually a synapse on a postsynaptic cell.
 
 
 #ExpSyn  # External Synapse Object
