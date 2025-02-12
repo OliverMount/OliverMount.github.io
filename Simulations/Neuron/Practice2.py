@@ -114,7 +114,7 @@ my_cells = create_n_BallAndStick(5, 50)
 #ExpSyn  # External Synapse Object
 ## For creating spikes () 
 
-stim = h.NetStim()  # Make a new stimulator
+stim = h.NetStim()  # Make a new stimulator (generates spike events at specified intervals or with randomized timing.)
 stim.number = 1  # The total number of spikes to generate. 
 stim.start = 9 #The time (in ms) at which the first spike is most likely to occur.
 
