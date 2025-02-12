@@ -71,25 +71,42 @@ plt.show()
 
 
 ## For differnt values of stimulus input current
+  
+amps = [0.075 * i for i in range(1, 5)]  # [0.075, 0.15, 0.225, 0.3]
+colors = ["green", "blue", "red", "black"]
+labels = [round(k,4) for k in amps]
 
-amps = [0.075 * i for i in range(1, 5)]  # [0.075, 0.15, 0.22499999999999998, 0.3]
-colors = ["green", "blue", "red", "black"] 
-for amp, color in zip(amps, colors):
+# Create a figure and axis using plt.subplots
+fig, ax = plt.subplots()
+
+for amp, color, label in zip(amps, colors, labels):
     stim.amp = amp
     h.finitialize(-65 * mV)
     h.continuerun(25 * ms)
-    plt.plot(t,list(soma_v),color=color) 
+    ax.plot(t, list(soma_v), color=color, label=label)  # Use ax.plot instead of plt.plot 
+ 
+ax.set_xlabel("Time (ms)",fontsize=20)
+ax.set_ylabel("Voltage (mV)",fontsize=20)
+ax.tick_params(axis='both', labelsize=16) 
+ax.spines[['top','right']].set_visible(False) 
+ax.legend(title='Stim. Amp (nA)', title_fontsize=16, frameon=False) 
 plt.show()
 
-
+ 
 # Why the below is differnt from above? 
 amps = [0.02,0.05,0.075,0.1,0.15]
 colors = ["gray","green", "blue", "red", "black"]
+labels=[str(round(k,4)) for k in amps]
 for amp, color in zip(amps, colors):
     stim.amp = amp
     h.finitialize(-65 * mV)
     h.continuerun(25 * ms)
-    plt.plot(t,list(soma_v),color=color) 
+    ax.plot(t, list(soma_v), color=color, label=label) 
+ax.set_xlabel("Time (ms)",fontsize=20)
+ax.set_ylabel("Voltage (mV)",fontsize=20)
+ax.tick_params(axis='both', labelsize=16) 
+ax.spines[['top','right']].set_visible(False) 
+ax.legend(title='Stim. Amp (nA)', title_fontsize=16, frameon=False) 
 plt.show()
 
 
@@ -105,8 +122,7 @@ for amp, color in zip(amps, colors):
 plt.show()
 
 
-# The dendritic currnet is different here
-
+# The dendritic currnet is different here 
 amps = [0.02,0.05,0.075,0.1,0.15]
 colors = ["gray","green", "blue", "red", "black"]
 for amp, color in zip(amps, colors):
@@ -116,5 +132,8 @@ for amp, color in zip(amps, colors):
     plt.plot(t,list(soma_v),color=color) 
     plt.plot(t,list(dend_v),color=color,linestyle="--") 
 plt.show()
+
+
+# Exercise 1
 
 
