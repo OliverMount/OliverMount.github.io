@@ -133,7 +133,7 @@ custom_lines = [
     Line2D([0], [0], color="black", linestyle="-", label="Soma Voltage"),
     Line2D([0], [0], color="black", linestyle="--", label="Dendritic Voltage")
 ]
-ax.legend(handles=custom_lines, loc="upper right", fontsize=14, title="Signal Type", title_fontsize=16)
+ax.legend(handles=custom_lines,   fontsize=14, title="Signal Type", title_fontsize=16)
  
 ax.set_xlabel("Time (ms)",fontsize=20)
 ax.set_ylabel("Voltage (mV)",fontsize=20)
