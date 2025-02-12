@@ -105,3 +105,16 @@ for amp, color in zip(amps, colors):
 plt.show()
 
 
+# The dendritic currnet is different here
+
+amps = [0.02,0.05,0.075,0.1,0.15]
+colors = ["gray","green", "blue", "red", "black"]
+for amp, color in zip(amps, colors):
+    stim.amp = amp
+    h.finitialize(-65 * mV)
+    h.continuerun(25 * ms)
+    plt.plot(t,list(soma_v),color=color) 
+    plt.plot(t,list(dend_v),color=color,linestyle="--") 
+plt.show()
+
+
