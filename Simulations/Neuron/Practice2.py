@@ -110,6 +110,17 @@ my_cells = create_n_BallAndStick(50, 1)
 # Each NetCon has a source and target, where the source is typically a spike threshold detector. When a spike is detected, the NetCon sends a message to a target, usually a synapse on a postsynaptic cell.
 
 
-## For creating spikes ()
+## For creating spikes () 
 
 stim = h.NetStim()  # Make a new stimulator
+
+## Attach it to a synapse in the middle of the dendrite
+## of the first cell in the network. (Named 'syn_' to avoid
+## being overwritten with the 'syn' var assigned later.)
+syn_ = h.ExpSyn(my_cells[0].dend(0.5))
+
+stim.number = 1
+stim.start = 9
+ncstim = h.NetCon(stim, syn_)
+ncstim.delay = 1 * ms
+ncstim.weight[0] = 0.04  # NetCon weight is a vector.
