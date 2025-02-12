@@ -2,6 +2,7 @@ from neuron import h
 from neuron.units import ms, mV, µm 
 
 import matplotlib.pyplot as plt   # For plotting using matplotlib
+from matplotlib.lines import Line2D  # Import Line2D for custom legend entries
 
 h.load_file("stdrun.hoc") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):
 
@@ -115,10 +116,9 @@ plt.show()
 # Tutorial example along with dendritic current  
 amps = [0.075 * i for i in range(1, 5)]  # [0.075, 0.15, 0.225, 0.3]
 colors = ["green", "blue", "red", "black"]
-labels = [round(k,4) for k in amps]
+labels = [round(k,4) for k in amps] 
 
-# Create a figure and axis using plt.subplots
-fig, ax = plt.subplots()
+fig, ax = plt.subplots()  # Create a figure and axis using plt.subplots
 
 for amp, color, label in zip(amps, colors, labels):
     stim.amp = amp
@@ -126,12 +126,21 @@ for amp, color, label in zip(amps, colors, labels):
     h.continuerun(25 * ms)
     ax.plot(t, list(soma_v), color=color, label=label)  # Use ax.plot instead of plt.plot 
     ax.plot(t,list(dend_v),color=color,linestyle="--") 
+    
+
+# Create a separate legend for soma and dendritic currents
+custom_lines = [
+    Line2D([0], [0], color="black", linestyle="-", label="Soma Voltage"),
+    Line2D([0], [0], color="black", linestyle="--", label="Dendritic Voltage")
+]
+ax.legend(handles=custom_lines, loc="upper right", fontsize=14, title="Signal Type", title_fontsize=16)
  
 ax.set_xlabel("Time (ms)",fontsize=20)
 ax.set_ylabel("Voltage (mV)",fontsize=20)
 ax.tick_params(axis='both', labelsize=16) 
 ax.spines[['top','right']].set_visible(False) 
-ax.legend(title='Stim. Amp (nA)', title_fontsize=16, frameon=False) 
+amp_legend = ax.legend(title='Stim. Amp (nA)', title_fontsize=16, frameon=False, fontsize=14)
+ax.add_artist(amp_legend) 
 plt.show()
  
 # The dendritic currnet is different here 
