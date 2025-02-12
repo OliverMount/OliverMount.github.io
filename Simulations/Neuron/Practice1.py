@@ -167,22 +167,16 @@ plt.show()
 ## Role of number of segments (nseg)   
 amps = [0.075 * i for i in range(1, 5)]
 colors = ["green", "blue", "red", "black"]
+labels=[str(round(k,4)) for k in amps]
 
 fig, ax = plt.subplots(figsize=(10, 6))  # Create a figure and axis using plt.subplots  
-for amp, color in zip(amps, colors):  # Like in previous simulation
+for amp, color,label in zip(amps, colors,labels):  # Like in previous simulation
     stim.amp = amp
-    for my_cell.dend.nseg, width in [(1, 2), (101, 1)]:
+    for my_cell.dend.nseg, width in [(1, 2), (101, 1)]:  # Segments and width
         h.finitialize(-65)
         h.continuerun(25)
-        ax.plot(t, list(soma_v),   color=color,linewidth =width)
-        ax.plot(t, list(dend_v),  linestyle="dashed", color=color,linewidth=width)
-        
-ax.set_xlabel("Time (ms)", fontsize=20)
-ax.set_ylabel("Voltage (mV)", fontsize=20)
-ax.tick_params(axis='both', labelsize=16)
-ax.spines[['top', 'right']].set_visible(False)      
-
-
+        ax.plot(t, list(soma_v),   color=color,linewidth =width,label=label)
+        ax.plot(t, list(dend_v),  linestyle="dashed", color=color,linewidth=width) 
 # Create a separate legend for soma and dendritic currents
 custom_lines = [
     Line2D([0], [0], color="black", linestyle="-", label="Soma Voltage"),
@@ -195,9 +189,10 @@ first_legend = ax.legend(title='Stim. Amp (nA)', title_fontsize=16, fontsize=16,
 ax.add_artist(first_legend)
 ax.legend(handles=custom_lines, title="Signal Type",fontsize=16,  title_fontsize=16, loc='upper right',frameon=False,bbox_to_anchor=(0.85, 0.5))  
         
-plt.show()
-
-
+ax.set_xlabel("Time (ms)", fontsize=20)
+ax.set_ylabel("Voltage (mV)", fontsize=20)
+ax.tick_params(axis='both', labelsize=16)
+ax.spines[['top', 'right']].set_visible(False)  
  
-
-
+plt.tight_layout()
+plt.show() 
