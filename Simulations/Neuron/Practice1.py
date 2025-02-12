@@ -113,7 +113,6 @@ plt.show()
 
 
 # Tutorial example along with dendritic current  
-
 amps = [0.075 * i for i in range(1, 5)]  # [0.075, 0.15, 0.225, 0.3]
 colors = ["green", "blue", "red", "black"]
 labels = [round(k,4) for k in amps]
