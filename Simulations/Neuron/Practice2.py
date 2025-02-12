@@ -112,18 +112,18 @@ my_cells = create_n_BallAndStick(5, 50)
 
 
 #ExpSyn  # External Synapse Object
-
 ## For creating spikes () 
 
 stim = h.NetStim()  # Make a new stimulator
+stim.number = 1
+stim.start = 9
 
 ## Attach it to a synapse in the middle of the dendrite
 ## of the first cell in the network. (Named 'syn_' to avoid
 ## being overwritten with the 'syn' var assigned later.)
 syn_ = h.ExpSyn(my_cells[0].dend(0.5))
 
-stim.number = 1
-stim.start = 9
+
 ncstim = h.NetCon(stim, syn_)
 ncstim.delay = 1 * ms
 ncstim.weight[0] = 0.04  # NetCon weight is a vector.
