@@ -131,3 +131,21 @@ syn_.tau = 2 * ms
 ncstim = h.NetCon(stim, syn_) # The time delay (in ms) between when the source generates an event and when it is delivered to the target.
 ncstim.delay = 1 * ms
 ncstim.weight[0] = 0.04  # NetCon weight is a vector.
+
+
+## Check if the frist cell works
+
+
+recording_cell = my_cells[0]
+soma_v = h.Vector().record(recording_cell.soma(0.5)._ref_v)
+dend_v = h.Vector().record(recording_cell.dend(0.5)._ref_v)
+t = h.Vector().record(h._ref_t)
+
+h.finitialize(-65 * mV)
+h.continuerun(25 * ms)
+
+
+plt.plot(t, soma_v, label="soma(0.5)")
+plt.plot(t, dend_v, label="dend(0.5)")
+plt.legend()
+plt.show()
