@@ -127,25 +127,48 @@ stim.start = 9 #The time (in ms) at which the first spike is most likely to occu
 ## being overwritten with the 'syn' var assigned later.)
 syn_ = h.ExpSyn(my_cells[0].dend(0.5)) 
 syn_.tau = 2 * ms
+syn_i = h.Vector().record(syn_._ref_i)  ## Record the synaptic current
 
 ncstim = h.NetCon(stim, syn_) # The time delay (in ms) between when the source generates an event and when it is delivered to the target.
 ncstim.delay = 1 * ms
 ncstim.weight[0] = 0.04  # NetCon weight is a vector.
 
 
-## Check if the frist cell works
-
+## Check if the first cell works 
 
 recording_cell = my_cells[0]
 soma_v = h.Vector().record(recording_cell.soma(0.5)._ref_v)
 dend_v = h.Vector().record(recording_cell.dend(0.5)._ref_v)
+
+
 t = h.Vector().record(h._ref_t)
 
 h.finitialize(-65 * mV)
 h.continuerun(25 * ms)
 
 
+
 plt.plot(t, soma_v, label="soma(0.5)")
 plt.plot(t, dend_v, label="dend(0.5)")
 plt.legend()
+plt.show()
+
+
+
+fig = plt.figure(figsize=(8, 4))
+ax1 = fig.add_subplot(2, 1, 1)
+soma_plot = ax1.plot(t, soma_v, color="black", label="soma(0.5)")
+dend_plot = ax1.plot(t, dend_v, color="red", label="dend(0.5)")
+rev_plot = ax1.plot(
+    [t[0], t[-1]], [syn_.e, syn_.e], label="syn reversal", color="blue", linestyle=":"
+)
+ax1.legend()
+ax1.set_ylabel("mV")
+ax1.set_xticks([])  # Use ax2's tick labels
+
+ax2 = fig.add_subplot(2, 1, 2)
+syn_plot = ax2.plot(t, syn_i, color="blue", label="synaptic current")
+ax2.legend()
+ax2.set_ylabel(h.units("ExpSyn.i"))
+ax2.set_xlabel("time (ms)")
 plt.show()
