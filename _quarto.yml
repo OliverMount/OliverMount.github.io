@@ -62,12 +62,13 @@ website:
           contents: 
             - text: "Random Processes"
               file: Tutorials/RandomProcess/RandomProcessIntro.qmd 
+            - text: "ARMA"
+              file: Tutorials/RandomProcess/ARMA.qmd
             - text: "AR"
               file: Tutorials/RandomProcess/AR.qmd 
             - text: "MA"
               file: Tutorials/RandomProcess/MA.qmd
-            - text: "ARMA"
-              file: Tutorials/RandomProcess/ARMA.qmd
+
           
         - section: "Estimation Theory"
           contents: 
