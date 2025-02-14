@@ -1,2 +1,7 @@
 # Auto-regressive moving average (ARMA) processess
 
+Let $x(n)$ and $v(n)$ are stationary random processes that are related by the linear constant coefficient differential equations
+
+$$
+x(n) + \sum_{i=1}^{p} a_p(l) x(n-l)  = \sum_{l=0}^q 
+$$

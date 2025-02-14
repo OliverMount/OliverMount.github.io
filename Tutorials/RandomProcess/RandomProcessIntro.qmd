@@ -1,1 +1,11 @@
 # List of tutorials here
+
+A special list of random processes we discuss in this tutorial are
+
+1.  ARMA
+
+2.  AR
+
+3.  MA
+
+4.  Harmonic processes
