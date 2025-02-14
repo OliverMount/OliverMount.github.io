@@ -3,7 +3,7 @@
 Let $x(n)$ and $v(n)$ are stationary random processes. If they are related by the linear constant coefficient differential equations
 
 $$
-x(n) + \sum_{i=1}^{p} a_p(l) x(n-l)  = \sum_{l=0}^q b_q(l)v(n-l)
+x(n) + \sum_{l=1}^{p} a(l) x(n-l)  = \sum_{l=0}^q b_q(l)v(n-l)
 $$
 
 then $x(n)$ is called an ARMA(p,q) process.
