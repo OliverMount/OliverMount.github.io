@@ -92,7 +92,7 @@
     "href": "Tutorials/RandomProcess/ARMA.html",
     "title": "Auto-regressive moving average (ARMA) processess",
     "section": "",
-    "text": "Auto-regressive moving average (ARMA) processess\nLet x(n) and v(n) are stationary random processes. If they are related by the linear constant coefficient differential equations\n\nx(n) + \\sum_{l=1}^{p} a(l) x(n-l)  = \\sum_{l=0}^q b(l)v(n-l)\n\nthen x(n) is called an ARMA(p,q) process.\n\nAutocorrelation",
+    "text": "Auto-regressive moving average (ARMA) processess\nLet x(n) and v(n) are stationary random processes. If they are related by the linear constant coefficient differential equations\n\nx(n) + \\sum_{l=1}^{p} a(l) x(n-l)  = \\sum_{l=0}^q b(l)v(n-l)\n\nthen x(n) is called an ARMA(p,q) process.\n\nAutocorrelation\nMultiplying both side by x^*(n-k) and taking the expectation leads to\n\n\\mathbb{E}[x(n)x^*(n-k)] + \\sum_{l=1}^{p} a(l) E[x(n-l) x^*(n-k)] = \\sum_{l=0}^q b(l)E[v(n-l)x^*(n-k)]",
     "crumbs": [
       "Tutorials",
       "Random Processes",
