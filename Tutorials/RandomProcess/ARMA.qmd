@@ -10,7 +10,7 @@ then $x(n)$ is called an ARMA(p,q) process.
 
 #### Autocorrelation
 
-Multiplying both side by $x^*(n-k)$ and taking the expectation leads to
+On both sides, multiplying by $x^*(n-k)$ and taking the expectation $\mathbb{E}$ leads to
 
 $$
 \mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) E[x(n-l) x^*(n-k)] = \sum_{l=0}^q b(l)E[v(n-l)x^*(n-k)]
