@@ -1,5 +1,6 @@
 ---
 title: "List of publications"
+bibliography: papers.bib
 ---
 
-This page contains materials related to projects
+# 

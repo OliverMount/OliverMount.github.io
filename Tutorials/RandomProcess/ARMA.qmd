@@ -15,3 +15,5 @@ On both sides, multiplying by $x^*(n-k)$ and taking the expectation $\mathbb{E}$
 $$
 \mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) E[x(n-l) x^*(n-k)] = \sum_{l=0}^q b(l)E[v(n-l)x^*(n-k)]
 $$
+
+In the present form, the above equation is not useful. However,
