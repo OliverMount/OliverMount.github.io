@@ -13,7 +13,10 @@ then $x(n)$ is called an ARMA(p,q) process.
 On both sides, multiplying by $x^*(n-k)$ and taking the expectation $\mathbb{E}$ leads to
 
 $$
-\mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) E[x(n-l) x^*(n-k)] = \sum_{l=0}^q b(l)E[v(n-l)x^*(n-k)]
+\begin{split}
+\mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) E[x(n-l) x^*(n-k)] & = \sum_{l=0}^q b(l)E[v(n-l)x^*(n-k)] \\
+r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) & = \sum_{l=0}^q b(l)r_v(k-l)
+\end{split}
 $$
 
 In the present form, the above equation is not useful. However,

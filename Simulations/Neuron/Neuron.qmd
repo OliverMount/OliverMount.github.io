@@ -1,3 +1,5 @@
 # NEURON simulator
 
 [NEURON simulator](https://nrn.readthedocs.io/en/8.2.6/) excels at simulating complex, multi-compartmental models with detailed biophysics. The NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature. The original programming language used to code the NEURON is Higher Order Calculator (HOC). NEURON may also be programmed in Python, which we will explore more in this series of writings.
+
+## Installation of NEURON with GPU support (CoreNEURON)
