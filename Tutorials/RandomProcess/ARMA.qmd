@@ -14,7 +14,7 @@ On both sides, multiplying by $x^*(n-k)$ and taking the expectation $\mathbb{E}$
 
 $$
 \begin{split}
-\mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) E[x(n-l) x^*(n-k)] & = \sum_{l=0}^q b(l)E[v(n-l)x^*(n-k)] \\
+\mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) \mathbb{E}[x(n-l) x^*(n-k)] & = \sum_{l=0}^q b(l)\mathbb{E}[v(n-l)x^*(n-k)] \\
 r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) & = \sum_{l=0}^q b(l)r_{vx}(k-l)
 \end{split}
 $$ {#eq-arma_original}
