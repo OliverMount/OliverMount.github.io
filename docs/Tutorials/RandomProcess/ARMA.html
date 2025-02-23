@@ -301,11 +301,14 @@ x(n) + \sum_{l=1}^{p} a(l) x(n-l)  = \sum_{l=0}^q b(l)v(n-l)
 <p>On both sides, multiplying by <span class="math inline">x^*(n-k)</span> and taking the expectation <span class="math inline">\mathbb{E}</span> leads to</p>
 <p><span id="eq-arma_original"><span class="math display">
 \begin{split}
-\mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) E[x(n-l) x^*(n-k)] &amp; = \sum_{l=0}^q b(l)E[v(n-l)x^*(n-k)] \\
+\mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) \mathbb{E}[x(n-l) x^*(n-k)] &amp; = \sum_{l=0}^q b(l)\mathbb{E}[v(n-l)x^*(n-k)] \\
 r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) &amp; = \sum_{l=0}^q b(l)r_{vx}(k-l)
 \end{split}
 \tag{1}</span></span></p>
-<p>In the present form, <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a> is not useful. However,</p>
+<p>In the present form, <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a> is not useful. It would be nice to relate the cross-correlation term <span class="math inline">r_{vx}(k)</span> on the RHS of <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a> to the autocorrelation term <span class="math inline">r_x(k)</span> by invoking the linear filter theory. Since</p>
+<p><span class="math display">
+x(n) = \sum_{l=0}^{\infty} h(l) v^*(n-l)
+</span></p>
 
 
 </section>
