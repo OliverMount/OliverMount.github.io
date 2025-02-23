@@ -24,3 +24,10 @@ In the present form, @eq-arma_original is not useful. It would be nice to relate
 $$
 x(n) = \sum_{l=0}^{\infty} h(l) v^*(n-l) 
 $$
+
+$$
+\begin{split}
+r_{vx}(k) &= \mathbb{E}[v(n)x^*(n-k)]  \\ & =  \sum_{l=0}^{\infty} \mathbb{E}[v(n)h^*(l)  v^*(n-k-l)] \\
+  & = \sum_{l=0}^\infty h^*(l)r_{v}(k+l)
+\end{split}
+$$

@@ -309,6 +309,12 @@ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) &amp; = \sum_{l=0}^q b(l)r_{vx}(k-l)
 <p><span class="math display">
 x(n) = \sum_{l=0}^{\infty} h(l) v^*(n-l)
 </span></p>
+<p><span class="math display">
+\begin{split}
+r_{vx}(k) &amp;= \mathbb{E}[v(n)x^*(n-k)]  \\ &amp; =  \sum_{l=0}^{\infty} \mathbb{E}[v(n)h^*(l)  v^*(n-k-l)] \\
+  &amp; = \sum_{l=0}^\infty h^*(l)r_{v}(k+l)
+\end{split}
+</span></p>
 
 
 </section>
