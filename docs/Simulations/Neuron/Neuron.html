@@ -200,6 +200,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#build" id="toc-build" class="nav-link" data-scroll-target="#build">2. Build</a></li>
   <li><a href="#load-the-modules" id="toc-load-the-modules" class="nav-link" data-scroll-target="#load-the-modules">3. Load the modules</a></li>
   <li><a href="#compile" id="toc-compile" class="nav-link" data-scroll-target="#compile">4. Compile</a></li>
+  <li><a href="#ringtest" id="toc-ringtest" class="nav-link" data-scroll-target="#ringtest">5. Ringtest</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -231,21 +232,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="installation-of-neuron-with-gpu-support-coreneuron">Installation of NEURON with GPU support (CoreNEURON)</h2>
 <section id="clone-the-latest-version-of-neuron" class="level3">
 <h3 class="anchored" data-anchor-id="clone-the-latest-version-of-neuron">1. Clone the latest version of NEURON</h3>
-<pre class="{bash}"><code>
-git clone https://github.com/neuronsimulator/nrn
-cd nrn</code></pre>
+
 </section>
 <section id="build" class="level3">
 <h3 class="anchored" data-anchor-id="build">2. Build</h3>
-<pre class="{bash}"><code>mkdir build
-cd build</code></pre>
+
 </section>
 <section id="load-the-modules" class="level3">
 <h3 class="anchored" data-anchor-id="load-the-modules">3. Load the modules</h3>
-<pre class="{bash}"><code>
-
-module load intel openmpi python cmake nvidia-hpc-sdk cuda  
-</code></pre>
 <p>In normal Linux systems, the modules are in the path <code>/usr/share/modules/modulefiles</code>. If the directory does not exists, then install using</p>
 <pre class="{bash}"><code>
 sudo apt-get install environment-modules
@@ -271,9 +265,10 @@ source /etc/profile.d/modules.sh
       -DCMAKE_C_FLAGS="-O3 -g" \
       -DCMAKE_BUILD_TYPE=Custom</code></pre>
 <p>Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)</p>
-<pre class="{bash}"><code>
-nvidia-smi --query-gpu=compute_cap --format=csv
-</code></pre>
+</section>
+<section id="ringtest" class="level3">
+<h3 class="anchored" data-anchor-id="ringtest">5. Ringtest</h3>
+<p>Best way to check if the installation is working properly is by running the ring test as in</p>
 
 
 </section>
