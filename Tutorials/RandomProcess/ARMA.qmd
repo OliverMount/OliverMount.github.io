@@ -22,12 +22,12 @@ $$ {#eq-arma_original}
 In the present form, @eq-arma_original is not useful. It would be nice to relate the cross-correlation term $r_{vx}(k)$ on the RHS of @eq-arma_original to the autocorrelation term $r_x(k)$ by invoking the linear filter theory. Since
 
 $$
-x(n) = \sum_{l=0}^{\infty} h(l) v^*(n-l) 
+x(n) = \sum_{m={-\infty}}^{\infty} v(m) h^*(n-m) 
 $$
 
 $$
 \begin{split}
-r_{vx}(k) &= \mathbb{E}[v(n)x^*(n-k)]  \\ & =  \sum_{l=0}^{\infty} \mathbb{E}[v(n)h^*(l)  v^*(n-k-l)] \\
+r_{vx}(k) &= \mathbb{E}[v(n)x^*(n-k)]  \\ & =  \sum_{l=0}^{\infty} \mathbb{E}[v(n)v^*(l)  h^*(n-k-l)] \\
   & = \sum_{l=0}^\infty h^*(l)r_{v}(k+l)
 \end{split}
 $$
