@@ -202,6 +202,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#compile" id="toc-compile" class="nav-link" data-scroll-target="#compile">4. Compile</a></li>
   <li><a href="#ringtest" id="toc-ringtest" class="nav-link" data-scroll-target="#ringtest">5. Ringtest</a></li>
   </ul></li>
+  <li><a href="#deep-dentritic-network-gpu-support" id="toc-deep-dentritic-network-gpu-support" class="nav-link" data-scroll-target="#deep-dentritic-network-gpu-support">Deep dentritic network (GPU support)</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -253,6 +254,7 @@ source /etc/profile.d/modules.sh
 </section>
 <section id="compile" class="level3">
 <h3 class="anchored" data-anchor-id="compile">4. Compile</h3>
+<p>Following compilation is for GPU architecture of 61</p>
 <pre class="{bash}"><code>cmake .. \
       -DNRN_ENABLE_CORENEURON=ON \
       -DCORENRN_ENABLE_GPU=ON \
@@ -297,9 +299,16 @@ mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -nce
 
 # CoreNEURON GPU Run
 mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu</code></pre>
-
-
 </section>
+</section>
+<section id="deep-dentritic-network-gpu-support" class="level1">
+<h1>Deep dentritic network (GPU support)</h1>
+<pre class="{bash}"><code>
+https://github.com/pkuzyc/DeepDendrite/tree/main
+
+</code></pre>
+
+
 </section>
 
 </main> <!-- /main -->
