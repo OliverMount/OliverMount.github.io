@@ -27,7 +27,16 @@ $$
 
 $$
 \begin{split}
-r_{vx}(k) &= \mathbb{E}[v(n)x^*(n-k)]  \\ & =  \sum_{l=0}^{\infty} \mathbb{E}[v(n)v^*(l)  h^*(n-k-l)] \\
-  & = \sum_{l=0}^\infty h^*(l)r_{v}(k+l)
+r_{vx}(k) &= \mathbb{E}[v(n)x^*(n-k)]  \\ 
+& =  \sum_{m=-\infty}^{\infty} \mathbb{E}[v(n)v^*(m)  h^*(n-m-k)] \\
+  & = \sigma_v^2 h^*(-k) 
 \end{split}
 $$
+
+The above simplification is due to the assumption that $v(n)$ is white noise. Now,
+
+$$ 
+r_{vx}(k-l) =  \sigma_v^2 h^*(l-k)  
+$$
+
+Assuming causal $h(n)$, then

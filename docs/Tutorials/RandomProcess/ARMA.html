@@ -307,14 +307,20 @@ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) &amp; = \sum_{l=0}^q b(l)r_{vx}(k-l)
 \tag{1}</span></span></p>
 <p>In the present form, <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a> is not useful. It would be nice to relate the cross-correlation term <span class="math inline">r_{vx}(k)</span> on the RHS of <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a> to the autocorrelation term <span class="math inline">r_x(k)</span> by invoking the linear filter theory. Since</p>
 <p><span class="math display">
-x(n) = \sum_{l=0}^{\infty} h(l) v^*(n-l)
+x(n) = \sum_{m={-\infty}}^{\infty} v(m) h^*(n-m)
 </span></p>
 <p><span class="math display">
 \begin{split}
-r_{vx}(k) &amp;= \mathbb{E}[v(n)x^*(n-k)]  \\ &amp; =  \sum_{l=0}^{\infty} \mathbb{E}[v(n)h^*(l)  v^*(n-k-l)] \\
-  &amp; = \sum_{l=0}^\infty h^*(l)r_{v}(k+l)
+r_{vx}(k) &amp;= \mathbb{E}[v(n)x^*(n-k)]  \\
+&amp; =  \sum_{m=-\infty}^{\infty} \mathbb{E}[v(n)v^*(m)  h^*(n-m-k)] \\
+  &amp; = \sigma_v^2 h^*(-k)
 \end{split}
 </span></p>
+<p>The above simplification is due to the assumption that <span class="math inline">v(n)</span> is white noise. Now,</p>
+<p><span class="math display">
+r_{vx}(k-l) =  \sigma_v^2 h^*(l-k)  
+</span></p>
+<p>Assuming causal <span class="math inline">h(n)</span>, then</p>
 
 
 </section>
