@@ -36,7 +36,7 @@
     "href": "Simulations/Neuron/Fundamentals.html",
     "title": "Fundamentals",
     "section": "",
-    "text": "A few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.\n\n\nParmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -",
+    "text": "A few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.\n\n\nParmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment",
     "crumbs": [
       "Neuron",
       "Fundamentals"
@@ -205,7 +205,7 @@
     "href": "Simulations/Neuron/Fundamentals.html#section",
     "title": "Fundamentals",
     "section": "",
-    "text": "Parmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -",
+    "text": "Parmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment",
     "crumbs": [
       "Neuron",
       "Fundamentals"
@@ -216,7 +216,7 @@
     "href": "Simulations/Neuron/Neuron.html#installation-of-neuron-with-gpu-support-coreneuron",
     "title": "NEURON simulator",
     "section": "Installation of NEURON with GPU support (CoreNEURON)",
-    "text": "Installation of NEURON with GPU support (CoreNEURON)\n\n1. Clone the latest version of NEURON\n\ngit clone https://github.com/neuronsimulator/nrn\ncd nrn\n\n\n2. Build\nmkdir build\ncd build\n\n\n3. Load the modules\n\n\nmodule load intel openmpi python cmake nvidia-hpc-sdk cuda  \n\nIn normal Linux systems, the modules are in the path /usr/share/modules/modulefiles. If the directory does not exists, then install using\n\nsudo apt-get install environment-modules\n\n# and configure the ~/.bashrc with \nsource /etc/profile.d/modules.sh\n\n\n\n4. Compile\ncmake .. \\\n      -DNRN_ENABLE_CORENEURON=ON \\\n      -DCORENRN_ENABLE_GPU=ON \\\n      -DNRN_ENABLE_INTERVIEWS=OFF \\\n      -DNRN_ENABLE_RX3D=OFF \\\n      -DCMAKE_INSTALL_PREFIX=$HOME/install \\\n      -DCMAKE_C_COMPILER=nvc \\\n      -DCMAKE_CXX_COMPILER=nvc++ \\\n      -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu \\\n      -DCMAKE_CUDA_ARCHITECTURES=\"61\" \\  # need to know this\n      -DCMAKE_EXE_LINKER_FLAGS: \"-cuda -gpu=cuda12.6,lineinfo,cc61 -acc\" # not necessary\n      -DCMAKE_CXX_FLAGS=\"-O3 -g\" \\\n      -DCMAKE_C_FLAGS=\"-O3 -g\" \\\n      -DCMAKE_BUILD_TYPE=Custom\nCheck the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)\n\nnvidia-smi --query-gpu=compute_cap --format=csv",
+    "text": "Installation of NEURON with GPU support (CoreNEURON)\n\n1. Clone the latest version of NEURON\ngit clone https://github.com/neuronsimulator/nrn\ncd nrn\n\n\n2. Build\nmkdir build\ncd build\n\n\n3. Load the modules\nmodule load intel openmpi python cmake nvidia-hpc-sdk cuda  \nIn normal Linux systems, the modules are in the path /usr/share/modules/modulefiles. If the directory does not exists, then install using\n\nsudo apt-get install environment-modules\n\n# and configure the ~/.bashrc with \nsource /etc/profile.d/modules.sh\n\n\n\n4. Compile\ncmake .. \\\n      -DNRN_ENABLE_CORENEURON=ON \\\n      -DCORENRN_ENABLE_GPU=ON \\\n      -DNRN_ENABLE_INTERVIEWS=OFF \\\n      -DNRN_ENABLE_RX3D=OFF \\\n      -DCMAKE_INSTALL_PREFIX=$HOME/install \\\n      -DCMAKE_C_COMPILER=nvc \\\n      -DCMAKE_CXX_COMPILER=nvc++ \\\n      -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu \\\n      -DCMAKE_CUDA_ARCHITECTURES=\"61\" \\  # need to know this\n      -DCMAKE_EXE_LINKER_FLAGS: \"-cuda -gpu=cuda12.6,lineinfo,cc61 -acc\" # not necessary\n      -DCMAKE_CXX_FLAGS=\"-O3 -g\" \\\n      -DCMAKE_C_FLAGS=\"-O3 -g\" \\\n      -DCMAKE_BUILD_TYPE=Custom\nCheck the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)\nnvidia-smi --query-gpu=compute_cap --format=csv\n\n\n5. Ringtest\nBest way to check if the installation is working properly is by running the ring test as in\ngit clone https://github.com/nrnhines/ringtest.git\ncd ringtest\n\nnrnivmodl -coreneuron mod\n\n# in any NEURON code add the following lines for CoreNEURON support (python files only)\n\nh.cvode.cache_efficient(1)\nif use_coreneuron:\n    from neuron import coreneuron\n    coreneuron.enable = True\n    coreneuron.gpu = coreneuron_gpu\n    \n    \n#run the three performance test \n\n# NEURON CPU Run\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64\n\n# CoreNEURON CPU Run\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron\n\n# CoreNEURON GPU Run\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu",
     "crumbs": [
       "Neuron",
       "Overview"

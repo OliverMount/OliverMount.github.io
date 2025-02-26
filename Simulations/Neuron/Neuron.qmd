@@ -7,7 +7,6 @@
 ### 1. Clone the latest version of NEURON
 
 ```{bash}
-
 git clone https://github.com/neuronsimulator/nrn
 cd nrn
 ```
@@ -19,13 +18,10 @@ mkdir build
 cd build
 ```
 
-### 3. Load the modules 
+### 3. Load the modules
 
 ```{bash}
-
-
 module load intel openmpi python cmake nvidia-hpc-sdk cuda  
-
 ```
 
 In normal Linux systems, the modules are in the path `/usr/share/modules/modulefiles`. If the directory does not exists, then install using
@@ -40,6 +36,8 @@ source /etc/profile.d/modules.sh
 ```
 
 ### 4. Compile
+
+Following compilation is for GPU architecture of 61
 
 ```{bash}
 cmake .. \
@@ -61,7 +59,45 @@ cmake .. \
 Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)
 
 ```{bash}
-
 nvidia-smi --query-gpu=compute_cap --format=csv
+```
+
+### 5. Ringtest
+
+Best way to check if the installation is working properly is by running the ring test as in
+
+```{bash}
+git clone https://github.com/nrnhines/ringtest.git
+cd ringtest
+
+nrnivmodl -coreneuron mod
+
+# in any NEURON code add the following lines for CoreNEURON support (python files only)
+
+h.cvode.cache_efficient(1)
+if use_coreneuron:
+    from neuron import coreneuron
+    coreneuron.enable = True
+    coreneuron.gpu = coreneuron_gpu
+    
+    
+#run the three performance test 
+
+# NEURON CPU Run
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64
+
+# CoreNEURON CPU Run
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron
+
+# CoreNEURON GPU Run
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu
+```
+
+# Deep dentritic network (GPU support)
+
+```{bash}
+
+https://github.com/pkuzyc/DeepDendrite/tree/main
+
 
 ```
