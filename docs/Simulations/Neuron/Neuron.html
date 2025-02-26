@@ -232,14 +232,17 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="installation-of-neuron-with-gpu-support-coreneuron">Installation of NEURON with GPU support (CoreNEURON)</h2>
 <section id="clone-the-latest-version-of-neuron" class="level3">
 <h3 class="anchored" data-anchor-id="clone-the-latest-version-of-neuron">1. Clone the latest version of NEURON</h3>
-
+<pre class="{bash}"><code>git clone https://github.com/neuronsimulator/nrn
+cd nrn</code></pre>
 </section>
 <section id="build" class="level3">
 <h3 class="anchored" data-anchor-id="build">2. Build</h3>
-
+<pre class="{bash}"><code>mkdir build
+cd build</code></pre>
 </section>
 <section id="load-the-modules" class="level3">
 <h3 class="anchored" data-anchor-id="load-the-modules">3. Load the modules</h3>
+<pre class="{bash}"><code>module load intel openmpi python cmake nvidia-hpc-sdk cuda  </code></pre>
 <p>In normal Linux systems, the modules are in the path <code>/usr/share/modules/modulefiles</code>. If the directory does not exists, then install using</p>
 <pre class="{bash}"><code>
 sudo apt-get install environment-modules
@@ -265,10 +268,35 @@ source /etc/profile.d/modules.sh
       -DCMAKE_C_FLAGS="-O3 -g" \
       -DCMAKE_BUILD_TYPE=Custom</code></pre>
 <p>Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)</p>
+<pre class="{bash}"><code>nvidia-smi --query-gpu=compute_cap --format=csv</code></pre>
 </section>
 <section id="ringtest" class="level3">
 <h3 class="anchored" data-anchor-id="ringtest">5. Ringtest</h3>
 <p>Best way to check if the installation is working properly is by running the ring test as in</p>
+<pre class="{bash}"><code>git clone https://github.com/nrnhines/ringtest.git
+cd ringtest
+
+nrnivmodl -coreneuron mod
+
+# in any NEURON code add the following lines for CoreNEURON support (python files only)
+
+h.cvode.cache_efficient(1)
+if use_coreneuron:
+    from neuron import coreneuron
+    coreneuron.enable = True
+    coreneuron.gpu = coreneuron_gpu
+    
+    
+#run the three performance test 
+
+# NEURON CPU Run
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64
+
+# CoreNEURON CPU Run
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron
+
+# CoreNEURON GPU Run
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu</code></pre>
 
 
 </section>
