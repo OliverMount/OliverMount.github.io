@@ -28,4 +28,40 @@ module load intel openmpi python cmake nvidia-hpc-sdk cuda
 
 ```
 
-### 2. Build
+In normal Linux systems, the modules are in the path `/usr/share/modules/modulefiles`. If the directory does not exists, then install using
+
+```{bash}
+
+sudo apt-get install environment-modules
+
+# and configure the ~/.bashrc with 
+source /etc/profile.d/modules.sh
+
+```
+
+### 4. Compile
+
+```{bash}
+cmake .. \
+      -DNRN_ENABLE_CORENEURON=ON \
+      -DCORENRN_ENABLE_GPU=ON \
+      -DNRN_ENABLE_INTERVIEWS=OFF \
+      -DNRN_ENABLE_RX3D=OFF \
+      -DCMAKE_INSTALL_PREFIX=$HOME/install \
+      -DCMAKE_C_COMPILER=nvc \
+      -DCMAKE_CXX_COMPILER=nvc++ \
+      -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu \
+      -DCMAKE_CUDA_ARCHITECTURES="61" \  # need to know this
+      -DCMAKE_EXE_LINKER_FLAGS: "-cuda -gpu=cuda12.6,lineinfo,cc61 -acc" # not necessary
+      -DCMAKE_CXX_FLAGS="-O3 -g" \
+      -DCMAKE_C_FLAGS="-O3 -g" \
+      -DCMAKE_BUILD_TYPE=Custom
+```
+
+Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)
+
+```{bash}
+
+nvidia-smi --query-gpu=compute_cap --format=csv
+
+```
