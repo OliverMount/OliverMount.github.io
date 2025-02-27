@@ -317,10 +317,18 @@ r_{vx}(k) &amp;= \mathbb{E}[v(n)x^*(n-k)]  \\
 \end{split}
 </span></p>
 <p>The above simplification is due to the assumption that <span class="math inline">v(n)</span> is white noise. Now,</p>
-<p><span class="math display">
+<p><span id="eq-rvx"><span class="math display">
 r_{vx}(k-l) =  \sigma_v^2 h^*(l-k)  
+\tag{2}</span></span></p>
+<p>Substituting <a href="#eq-rvx" class="quarto-xref">Equation&nbsp;2</a> in to <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a></p>
+<p><span class="math display">
+\begin{split}
+r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) &amp; = \sum_{l=0}^q b(l)r_{vx}(k-l) \\
+&amp; = \sigma_v^2\sum_{l=0}^q b(l)  h^*(l-k) \\
+&amp; = \sigma_v^2\sum_{l=0}^q-k b(l+k)  h^*(l)
+\end{split}
 </span></p>
-<p>Assuming causal <span class="math inline">h(n)</span>, then</p>
+<p>The last step is due to the assumption of causal <span class="math inline">h(n)</span>.</p>
 
 
 </section>
