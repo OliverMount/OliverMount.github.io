@@ -50,3 +50,11 @@ $$
 $$
 
 The last step is due to the assumption of causal $h(n)$.
+
+The equation
+
+$$ 
+ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  = \sigma_v^2\sum_{l=0}^{q-k} b(l+k)  h^*(l) 
+$$
+
+is called `Yule-Walker` equation.
