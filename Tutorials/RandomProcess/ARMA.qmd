@@ -45,7 +45,7 @@ $$
 \begin{split}
  r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) & = \sum_{l=0}^q b(l)r_{vx}(k-l) \\
 & = \sigma_v^2\sum_{l=0}^q b(l)  h^*(l-k) \\
-& = \sigma_v^2\sum_{l=0}^q-k b(l+k)  h^*(l)
+& = \sigma_v^2\sum_{l=0}^{q-k} b(l+k)  h^*(l)
 \end{split}
 $$
 
