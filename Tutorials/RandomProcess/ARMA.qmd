@@ -77,7 +77,7 @@ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  =
  
 $$
 
-The YW equations can be written in the matrix form (for $k=p+q$) as
+The above YW equations can be written (for $k=p+q$) as
 
 $$
 \begin{split}
