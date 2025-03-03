@@ -363,6 +363,25 @@ r_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \cdots + a(p) r_x(-(p-(q+2))) &amp;=
 r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q) &amp;= 0\\
 \end{split}
 </span></p>
+<p>In matrix form,</p>
+<p><span class="math display">
+\begin{bmatrix}
+r_x(0) &amp;     r_x(-1)  &amp;   r_x(-2) &amp; \cdots &amp;  r_x(-p)  \\
+r_x(1) &amp;     r_x(0)  &amp;    r_x(-1) &amp;  \cdots &amp;  r_x(-(p-1)) \\
+\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
+r_x(q) &amp;    r_x(q-1)  &amp;  r_x(q-2) &amp; \cdots &amp; r_x(-(p-q)) \\
+---------------------------\\
+r_x(q+1) +   a(1) r_x(q)  + a(2) r_x(q-1) + \cdots + a(p) r_x(-(p-(q+1)) \\
+r_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \cdots + a(p) r_x(-(p-(q+2)))  \\
+\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
+r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q)  \\
+\end{bmatrix}
+= \sigma_v^2 \begin{bmatrix}  a(1) &amp; a(2) &amp; \vdots &amp; a(p) \\
+\end{bmatrix}
+\end{bmatrix}
+= \sigma_v^2 \begin{bmatrix}  C_q(0) \\
+\end{bmatrix}
+</span></p>
 
 
 </section>

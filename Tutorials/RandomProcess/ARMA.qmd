@@ -100,12 +100,15 @@ $$
 r_x(0) &     r_x(-1)  &   r_x(-2) & \cdots &  r_x(-p)  \\ 
 r_x(1) &     r_x(0)  &    r_x(-1) &  \cdots &  r_x(-(p-1)) \\ 
 \vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
-r_x(q) +   a(1) r_x(q-1)  + a(2) r_x(q-2) + \cdots + a(p) r_x(-(p-q)) &= C_q(q)\\
+r_x(q) &    r_x(q-1)  &  r_x(q-2) & \cdots & r_x(-(p-q)) \\
 ---------------------------\\
-r_x(q+1) +   a(1) r_x(q)  + a(2) r_x(q-1) + \cdots + a(p) r_x(-(p-(q+1)) &= 0\\
-r_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \cdots + a(p) r_x(-(p-(q+2))) &= 0\\
+r_x(q+1) +   a(1) r_x(q)  + a(2) r_x(q-1) + \cdots + a(p) r_x(-(p-(q+1)) \\
+r_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \cdots + a(p) r_x(-(p-(q+2)))  \\
 \vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
-r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q) &= 0\\
+r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q)  \\
+\end{bmatrix}
+= \sigma_v^2 \begin{bmatrix}  a(1) & a(2) & \vdots & a(p) \\
+\end{bmatrix}
 \end{bmatrix}
 = \sigma_v^2 \begin{bmatrix}  C_q(0) \\
 \end{bmatrix}
