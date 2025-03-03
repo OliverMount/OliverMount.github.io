@@ -92,3 +92,12 @@ r_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \cdots + a(p) r_x(-(p-(q+2))) &= 0\\
 r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q) &= 0\\
 \end{split} 
 $$
+
+In matrix form,
+
+$$
+\begin{bmatrix}
+\end{bmatrix}
+= \sigma_v^2 \begin{bmatrix}
+\end{bmatrix}
+$$
