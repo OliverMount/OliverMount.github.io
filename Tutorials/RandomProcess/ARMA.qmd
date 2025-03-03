@@ -97,8 +97,8 @@ In matrix form,
 
 $$
 \begin{bmatrix}
-r_x(0) +   a(1) r_x(-1)  + a(2) r_x(-2) + \cdots + a(p) r_x(-p)  \\ 
-r_x(1) +   a(1) r_x(0)  + a(2) r_x(-1) + \cdots + a(p) r_x(-(p-1)) &= C_q(1)\\ 
+r_x(0) &     r_x(-1)  &   r_x(-2) & \cdots &  r_x(-p)  \\ 
+r_x(1) &     r_x(0)  &    r_x(-1) &  \cdots &  r_x(-(p-1)) \\ 
 \vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
 r_x(q) +   a(1) r_x(q-1)  + a(2) r_x(q-2) + \cdots + a(p) r_x(-(p-q)) &= C_q(q)\\
 ---------------------------\\
