@@ -338,17 +338,11 @@ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  = \sigma_v^2\sum_{l=0}^{q-k} b(l+k)  h^*(
 C_q(k)  = \sigma_v^2\sum_{l=0}^{q-k} b(l+k)  h^*(l)  
 </span></p>
 <p><span class="math display">
-r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  =  
-</span></p>
-<p>$$</p>
-r_x(k) + _{l=1}^{p} a(l) r_x(k-l) =<br>
-{
-<span class="math display">\begin{array}{ c l }
+r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) =\left\{ \begin{array}{ c l }
      C_q(k) &amp; k  \leq q \\
     0                 &amp;   k &gt;q
-  \end{array}</span>
-<p>.</p>
-<p>$$</p>
+  \end{array}\right.
+</span></p>
 <p>The above YW equations can be written (for <span class="math inline">k=p+q</span>) as</p>
 <p><span class="math display">
 \begin{split}
@@ -367,19 +361,18 @@ r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q) &amp;= 0\\
 <p><span class="math display">
 \begin{bmatrix}
 r_x(0) &amp;     r_x(-1)  &amp;   r_x(-2) &amp; \cdots &amp;  r_x(-p)  \\
-r_x(1) &amp;     r_x(0)  &amp;    r_x(-1) &amp;  \cdots &amp;  r_x(-(p-1)) \\
-\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
+r_x(1) &amp;     r_x(0)  &amp;    r_x(-1) &amp;  \cdots &amp;  r_x(-(p-1)) \\  
+\vdots &amp;     \ddots  &amp;    \ddots &amp;  \vdots &amp;  \vdots  \\   
 r_x(q) &amp;    r_x(q-1)  &amp;  r_x(q-2) &amp; \cdots &amp; r_x(-(p-q)) \\
----------------------------\\
-r_x(q+1) +   a(1) r_x(q)  + a(2) r_x(q-1) + \cdots + a(p) r_x(-(p-(q+1)) \\
-r_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \cdots + a(p) r_x(-(p-(q+2)))  \\
-\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
-r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q)  \\
+---- &amp;     ----   &amp;    ----  &amp;  ----  &amp; ----   \\   
+r_x(q+1) &amp;    r_x(q)  &amp;  r_x(q-1) &amp; \cdots &amp;   r_x(-(p-(q+1)) \\
+r_x(q+2) &amp;  r_x(q+1)  &amp; r_x(q) &amp; \cdots &amp;   r_x(-(p-(q+2)))  \\
+\vdots &amp;     \ddots  &amp;    \ddots &amp;  \vdots &amp;  \vdots  \\   
+r_x(q+p) &amp;    r_x(q+p-1)  &amp; r_x(q-1) &amp; \cdots &amp;  r_x(q)  
 \end{bmatrix}
-= \sigma_v^2 \begin{bmatrix}  a(1) &amp; a(2) &amp; \vdots &amp; a(p) \\
+\begin{bmatrix}  1 \\ a(1) \\ a(2)  \\ \vdots \\ a(p) \\
 \end{bmatrix}
-\end{bmatrix}
-= \sigma_v^2 \begin{bmatrix}  C_q(0) \\
+= \sigma_v^2 \begin{bmatrix}  C_q(0) \\ C_q(1) \\ C_q(2)  \\ \vdots \\ C_q(q) \\ 0 \\ 0 \\ \vdots \\ 0
 \end{bmatrix}
 </span></p>
 
