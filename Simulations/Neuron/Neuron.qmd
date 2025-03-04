@@ -90,7 +90,9 @@ Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)
 nvidia-smi --query-gpu=compute_cap --format=csv
 ```
 
-### 5. Ringtest
+### 7. Install
+
+### 6. Ringtest
 
 Best way to check if the installation is working properly is by running the ring test as in
 
