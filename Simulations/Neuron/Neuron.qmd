@@ -65,7 +65,7 @@ set HPC_SDK /opt/nvidia/hpc_sdk/Linux_x86_64/25.1 prepend-path PATH \$HPC_SDK/co
 
 ### 4. Compile
 
-Following compilation is for GPU architecture of 61
+Following compilation is `for GPU architecture of 61`
 
 ```{bash}
 cmake .. \
@@ -90,9 +90,24 @@ Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)
 nvidia-smi --query-gpu=compute_cap --format=csv
 ```
 
-### 7. Install
+### 7. Install (make)
 
-### 6. Ringtest
+```{bash}
+
+make -j 
+make install
+```
+
+### 8. Export Python PATH variables to \~/.bashrc
+
+```{bash}
+  
+export PATH=$HOME/install/bin:$PATH  # assuming $HOME/install is the cmake installtion directory (see 5-th line of cmake in Step 4.)
+
+export PYTHONPATH=$HOME/install/lib/python:$PYTHONPATH
+```
+
+### 9. Ringtest
 
 Best way to check if the installation is working properly is by running the ring test as in
 
