@@ -243,7 +243,6 @@ cd build</code></pre>
 </section>
 <section id="load-the-modules" class="level3">
 <h3 class="anchored" data-anchor-id="load-the-modules">3. Load the modules</h3>
-<pre class="{bash}"><code>module load intel openmpi python cmake nvidia-hpc-sdk cuda  </code></pre>
 <p>In normal Linux systems, the modules are in the path <code>/usr/share/modules/modulefiles</code>. If the directory does not exists, then install using</p>
 <pre class="{bash}"><code>
 sudo apt-get install environment-modules
@@ -251,6 +250,28 @@ sudo apt-get install environment-modules
 # and configure the ~/.bashrc with 
 source /etc/profile.d/modules.sh
 </code></pre>
+<p>Load the following modules</p>
+<pre class="{bash}"><code>module load  openmpi python cmake nvidia-hpc-sdk/25.1 cuda  </code></pre>
+<p>If they are not loading make sure the following files are available in <code>/usr/share/modules/modulefiles</code></p>
+<ol type="1">
+<li>openmpi</li>
+<li>python</li>
+<li>cmake</li>
+<li>nvidia-hpc-sdk/25.1</li>
+<li>cuda</li>
+</ol>
+<p>For example, the content of the file in nvidia-hpc-sdk/25.1 should read as</p>
+<pre class="{bash}"><code>#%Module1.0 
+
+proc ModulesHelp { } { puts stderr "NVIDIA HPC SDK 25.1" } 
+module-whatis "NVIDIA HPC SDK 25.1"
+
+set HPC_SDK /opt/nvidia/hpc_sdk/Linux_x86_64/25.1 
+prepend-path PATH $HPC_SDK/compilers/bin 
+prepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib
+</code></pre>
+<p>#%Module1.0 proc ModulesHelp { } { puts stderr “NVIDIA HPC SDK 25.1” } module-whatis “NVIDIA HPC SDK 25.1”</p>
+<p>set HPC_SDK /opt/nvidia/hpc_sdk/Linux_x86_64/25.1 prepend-path PATH $HPC_SDK/compilers/bin prepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib</p>
 </section>
 <section id="compile" class="level3">
 <h3 class="anchored" data-anchor-id="compile">4. Compile</h3>
