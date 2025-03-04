@@ -93,4 +93,4 @@ mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -nce
 mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu
 ```
 
-#   
+# 
