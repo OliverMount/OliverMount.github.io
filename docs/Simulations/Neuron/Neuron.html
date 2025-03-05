@@ -200,7 +200,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#build" id="toc-build" class="nav-link" data-scroll-target="#build">2. Build</a></li>
   <li><a href="#load-the-modules" id="toc-load-the-modules" class="nav-link" data-scroll-target="#load-the-modules">3. Load the modules</a></li>
   <li><a href="#compile" id="toc-compile" class="nav-link" data-scroll-target="#compile">4. Compile</a></li>
-  <li><a href="#ringtest" id="toc-ringtest" class="nav-link" data-scroll-target="#ringtest">5. Ringtest</a></li>
+  <li><a href="#install-make" id="toc-install-make" class="nav-link" data-scroll-target="#install-make">7. Install (make)</a></li>
+  <li><a href="#export-python-path-variables-to-.bashrc" id="toc-export-python-path-variables-to-.bashrc" class="nav-link" data-scroll-target="#export-python-path-variables-to-.bashrc">8. Export Python PATH variables to ~/.bashrc</a></li>
+  <li><a href="#ringtest" id="toc-ringtest" class="nav-link" data-scroll-target="#ringtest">9. Ringtest</a></li>
   </ul></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
@@ -275,7 +277,7 @@ prepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib
 </section>
 <section id="compile" class="level3">
 <h3 class="anchored" data-anchor-id="compile">4. Compile</h3>
-<p>Following compilation is for GPU architecture of 61</p>
+<p>Following compilation is <code>for GPU architecture of 61</code></p>
 <pre class="{bash}"><code>cmake .. \
       -DNRN_ENABLE_CORENEURON=ON \
       -DCORENRN_ENABLE_GPU=ON \
@@ -293,8 +295,21 @@ prepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib
 <p>Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)</p>
 <pre class="{bash}"><code>nvidia-smi --query-gpu=compute_cap --format=csv</code></pre>
 </section>
+<section id="install-make" class="level3">
+<h3 class="anchored" data-anchor-id="install-make">7. Install (make)</h3>
+<pre class="{bash}"><code>
+make -j 
+make install</code></pre>
+</section>
+<section id="export-python-path-variables-to-.bashrc" class="level3">
+<h3 class="anchored" data-anchor-id="export-python-path-variables-to-.bashrc">8. Export Python PATH variables to ~/.bashrc</h3>
+<pre class="{bash}"><code>  
+export PATH=$HOME/install/bin:$PATH  # assuming $HOME/install is the cmake installtion directory (see 5-th line of cmake in Step 4.)
+
+export PYTHONPATH=$HOME/install/lib/python:$PYTHONPATH</code></pre>
+</section>
 <section id="ringtest" class="level3">
-<h3 class="anchored" data-anchor-id="ringtest">5. Ringtest</h3>
+<h3 class="anchored" data-anchor-id="ringtest">9. Ringtest</h3>
 <p>Best way to check if the installation is working properly is by running the ring test as in</p>
 <pre class="{bash}"><code>git clone https://github.com/nrnhines/ringtest.git
 cd ringtest
