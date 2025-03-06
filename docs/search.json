@@ -104,7 +104,7 @@
     "href": "Tutorials/RandomProcess/RandomProcessIntro.html",
     "title": "List of tutorials here",
     "section": "",
-    "text": "List of tutorials here\nA special list of random processes we discuss in this tutorial are\n\nARMA\nAR\nMA\nHarmonic processes",
+    "text": "List of tutorials here\nA list of random processes we discuss in this tutorial are\n\nARMA\nAR\nMA\nHarmonic processes\n\nExcept 4, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function.",
     "crumbs": [
       "Tutorials",
       "Random Processes",
