@@ -68,6 +68,8 @@ website:
               file: Tutorials/RandomProcess/AR.qmd 
             - text: "MA"
               file: Tutorials/RandomProcess/MA.qmd
+            - text: "Filtering of randomprocess"
+              file: Tutorials/RandomProcess/FilteringofRP.qmd
 
           
         - section: "Estimation Theory"
