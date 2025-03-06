@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>arma – Welcome</title>
+<title>filteringofrp – Welcome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../Tutorials/RandomProcess/AR.html" rel="next">
-<link href="../../Tutorials/RandomProcess/RandomProcessIntro.html" rel="prev">
+<link href="../../Tutorials/EstimationTheory/EstimationTheoryIntro.html" rel="next">
+<link href="../../Tutorials/RandomProcess/MA.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -70,49 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -179,7 +136,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/RandomProcessIntro.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/ARMA.html">ARMA</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/RandomProcessIntro.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/FilteringofRP.html">Filtering of randomprocess</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -222,7 +179,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Tutorials/RandomProcess/ARMA.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../Tutorials/RandomProcess/ARMA.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ARMA</span></a>
   </div>
 </li>
@@ -240,7 +197,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Tutorials/RandomProcess/FilteringofRP.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Tutorials/RandomProcess/FilteringofRP.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Filtering of randomprocess</span></a>
   </div>
 </li>
@@ -285,106 +242,20 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#auto-regressive-moving-average-arma-processess" id="toc-auto-regressive-moving-average-arma-processess" class="nav-link active" data-scroll-target="#auto-regressive-moving-average-arma-processess">Auto-regressive moving average (ARMA) processess</a></li>
+  <li><a href="#filtering-of-random-process" id="toc-filtering-of-random-process" class="nav-link active" data-scroll-target="#filtering-of-random-process">Filtering of random process</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Tutorials/RandomProcess/ARMA.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Tutorials/RandomProcess/ARMA.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/RandomProcessIntro.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/ARMA.html">ARMA</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/RandomProcessIntro.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../Tutorials/RandomProcess/FilteringofRP.html">Filtering of randomprocess</a></li></ol></nav></header>
 
 
 
 
-<section id="auto-regressive-moving-average-arma-processess" class="level1">
-<h1>Auto-regressive moving average (ARMA) processess</h1>
-<p>Let <span class="math inline">x(n)</span> and <span class="math inline">v(n)</span> are stationary random processes. If they are related by the linear constant coefficient differential equations</p>
-<p><span class="math display">
-x(n) + \sum_{l=1}^{p} a(l) x(n-l)  = \sum_{l=0}^q b(l)v(n-l)
-</span></p>
-<p>then <span class="math inline">x(n)</span> is called an ARMA(p,q) process.</p>
-<section id="autocorrelation" class="level4">
-<h4 class="anchored" data-anchor-id="autocorrelation">Autocorrelation</h4>
-<p>On both sides, multiplying by <span class="math inline">x^*(n-k)</span> and taking the expectation <span class="math inline">\mathbb{E}</span> leads to</p>
-<p><span id="eq-arma_original"><span class="math display">
-\begin{split}
-\mathbb{E}[x(n)x^*(n-k)] + \sum_{l=1}^{p} a(l) \mathbb{E}[x(n-l) x^*(n-k)] &amp; = \sum_{l=0}^q b(l)\mathbb{E}[v(n-l)x^*(n-k)] \\
-r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) &amp; = \sum_{l=0}^q b(l)r_{vx}(k-l)
-\end{split}
-\tag{1}</span></span></p>
-<p>In the present form, <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a> is not useful. It would be nice to relate the cross-correlation term <span class="math inline">r_{vx}(k)</span> on the RHS of <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a> to the autocorrelation term <span class="math inline">r_x(k)</span> by invoking the linear filter theory (that is convolution). Since</p>
-<p><span class="math display">
-x(n) = \sum_{m={-\infty}}^{\infty} v(m) h^*(n-m)
-</span></p>
-<p>where <span class="math inline">h(n)</span> is the impulse response of LTI system.</p>
-<p><span class="math display">
-\begin{split}
-r_{vx}(k) &amp;= \mathbb{E}[v(n)x^*(n-k)]  \\
-&amp; =  \sum_{m=-\infty}^{\infty} \mathbb{E}[v(n)v^*(m)  h^*(n-m-k)] \\
-  &amp; = \sigma_v^2 h^*(-k)
-\end{split}
-</span></p>
-<p>The above simplification is due to the assumption that <span class="math inline">v(n)</span> is white noise. Now,</p>
-<p><span id="eq-rvx"><span class="math display">
-r_{vx}(k-l) =  \sigma_v^2 h^*(l-k)  
-\tag{2}</span></span></p>
-<p>Substituting <a href="#eq-rvx" class="quarto-xref">Equation&nbsp;2</a> in to <a href="#eq-arma_original" class="quarto-xref">Equation&nbsp;1</a></p>
-<p><span class="math display">
-\begin{split}
-r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) &amp; = \sum_{l=0}^q b(l)r_{vx}(k-l) \\
-&amp; = \sigma_v^2\sum_{l=0}^q b(l)  h^*(l-k) \\
-&amp; = \sigma_v^2\sum_{l=0}^{q-k} b(l+k)  h^*(l)
-\end{split}
-</span></p>
-<p>The last step is due to the assumption of causal <span class="math inline">h(n)</span>.</p>
-<p>The equation</p>
-<p><span class="math display">
-r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  = \sigma_v^2\sum_{l=0}^{q-k} b(l+k)  h^*(l)
-</span></p>
-<p>is called <code>Yule-Walker</code> equation. Let the RHS be</p>
-<p><span class="math display">  
-C_q(k)  = \sigma_v^2\sum_{l=0}^{q-k} b(l+k)  h^*(l)  
-</span></p>
-<p><span class="math display">
-r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) =\left\{ \begin{array}{ c l }
-     C_q(k) &amp; k  \leq q \\
-    0                 &amp;   k &gt;q
-  \end{array}\right.
-</span></p>
-<p>The above YW equations can be written (for <span class="math inline">k=p+q</span>) as</p>
-<p><span class="math display">
-\begin{split}
-r_x(0) +   a(1) r_x(-1)  + a(2) r_x(-2) + \cdots + a(p) r_x(-p) &amp;= C_q(0)\\
-r_x(1) +   a(1) r_x(0)  + a(2) r_x(-1) + \cdots + a(p) r_x(-(p-1)) &amp;= C_q(1)\\
-\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
-r_x(q) +   a(1) r_x(q-1)  + a(2) r_x(q-2) + \cdots + a(p) r_x(-(p-q)) &amp;= C_q(q)\\
----------------------------\\
-r_x(q+1) +   a(1) r_x(q)  + a(2) r_x(q-1) + \cdots + a(p) r_x(-(p-(q+1)) &amp;= 0\\
-r_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \cdots + a(p) r_x(-(p-(q+2))) &amp;= 0\\
-\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
-r_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \cdots + a(p) r_x(q) &amp;= 0\\
-\end{split}
-</span></p>
-<p>In matrix form,</p>
-<p><span class="math display">
-\begin{bmatrix}
-r_x(0) &amp;     r_x(-1)  &amp;   r_x(-2) &amp; \cdots &amp;  r_x(-p)  \\
-r_x(1) &amp;     r_x(0)  &amp;    r_x(-1) &amp;  \cdots &amp;  r_x(-(p-1)) \\  
-\vdots &amp;     \ddots  &amp;    \ddots &amp;  \vdots &amp;  \vdots  \\   
-r_x(q) &amp;    r_x(q-1)  &amp;  r_x(q-2) &amp; \cdots &amp; r_x(-(p-q)) \\
----- &amp;     ----   &amp;    ----  &amp;  ----  &amp; ----   \\   
-r_x(q+1) &amp;    r_x(q)  &amp;  r_x(q-1) &amp; \cdots &amp;   r_x(-(p-(q+1)) \\
-r_x(q+2) &amp;  r_x(q+1)  &amp; r_x(q) &amp; \cdots &amp;   r_x(-(p-(q+2)))  \\
-\vdots &amp;     \ddots  &amp;    \ddots &amp;  \vdots &amp;  \vdots  \\   
-r_x(q+p) &amp;    r_x(q+p-1)  &amp; r_x(q-1) &amp; \cdots &amp;  r_x(q)  
-\end{bmatrix}
-\begin{bmatrix}  1 \\ a(1) \\ a(2)  \\ \vdots \\ a(p) \\
-\end{bmatrix}
-= \sigma_v^2 \begin{bmatrix}  C_q(0) \\ C_q(1) \\ C_q(2)  \\ \vdots \\ C_q(q)\\ ---- \\ 0 \\ 0 \\ \vdots \\ 0
-\end{bmatrix}
-</span></p>
+<section id="filtering-of-random-process" class="level1">
+<h1>Filtering of random process</h1>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -807,13 +678,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../Tutorials/RandomProcess/RandomProcessIntro.html" class="pagination-link" aria-label="Random Processes">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Random Processes</span>
+      <a href="../../Tutorials/RandomProcess/MA.html" class="pagination-link" aria-label="MA">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">MA</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../Tutorials/RandomProcess/AR.html" class="pagination-link" aria-label="AR">
-        <span class="nav-page-text">AR</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../Tutorials/EstimationTheory/EstimationTheoryIntro.html" class="pagination-link" aria-label="Estimation Theory">
+        <span class="nav-page-text">Estimation Theory</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -832,7 +703,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Tutorials/RandomProcess/ARMA.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Tutorials/RandomProcess/ARMA.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Copyright Feb.&nbsp;2025, Oliver</p>
 </div>

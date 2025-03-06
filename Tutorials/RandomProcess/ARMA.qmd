@@ -19,11 +19,13 @@ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) & = \sum_{l=0}^q b(l)r_{vx}(k-l)
 \end{split}
 $$ {#eq-arma_original}
 
-In the present form, @eq-arma_original is not useful. It would be nice to relate the cross-correlation term $r_{vx}(k)$ on the RHS of @eq-arma_original to the autocorrelation term $r_x(k)$ by invoking the linear filter theory. Since
+In the present form, @eq-arma_original is not useful. It would be nice to relate the cross-correlation term $r_{vx}(k)$ on the RHS of @eq-arma_original to the autocorrelation term $r_x(k)$ by invoking the linear filter theory (that is convolution). Since
 
 $$
 x(n) = \sum_{m={-\infty}}^{\infty} v(m) h^*(n-m) 
 $$
+
+where $h(n)$ is the impulse response of LTI system.
 
 $$
 \begin{split}
