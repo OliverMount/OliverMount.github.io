@@ -107,3 +107,7 @@ r_x(q+p) &    r_x(q+p-1)  & r_x(q-1) & \cdots &  r_x(q)
 = \sigma_v^2 \begin{bmatrix}  C_q(0) \\ C_q(1) \\ C_q(2)  \\ \vdots \\ C_q(q)\\ ---- \\ 0 \\ 0 \\ \vdots \\ 0 
 \end{bmatrix}
 $$
+
+The YW equations can be used
+
+1.  To find the $a(i)$ given autocorrealtion values.
