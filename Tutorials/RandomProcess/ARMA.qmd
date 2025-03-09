@@ -111,4 +111,4 @@ $$
 The YW equations can be used
 
 1.  To find the $a(i)$ given autocorrelation values.
-2.  Recurrence relationshiop for autocorrelation sequence for extrapolation.
+2.  Recurrence relationship for autocorrelation sequence for extrapolation.
