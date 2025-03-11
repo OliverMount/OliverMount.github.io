@@ -138,9 +138,9 @@
   {
     "objectID": "Tutorials/EstimationTheory/EstimationTheoryIntro.html",
     "href": "Tutorials/EstimationTheory/EstimationTheoryIntro.html",
-    "title": "List of topics in estimation",
+    "title": "Introduction",
     "section": "",
-    "text": "List of topics in estimation",
+    "text": "Introduction\nGiven a set of observations (scalar or vector) x_1, x_2,\\cdots , x_N, find the parameter \\theta (scalar or vector) hidden in the observations.",
     "crumbs": [
       "Tutorials",
       "Estimation Theory",
