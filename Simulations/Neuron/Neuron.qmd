@@ -139,3 +139,32 @@ mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -nce
 ```
 
 # 
+
+## Batch files for running in cpu
+
+```{bash}
+#!/bin/bash
+#SBATCH --job-name=rt_cpu       # Job name
+#SBATCH --output=rt_cpu.out     # Standard output and error log
+#SBATCH --error=rt_cpu.err      # Error log file                                                                                                     
+#SBATCH --ntasks=1                # Number of MPI processes
+#SBATCH --time=00:20:00           # Time limit (HH:MM:SS)
+#SBATCH --partition=olaf_c_core       # Partition name (adjust as needed)
+
+module purge
+module load gcc/12.2.0 openmpi/4.1.1-Rocky python/.3.12.3
+
+module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
+module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
+
+# Run the MPI program
+
+#mpiexec -n 2 ./x86_64/special -mpi -python ringtest.py -tstop 100
+#mpiexec -n 2 ./x86_64/special -mpi -python ringtest.py -tstop 100 -coreneuron
+
+# NEURON CPU Run ( in partition olaf_c_core ) 
+#mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64
+
+# CoreNEURON CPU Run ( in partition olaf_c_core ) 
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron
+```
