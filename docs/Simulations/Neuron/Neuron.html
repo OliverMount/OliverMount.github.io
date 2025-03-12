@@ -204,7 +204,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#export-python-path-variables-to-.bashrc" id="toc-export-python-path-variables-to-.bashrc" class="nav-link" data-scroll-target="#export-python-path-variables-to-.bashrc">8. Export Python PATH variables to ~/.bashrc</a></li>
   <li><a href="#ringtest" id="toc-ringtest" class="nav-link" data-scroll-target="#ringtest">9. Ringtest</a></li>
   </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a>
+  <ul class="collapse">
+  <li><a href="#batch-files-for-running-in-cpu" id="toc-batch-files-for-running-in-cpu" class="nav-link" data-scroll-target="#batch-files-for-running-in-cpu">Batch files for running in cpu</a></li>
+  <li><a href="#batch-files-for-running-in-gpu" id="toc-batch-files-for-running-in-gpu" class="nav-link" data-scroll-target="#batch-files-for-running-in-gpu">Batch files for running in GPU</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -339,8 +343,57 @@ mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -nce
 </section>
 <section id="section" class="level1">
 <h1></h1>
+<section id="batch-files-for-running-in-cpu" class="level2">
+<h2 class="anchored" data-anchor-id="batch-files-for-running-in-cpu">Batch files for running in cpu</h2>
+<pre class="{bash}"><code>#!/bin/bash
+#SBATCH --job-name=rt_cpu       # Job name
+#SBATCH --output=rt_cpu.out     # Standard output and error log
+#SBATCH --error=rt_cpu.err      # Error log file                                                                                                     
+#SBATCH --ntasks=1                # Number of MPI processes
+#SBATCH --time=00:20:00           # Time limit (HH:MM:SS)
+#SBATCH --partition=olaf_c_core       # Partition name (adjust as needed)
+
+module purge
+module load gcc/12.2.0 openmpi/4.1.1-Rocky python/.3.12.3
+
+module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
+module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
+
+# Run the MPI program
+
+#mpiexec -n 2 ./x86_64/special -mpi -python ringtest.py -tstop 100
+#mpiexec -n 2 ./x86_64/special -mpi -python ringtest.py -tstop 100 -coreneuron
+
+# NEURON CPU Run ( in partition olaf_c_core ) 
+#mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64
+
+# CoreNEURON CPU Run ( in partition olaf_c_core ) 
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron</code></pre>
+</section>
+<section id="batch-files-for-running-in-gpu" class="level2">
+<h2 class="anchored" data-anchor-id="batch-files-for-running-in-gpu">Batch files for running in GPU</h2>
+<pre class="{bash}"><code>#!/bin/bash
+#SBATCH --job-name=ringtest_gpu
+#SBATCH --output=ringtest_gpu.out
+#SBATCH --error=ringtest_gpu.err
+#SBATCH --partition=AIP
+#SBATCH --gpus-per-node=1
+#SBATCH --ntasks=1
+#SBATCH --time=01:00:00
+
+# Load necessary modules (adjust as needed for your system)
+module purge
+module load gcc/12.2.0 openmpi/4.1.1-Rocky python/.3.12.3
+
+module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
+module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
+
+# Run the CoreNEURON simulation
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu
+</code></pre>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

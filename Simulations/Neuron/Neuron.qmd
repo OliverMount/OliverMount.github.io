@@ -168,3 +168,27 @@ module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 # CoreNEURON CPU Run ( in partition olaf_c_core ) 
 mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron
 ```
+
+## Batch files for running in GPU
+
+```{bash}
+#!/bin/bash
+#SBATCH --job-name=ringtest_gpu
+#SBATCH --output=ringtest_gpu.out
+#SBATCH --error=ringtest_gpu.err
+#SBATCH --partition=AIP
+#SBATCH --gpus-per-node=1
+#SBATCH --ntasks=1
+#SBATCH --time=01:00:00
+
+# Load necessary modules (adjust as needed for your system)
+module purge
+module load gcc/12.2.0 openmpi/4.1.1-Rocky python/.3.12.3
+
+module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
+module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
+
+# Run the CoreNEURON simulation
+mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu
+
+```
