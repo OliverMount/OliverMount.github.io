@@ -1,3 +1,3 @@
 # Introduction
 
-Given a set of observations (scalar or vector) $x_1, x_2,\cdots , x_N$, find the parameter $\theta$ (scalar or vector) hidden in the observations.
+Given a set of observations (scalar or vector) $\bm{x}_1, x_2,\cdots , x_N$, find the parameter $\theta$ (scalar or vector) hidden in the observations.
