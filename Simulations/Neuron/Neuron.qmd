@@ -192,3 +192,38 @@ module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu
 
 ```
+
+## Batch files for running in multi-node GPU
+
+```{bash}
+#!/bin/bash
+#SBATCH --job-name=ringtest_multi_gpu
+#SBATCH --output=ringtest_multi_gpu_%j.out
+#SBATCH --error=ringtest_multi_gpu_%j.err
+#SBATCH --partition=AIP
+#SBATCH --nodes=2               # Number of nodes
+#SBATCH --gpus-per-node=2       # GPUs per node (adjust based on node GPU capacity)
+#SBATCH --ntasks-per-node=2     # MPI tasks per node (matches GPUs-per-node)
+#SBATCH --time=01:00:00
+#SBATCH --exclusive             # Request exclusive node access
+
+# Load modules (confirm paths match your cluster's setup)
+module purge
+module load gcc/12.2.0 \
+            openmpi/4.1.1-Rocky \
+            python/3.12.3 \
+            /opt/ibs_lib/modulefiles/libraries/cuda/25.1 \
+            /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
+
+# Ensure CUDA and MPI are visible
+export CUDA_VISIBLE_DEVICES=0,1  # Map GPUs per node (adjust if needed)
+export OMP_NUM_THREADS=1         # Disable threading unless required
+
+# Run with MPI across nodes
+mpiexec --bind-to none --map-by node \
+    -n $((SLURM_NNODES * SLURM_NTASKS_PER_NODE)) \
+    ./x86_64/special -mpi -python ringtest.py \
+    -tstop 10 -nring 128 -ncell 128 -branch 32 64 \
+    -coreneuron -gpu
+
+```
