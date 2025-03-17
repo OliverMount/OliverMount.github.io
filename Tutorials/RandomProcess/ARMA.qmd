@@ -140,3 +140,7 @@ r_x(k) =-  a(1) r_x(k-1)
 $$
 
 If $r_x(0)$ and $r_x(1)$ are known, then the $r_x(k), \forall k>1$ can be obtained from the above recurrence.
+
+Also, if $p \geq q$ and if $r_x(0), \cdots, r_x(p-1)$ are known, the for any $k \geq p$, one can obtain $$
+r_x(k) =- \sum_{l=1}^{p} a(l) r_x(k-l)   
+$$
