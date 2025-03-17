@@ -110,8 +110,28 @@ $$
 
 The YW equations can be used
 
-1.  To find the filter coefficients $a(i)$ given autocorrelation values.
+1.  To find the (AR) filter coefficients $a(i)$ given autocorrelation values.
 
 2.  Recurrence relationship for autocorrelation sequence for extrapolation.
 
     YW equations can be used to extrapolate the
+
+### Recurrence for autocorrelation sequence for extrapolation
+
+From
+
+$$
+r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) =\left\{ \begin{array}{ c l }
+     C_q(k) & k  \leq q \\
+    0                 &   k >q
+  \end{array}\right.
+$$
+
+for $k>q$,
+
+$$
+r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) =\left\{ \begin{array}{ c l }
+     C_q(k) & k  \leq q \\
+    0                 &   k >q
+  \end{array}\right.
+$$
