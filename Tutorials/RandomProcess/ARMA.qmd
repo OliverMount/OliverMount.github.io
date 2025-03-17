@@ -130,8 +130,13 @@ $$
 for $k>q$,
 
 $$
-r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) =\left\{ \begin{array}{ c l }
-     C_q(k) & k  \leq q \\
-    0                 &   k >q
-  \end{array}\right.
+r_x(k) =- \sum_{l=1}^{p} a(l) r_x(k-l)   
 $$
+
+For example, in the case of ARMA(1,1) process where $p=q=1$, we have for $k>1$
+
+$$
+r_x(k) =-  a(1) r_x(k-1)   
+$$
+
+If $r_x(0)$ and $r_x(1)$ are known, then the $r_x(k), \forall k>1$ can be obtained from the above recurrence.
