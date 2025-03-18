@@ -6,7 +6,7 @@ $$
  r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  = \sigma_v^2  b(0)  h^*(0) \delta(k)~~;~~ k\geq0
 $$
 
-For a stable, causal filter with rational transfer function, we ahve
+For a `stable, causal` filter with rational transfer function, we have (using intial value of $z-$transform, that is, $h(0) = \lim_{z->\infty} H(z)$ results in $h^*(0)=b(0)$, then, the RHS becomes $\sigma_v^2 |b(0)|^2$.
 
 In the matrix form, this would be for $k=0,1,\cdots,p$
 
@@ -19,7 +19,7 @@ r_x(p) &    r_x(p-1)  &  r_x(p-2) & \cdots & r_x(0)
 \end{bmatrix}
 \begin{bmatrix}  1 \\ a(1) \\ a(2)  \\ \vdots \\ a(p) \\
 \end{bmatrix}
-= \sigma_v^2 b(0)  h^*(0)\begin{bmatrix}  1 \\ 0 \\ 0  \\ \vdots \\ 0  
+= \sigma_v^2 |b(0)|^2  \begin{bmatrix}  1 \\ 0 \\ 0  \\ \vdots \\ 0  
 \end{bmatrix}
 $$
 
@@ -34,6 +34,17 @@ r_x(1) &     r_x(0)
 \end{bmatrix}
 \begin{bmatrix}  1 \\ a(1)   
 \end{bmatrix}
-= \sigma_v^2 b(0)  h^*(0)\begin{bmatrix}  1 \\ 0  
+= \sigma_v^2 |b(0)|^2\begin{bmatrix}  1 \\ 0  
 \end{bmatrix}
 $$
+
+Since, $r_x(k)=r_x(-k)$, we have
+
+$$
+\begin{split}
+r_x(0) +     r_x(1)   & =\sigma_v^2 |b(0)|^2 \\ 
+r_x(1) +     a(1) r_x(0) &= 0  
+\end{split}
+$$
+
+that leads to
