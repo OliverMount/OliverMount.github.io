@@ -1,1 +1,9 @@
 # Auto-regressive (AR) processes
+
+The YW equation for AR(p) process can be obtained by setting $q=0$ in YW equation for ARMA(p,q) that results in
+
+$$ 
+ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  = \sigma_v^2  b(0)  h^*(0) \delta(k)~~;~~ k\geq0
+$$
+
+In the matrix form, this would be
