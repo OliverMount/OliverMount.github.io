@@ -1,5 +1,14 @@
 ---
 title: "List of publications"
+bibliography: references.bib
 ---
 
 # 
+
+## arxiv
+
+## Journals
+
+## Conferences
+
+## Patents

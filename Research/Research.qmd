@@ -1,5 +1,13 @@
 ---
 title: "Research"
+
+listing:
+  contents: posts
+  type: default
+  
+sort:
+  - "date"
+  - "title desc"
 ---
 
 My research results are constantly being updated here
