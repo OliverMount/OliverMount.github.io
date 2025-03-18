@@ -116,7 +116,7 @@
     "href": "Tutorials/RandomProcess/AR.html",
     "title": "Auto-regressive (AR) processes",
     "section": "",
-    "text": "Auto-regressive (AR) processes\nThe YW equation for AR(p) process can be obtained by setting q=0 in YW equation for ARMA(p,q) that results in\n\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l)  = \\sigma_v^2  b(0)  h^*(0) \\delta(k)~~;~~ k\\geq0\n\nIn the matrix form, this would be for k=0,1,\\cdots,p\n\n\\begin{bmatrix}\nr_x(0) &     r_x(-1)  &   r_x(-2) & \\cdots &  r_x(-p)  \\\\\nr_x(1) &     r_x(0)  &    r_x(-1) &  \\cdots &  r_x(-(p-1)) \\\\  \n\\vdots &     \\ddots  &    \\ddots &  \\vdots &  \\vdots  \\\\   \nr_x(p) &    r_x(p-1)  &  r_x(p-2) & \\cdots & r_x(0)  \n\\end{bmatrix}\n\\begin{bmatrix}  1 \\\\ a(1) \\\\ a(2)  \\\\ \\vdots \\\\ a(p) \\\\\n\\end{bmatrix}\n= \\sigma_v^2 b(0)  h^*(0)\\begin{bmatrix}  1 \\\\ 0 \\\\ 0  \\\\ \\vdots \\\\ 0  \n\\end{bmatrix}\n\nThe filter coefficients are linear in autocorrelation and thence it would be easy",
+    "text": "Auto-regressive (AR) processes\nThe YW equation for AR(p) process can be obtained by setting q=0 in YW equation for ARMA(p,q) that results in\n\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l)  = \\sigma_v^2  b(0)  h^*(0) \\delta(k)~~;~~ k\\geq0\n\nFor a stable, causal filter with rational transfer function, we have (using intial value of z-transform, that is, h(0) = \\lim_{z-&gt;\\infty} H(z) results in h^*(0)=b(0), then, the RHS becomes \\sigma_v^2 |b(0)|^2.\nIn the matrix form, this would be for k=0,1,\\cdots,p\n\n\\begin{bmatrix}\nr_x(0) &     r_x(-1)  &   r_x(-2) & \\cdots &  r_x(-p)  \\\\\nr_x(1) &     r_x(0)  &    r_x(-1) &  \\cdots &  r_x(-(p-1)) \\\\  \n\\vdots &     \\ddots  &    \\ddots &  \\vdots &  \\vdots  \\\\   \nr_x(p) &    r_x(p-1)  &  r_x(p-2) & \\cdots & r_x(0)  \n\\end{bmatrix}\n\\begin{bmatrix}  1 \\\\ a(1) \\\\ a(2)  \\\\ \\vdots \\\\ a(p) \\\\\n\\end{bmatrix}\n= \\sigma_v^2 |b(0)|^2  \\begin{bmatrix}  1 \\\\ 0 \\\\ 0  \\\\ \\vdots \\\\ 0  \n\\end{bmatrix}\n\nThe filter coefficients are linear in autocorrelation and thence it would be easy to find them give autocorrelation sequence.\nConsider for example AR(1) process (p=1),\n\n\\begin{bmatrix}\nr_x(0) &     r_x(-1)   \\\\\nr_x(1) &     r_x(0)   \n\\end{bmatrix}\n\\begin{bmatrix}  1 \\\\ a(1)   \n\\end{bmatrix}\n= \\sigma_v^2 |b(0)|^2\\begin{bmatrix}  1 \\\\ 0  \n\\end{bmatrix}\n\nSince, r_x(k)=r_x(-k), we have\n\n\\begin{split}\nr_x(0) +     r_x(1)   & =\\sigma_v^2 |b(0)|^2 \\\\\nr_x(1) +     a(1) r_x(0) &= 0  \n\\end{split}\n\nthat leads to",
     "crumbs": [
       "Tutorials",
       "Random Processes",
@@ -258,6 +258,17 @@
     "title": "NEURON simulator",
     "section": "Batch files for running in GPU",
     "text": "Batch files for running in GPU\n#!/bin/bash\n#SBATCH --job-name=ringtest_gpu\n#SBATCH --output=ringtest_gpu.out\n#SBATCH --error=ringtest_gpu.err\n#SBATCH --partition=AIP\n#SBATCH --gpus-per-node=1\n#SBATCH --ntasks=1\n#SBATCH --time=01:00:00\n\n# Load necessary modules (adjust as needed for your system)\nmodule purge\nmodule load gcc/12.2.0 openmpi/4.1.1-Rocky python/.3.12.3\n\nmodule load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1\nmodule load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1\n\n# Run the CoreNEURON simulation\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu",
+    "crumbs": [
+      "Neuron",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "Simulations/Neuron/Neuron.html#batch-files-for-running-in-multi-node-gpu",
+    "href": "Simulations/Neuron/Neuron.html#batch-files-for-running-in-multi-node-gpu",
+    "title": "NEURON simulator",
+    "section": "Batch files for running in multi-node GPU",
+    "text": "Batch files for running in multi-node GPU\n#!/bin/bash\n#SBATCH --job-name=ringtest_multi_gpu\n#SBATCH --output=ringtest_multi_gpu_%j.out\n#SBATCH --error=ringtest_multi_gpu_%j.err\n#SBATCH --partition=AIP\n#SBATCH --nodes=2               # Number of nodes\n#SBATCH --gpus-per-node=2       # GPUs per node (adjust based on node GPU capacity)\n#SBATCH --ntasks-per-node=2     # MPI tasks per node (matches GPUs-per-node)\n#SBATCH --time=01:00:00\n#SBATCH --exclusive             # Request exclusive node access\n\n# Load modules (confirm paths match your cluster's setup)\nmodule purge\nmodule load gcc/12.2.0 \\\n            openmpi/4.1.1-Rocky \\\n            python/3.12.3 \\\n            /opt/ibs_lib/modulefiles/libraries/cuda/25.1 \\\n            /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1\n\n# Ensure CUDA and MPI are visible\nexport CUDA_VISIBLE_DEVICES=0,1  # Map GPUs per node (adjust if needed)\nexport OMP_NUM_THREADS=1         # Disable threading unless required\n\n# Run with MPI across nodes\nmpiexec --bind-to none --map-by node \\\n    -n $((SLURM_NNODES * SLURM_NTASKS_PER_NODE)) \\\n    ./x86_64/special -mpi -python ringtest.py \\\n    -tstop 10 -nring 128 -ncell 128 -branch 32 64 \\\n    -coreneuron -gpu",
     "crumbs": [
       "Neuron",
       "Overview"

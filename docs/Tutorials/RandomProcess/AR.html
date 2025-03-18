@@ -300,6 +300,7 @@ window.Quarto = {
 <p><span class="math display">
 r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  = \sigma_v^2  b(0)  h^*(0) \delta(k)~~;~~ k\geq0
 </span></p>
+<p>For a <code>stable, causal</code> filter with rational transfer function, we have (using intial value of <span class="math inline">z-</span>transform, that is, <span class="math inline">h(0) = \lim_{z-&gt;\infty} H(z)</span> results in <span class="math inline">h^*(0)=b(0)</span>, then, the RHS becomes <span class="math inline">\sigma_v^2 |b(0)|^2</span>.</p>
 <p>In the matrix form, this would be for <span class="math inline">k=0,1,\cdots,p</span></p>
 <p><span class="math display">
 \begin{bmatrix}
@@ -310,10 +311,29 @@ r_x(p) &amp;    r_x(p-1)  &amp;  r_x(p-2) &amp; \cdots &amp; r_x(0)
 \end{bmatrix}
 \begin{bmatrix}  1 \\ a(1) \\ a(2)  \\ \vdots \\ a(p) \\
 \end{bmatrix}
-= \sigma_v^2 b(0)  h^*(0)\begin{bmatrix}  1 \\ 0 \\ 0  \\ \vdots \\ 0  
+= \sigma_v^2 |b(0)|^2  \begin{bmatrix}  1 \\ 0 \\ 0  \\ \vdots \\ 0  
 \end{bmatrix}
 </span></p>
-<p>The filter coefficients are linear in autocorrelation and thence it would be easy</p>
+<p>The filter coefficients are linear in autocorrelation and thence it would be easy to find them give autocorrelation sequence.</p>
+<p>Consider for example AR(1) process (<span class="math inline">p=1</span>),</p>
+<p><span class="math display">
+\begin{bmatrix}
+r_x(0) &amp;     r_x(-1)   \\
+r_x(1) &amp;     r_x(0)   
+\end{bmatrix}
+\begin{bmatrix}  1 \\ a(1)   
+\end{bmatrix}
+= \sigma_v^2 |b(0)|^2\begin{bmatrix}  1 \\ 0  
+\end{bmatrix}
+</span></p>
+<p>Since, <span class="math inline">r_x(k)=r_x(-k)</span>, we have</p>
+<p><span class="math display">
+\begin{split}
+r_x(0) +     r_x(1)   &amp; =\sigma_v^2 |b(0)|^2 \\
+r_x(1) +     a(1) r_x(0) &amp;= 0  
+\end{split}
+</span></p>
+<p>that leads to</p>
 
 
 </section>
