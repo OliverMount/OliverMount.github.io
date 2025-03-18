@@ -284,7 +284,7 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#auto-regressive-moving-average-arma-processess" id="toc-auto-regressive-moving-average-arma-processess" class="nav-link active" data-scroll-target="#auto-regressive-moving-average-arma-processess">Auto-regressive moving average (ARMA) processess</a>
+  <li><a href="#auto-regressive-moving-average-arma-processes" id="toc-auto-regressive-moving-average-arma-processes" class="nav-link active" data-scroll-target="#auto-regressive-moving-average-arma-processes">Auto-regressive moving average (ARMA) processes</a>
   <ul class="collapse">
   <li><a href="#recurrence-for-autocorrelation-sequence-for-extrapolation" id="toc-recurrence-for-autocorrelation-sequence-for-extrapolation" class="nav-link" data-scroll-target="#recurrence-for-autocorrelation-sequence-for-extrapolation">Recurrence for autocorrelation sequence for extrapolation</a></li>
   </ul></li>
@@ -297,8 +297,8 @@ window.Quarto = {
 
 
 
-<section id="auto-regressive-moving-average-arma-processess" class="level1">
-<h1>Auto-regressive moving average (ARMA) processess</h1>
+<section id="auto-regressive-moving-average-arma-processes" class="level1">
+<h1>Auto-regressive moving average (ARMA) processes</h1>
 <p>Let <span class="math inline">x(n)</span> and <span class="math inline">v(n)</span> are stationary random processes. If they are related by the linear constant coefficient differential equations</p>
 <p><span class="math display">
 x(n) + \sum_{l=1}^{p} a(l) x(n-l)  = \sum_{l=0}^q b(l)v(n-l)
@@ -352,7 +352,7 @@ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) =\left\{ \begin{array}{ c l }
     0                 &amp;   k &gt;q
   \end{array}\right.
 </span></p>
-<p>The above YW equations can be written (for <span class="math inline">k=p+q</span>) as</p>
+<p>The above YW equations can be written (for <span class="math inline">k=0,\cdots,p+q</span>) as</p>
 <p><span class="math display">
 \begin{split}
 r_x(0) +   a(1) r_x(-1)  + a(2) r_x(-2) + \cdots + a(p) r_x(-p) &amp;= C_q(0)\\
@@ -404,11 +404,21 @@ r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l) =\left\{ \begin{array}{ c l }
 <p><span class="math display">
 r_x(k) =- \sum_{l=1}^{p} a(l) r_x(k-l)   
 </span></p>
-<p>For example, in the case of ARMA(1,1) process where <span class="math inline">p=q=1</span>, we have for <span class="math inline">k&gt;1</span></p>
+<p>In the case of ARMA(1,1) process where <span class="math inline">p=q=1</span>, we have for <span class="math inline">k&gt;1</span></p>
 <p><span class="math display">
 r_x(k) =-  a(1) r_x(k-1)   
 </span></p>
 <p>If <span class="math inline">r_x(0)</span> and <span class="math inline">r_x(1)</span> are known, then the <span class="math inline">r_x(k), \forall k&gt;1</span> can be obtained from the above recurrence.</p>
+<p>In the case of ARMA(3,1) process where <span class="math inline">p=3,q=1</span>, we have for <span class="math inline">k&gt;1</span></p>
+<p><span class="math display">
+r_x(k) =-  a(1) r_x(k-1)   -  a(2) r_x(k-2) -  a(1) r_x(k-3)
+</span></p>
+<p>If <span class="math inline">r_x(0),r_x(1)</span> are known, then the <span class="math inline">r_x(k), \forall k&gt;1</span> can be obtained from the above recurrence.</p>
+<p>In the case of ARMA(1,3) process where <span class="math inline">p=1,q=3</span>, we have for <span class="math inline">k&gt;3</span></p>
+<p><span class="math display">
+r_x(k) =-  a(1) r_x(k-1)     
+</span></p>
+<p>If <span class="math inline">r_x(0),r_x(1),r_x(2),r_x(3)</span> are known, then the <span class="math inline">r_x(k), \forall k&gt;3</span> can be obtained from the above recurrence.</p>
 <p>Also, if <span class="math inline">p \geq q</span> and if <span class="math inline">r_x(0), \cdots, r_x(p-1)</span> are known, the for any <span class="math inline">k \geq p</span>, one can obtain <span class="math display">
 r_x(k) =- \sum_{l=1}^{p} a(l) r_x(k-l)   
 </span></p>
