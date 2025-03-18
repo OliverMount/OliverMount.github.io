@@ -6,6 +6,8 @@ $$
  r_x(k) + \sum_{l=1}^{p} a(l) r_x(k-l)  = \sigma_v^2  b(0)  h^*(0) \delta(k)~~;~~ k\geq0
 $$
 
+For a stable, causal filter with rational transfer function, we ahve
+
 In the matrix form, this would be for $k=0,1,\cdots,p$
 
 $$
@@ -21,4 +23,17 @@ r_x(p) &    r_x(p-1)  &  r_x(p-2) & \cdots & r_x(0)
 \end{bmatrix}
 $$
 
-The filter coefficients are linear in autocorrelation and thence it would be easy
+The filter coefficients are linear in autocorrelation and thence it would be easy to find them give autocorrelation sequence.
+
+Consider for example AR(1) process ($p=1$),
+
+$$
+\begin{bmatrix}
+r_x(0) &     r_x(-1)   \\ 
+r_x(1) &     r_x(0)   
+\end{bmatrix}
+\begin{bmatrix}  1 \\ a(1)   
+\end{bmatrix}
+= \sigma_v^2 b(0)  h^*(0)\begin{bmatrix}  1 \\ 0  
+\end{bmatrix}
+$$
