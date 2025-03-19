@@ -184,7 +184,7 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me."
+    "text": "I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications.\nWhile acknowledging the value of established methodologies in neuroscience, I am driven by an insatiable curiosity to push beyond the boundaries of current knowledge. My ambition is to forge new pathways of discovery, developing innovative techniques (rather than recycling techniques) and paradigms that will revolutionize our understanding of the brain.\nIf you would like to collaborate with my explorations, please contact me."
   },
   {
     "objectID": "index.html#current-research-interests",
@@ -273,5 +273,12 @@
       "Neuron",
       "Overview"
     ]
+  },
+  {
+    "objectID": "Research/WSK.html",
+    "href": "Research/WSK.html",
+    "title": "Wavelet Shift Keying",
+    "section": "",
+    "text": "My research results are constantly being updated here"
   }
 ]

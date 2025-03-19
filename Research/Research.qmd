@@ -2,8 +2,11 @@
 title: "Research"
 
 listing:
-  contents: posts
+  contents:  
+    - "WSK.qmd" 
+    - "Krylov.qmd"
   type: default
+  categories: true
   
 sort:
   - "date"

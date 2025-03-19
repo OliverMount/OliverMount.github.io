@@ -5,7 +5,11 @@ about:
   template: solana 
 ---
 
-I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications. If you would like to collaborate with my explorations, please contact me.
+I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications.
+
+While acknowledging the value of established methodologies in neuroscience, I am driven by an insatiable curiosity to push beyond the boundaries of current knowledge. My ambition is to forge new pathways of discovery, developing innovative techniques (rather than recycling techniques) and paradigms that will revolutionize our understanding of the brain.
+
+If you would like to collaborate with my explorations, please contact me.
 
 ## Current Research Interests
 
