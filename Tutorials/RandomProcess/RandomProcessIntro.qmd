@@ -1,4 +1,4 @@
-# List of tutorials here
+# List of tutorials
 
 A list of random processes we discuss in this tutorial are
 
@@ -10,4 +10,8 @@ A list of random processes we discuss in this tutorial are
 
 4.  Harmonic processes
 
-Except 4, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function.
+Except the harmonic processes, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function given by
+
+$$
+H(z) =\frac{B(z)}{A(z)} =\frac{\sum_{k=0}^qb(k)z^{-k}}{1+\sum_{k=1}^pa(k)z^{-k}}
+$$
