@@ -1,6 +1,9 @@
 [
   {
     "listing": "/Research/Research.html",
-    "items": []
+    "items": [
+      "/Research/Krylov.html",
+      "/Research/WSK.html"
+    ]
   }
 ]
