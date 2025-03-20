@@ -13,5 +13,3 @@ sort:
   - "date"
   - "title desc"
 ---
-
-My research results are constantly being updated here
