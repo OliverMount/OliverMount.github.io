@@ -4,7 +4,7 @@
     "href": "Research/Research.html",
     "title": "Research",
     "section": "",
-    "text": "Krylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\n\nNo matching items",
+    "text": "Krylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Research"
     ]
@@ -286,6 +286,13 @@
     "href": "Research/Krylov.html",
     "title": "Krylov Subspace-based Channel Estimation",
     "section": "",
-    "text": "Channel estimation based on Kylov subspace approach."
+    "text": "We investigate a low-rank minimum mean-square error (MMSE) channel estimator in orthogonal frequency division multiplexing (OFDM) systems. The proposed estimator is derived by using the multi-stage nested Wiener filter (MSNWF) identified in the literature as a Krylov subspace approach for rank reduction. We describe the low-rank MMSE expressions for exploiting the time correlation function of the channel path gains. The Krylov subspace technique requires neither eigenvalue decomposition (EVD) nor the inverse of the covariance matrices for parameter estimation. We show that the Krylov channel estimator can perform as well as the EVD estimator with a much smaller rank. Simulation results obtained confirm the superiority of the proposed Krylov low-rank channel estimator in approaching near full-rank MSE performance."
+  },
+  {
+    "objectID": "Research/SparseChannel.html",
+    "href": "Research/SparseChannel.html",
+    "title": "Sparse Channel Estimation",
+    "section": "",
+    "text": "A threshold-based procedure to estimate sparse channels in an orthogonal frequency division multiplexing (OFDM) system is proposed. An optimal threshold is derived by maximising the probability of correct detection between significant and zero-valued taps estimated by the least squares (LS) estimator. Improved LS estimates are obtained by pruning the LS estimates with the statistically derived threshold."
   }
 ]

@@ -4,12 +4,12 @@ title: "Research"
 listing:
   contents:  
     - "WSK.qmd" 
+    - "SparseChannel.qmd"
     - "Krylov.qmd" 
   type: default
   categories: true
   date-format: iso
   
 sort:
-  - "date"
-  - "title desc"
+  - "date" 
 ---

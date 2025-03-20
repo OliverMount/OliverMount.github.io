@@ -1,0 +1,7 @@
+---
+title: "Sparse Channel Estimation" 
+author: Oliver 
+date:   February 2008
+---
+
+A threshold-based procedure to estimate sparse channels in an orthogonal frequency division multiplexing (OFDM) system is proposed. An optimal threshold is derived by maximising the probability of correct detection between significant and zero-valued taps estimated by the least squares (LS) estimator. Improved LS estimates are obtained by pruning the LS estimates with the statistically derived threshold.
