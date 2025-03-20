@@ -1,0 +1,7 @@
+---
+title: "Improved LS Channel Estimation in CFO" 
+author: Oliver 
+date:   February 2012
+---
+
+The authors consider the design of pilot sequences for channel estimation in the presence of carrier frequency offset (CFO) in systems that employ orthogonal frequency division multiplexing (OFDM). The CFO introduces intercarrier interference (ICI) which degrades the accuracy of the channel estimation. In order to minimise this effect, the authors design pilot sequence that minimises the mean square error (MSE) of the modified least squares (mLS) channel estimator. Since the identical pilot sequence, which minimises this MSE, has high peak-to-average power ratio of the OFDM signal, an alternative approach is proposed for channel estimation. The authors first introduce a new estimator as an alternative to the mLS estimator and design a low PAPR pilot sequences tailored to this new estimator. They show that the proposed procedure completely eliminates the effect of the ICI on the channel estimate. They then extend their design of pilot sequences for realistic sparse channels. Both analytical and computer simulation results presented in this study demonstrate the superiority of the proposed approach over conventional methods for channel estimation in the presence of ICI.

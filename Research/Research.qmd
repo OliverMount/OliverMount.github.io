@@ -6,6 +6,7 @@ listing:
     - "WSK.qmd" 
     - "SparseChannel.qmd"
     - "Krylov.qmd" 
+    - "ImprovedLS.qmd"
   type: default
   categories: true
   date-format: iso
