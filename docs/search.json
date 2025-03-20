@@ -4,7 +4,7 @@
     "href": "Research/Research.html",
     "title": "Research",
     "section": "",
-    "text": "Krylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Krylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Research"
     ]
@@ -279,7 +279,7 @@
     "href": "Research/WSK.html",
     "title": "Wavelet Shift Keying",
     "section": "",
-    "text": "Wavelets as pulses for communication systems."
+    "text": "Wavelet-based schemes enhance digital communication spectral efficiency through two main methods: pulse shaping and wavelet shift keying (WSK) modulation. In pulse shaping, orthonormal wavelets and their dyadic expansions serve as baseband pulses, enabling single-sideband transmission for higher data rates (1.12 b/s/Hz) compared to raised-cosine systems (0.83 b/s/Hz) while satisfying Nyquist criteria. The wavelet approach also provides coding gains without bandwidth penalties by using optimized waveforms. For modulation, WSK encodes data streams as scaled versions of mother wavelets, improving spectral efficiency as user numbers increase while maintaining consistent power efficiency. Both methods leverage wavelets’ time-frequency localization and orthogonality to outperform traditional communication techniques in bandwidth-constrained scenarios"
   },
   {
     "objectID": "Research/Krylov.html",
