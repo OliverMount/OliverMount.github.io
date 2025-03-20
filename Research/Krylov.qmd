@@ -1,5 +1,7 @@
 ---
 title: "Krylov Subspace-based Channel Estimation" 
+author: Oliver 
+date:  Jnauary 2010
 ---
 
-Channel estimation based on Kylov subspace approach.
+We investigate a low-rank minimum mean-square error (MMSE) channel estimator in orthogonal frequency division multiplexing (OFDM) systems. The proposed estimator is derived by using the multi-stage nested Wiener filter (MSNWF) identified in the literature as a Krylov subspace approach for rank reduction. We describe the low-rank MMSE expressions for exploiting the time correlation function of the channel path gains. The Krylov subspace technique requires neither eigenvalue decomposition (EVD) nor the inverse of the covariance matrices for parameter estimation. We show that the Krylov channel estimator can perform as well as the EVD estimator with a much smaller rank. Simulation results obtained confirm the superiority of the proposed Krylov low-rank channel estimator in approaching near full-rank MSE performance.

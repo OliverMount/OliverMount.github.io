@@ -7,6 +7,7 @@ listing:
     - "Krylov.qmd" 
   type: default
   categories: true
+  date-format: iso
   
 sort:
   - "date"
