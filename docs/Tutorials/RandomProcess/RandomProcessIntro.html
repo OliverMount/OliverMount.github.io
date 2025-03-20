@@ -69,6 +69,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -241,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#list-of-tutorials-here" id="toc-list-of-tutorials-here" class="nav-link active" data-scroll-target="#list-of-tutorials-here">List of tutorials here</a></li>
+  <li><a href="#random-processes" id="toc-random-processes" class="nav-link active" data-scroll-target="#random-processes">Random processes</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Tutorials/RandomProcess/RandomProcessIntro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Tutorials/RandomProcess/RandomProcessIntro.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -251,8 +294,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="list-of-tutorials-here" class="level1">
-<h1>List of tutorials here</h1>
+<section id="random-processes" class="level1">
+<h1>Random processes</h1>
 <p>A list of random processes we discuss in this tutorial are</p>
 <ol type="1">
 <li><p>ARMA</p></li>
@@ -260,7 +303,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>MA</p></li>
 <li><p>Harmonic processes</p></li>
 </ol>
-<p>Except 4, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function.</p>
+<p>Except the harmonic processes, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function given by</p>
+<p><span class="math display">
+H(z) =\frac{B(z)}{A(z)} =  \frac{\sum_{k=0}^qb(k)z^{-k}}{1+\sum_{k=1}^pa(k)z^{-k}}
+</span></p>
 
 
 </section>
