@@ -42,9 +42,15 @@ Since, $r_x(k)=r_x(-k)$, we have
 
 $$
 \begin{split}
-r_x(0) +     r_x(1)   & =\sigma_v^2 |b(0)|^2 \\ 
+r_x(0) +     r_x(1) a(1)  & =\sigma_v^2 |b(0)|^2 \\ 
 r_x(1) +     a(1) r_x(0) &= 0  
 \end{split}
 $$
 
 that leads to
+
+$$ 
+     a(1)   = -\frac{r_x(1)} {r_x(0)}   
+$$
+
+In a similar vein, it is also possible to find the autocorrelation sequence given the filter coefficients $a(i)$s.
