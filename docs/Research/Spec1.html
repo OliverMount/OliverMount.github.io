@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Oliver James, Aravind, R. ; Prabhu, K. M. M.">
-<meta name="dcterms.date" content="2010-01-01">
+<meta name="author" content="Oliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee">
+<meta name="dcterms.date" content="2012-03-30">
 
-<title>Krylov Subspace-based Channel Estimation – Welcome</title>
+<title>Improving resolution of miniature spectrometers by exploiting sparse nature of signals – Welcome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -144,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Krylov Subspace-based Channel Estimation</h1>
+<h1 class="title">Improving resolution of miniature spectrometers by exploiting sparse nature of signals</h1>
 </div>
 
 
@@ -154,14 +197,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Oliver James, Aravind, R. ; Prabhu, K. M. M. </p>
+             <p>Oliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2010</p>
+      <p class="date">March 30, 2012</p>
     </div>
   </div>
   
@@ -173,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We investigate a low-rank minimum mean-square error (MMSE) channel estimator in orthogonal frequency division multiplexing (OFDM) systems. The proposed estimator is derived by using the multi-stage nested Wiener filter (MSNWF) identified in the literature as a Krylov subspace approach for rank reduction. We describe the low-rank MMSE expressions for exploiting the time correlation function of the channel path gains. The Krylov subspace technique requires neither eigenvalue decomposition (EVD) nor the inverse of the covariance matrices for parameter estimation. We show that the Krylov channel estimator can perform as well as the EVD estimator with a much smaller rank. Simulation results obtained confirm the superiority of the proposed Krylov low-rank channel estimator in approaching near full-rank MSE performance.</p>
+<p>In this paper, we present a signal processing approach to improve the resolution of a spectrometer with a fixed number of low-cost, non-ideal filters. We aim to show that the resolution can be improved beyond the limit set by the number of filters by exploiting the sparse nature of a signal spectrum. We consider an underdetermined system of linear equations as a model for signal spectrum estimation. We design a non-negative <span class="math inline">L_1</span>norm minimization algorithm for solving the system of equations. We demonstrate that the resolution can be improved multiple times by using the proposed algorithm.</p>
 
 
 
@@ -610,7 +653,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Research/Krylov.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Research/Krylov.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Research/Spec1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Research/Spec1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Copyright Feb.&nbsp;2025, Oliver</p>
 </div>

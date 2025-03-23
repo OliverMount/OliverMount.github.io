@@ -2,8 +2,10 @@
   {
     "listing": "/Research/Research.html",
     "items": [
+      "/Research/Spec2.html",
       "/Research/ImpactOfSamplingRate.html",
       "/Research/ImprovedLS.html",
+      "/Research/Spec1.html",
       "/Research/Krylov.html",
       "/Research/SparseChannel.html",
       "/Research/WSK.html"

@@ -1,7 +1,7 @@
 ---
 title: "Improving resolution of miniature spectrometers by exploiting sparse nature of signals" 
 author:  Oliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee 
-date:  March 2012
+date:  2012-02-30 
 ---
 
 In this paper, we present a signal processing approach to improve the resolution of a spectrometer with a fixed number of low-cost, non-ideal filters. We aim to show that the resolution can be improved beyond the limit set by the number of filters by exploiting the sparse nature of a signal spectrum. We consider an underdetermined system of linear equations as a model for signal spectrum estimation. We design a non-negative $L_1$norm minimization algorithm for solving the system of equations. We demonstrate that the resolution can be improved multiple times by using the proposed algorithm.

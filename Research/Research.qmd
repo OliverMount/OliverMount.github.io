@@ -8,6 +8,9 @@ listing:
     - "Krylov.qmd" 
     - "ImprovedLS.qmd"
     - "ImpactOfSamplingRate.qmd"
+    - "Spec1.qmd"
+    - "Spec2.qmd"
+    
   type: default
   categories: true
   date-format: iso

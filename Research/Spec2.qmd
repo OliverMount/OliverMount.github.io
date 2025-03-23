@@ -1,0 +1,7 @@
+---
+title: "Filters with random transmittance for improving resolution in filter-array-based spectrometers" 
+author:  Oliver James, Woongbi Lee, and Heung-No Lee 
+date:  2013-02-25
+---
+
+In this paper, we introduce a method for improving the resolution of miniature spectrometers. Our method is based on using filters with random transmittance. Such filters sense fine details of an input signal spectrum, which, when combined with a signal processing algorithm, aid in improving resolution. We also propose an approach for designing filters with random transmittance using optical thin-film technology. We demonstrate that the improvement in resolution is 7-fold when using the filters with random transmittance over what was achieved in our previous work.
