@@ -1,6 +1,6 @@
 ---
 title: "Sparse Channel Estimation" 
-author: Oliver 
+author: Oliver James, Aravind, R. ; Prabhu, K. M. M.
 date:   February 2008
 ---
 
