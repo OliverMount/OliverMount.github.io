@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Oliver James, Hyunjin Park, Seong-Gi Kim">
+<meta name="dcterms.date" content="2019-01-01">
 
-<title>Research – Welcome</title>
+<title>Impact of sampling rate on fMRI connectivity analysis – Welcome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -69,84 +69,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -168,7 +96,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../Research/Research.html" aria-current="page"> 
+    <a class="nav-link" href="../Research/Research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -203,58 +131,39 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Research/Research.html">Research</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Research/Research.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Research</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Impact of sampling rate on fMRI connectivity analysis</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Oliver James, Hyunjin Park, Seong-Gi Kim </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2019</p>
+    </div>
+  </div>
   
     
   </div>
@@ -264,140 +173,11 @@ window.Quarto = {
 </header>
 
 
+<p>A typical time series in functional magnetic resonance imaging (fMRI) exhibits autocorrelation, that is, the samples of the time series are dependent. In addition, temporal filtering, one of the crucial steps in preprocessing of functional magnetic resonance images, induces its own autocorrelation. While performing connectivity analysis in fMRI, the impact of the autocorrelation is largely ignored. Recently, autocorrelation has been addressed by variance correction approaches, which are sensitive to the sampling rate. In this article, we aim to investigate the impact of the sampling rate on the variance correction approaches. Toward this end, we first derived a generalized expression for the variance of the sample Pearson correlation coefficient (SPCC) in terms of the sampling rate and the filter cutoff frequency, in addition to the autocorrelation and cross-covariance functions of the time series. Through simulations, we illustrated the importance of the variance correction for a fixed sampling rate. Using the real resting state fMRI data sets, we demonstrated that the data sets with higher sampling rates were more prone to false positives, in agreement with the existing empirical reports. We further demonstrated with single subject results that for the data sets with higher sampling rates, the variance correction strategy restored the integrity of true connectivity.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1546268400000" data-listing-file-modified-sort="1742711376459" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="204">
-<div class="thumbnail"><a href="../Research/ImpactOfSamplingRate.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../Research/ImpactOfSamplingRate.html" class="no-external">Impact of sampling rate on fMRI connectivity analysis</a>
-</h3>
-<div class="delink listing-description"><a href="../Research/ImpactOfSamplingRate.html" class="no-external">
-A typical time series in functional magnetic resonance imaging (fMRI) exhibits autocorrelation, that is, the samples of the time series are dependent. In addition, temporal…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../Research/ImpactOfSamplingRate.html" class="no-external">
-<div class="listing-date">
-2019-01-01
-</div>
-<div class="listing-author">
-Oliver James, Hyunjin Park, Seong-Gi Kim
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1328022000000" data-listing-file-modified-sort="1742522148591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
-<div class="thumbnail"><a href="../Research/ImprovedLS.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../Research/ImprovedLS.html" class="no-external">Improved LS Channel Estimation in CFO</a>
-</h3>
-<div class="delink listing-description"><a href="../Research/ImprovedLS.html" class="no-external">
-The authors consider the design of pilot sequences for channel estimation in the presence of carrier frequency offset (CFO) in systems that employ orthogonal frequency…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../Research/ImprovedLS.html" class="no-external">
-<div class="listing-date">
-2012-02-01
-</div>
-<div class="listing-author">
-Oliver
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1262271600000" data-listing-file-modified-sort="1742522148591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="117">
-<div class="thumbnail"><a href="../Research/Krylov.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../Research/Krylov.html" class="no-external">Krylov Subspace-based Channel Estimation</a>
-</h3>
-<div class="delink listing-description"><a href="../Research/Krylov.html" class="no-external">
-We investigate a low-rank minimum mean-square error (MMSE) channel estimator in orthogonal frequency division multiplexing (OFDM) systems. The proposed estimator is derived…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../Research/Krylov.html" class="no-external">
-<div class="listing-date">
-2010-01-01
-</div>
-<div class="listing-author">
-Oliver
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1201791600000" data-listing-file-modified-sort="1742522148591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
-<div class="thumbnail"><a href="../Research/SparseChannel.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../Research/SparseChannel.html" class="no-external">Sparse Channel Estimation</a>
-</h3>
-<div class="delink listing-description"><a href="../Research/SparseChannel.html" class="no-external">
-A threshold-based procedure to estimate sparse channels in an orthogonal frequency division multiplexing (OFDM) system is proposed. An optimal threshold is derived by…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../Research/SparseChannel.html" class="no-external">
-<div class="listing-date">
-2008-02-01
-</div>
-<div class="listing-author">
-Oliver
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1124118000000" data-listing-file-modified-sort="1742522148591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="105">
-<div class="thumbnail"><a href="../Research/WSK.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../Research/WSK.html" class="no-external">Wavelet Shift Keying</a>
-</h3>
-<div class="delink listing-description"><a href="../Research/WSK.html" class="no-external">
-Wavelet-based schemes enhance digital communication spectral efficiency through two main methods: pulse shaping and wavelet shift keying (WSK) modulation. In pulse shaping…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../Research/WSK.html" class="no-external">
-<div class="listing-date">
-2005-08-16
-</div>
-<div class="listing-author">
-Oliver
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -830,7 +610,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Research/Research.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Research/Research.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Research/ImpactOfSamplingRate.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Research/ImpactOfSamplingRate.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Copyright Feb.&nbsp;2025, Oliver</p>
 </div>

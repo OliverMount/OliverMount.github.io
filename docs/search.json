@@ -4,7 +4,7 @@
     "href": "Research/Research.html",
     "title": "Research",
     "section": "",
-    "text": "Improved LS Channel Estimation in CFO\n\n\n\n\n\n\n\n\n\n\n\n2012-02-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nKrylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\n\nNo matching items",
+    "text": "Impact of sampling rate on fMRI connectivity analysis\n\n\n\n\n\n\n\n\n2019-01-01\n\n\nOliver James, Hyunjin Park, Seong-Gi Kim\n\n\n\n\n\n\n\n\n\n\n\n\nImproved LS Channel Estimation in CFO\n\n\n\n\n\n\n\n\n2012-02-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nKrylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Research"
     ]
@@ -301,5 +301,12 @@
     "title": "Improved LS Channel Estimation in CFO",
     "section": "",
     "text": "The authors consider the design of pilot sequences for channel estimation in the presence of carrier frequency offset (CFO) in systems that employ orthogonal frequency division multiplexing (OFDM). The CFO introduces intercarrier interference (ICI) which degrades the accuracy of the channel estimation. In order to minimise this effect, the authors design pilot sequence that minimises the mean square error (MSE) of the modified least squares (mLS) channel estimator. Since the identical pilot sequence, which minimises this MSE, has high peak-to-average power ratio of the OFDM signal, an alternative approach is proposed for channel estimation. The authors first introduce a new estimator as an alternative to the mLS estimator and design a low PAPR pilot sequences tailored to this new estimator. They show that the proposed procedure completely eliminates the effect of the ICI on the channel estimate. They then extend their design of pilot sequences for realistic sparse channels. Both analytical and computer simulation results presented in this study demonstrate the superiority of the proposed approach over conventional methods for channel estimation in the presence of ICI."
+  },
+  {
+    "objectID": "Research/ImpactOfSamplingRate.html",
+    "href": "Research/ImpactOfSamplingRate.html",
+    "title": "Impact of sampling rate on fMRI connectivity analysis",
+    "section": "",
+    "text": "A typical time series in functional magnetic resonance imaging (fMRI) exhibits autocorrelation, that is, the samples of the time series are dependent. In addition, temporal filtering, one of the crucial steps in preprocessing of functional magnetic resonance images, induces its own autocorrelation. While performing connectivity analysis in fMRI, the impact of the autocorrelation is largely ignored. Recently, autocorrelation has been addressed by variance correction approaches, which are sensitive to the sampling rate. In this article, we aim to investigate the impact of the sampling rate on the variance correction approaches. Toward this end, we first derived a generalized expression for the variance of the sample Pearson correlation coefficient (SPCC) in terms of the sampling rate and the filter cutoff frequency, in addition to the autocorrelation and cross-covariance functions of the time series. Through simulations, we illustrated the importance of the variance correction for a fixed sampling rate. Using the real resting state fMRI data sets, we demonstrated that the data sets with higher sampling rates were more prone to false positives, in agreement with the existing empirical reports. We further demonstrated with single subject results that for the data sets with higher sampling rates, the variance correction strategy restored the integrity of true connectivity."
   }
 ]

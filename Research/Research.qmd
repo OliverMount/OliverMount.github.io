@@ -7,6 +7,7 @@ listing:
     - "SparseChannel.qmd"
     - "Krylov.qmd" 
     - "ImprovedLS.qmd"
+    - "ImpactOfSamplingRate.qmd"
   type: default
   categories: true
   date-format: iso

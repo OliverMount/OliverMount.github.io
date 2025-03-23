@@ -2,6 +2,7 @@
   {
     "listing": "/Research/Research.html",
     "items": [
+      "/Research/ImpactOfSamplingRate.html",
       "/Research/ImprovedLS.html",
       "/Research/Krylov.html",
       "/Research/SparseChannel.html",
