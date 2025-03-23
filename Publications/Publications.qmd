@@ -1,5 +1,6 @@
 ---
 title: "List of publications" 
+bibliography: references.bib
 ---
 
 # 

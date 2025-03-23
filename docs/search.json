@@ -14,7 +14,7 @@
     "href": "Publications/Publications.html",
     "title": "List of publications",
     "section": "",
-    "text": "This page contains materials related to projects",
+    "text": "Oliver, Aravind, and Prabhu (2012)",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -315,5 +315,27 @@
     "title": "Improving resolution of miniature spectrometers by exploiting sparse nature of signals",
     "section": "",
     "text": "In this paper, we present a signal processing approach to improve the resolution of a spectrometer with a fixed number of low-cost, non-ideal filters. We aim to show that the resolution can be improved beyond the limit set by the number of filters by exploiting the sparse nature of a signal spectrum. We consider an underdetermined system of linear equations as a model for signal spectrum estimation. We design a non-negative L_1norm minimization algorithm for solving the system of equations. We demonstrate that the resolution can be improved multiple times by using the proposed algorithm."
+  },
+  {
+    "objectID": "Publications/Publications.html#patents",
+    "href": "Publications/Publications.html#patents",
+    "title": "List of publications",
+    "section": "",
+    "text": "@ggplot2\n@Book{ggplot2, author = {Hadley Wickham}, title = {ggplot2: Elegant Graphics for Data Analysis}, publisher = {Springer-Verlag New York}, year = {2016}, isbn = {978-3-319-24277-4}, url = {http://ggplot2.org}, }",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#journals",
+    "href": "Publications/Publications.html#journals",
+    "title": "List of publications",
+    "section": "",
+    "text": "Oliver, Aravind, and Prabhu (2012)",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
   }
 ]
