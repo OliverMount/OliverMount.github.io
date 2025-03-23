@@ -4,7 +4,7 @@
     "href": "Research/Research.html",
     "title": "Research",
     "section": "",
-    "text": "Filters with random transmittance for improving resolution in filter-array-based spectrometers\n\n\n\n\n\n\n\n\n\n\n\n2013-02-25\n\n\nOliver James, Woongbi Lee, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nImpact of sampling rate on fMRI connectivity analysis\n\n\n\n\n\n\n\n\n\n\n\n2019-01-01\n\n\nOliver James, Hyunjin Park, Seong-Gi Kim\n\n\n\n\n\n\n\n\n\n\n\n\nImproved LS Channel Estimation in CFO\n\n\n\n\n\n\n\n\n\n\n\n2012-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nImproving resolution of miniature spectrometers by exploiting sparse nature of signals\n\n\n\n\n\n\n\n\n\n\n\n2012-03-30\n\n\nOliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nKrylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\n\nNo matching items",
+    "text": "Filters with random transmittance for improving resolution in filter-array-based spectrometers\n\n\n\n\n\n\n\n\n\n\n\n2013-02-25\n\n\nOliver James, Woongbi Lee, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nImpact of sampling rate on fMRI connectivity analysis\n\n\n\n\n\n\n\n\n\n\n\n2019-01-01\n\n\nOliver James, Hyunjin Park, Seong-Gi Kim\n\n\n\n\n\n\n\n\n\n\n\n\nImproved LS Channel Estimation in CFO\n\n\n\n\n\n\n\n\n\n\n\n2012-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nImproving resolution of miniature spectrometers by exploiting sparse nature of signals\n\n\n\n\n\n\n\n\n\n\n\n2012-03-30\n\n\nOliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nKrylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nOn the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis\n\n\n\n\n\n\n\n\n\n\n\n2015-06-01\n\n\nOliver James\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Research"
     ]
@@ -344,5 +344,12 @@
     "title": "Filters with random transmittance for improving resolution in filter-array-based spectrometers",
     "section": "",
     "text": "In this paper, we introduce a method for improving the resolution of miniature spectrometers. Our method is based on using filters with random transmittance. Such filters sense fine details of an input signal spectrum, which, when combined with a signal processing algorithm, aid in improving resolution. We also propose an approach for designing filters with random transmittance using optical thin-film technology. We demonstrate that the improvement in resolution is 7-fold when using the filters with random transmittance over what was achieved in our previous work."
+  },
+  {
+    "objectID": "Research/RIPofRealComplex.html",
+    "href": "Research/RIPofRealComplex.html",
+    "title": "On the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis",
+    "section": "",
+    "text": "In this paper, we aim to revisit the restricted isometry property (RIP) of real and complex Gaussian sensing matrices. We do this reconsideration via the recently introduced restricted isometry random variable (RIV) framework for the real Gaussian sensing matrices. We first generalize the RIV framework to the complex settings and illustrate that the restricted isometry constants (RICs) of complex Gaussian sensing matrices are smaller than their real-valued counterpart. The reasons behind the better RIC nature of complex sensing matrices over their real-valued counterpart is delineated. We also demonstrate via critical functions, upper bounds on the RICs, that complex Gaussian matrices with prescribed RICs exist for larger number of problem sizes than the real Gaussian matrices."
   }
 ]
