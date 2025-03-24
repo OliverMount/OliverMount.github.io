@@ -3,15 +3,21 @@ title: "List of publications"
 bibliography: references.bib 
 ---
 
-# 
+## arXiv
 
-## arxiv
-
-**James, Oliver**., & Lee, H.-N. (2025). On Eigenvalues of Wishart Matrix for Analysis of Compressive Sensing Systems. Available Online at <https://arxiv.org/abs/1402.6757>.
+**James, Oliver**., & Lee, H.-N. (2025). Concise Probability Distributions of Eigenvalues of Real-Valued Wishart Matrices. <https://arxiv.org/abs/1402.6757>.
 
 **James, Oliver.**, & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. <https://arxiv.org/abs/1410.1956>
 
 ## Journals {#sec-journals}
+
+Bae, J., Jung, K., **James, Oliver.**, Suzuki, S., & Kim, Y. J. (2025). Frontal engagement in perceptual integration under low subjective visibility. ***NeuroImage***, *305*, 120984.
+
+Do, J., **James, Oliver**., & Kim, Y.-J. (2024). Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain. **Iscience,** 27(7).
+
+Do, J., Eo, K. Y., **James, Oliver**., Lee, J., & Kim, Y.-J. (2022). The representational dynamics of sequential perceptual averaging. **Journal of Neuroscience**, 42(6), 1141–1153.
+
+Adalarasu, K., Jagannath, M., & **James, Oliver.** (2020). Assessment of techniques for teaching school children with autism. **IRBM**, 41(2), 88–93.
 
 **James, Oliver**., Park, H., & Kim, S.-G. (2019). Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis. **Human Brain Mapping**, 40(11), 3321–3337.
 
@@ -25,6 +31,8 @@ Lee, Y., Park, B.-Y., **James, Oliver.**, Kim, S.-G., & Park, H. (2017). Autism 
 
 **Oliver, James**. (2016). Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework. **Wireless Personal Communications**, 87(10), 513–526.
 
+**James, Oliver**. (2015). Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices. **International Journal of Computer Applications**, 975, 8887.
+
 **Oliver, James**., Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers. **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), 497–502.
 
 **Oliver, James**, WoongBi, L., Heung-No, & Lee. (2013). Filters with random transmittance for improving resolution in filter-array-based spectrometers. **Optics Express**, 21(4), 3969–3989.
@@ -36,6 +44,10 @@ Lee, Y., Park, B.-Y., **James, Oliver.**, Kim, S.-G., & Park, H. (2017). Autism 
 **Oliver, James**, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. **Signal Processing**, 90(6), 1861–1872.
 
 **Oliver, James**., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. **Electronics Letters**, 44(13), 830–832.
+
+## Book Chapters
+
+Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., & **James, Oliver.** (2023). **Low Power Methodologies for FPGA—An Overview. Low Power Architectures for IoT Applications**, 85–97.
 
 ## Conferences
 
