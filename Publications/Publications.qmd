@@ -7,7 +7,17 @@ bibliography: references.bib
 
 ## arxiv
 
+**James, Oliver**., & Lee, H.-N. (2025). On Eigenvalues of Wishart Matrix for Analysis of Compressive Sensing Systems. Available Online at <https://arxiv.org/abs/1402.6757>.
+
+**James, Oliver.**, & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. <https://arxiv.org/abs/1410.1956>
+
 ## Journals {#sec-journals}
+
+**Oliver, James**., Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers. **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), 497–502.
+
+**Oliver, James**, WoongBi, L., Heung-No, & Lee. (2013). Filters with random transmittance for improving resolution in filter-array-based spectrometers. **Optics Express**, 21(4), 3969–3989.
+
+**Oliver, James**., Lee, W., Park, S., & Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. **Optics Express**, 20(3), 2613–2625.
 
 **Oliver, James**, Aravind, R., & Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. **IET Signal Processing**, 6(1), 45–53.
 
@@ -17,8 +27,14 @@ bibliography: references.bib
 
 ## Conferences
 
+J. Oliver, S. P., WoongBi Lee, & Lee, H.-N. (2013). Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers. Korean Information and Communication Society Journal, (6), 497–502.
+
 Oliver, J., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.
 
 Oliver, J., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.
 
+Oliver, J., Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.
+
 ## Patents 
+
+Oliver, J., Lee, W.-B., Park, S., & Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.

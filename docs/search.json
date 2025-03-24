@@ -14,7 +14,7 @@
     "href": "Publications/Publications.html",
     "title": "List of publications",
     "section": "",
-    "text": "James, Aravind, and Prabhu (2008)\n\n\n\nICCIMA’05 Oliver, Kumari, and Sadasivam (2005)",
+    "text": "James, Oliver., & Lee, H.-N. (2025). On Eigenvalues of Wishart Matrix for Analysis of Compressive Sensing Systems. Available Online at https://arxiv.org/abs/1402.6757.\nJames, Oliver., & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. https://arxiv.org/abs/1410.1956\n\n\n\nOliver, James., Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers. The Journal of Korean Institute of Communications and Information Sciences, 38(6), 497–502.\nOliver, James, WoongBi, L., Heung-No, & Lee. (2013). Filters with random transmittance for improving resolution in filter-array-based spectrometers. Optics Express, 21(4), 3969–3989.\nOliver, James., Lee, W., Park, S., & Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. Optics Express, 20(3), 2613–2625.\nOliver, James, Aravind, R., & Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. IET Signal Processing, 6(1), 45–53.\nOliver, James, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. Signal Processing, 90(6), 1861–1872.\nOliver, James., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. Electronics Letters, 44(13), 830–832.\n\n\n\nJ. Oliver, S. P., WoongBi Lee, & Lee, H.-N. (2013). Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers. Korean Information and Communication Society Journal, (6), 497–502.\nOliver, J., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.\nOliver, J., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.\nOliver, J., Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.\n\n\n\nOliver, J., Lee, W.-B., Park, S., & Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -321,7 +321,7 @@
     "href": "Publications/Publications.html#patents",
     "title": "List of publications",
     "section": "",
-    "text": "@ggplot2\n@Book{ggplot2, author = {Hadley Wickham}, title = {ggplot2: Elegant Graphics for Data Analysis}, publisher = {Springer-Verlag New York}, year = {2016}, isbn = {978-3-319-24277-4}, url = {http://ggplot2.org}, }",
+    "text": "Oliver, J., Lee, W.-B., Park, S., & Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -343,7 +343,7 @@
     "href": "Publications/Publications.html#conferences",
     "title": "List of publications",
     "section": "",
-    "text": "ICCIMA’05 Oliver, Kumari, and Sadasivam (2005)",
+    "text": "J. Oliver, S. P., WoongBi Lee, & Lee, H.-N. (2013). Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers. Korean Information and Communication Society Journal, (6), 497–502.\nOliver, J., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.\nOliver, J., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.\nOliver, J., Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -413,5 +413,27 @@
     "title": "On the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis",
     "section": "",
     "text": "In this paper, we aim to revisit the restricted isometry property (RIP) of real and complex Gaussian sensing matrices. We do this reconsideration via the recently introduced restricted isometry random variable (RIV) framework for the real Gaussian sensing matrices. We first generalize the RIV framework to the complex settings and illustrate that the restricted isometry constants (RICs) of complex Gaussian sensing matrices are smaller than their real-valued counterpart. The reasons behind the better RIC nature of complex sensing matrices over their real-valued counterpart is delineated. We also demonstrate via critical functions, upper bounds on the RICs, that complex Gaussian matrices with prescribed RICs exist for larger number of problem sizes than the real Gaussian matrices."
+  },
+  {
+    "objectID": "Publications/Publications.html#sec-journals",
+    "href": "Publications/Publications.html#sec-journals",
+    "title": "List of publications",
+    "section": "",
+    "text": "Oliver, James., Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers. The Journal of Korean Institute of Communications and Information Sciences, 38(6), 497–502.\nOliver, James, WoongBi, L., Heung-No, & Lee. (2013). Filters with random transmittance for improving resolution in filter-array-based spectrometers. Optics Express, 21(4), 3969–3989.\nOliver, James., Lee, W., Park, S., & Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. Optics Express, 20(3), 2613–2625.\nOliver, James, Aravind, R., & Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. IET Signal Processing, 6(1), 45–53.\nOliver, James, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. Signal Processing, 90(6), 1861–1872.\nOliver, James., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. Electronics Letters, 44(13), 830–832.",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#arxiv",
+    "href": "Publications/Publications.html#arxiv",
+    "title": "List of publications",
+    "section": "",
+    "text": "James, Oliver., & Lee, H.-N. (2025). On Eigenvalues of Wishart Matrix for Analysis of Compressive Sensing Systems. Available Online at https://arxiv.org/abs/1402.6757.\nJames, Oliver., & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. https://arxiv.org/abs/1410.1956",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
   }
 ]
