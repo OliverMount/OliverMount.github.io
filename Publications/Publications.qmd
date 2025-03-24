@@ -13,6 +13,18 @@ bibliography: references.bib
 
 ## Journals {#sec-journals}
 
+**James, Oliver**., Park, H., & Kim, S.-G. (2019). Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis. **Human Brain Mapping**, 40(11), 3321–3337.
+
+Park, B.-Y., Shim, W. M., **James, Oliver.**, & Park, H. (2019). Possible links between the lag structure in visual cortex and visual streams using fMRI. **Scientific Reports**, 9(1), 4283.
+
+Eo, K., **James, Oliver**., Son, S., Kang, M.-S., Chong, S. C., & Kim, Y.-J. (2018). Representational dynamics of ensemble average of simultaneously presented objects. **Journal of Vision**, 18(10), 80–80.
+
+Kwon, J., Kim, M., Park, H., Kang, B.-M., Jo, Y., Kim, J.-H., **Oliver James**… Others. (2017). Label-free nanoscale optical metrology on myelinated axons in vivo. **Nature Communications**, 8(1), 1832.
+
+Lee, Y., Park, B.-Y., **James, Oliver.**, Kim, S.-G., & Park, H. (2017). Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults. **Frontiers in Human Neuroscience**, 11, 418.
+
+**Oliver, James**. (2016). Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework. **Wireless Personal Communications**, 87(10), 513–526.
+
 **Oliver, James**., Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers. **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), 497–502.
 
 **Oliver, James**, WoongBi, L., Heung-No, & Lee. (2013). Filters with random transmittance for improving resolution in filter-array-based spectrometers. **Optics Express**, 21(4), 3969–3989.
@@ -27,7 +39,11 @@ bibliography: references.bib
 
 ## Conferences
 
+James, O., Lee, W.-B., & Lee, H.-N. (2013). Random Transmittance Based Filter Array Spectrometers: Sparse Spectrum Recovery And Resolution Improvement. Global Conference on Signal and Information Processing (GlobalSIP), 2013 IEEE, 615–615. IEEE.
+
 J. Oliver, S. P., WoongBi Lee, & Lee, H.-N. (2013). Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers. Korean Information and Communication Society Journal, (6), 497–502.
+
+Oliver, J., & Lee, H.-N. (2011). A realistic distributed compressive sensing framework for multiple wireless sensor networks. Proc. 4th Signal Process. with Adapt. Sparse Struct. Repr, 105.
 
 Oliver, J., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.
 
@@ -36,5 +52,9 @@ Oliver, J., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation 
 Oliver, J., Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.
 
 ## Patents 
+
+Lee, H. N., Park, S. J., Oliver, J., & Lee, W. B. (may \# ‘ 12’, note=US Patent 9,030,662 2015). Method and apparatus for processing optical signal of spectrometer using sparse nature of signals.
+
+Lee, H. N., Oliver, J., & Lee, W. B. (oct \# ‘ 29’, note=US Patent 10,458,843 2019). Spectrometry apparatus and spectrometry method.
 
 Oliver, J., Lee, W.-B., Park, S., & Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.
