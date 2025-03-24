@@ -14,7 +14,7 @@
     "href": "Publications/Publications.html",
     "title": "List of publications",
     "section": "",
-    "text": "Oliver, Aravind, and Prabhu (2012)",
+    "text": "ICCIMA’05 Oliver, Kumari, and Sadasivam (2005)",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -332,7 +332,18 @@
     "href": "Publications/Publications.html#journals",
     "title": "List of publications",
     "section": "",
-    "text": "Oliver, Aravind, and Prabhu (2012)",
+    "text": "Oliver, Kumari, and Sadasivam (2005)",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#conferences",
+    "href": "Publications/Publications.html#conferences",
+    "title": "List of publications",
+    "section": "",
+    "text": "ICCIMA’05 Oliver, Kumari, and Sadasivam (2005)",
     "crumbs": [
       "Publications",
       "List of publications"

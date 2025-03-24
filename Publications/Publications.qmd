@@ -1,6 +1,7 @@
 ---
 title: "List of publications" 
 bibliography: references.bib
+csl: apa.csl
 ---
 
 # 
@@ -9,6 +10,10 @@ bibliography: references.bib
 
 ## Journals
 
+@james2008
+
 ## Conferences
+
+ICCIMA’05 @oliver2005
 
 ## Patents
