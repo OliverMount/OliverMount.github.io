@@ -51,28 +51,28 @@ Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., & **James, Oliv
 
 ## Conferences
 
-**Oliver James**, and Yee Joon Kim, (2023) On the representation of objective and subjective visible/invisible stimuli in humans via EEG-based report and no- report, Cognitive Neuroscience Symposium, CNS, SFA, USA
+**James**, **Oliver** and Yee Joon Kim, (2023) On the representation of objective and subjective visible/invisible stimuli in humans via EEG-based report and no- report, Cognitive Neuroscience Symposium, CNS, SFA, USA
 
-Jisub Bae, **Oliver James**, and Yee Joon Kim, (2023) The influence of subjective visibility on illusory contour perception: An EEG study, Cognitive Neuroscience Symposium, CNS, SFA, USA
+Jisub Bae, **James** **Oliver,** and Yee Joon Kim, (2023) The influence of subjective visibility on illusory contour perception: An EEG study, Cognitive Neuroscience Symposium, CNS, SFA, USA
 
 **James, Oliver.**, Lee, W.-B., & Lee, H.-N. (2013). Random Transmittance Based Filter Array Spectrometers: Sparse Spectrum Recovery And Resolution Improvement. Global Conference on Signal and Information Processing (GlobalSIP), 2013 IEEE, 615–615. IEEE.
 
-**Oliver, James**., Lee, W.-B., Park, S., & Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.
+**James,Oliver** ., Lee, W.-B., Park, S., & Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.
 
-Lee, W.-B., **Oliver, James**., Kim, S.-C., & Lee, H.-N. (2013). Random optical scatter filters for spectrometers: Implementation and Estimation. Imaging Systems and Applications, JTu4A-33. Optica Publishing Group.
+Lee, W.-B., **James,Oliver**, Kim, S.-C., & Lee, H.-N. (2013). Random optical scatter filters for spectrometers: Implementation and Estimation. Imaging Systems and Applications, JTu4A-33. Optica Publishing Group.
 
 **James, Oliver**, S. P., WoongBi Lee, & Lee, H.-N. (2013). Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers. Korean Information and Communication Society Journal, (6), 497–502.
 
 **James, Oliver**, & Lee, H.-N. (2011). A realistic distributed compressive sensing framework for multiple wireless sensor networks. Proc. 4th Signal Process. with Adapt. Sparse Struct. Repr, 105.
 
-**Oliver, James**., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.
+**James, Oliver**., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.
 
-**Oliver, James**., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.
+**James, Oliver**., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.
 
-**Oliver, James**., Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.
+**James, Oliver**, Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.
 
 ## Patents
 
-Lee, H. N., Park, S. J., Oliver, J., & Lee, W. B. (may \# ‘ 12’, note=US Patent 9,030,662 2015). Method and apparatus for processing optical signal of spectrometer using sparse nature of signals.
+Lee, H. N., Park, S. J., **James, Oliver**, & Lee, W. B. (may \# ‘ 12’, note=US Patent 9,030,662 2015). Method and apparatus for processing optical signal of spectrometer using sparse nature of signals.
 
-Lee, H. N., Oliver, James., & Lee, W. B. (oct \# ‘ 29’, note=US Patent 10,458,843 2019). Spectrometry apparatus and spectrometry method.
+Lee, H. N., **James, Oliver**, & Lee, W. B. (oct \# ‘ 29’, note=US Patent 10,458,843 2019). Spectrometry apparatus and spectrometry method.
