@@ -1,0 +1,7 @@
+---
+title: "On the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis" 
+author:  Oliver James  
+date:  June 2015 
+---
+
+In this paper, we aim to revisit the restricted isometry property (RIP) of real and complex Gaussian sensing matrices. We do this reconsideration via the recently introduced restricted isometry random variable (RIV) framework for the real Gaussian sensing matrices. We first generalize the RIV framework to the complex settings and illustrate that the restricted isometry constants (RICs) of complex Gaussian sensing matrices are smaller than their real-valued counterpart. The reasons behind the better RIC nature of complex sensing matrices over their real-valued counterpart is delineated. We also demonstrate via critical functions, upper bounds on the RICs, that complex Gaussian matrices with prescribed RICs exist for larger number of problem sizes than the real Gaussian matrices.

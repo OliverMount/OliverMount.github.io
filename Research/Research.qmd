@@ -10,6 +10,7 @@ listing:
     - "ImpactOfSamplingRate.qmd"
     - "Spec1.qmd"
     - "Spec2.qmd"
+    - "RIPofRealComplex.qmd"
     
   type: default
   categories: true
