@@ -1,19 +1,24 @@
 ---
 title: "List of publications" 
-bibliography: references.bib
-csl: apa.csl
+bibliography: references.bib 
 ---
 
 # 
 
 ## arxiv
 
-## Journals
+## Journals {#sec-journals}
 
-@james2008
+**Oliver, James**, Aravind, R., & Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. **IET Signal Processing**, 6(1), 45–53.
+
+**Oliver, James**, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. **Signal Processing**, 90(6), 1861–1872.
+
+**Oliver, James**., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. **Electronics Letters**, 44(13), 830–832.
 
 ## Conferences
 
-ICCIMA’05 @oliver2005
+Oliver, J., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.
 
-## Patents
+Oliver, J., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.
+
+## Patents 

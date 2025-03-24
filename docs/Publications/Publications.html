@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -173,9 +193,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a>
   <ul class="collapse">
   <li><a href="#arxiv" id="toc-arxiv" class="nav-link" data-scroll-target="#arxiv">arxiv</a></li>
-  <li><a href="#journals" id="toc-journals" class="nav-link" data-scroll-target="#journals">Journals</a></li>
+  <li><a href="#sec-journals" id="toc-sec-journals" class="nav-link" data-scroll-target="#sec-journals">Journals</a></li>
   <li><a href="#conferences" id="toc-conferences" class="nav-link" data-scroll-target="#conferences">Conferences</a></li>
   <li><a href="#patents" id="toc-patents" class="nav-link" data-scroll-target="#patents">Patents</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a>
+  <ul class="collapse">
+  <li><a href="#journal-references" id="toc-journal-references" class="nav-link" data-scroll-target="#journal-references">Journal References</a></li>
+  <li><a href="#conference-references" id="toc-conference-references" class="nav-link" data-scroll-target="#conference-references">Conference References</a></li>
+  <li><a href="#patent-references" id="toc-patent-references" class="nav-link" data-scroll-target="#patent-references">Patent References</a></li>
+  <li><a href="#arxiv-references" id="toc-arxiv-references" class="nav-link" data-scroll-target="#arxiv-references">arXiv References</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Publications/Publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Publications/Publications.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -207,20 +234,44 @@ ul.task-list li input[type="checkbox"] {
 <section id="arxiv" class="level2">
 <h2 class="anchored" data-anchor-id="arxiv">arxiv</h2>
 </section>
-<section id="journals" class="level2">
-<h2 class="anchored" data-anchor-id="journals">Journals</h2>
+<section id="sec-journals" class="level2">
+<h2 class="anchored" data-anchor-id="sec-journals">Journals</h2>
+<div id="refs-journal">
+
+</div>
 </section>
 <section id="conferences" class="level2">
 <h2 class="anchored" data-anchor-id="conferences">Conferences</h2>
 </section>
 <section id="patents" class="level2">
 <h2 class="anchored" data-anchor-id="patents">Patents</h2>
-
-
+</section>
+</section>
+<section id="references" class="level1 hidden">
+<h1>References</h1>
+<section id="journal-references" class="level2">
+<h2 class="anchored" data-anchor-id="journal-references">Journal References</h2>
+<p><span class="citation" data-cites="james2008">(<a href="#ref-james2008" role="doc-biblioref">James, Aravind, and Prabhu 2008</a>)</span></p>
+</section>
+<section id="conference-references" class="level2">
+<h2 class="anchored" data-anchor-id="conference-references">Conference References</h2>
+</section>
+<section id="patent-references" class="level2">
+<h2 class="anchored" data-anchor-id="patent-references">Patent References</h2>
+</section>
+<section id="arxiv-references" class="level2">
+<h2 class="anchored" data-anchor-id="arxiv-references">arXiv References</h2>
 </section>
 </section>
 
-</main> <!-- /main -->
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-james2008" class="csl-entry" role="listitem">
+James, Oliver, R. Aravind, and K. M. M. Prabhu. 2008. <span>“Sparse Channel Estimation in OFDM Systems by Threshold-Based Pruning.”</span> <em>Electronics Letters</em> 44 (February): 830–32. <a href="https://doi.org/10.1049/el:20081089">https://doi.org/10.1049/el:20081089</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

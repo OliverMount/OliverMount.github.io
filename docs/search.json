@@ -14,7 +14,7 @@
     "href": "Publications/Publications.html",
     "title": "List of publications",
     "section": "",
-    "text": "ICCIMA’05 Oliver, Kumari, and Sadasivam (2005)",
+    "text": "James, Aravind, and Prabhu (2008)\n\n\n\nICCIMA’05 Oliver, Kumari, and Sadasivam (2005)",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -332,7 +332,7 @@
     "href": "Publications/Publications.html#journals",
     "title": "List of publications",
     "section": "",
-    "text": "Oliver, Kumari, and Sadasivam (2005)",
+    "text": "James, Aravind, and Prabhu (2008)",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -344,6 +344,57 @@
     "title": "List of publications",
     "section": "",
     "text": "ICCIMA’05 Oliver, Kumari, and Sadasivam (2005)",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Research/Spec2.html",
+    "href": "Research/Spec2.html",
+    "title": "Filters with random transmittance for improving resolution in filter-array-based spectrometers",
+    "section": "",
+    "text": "In this paper, we introduce a method for improving the resolution of miniature spectrometers. Our method is based on using filters with random transmittance. Such filters sense fine details of an input signal spectrum, which, when combined with a signal processing algorithm, aid in improving resolution. We also propose an approach for designing filters with random transmittance using optical thin-film technology. We demonstrate that the improvement in resolution is 7-fold when using the filters with random transmittance over what was achieved in our previous work."
+  },
+  {
+    "objectID": "Publications/Publications.html#journal-references",
+    "href": "Publications/Publications.html#journal-references",
+    "title": "List of publications",
+    "section": "Journal References",
+    "text": "Journal References\n(James, Aravind, and Prabhu 2008)",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#conference-references",
+    "href": "Publications/Publications.html#conference-references",
+    "title": "List of publications",
+    "section": "Conference References",
+    "text": "Conference References",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#patent-references",
+    "href": "Publications/Publications.html#patent-references",
+    "title": "List of publications",
+    "section": "Patent References",
+    "text": "Patent References",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#arxiv-references",
+    "href": "Publications/Publications.html#arxiv-references",
+    "title": "List of publications",
+    "section": "arXiv References",
+    "text": "arXiv References",
     "crumbs": [
       "Publications",
       "List of publications"
