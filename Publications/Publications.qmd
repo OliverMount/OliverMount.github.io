@@ -29,21 +29,21 @@ Kwon, J., Kim, M., Park, H., Kang, B.-M., Jo, Y., Kim, J.-H., **Oliver James**�
 
 Lee, Y., Park, B.-Y., **James, Oliver.**, Kim, S.-G., & Park, H. (2017). Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults. **Frontiers in Human Neuroscience**, 11, 418.
 
-**Oliver, James**. (2016). Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework. **Wireless Personal Communications**, 87(10), 513–526.
+**James, Oliver**. (2016). Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework. **Wireless Personal Communications**, 87(10), 513–526.
 
 **James, Oliver**. (2015). Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices. **International Journal of Computer Applications**, 975, 8887.
 
-**Oliver, James**., Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers. **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), 497–502.
+**James, Oliver**, Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers. **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), 497–502.
 
-**Oliver, James**, WoongBi, L., Heung-No, & Lee. (2013). Filters with random transmittance for improving resolution in filter-array-based spectrometers. **Optics Express**, 21(4), 3969–3989.
+**James, Oliver**, WoongBi, L., Heung-No, & Lee. (2013). Filters with random transmittance for improving resolution in filter-array-based spectrometers. **Optics Express**, 21(4), 3969–3989.
 
-**Oliver, James**., Lee, W., Park, S., & Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. **Optics Express**, 20(3), 2613–2625.
+**James, Oliver**., Lee, W., Park, S., & Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. **Optics Express**, 20(3), 2613–2625.
 
 **Oliver, James**, Aravind, R., & Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. **IET Signal Processing**, 6(1), 45–53.
 
-**Oliver, James**, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. **Signal Processing**, 90(6), 1861–1872.
+**James, Oliver**, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. **Signal Processing**, 90(6), 1861–1872.
 
-**Oliver, James**., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. **Electronics Letters**, 44(13), 830–832.
+**James, Oliver**., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. **Electronics Letters**, 44(13), 830–832.
 
 ## Book Chapters
 
