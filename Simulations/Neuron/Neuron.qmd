@@ -227,3 +227,65 @@ mpiexec --bind-to none --map-by node \
     -coreneuron -gpu
 
 ```
+
+## Installation of DeepDendrite 
+
+```{bash}
+
+# Docker is here
+# https://deepdendrite.readthedocs.io/
+# docker run --gpus '"device=0"' -itd --user $(id -u):$(id -g) --volume $(pwd):/workdir deepdendrite_docker:1.0 
+
+# Manual installation 
+
+DIR="/home/olive/DeepDendrite"
+
+# Check if the directory exists
+if [ -d "$DIR" ]; then 
+    rm -rf "$DIR"
+    echo "Directory removed: $DIR"  
+fi
+    
+echo "Cloing in to : $DIR" 
+git clone https://github.com/pkuzyc/DeepDendrite.git
+cd $DIR/src/nrn_modify 
+
+  
+
+chmod +x configure
+
+
+# you may set the variables before this command as well
+
+# before configuration
+
+# make sure that the 
+# AM_INIT_AUTOMAKE([foreign]) in configure.ac to AM_INIT_AUTOMAKE([1.16 foreign])
+# if your systerm automake version is 1.16
+# check it via automake --version
+
+
+echo "######################################################"
+echo "Configure"
+echo "######################################################" 
+  
+  
+# Locate the python library flags
+#python3-config --ldflags
+#python3-config --libs
+
+
+./configure --prefix ~/DeepDendrite/install --without-iv --with-paranrn --with-nrnpython=`which python3` PYLIB="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12" PYLIBDIR="/usr/lib/x86_64-linux-gnu" PYLIBLINK="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12"
+
+autoreconf -f -i
+
+echo "######################################################"
+echo "MAKE -j"
+echo "###########	###########################################" 
+make -j8  
+
+export PYTHONPATH=$PYTHONPATH:/home/olive/DeepDendrite/install/lib/python
+
+#make install
+
+```
