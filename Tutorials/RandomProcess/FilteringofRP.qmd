@@ -5,7 +5,7 @@ The linear time-invariant filters are widely employed in applications ranging fr
 Consider the input/output of an LTI system with the input process being non-zero mean $\mu_x$ and autocorrelation $r_x(k)$
 
 $$
-y_n = \sum_{k=-\infty}^{\infty} h_lx_{n-l}
+y(n) = \sum_{k=-\infty}^{\infty} h(l)x(n-l)
 $$ {#eq-LTI}
 
 ### Mean of the output process
@@ -14,8 +14,8 @@ The mean of the output process is
 
 $$
 \begin{split}
-\mathbb{E}[y_n] & = \sum_{k=-\infty}^{\infty} h_l \mathbb{E}[x_{n-l}] \\
-& = \mu \sum_{k=-\infty}^{\infty} h_l  \\
+\mathbb{E}[y_n] & = \sum_{k=-\infty}^{\infty} h(l) \mathbb{E}[x(n-l)] \\
+& = \mu \sum_{k=-\infty}^{\infty} h(l)  \\
 & = \mu H(e^{j0})
 \end{split}
 $$
@@ -28,7 +28,7 @@ Multiplying both sides of @eq-LTI with $y_{n-k}$ and taking expectation on both 
 
 $$
 \begin{split}
-\mathbb{E}[y_n y^*_{n-k}] & = \sum_{k=-\infty}^{\infty} h_l\mathbb{E}[ x_{n-l} y^*_{n-k}] \\
+\mathbb{E}[y(n) y^*(n-k)] & = \sum_{k=-\infty}^{\infty} h(l)\mathbb{E}[ x(n-l) y^*(n-k)] \\
 r_y(k) & =a  \\
 \end{split}
 $$
