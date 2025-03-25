@@ -235,6 +235,9 @@ mpiexec --bind-to none --map-by node \
 # Docker is here
 # https://deepdendrite.readthedocs.io/
 # docker run --gpus '"device=0"' -itd --user $(id -u):$(id -g) --volume $(pwd):/workdir deepdendrite_docker:1.0 
+# If you use the Docker version, please change the settings inside the Docker file such as ARG HPCSDK_VER="25.1", ARG CUDA_VER="12.6", ARG UBUNTU_VER="24.04" according to your sister version
+
+
 
 # Manual installation 
 
