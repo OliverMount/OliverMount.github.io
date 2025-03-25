@@ -1,4 +1,4 @@
-# Auto-regressive moving average (ARMA) processes {#sec-auto-regressive-moving-average-(arma-processes}
+# Auto-regressive moving average (ARMA) processes  
 
 Let $x(n)$ and $v(n)$ are stationary random processes. If they are related by the linear constant coefficient differential equations
 

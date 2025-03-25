@@ -228,7 +228,7 @@ mpiexec --bind-to none --map-by node \
 
 ```
 
-## Installation of DeepDendrite 
+## Installation of DeepDendrite
 
 ```{bash}
 

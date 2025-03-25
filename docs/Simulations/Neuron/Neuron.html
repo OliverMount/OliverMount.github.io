@@ -208,6 +208,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#batch-files-for-running-in-cpu" id="toc-batch-files-for-running-in-cpu" class="nav-link" data-scroll-target="#batch-files-for-running-in-cpu">Batch files for running in cpu</a></li>
   <li><a href="#batch-files-for-running-in-gpu" id="toc-batch-files-for-running-in-gpu" class="nav-link" data-scroll-target="#batch-files-for-running-in-gpu">Batch files for running in GPU</a></li>
   <li><a href="#batch-files-for-running-in-multi-node-gpu" id="toc-batch-files-for-running-in-multi-node-gpu" class="nav-link" data-scroll-target="#batch-files-for-running-in-multi-node-gpu">Batch files for running in multi-node GPU</a></li>
+  <li><a href="#installation-of-deepdendrite" id="toc-installation-of-deepdendrite" class="nav-link" data-scroll-target="#installation-of-deepdendrite">Installation of DeepDendrite</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -424,6 +425,64 @@ mpiexec --bind-to none --map-by node \
     -tstop 10 -nring 128 -ncell 128 -branch 32 64 \
     -coreneuron -gpu
 </code></pre>
+</section>
+<section id="installation-of-deepdendrite" class="level2">
+<h2 class="anchored" data-anchor-id="installation-of-deepdendrite">Installation of DeepDendrite</h2>
+<pre class="{bash}"><code>
+# Docker is here
+# https://deepdendrite.readthedocs.io/
+# docker run --gpus '"device=0"' -itd --user $(id -u):$(id -g) --volume $(pwd):/workdir deepdendrite_docker:1.0 
+
+# Manual installation 
+
+DIR="/home/olive/DeepDendrite"
+
+# Check if the directory exists
+if [ -d "$DIR" ]; then 
+    rm -rf "$DIR"
+    echo "Directory removed: $DIR"  
+fi
+    
+echo "Cloing in to : $DIR" 
+git clone https://github.com/pkuzyc/DeepDendrite.git
+cd $DIR/src/nrn_modify 
+ 
+#chmod +x configure
+
+
+# you may set the variables before this command as well
+
+# before configuration
+
+# make sure that the 
+# AM_INIT_AUTOMAKE([foreign]) in configure.ac to AM_INIT_AUTOMAKE([1.16 foreign])
+# if your systerm automake version is 1.16
+# check it via automake --version
+
+
+echo "######################################################"
+echo "Configure"
+echo "######################################################" 
+  
+  
+# Locate the python library flags
+#python3-config --ldflags
+#python3-config --libs
+
+# the flags during configure should be inaccordance with your system ldflags and libs. Check them via the above command
+
+./configure --prefix ~/DeepDendrite/install --without-iv --with-paranrn --with-nrnpython=`which python3` PYLIB="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12" PYLIBDIR="/usr/lib/x86_64-linux-gnu" PYLIBLINK="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12"
+
+autoreconf -f -i  # this will correct for any version mismatch during the configure
+
+# This will make 
+make -j8  
+
+export PYTHONPATH=$PYTHONPATH:/home/olive/DeepDendrite/install/lib/python
+
+make install 
+
+# After installtion start running the Figure 5 and Figure 4 files</code></pre>
 
 
 </section>
