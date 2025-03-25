@@ -278,13 +278,11 @@ echo "######################################################"
 
 autoreconf -f -i  # this will correct for any version mismatch during the configure
 
-echo "######################################################"
-echo "MAKE -j"
-echo "###########	###########################################" 
+# This will make 
 make -j8  
 
 export PYTHONPATH=$PYTHONPATH:/home/olive/DeepDendrite/install/lib/python
 
-#make install
+make install
 
 ```
