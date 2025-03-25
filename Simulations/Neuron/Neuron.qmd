@@ -283,6 +283,7 @@ make -j8
 
 export PYTHONPATH=$PYTHONPATH:/home/olive/DeepDendrite/install/lib/python
 
-make install
+make install 
 
+# After installtion start running the Figure 5 and Figure 4 files
 ```
