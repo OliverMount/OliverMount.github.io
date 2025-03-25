@@ -8,6 +8,8 @@ $$
 y_n = \sum_{k=-\infty}^{\infty} h_lx_{n-l}
 $$
 
+### Mean of the output process
+
 The mean of the output process is
 
 $$
@@ -17,3 +19,7 @@ $$
 & = \mu H(e^{j0})
 \end{split}
 $$
+
+The mean of the output process is the product of the mean of the input process and the frequency response of the filter at $w=0$.
+
+### Autocorrelation of the output 
