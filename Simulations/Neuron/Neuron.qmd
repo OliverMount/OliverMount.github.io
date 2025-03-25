@@ -272,6 +272,7 @@ echo "######################################################"
 #python3-config --ldflags
 #python3-config --libs
 
+# the flags during configure should be inaccordance with your system ldflags and libs. Check them via the above command
 
 ./configure --prefix ~/DeepDendrite/install --without-iv --with-paranrn --with-nrnpython=`which python3` PYLIB="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12" PYLIBDIR="/usr/lib/x86_64-linux-gnu" PYLIBLINK="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12"
 
