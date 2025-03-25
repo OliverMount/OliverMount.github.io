@@ -249,10 +249,8 @@ fi
 echo "Cloing in to : $DIR" 
 git clone https://github.com/pkuzyc/DeepDendrite.git
 cd $DIR/src/nrn_modify 
-
-  
-
-chmod +x configure
+ 
+#chmod +x configure
 
 
 # you may set the variables before this command as well
@@ -277,7 +275,7 @@ echo "######################################################"
 
 ./configure --prefix ~/DeepDendrite/install --without-iv --with-paranrn --with-nrnpython=`which python3` PYLIB="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12" PYLIBDIR="/usr/lib/x86_64-linux-gnu" PYLIBLINK="-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12"
 
-autoreconf -f -i
+autoreconf -f -i  # this will correct for any version mismatch during the configure
 
 echo "######################################################"
 echo "MAKE -j"
