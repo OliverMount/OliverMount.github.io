@@ -27,5 +27,8 @@ The mean of the output process is the product of the mean of the input process a
 Multiplying both sides of @eq-LTI with $y_{n-k}$ and taking expectation on both sides leads to
 
 $$
-\mathbb{E}[y_n y^*_{n-k}]= \sum_{k=-\infty}^{\infty} h_l\mathbb{E}[ x_{n-l} y^*_{n-k}] 
+\begin{split}
+\mathbb{E}[y_n y^*_{n-k}] & = \sum_{k=-\infty}^{\infty} h_l\mathbb{E}[ x_{n-l} y^*_{n-k}] \\
+r_y(k) & =a  \\
+\end{split}
 $$
