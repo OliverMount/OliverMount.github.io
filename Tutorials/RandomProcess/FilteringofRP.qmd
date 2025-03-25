@@ -2,8 +2,15 @@
 
 The linear time-invariant filters are widely employed in applications ranging from modern communication system, audio processing and radar systems. The input of such systems would be usually random processes. Thus, it is of importance to study the how the statistics of the random processes change as a result of filtering. Of particular importance is the mean and autocorrelation of the input and output processes.
 
-Consider the input/output of an LTI system
+Consider the input/output of an LTI system with the input process being non-zero mean $\mu$ and autocorrelation $r_x(k)$
 
 $$
-y(n) = \sum
+y_n = \sum_{l=-\infty}^{\infty} h_lx_{n-l}
+$$
+
+The mean of the output process is
+
+$$
+\begin{split}
+\end{split}
 $$
