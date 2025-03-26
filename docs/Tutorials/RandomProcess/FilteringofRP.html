@@ -69,6 +69,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -241,7 +284,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#filtering-of-random-process" id="toc-filtering-of-random-process" class="nav-link active" data-scroll-target="#filtering-of-random-process">Filtering of random process</a></li>
+  <li><a href="#filtering-of-random-process" id="toc-filtering-of-random-process" class="nav-link active" data-scroll-target="#filtering-of-random-process">Filtering of random process</a>
+  <ul class="collapse">
+  <li><a href="#mean-of-the-output-process" id="toc-mean-of-the-output-process" class="nav-link" data-scroll-target="#mean-of-the-output-process">Mean of the output process</a></li>
+  <li><a href="#autocorrelation-of-the-output" id="toc-autocorrelation-of-the-output" class="nav-link" data-scroll-target="#autocorrelation-of-the-output">Autocorrelation of the output</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -254,8 +301,34 @@ ul.task-list li input[type="checkbox"] {
 <section id="filtering-of-random-process" class="level1">
 <h1>Filtering of random process</h1>
 <p>The linear time-invariant filters are widely employed in applications ranging from modern communication system, audio processing and radar systems. The input of such systems would be usually random processes. Thus, it is of importance to study the how the statistics of the random processes change as a result of filtering. Of particular importance is the mean and autocorrelation of the input and output processes.</p>
+<p>Consider the input/output of an LTI system with the input process being non-zero mean <span class="math inline">\mu_x</span> and autocorrelation <span class="math inline">r_x(k)</span></p>
+<p><span id="eq-LTI"><span class="math display">
+y(n) = \sum_{k=-\infty}^{\infty} h(l)x(n-l)
+\tag{1}</span></span></p>
+<section id="mean-of-the-output-process" class="level3">
+<h3 class="anchored" data-anchor-id="mean-of-the-output-process">Mean of the output process</h3>
+<p>The mean of the output process is</p>
+<p><span class="math display">
+\begin{split}
+\mathbb{E}[y_n] &amp; = \sum_{k=-\infty}^{\infty} h(l) \mathbb{E}[x(n-l)] \\
+&amp; = \mu \sum_{k=-\infty}^{\infty} h(l)  \\
+&amp; = \mu H(e^{j0})
+\end{split}
+</span></p>
+<p>The mean of the output process is the product of the mean of the input process and the frequency response of the filter at <span class="math inline">w=0</span>.</p>
+</section>
+<section id="autocorrelation-of-the-output" class="level3">
+<h3 class="anchored" data-anchor-id="autocorrelation-of-the-output">Autocorrelation of the output</h3>
+<p>Multiplying both sides of <a href="#eq-LTI" class="quarto-xref">Equation&nbsp;1</a> with <span class="math inline">y_{n-k}</span> and taking expectation on both sides leads to</p>
+<p><span class="math display">
+\begin{split}
+\mathbb{E}[y(n) y^*(n-k)] &amp; = \sum_{k=-\infty}^{\infty} h(l)\mathbb{E}[ x(n-l) y^*(n-k)] \\
+r_y(k) &amp; =a  \\
+\end{split}
+</span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
