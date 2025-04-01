@@ -22,7 +22,7 @@ $$
 
 The mean of the output process is the product of the mean of the input process and the frequency response of the filter at $w=0$.
 
-### Autocorrelation of the output 
+### Autocorrelation of the output
 
 Multiplying both sides of @eq-LTI with $y_{n-k}$ and taking expectation on both sides leads to
 
