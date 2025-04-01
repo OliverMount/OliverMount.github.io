@@ -101,6 +101,8 @@ website:
               file: Simulations/Neuron/Introduction.qmd
             - text: "Fundamentals"
               file: Simulations/Neuron/Fundamentals.qmd 
+            - text: "NMODL"
+              file: Simulations/Neuron/NMODL.qmd 
           
     - title: "Brian2"
       contents:

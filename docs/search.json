@@ -457,5 +457,23 @@
       "Neuron",
       "Overview"
     ]
+  },
+  {
+    "objectID": "Simulations/Neuron/NMOL.html#neuron-block",
+    "href": "Simulations/Neuron/NMOL.html#neuron-block",
+    "title": "NMODL",
+    "section": "NEURON BLOCK",
+    "text": "NEURON BLOCK\nDeclares mechanism properties and interface variables:\n\n\n\n\n\n\nNEURON BLOCK\n\n\n\nNEURON\n{ SUFFIX CaT : Mechanism name\nUSEION ca READ cai, cao WRITE ica\nRANGE gbar, minf : Global and range variables\nGLOBAL tau_m }"
+  },
+  {
+    "objectID": "Simulations/Neuron/NMODL.html#neuron-block",
+    "href": "Simulations/Neuron/NMODL.html#neuron-block",
+    "title": "NMODL",
+    "section": "NEURON BLOCK",
+    "text": "NEURON BLOCK\nDeclares mechanism properties and interface variables:\n\n\n\n\n\n\nNEURON BLOCK\n\n\n\nNEURON\n{ SUFFIX CaT : Mechanism name\nUSEION ca READ cai, cao WRITE ica\nRANGE gbar, minf : Global and range variables\nGLOBAL tau_m\n}",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
   }
 ]

@@ -1,0 +1,25 @@
+---
+title: "NMODL"
+---
+
+## Core Blocks in NMODL
+
+## NEURON BLOCK
+
+Declares mechanism properties and interface variables:
+
+::: {.callout-note icon="false"}
+## NEURON BLOCK
+
+NEURON
+
+{ SUFFIX CaT : Mechanism name
+
+USEION ca READ cai, cao WRITE ica
+
+RANGE gbar, minf : Global and range variables
+
+GLOBAL tau_m
+
+}
+:::
