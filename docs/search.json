@@ -470,7 +470,29 @@
     "href": "Simulations/Neuron/NMODL.html#neuron-block",
     "title": "NMODL",
     "section": "NEURON BLOCK",
-    "text": "NEURON BLOCK\nDeclares mechanism properties and interface variables:\n\n\n\n\n\n\nNEURON BLOCK\n\n\n\nNEURON\n{ SUFFIX CaT : Mechanism name\nUSEION ca READ cai, cao WRITE ica\nRANGE gbar, minf : Global and range variables\nGLOBAL tau_m\n}",
+    "text": "NEURON BLOCK\nDeclares mechanism properties and interface variables:\n\n\n\n\n\n\nNEURON BLOCK\n\n\n\nNEURON {\nSUFFIX…\nRANGE …\nGLOBAL …\nNONSPECIFIC_CURRENT …\nUSEION … READ … WRITE … VALENCE real\nPOINT_PROCESS …\nPOINTER …\nEXTERNAL …\n}",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "Simulations/Neuron/NMODL.html",
+    "href": "Simulations/Neuron/NMODL.html",
+    "title": "NMODL",
+    "section": "",
+    "text": "The acronym “nrnivmodl” stands for NEURON Interpreter and Model Description Language Compiler. It is part of the NEURON simulation environment and is used to compile .mod files (written in NMODL) into a specialized version of NEURON called special. This version includes user-defined mechanisms for simulating physiological neuron models",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "Simulations/Neuron/NMODL.html#core-blocks-in-nmodl",
+    "href": "Simulations/Neuron/NMODL.html#core-blocks-in-nmodl",
+    "title": "NMODL",
+    "section": "Core Blocks in NMODL",
+    "text": "Core Blocks in NMODL",
     "crumbs": [
       "Neuron",
       "NMODL"

@@ -226,6 +226,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>The acronym “nrnivmodl” stands for <strong>NEURON Interpreter and Model Description Language Compiler</strong>. It is part of the NEURON simulation environment and is used to compile <code>.mod</code> files (written in NMODL) into a specialized version of NEURON called <code>special</code>. This version includes user-defined mechanisms for simulating physiological neuron models</p>
 <section id="core-blocks-in-nmodl" class="level2">
 <h2 class="anchored" data-anchor-id="core-blocks-in-nmodl">Core Blocks in NMODL</h2>
 </section>
@@ -242,11 +243,15 @@ NEURON BLOCK
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>NEURON</p>
-<p>{ SUFFIX CaT : Mechanism name</p>
-<p>USEION ca READ cai, cao WRITE ica</p>
-<p>RANGE gbar, minf : Global and range variables</p>
-<p>GLOBAL tau_m</p>
+<p>NEURON {</p>
+<p>SUFFIX…</p>
+<p>RANGE …</p>
+<p>GLOBAL …</p>
+<p>NONSPECIFIC_CURRENT …</p>
+<p>USEION … READ … WRITE … VALENCE real</p>
+<p>POINT_PROCESS …</p>
+<p>POINTER …</p>
+<p>EXTERNAL …</p>
 <p>}</p>
 </div>
 </div>
