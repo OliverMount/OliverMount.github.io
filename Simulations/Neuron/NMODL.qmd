@@ -33,3 +33,5 @@ EXTERNAL ...
 
 }
 :::
+
+The `RANGE` and `GLOABAL` names should also be declared in the normal `PARAMETER` or `ASSIGNED` statement outside of the `NEURON` block, otherwise they will be hidden from the user.
