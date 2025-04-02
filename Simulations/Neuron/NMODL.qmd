@@ -13,15 +13,23 @@ Declares mechanism properties and interface variables:
 ::: {.callout-note icon="false"}
 ## NEURON BLOCK
 
-NEURON
+NEURON {
 
-{ SUFFIX CaT : Mechanism name
+SUFFIX...
 
-USEION ca READ cai, cao WRITE ica
+RANGE ...
 
-RANGE gbar, minf : Global and range variables
+GLOBAL ...
 
-GLOBAL tau_m
+NONSPECIFIC_CURRENT ...
+
+USEION ... READ ... WRITE ... VALENCE real
+
+POINT_PROCESS ...
+
+POINTER ...
+
+EXTERNAL ...
 
 }
 :::
