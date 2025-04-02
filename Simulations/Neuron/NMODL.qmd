@@ -37,3 +37,5 @@ EXTERNAL ...
 The `RANGE` and `GLOABAL` names should also be declared in the normal `PARAMETER` or `ASSIGNED` statement outside of the `NEURON` block, otherwise they will be hidden from the user.
 
 *NEURON* makes the distinction between mechanisms that are attributed to an entire section (`e.g., HH channels`) and mechanisms that are associated with a particular point in the section (`e.g., voltage clamp or synapse`). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm^2^). Point processes also differ in that you can insert several in the same segment.
+
+There are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the [model description language](https://web.mit.edu/neuron_v7.4/nrntuthtml/tutorial/tutD.html).
