@@ -39,3 +39,7 @@ The `RANGE` and `GLOABAL` names should also be declared in the normal `PARAMETER
 *NEURON* makes the distinction between mechanisms that are attributed to an entire section (`e.g., HH channels`) and mechanisms that are associated with a particular point in the section (`e.g., voltage clamp or synapse`). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm^2^). Point processes also differ in that you can insert several in the same segment.
 
 There are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the [model description language](https://web.mit.edu/neuron_v7.4/nrntuthtml/tutorial/tutD.html).
+
+## VERBATIM BLOCK
+
+Sections of code surrounded by `VERBATIM` and `ENDVERBATIM` blocks are interpreted as literal C/C++ code. This feature is typically used to interface with external C/C++ libraries, or to use NEURON features (such as random number generation) that are not explicitly supported in the NMODL language.

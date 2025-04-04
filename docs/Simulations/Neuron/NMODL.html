@@ -201,6 +201,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#core-blocks-in-nmodl" id="toc-core-blocks-in-nmodl" class="nav-link active" data-scroll-target="#core-blocks-in-nmodl">Core Blocks in NMODL</a></li>
   <li><a href="#neuron-block" id="toc-neuron-block" class="nav-link" data-scroll-target="#neuron-block">NEURON BLOCK</a></li>
+  <li><a href="#verbatim-block" id="toc-verbatim-block" class="nav-link" data-scroll-target="#verbatim-block">VERBATIM BLOCK</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Simulations/Neuron/NMODL.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Simulations/Neuron/NMODL.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -255,6 +256,13 @@ NEURON BLOCK
 <p>}</p>
 </div>
 </div>
+<p>The <code>RANGE</code> and <code>GLOABAL</code> names should also be declared in the normal <code>PARAMETER</code> or <code>ASSIGNED</code> statement outside of the <code>NEURON</code> block, otherwise they will be hidden from the user.</p>
+<p><em>NEURON</em> makes the distinction between mechanisms that are attributed to an entire section (<code>e.g., HH channels</code>) and mechanisms that are associated with a particular point in the section (<code>e.g., voltage clamp or synapse</code>). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm<sup>2</sup>). Point processes also differ in that you can insert several in the same segment.</p>
+<p>There are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the <a href="https://web.mit.edu/neuron_v7.4/nrntuthtml/tutorial/tutD.html">model description language</a>.</p>
+</section>
+<section id="verbatim-block" class="level2">
+<h2 class="anchored" data-anchor-id="verbatim-block">VERBATIM BLOCK</h2>
+<p>Sections of code surrounded by <code>VERBATIM</code> and <code>ENDVERBATIM</code> blocks are interpreted as literal C/C++ code. This feature is typically used to interface with external C/C++ libraries, or to use NEURON features (such as random number generation) that are not explicitly supported in the NMODL language.</p>
 
 
 </section>
