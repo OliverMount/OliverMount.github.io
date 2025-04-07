@@ -35,25 +35,22 @@ print(loop_frat)
 
 # Reset r for closed-form calculation
 r <- 1/2  
+dr<-(r/(Nannuli-1))/2
+
+# Initial conditions for loop
+#loop_vrat[1] <- 0
+#loop_frat[1] <- 2 * r
+
 
 # Closed-form computation
 closed_vrat <- numeric(Nannuli)
 closed_frat <- numeric(Nannuli)
 
 # Loop through each annulus for closed-form calculation
-for (i in 0:(Nannuli - 2)) {
-  # Compute the radius for this annulus
-  closed_r_inner <- 1/2 - i * (1 / (2 * (Nannuli - 1)))
-  closed_r_outer <- closed_r_inner - dr2
-  
-  # Compute interior half of annulus volume (closed-form)
-  closed_vrat[i + 1] <- pi * (closed_r_inner - dr2 / 2) * 2 * dr2
-  
+for (i in 0:(Nannuli - 2)) { 
   # Compute the area ratio (closed-form)
-  closed_frat[i + 1] <- 2 * pi * closed_r_inner / (2 * dr2)
-  
-  # Compute outer half of annulus volume (closed-form)
-  closed_vrat[i + 2] <- pi * (closed_r_outer + dr2 / 2) * 2 * dr2
+  closed_frat[i + 1] <- 2 * pi *  (r-(((2*i)+1)*dr)) / (2*dr)
+  closed_vrat[i + 1] <-   (pi *  ((r-(((2*i)+2)*dr)) + (dr/2)) *(2*dr)) + (pi *  ((r-(((2*i)+2)*dr)) - (dr/2)) *(2*dr))
 }
 
 # Print and compare the closed-form results
