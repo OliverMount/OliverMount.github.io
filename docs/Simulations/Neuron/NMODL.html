@@ -68,6 +68,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -227,7 +270,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The acronym “nrnivmodl” stands for <strong>NEURON Interpreter and Model Description Language Compiler</strong>. It is part of the NEURON simulation environment and is used to compile <code>.mod</code> files (written in NMODL) into a specialized version of NEURON called <code>special</code>. This version includes user-defined mechanisms for simulating physiological neuron models</p>
+<p>The acronym “nrnivmodl” stands for <strong>NEURON Interpreter and Model Description Language Compiler</strong>. It is part of the NEURON simulation environment and is used to compile <code>.mod</code> files (written in NMODL) into a specialized version of NEURON called <code>special</code>. This version includes user-defined mechanisms for simulating physiological neuron models.</p>
+<p>Why NMODL in Neuron simulator?</p>
+<p>The purpose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. The .mod files extend NEURON’s capabilities by specifying kinetic equations, state variables, and interactions with ions.</p>
 <section id="core-blocks-in-nmodl" class="level2">
 <h2 class="anchored" data-anchor-id="core-blocks-in-nmodl">Core Blocks in NMODL</h2>
 </section>
@@ -249,7 +294,7 @@ NEURON BLOCK
 <p>RANGE …</p>
 <p>GLOBAL …</p>
 <p>NONSPECIFIC_CURRENT …</p>
-<p>USEION … READ … WRITE … VALENCE real</p>
+<p>USEION … READ … WRITE … VALENCE real // Specifies ion interaction (see <strong>Nernst potential</strong> below)</p>
 <p>POINT_PROCESS …</p>
 <p>POINTER …</p>
 <p>EXTERNAL …</p>
@@ -259,6 +304,11 @@ NEURON BLOCK
 <p>The <code>RANGE</code> and <code>GLOABAL</code> names should also be declared in the normal <code>PARAMETER</code> or <code>ASSIGNED</code> statement outside of the <code>NEURON</code> block, otherwise they will be hidden from the user.</p>
 <p><em>NEURON</em> makes the distinction between mechanisms that are attributed to an entire section (<code>e.g., HH channels</code>) and mechanisms that are associated with a particular point in the section (<code>e.g., voltage clamp or synapse</code>). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm<sup>2</sup>). Point processes also differ in that you can insert several in the same segment.</p>
 <p>There are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the <a href="https://web.mit.edu/neuron_v7.4/nrntuthtml/tutorial/tutD.html">model description language</a>.</p>
+<p><strong>Nernst potential</strong></p>
+<p><span class="math display">
+\displaystyle E={\frac {RT}{zF}}\ln {\frac {[{\text{ion outside cell}}]}{[{\text{ion inside cell}}]}}=2.3026{\frac {RT}{zF}}\log _{10}{\frac {[{\text{ion outside cell}}]}{[{\text{ion inside cell}}]}}.
+</span></p>
+<p>when finitialize() is called Nernst equation is computed.</p>
 </section>
 <section id="verbatim-block" class="level2">
 <h2 class="anchored" data-anchor-id="verbatim-block">VERBATIM BLOCK</h2>
