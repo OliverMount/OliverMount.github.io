@@ -6,7 +6,7 @@ The acronym "nrnivmodl" stands for **NEURON Interpreter and Model Description La
 
 Why NMODL in Neuron simulator?
 
-The prupose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. These files extend NEURON's capabilities by specifying kinetic equations, state variables, and interactions with ions.
+The purpose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. The .mod files extend NEURON's capabilities by specifying kinetic equations, state variables, and interactions with ions.
 
 ## Core Blocks in NMODL
 
@@ -27,7 +27,7 @@ GLOBAL ...
 
 NONSPECIFIC_CURRENT ...
 
-USEION ... READ ... WRITE ... VALENCE real
+USEION ... READ ... WRITE ... VALENCE real // Specifies ion interaction
 
 POINT_PROCESS ...
 
