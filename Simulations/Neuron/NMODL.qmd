@@ -44,9 +44,13 @@ The `RANGE` and `GLOABAL` names should also be declared in the normal `PARAMETER
 
 There are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the [model description language](https://web.mit.edu/neuron_v7.4/nrntuthtml/tutorial/tutD.html).
 
+**Nernst potential**
+
 $$
 \displaystyle E={\frac {RT}{zF}}\ln {\frac {[{\text{ion outside cell}}]}{[{\text{ion inside cell}}]}}=2.3026{\frac {RT}{zF}}\log _{10}{\frac {[{\text{ion outside cell}}]}{[{\text{ion inside cell}}]}}.
 $$
+
+when finitialize() is called Nernst equation is computed.
 
 ## VERBATIM BLOCK
 
