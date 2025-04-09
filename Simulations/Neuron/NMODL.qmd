@@ -2,7 +2,11 @@
 title: "NMODL"
 ---
 
-The acronym "nrnivmodl" stands for **NEURON Interpreter and Model Description Language Compiler**. It is part of the NEURON simulation environment and is used to compile `.mod` files (written in NMODL) into a specialized version of NEURON called `special`. This version includes user-defined mechanisms for simulating physiological neuron models
+The acronym "nrnivmodl" stands for **NEURON Interpreter and Model Description Language Compiler**. It is part of the NEURON simulation environment and is used to compile `.mod` files (written in NMODL) into a specialized version of NEURON called `special`. This version includes user-defined mechanisms for simulating physiological neuron models.
+
+Why NMODL in Neuron simulator?
+
+The prupose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. These files extend NEURON's capabilities by specifying kinetic equations, state variables, and interactions with ions.
 
 ## Core Blocks in NMODL
 
