@@ -39,7 +39,6 @@ module load gcc/12.2.0 pgi/23.5 bison/3.8.2 flex/2.6.4 cmake/3.28.1 python/.3.12
 module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
 module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 
-
 export MPI_CXX_COMPILER=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/mpi/bin/mpicxx
 export MPI_CXX_INCLUDE_PATH=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/include/
 export MPI_CXX_LIBRARIES=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so
