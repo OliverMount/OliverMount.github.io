@@ -1,3 +1,4 @@
+
 #homedir=/opt/ibs_lib/apps/neuron/8.2.6/GCC/1220/H100
 cd ..
 
@@ -42,10 +43,6 @@ module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 export MPI_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5
 export PATH=$MPI_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
-
-#export MPI_CXX_COMPILER=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/mpi/bin/mpicxx
-#export MPI_CXX_INCLUDE_PATH=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/include/
-#export MPI_CXX_LIBRARIES=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so
 
 export CMAKE_INCLUDE_PATH=/opt/ibs_lib/apps/readline/8.2/include:$CMAKE_INCLUDE_PATH
 export CMAKE_LIBRARY_PATH=/opt/ibs_lib/apps/readline/8.2/lib:$CMAKE_LIBRARY_PATH
