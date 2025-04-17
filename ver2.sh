@@ -38,8 +38,10 @@ module purge
 #module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
 module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 
+export CUDA_HOME=/opt/ibs_lib/src_gpu/nvhpc/nvhpc_2025_251_Linux_x86_64_cuda_multi/install_components/Linux_x86_64/25.1/cuda/12.6
+export CUDA_ROOT=/opt/ibs_lib/src_gpu/nvhpc/nvhpc_2025_251_Linux_x86_64_cuda_multi/install_components/Linux_x86_64/25.1/cuda/12.6
 
-export CUDA_HOME=/opt/ibs_lib/apps/cudatoolkit/cuda-12.2
+#export CUDA_HOME=/opt/ibs_lib/apps/cudatoolkit/cuda-12.2
 export PATH=$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
