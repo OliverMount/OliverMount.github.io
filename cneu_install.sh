@@ -44,6 +44,9 @@ export MPI_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/op
 export PATH=$MPI_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
 
+
+#Read lines
+
 export CMAKE_INCLUDE_PATH=/opt/ibs_lib/apps/readline/8.2/include:$CMAKE_INCLUDE_PATH
 export CMAKE_LIBRARY_PATH=/opt/ibs_lib/apps/readline/8.2/lib:$CMAKE_LIBRARY_PATH
 
@@ -67,7 +70,7 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
 #echo -e "\n##############"
 #echo -e "Making -j"
 #echo -e "##############"
-#make -j
+make -j
 
 
 echo -e "\n##############"
