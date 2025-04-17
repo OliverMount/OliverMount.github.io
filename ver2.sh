@@ -64,10 +64,10 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DCMAKE_CXX_FLAGS="-O3 -g"  \
  -DCMAKE_BUILD_TYPE=Custom 
 
-#echo -e "\n##############"
-#echo -e "Making -j"
-#echo -e "##############"
-#make -j
+echo -e "\n##############"
+echo -e "Making -j"
+echo -e "##############"
+make -j
 
 
 echo -e "\n##############"
