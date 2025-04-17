@@ -1,5 +1,8 @@
 #homedir=/opt/ibs_lib/apps/neuron/8.2.6/GCC/1220/H100
 
+cd ..
+
+
 # Remove nrn if it is already installed
 if [ -d nrn ]; then
 	echo -e "\n#####################"
