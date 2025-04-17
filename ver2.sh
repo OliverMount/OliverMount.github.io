@@ -1,4 +1,3 @@
-
 #homedir=/opt/ibs_lib/apps/neuron/8.2.6/GCC/1220/H100
 cd ..
 
@@ -39,7 +38,7 @@ module purge
 #module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
 module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 
-export CUDA_HOME=/opt/ibs_lib/apps/cudatoolkit/cuda-12.2
+export CUDA_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/cuda
 export PATH=$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
