@@ -12,7 +12,11 @@
         "\n",
         "Load the necessary modules\n"
       ],
+<<<<<<< HEAD
       "id": "c57508fa"
+=======
+      "id": "f58d0b3a"
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
     },
     {
       "cell_type": "code",
@@ -26,7 +30,11 @@
         "  \n",
         "h.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):"
       ],
+<<<<<<< HEAD
       "id": "9448bf45",
+=======
+      "id": "a8082d4f",
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
       "execution_count": null,
       "outputs": []
     },
@@ -36,7 +44,11 @@
       "source": [
         "Define one cell with soma and dendrite (with necessary parameters, morphology) using python class\n"
       ],
+<<<<<<< HEAD
       "id": "3d139dd8"
+=======
+      "id": "deea37e8"
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
     },
     {
       "cell_type": "code",
@@ -78,7 +90,11 @@
         "\n",
         "my_cell = BallAndStick(0)"
       ],
+<<<<<<< HEAD
       "id": "f9519015",
+=======
+      "id": "9b8d9bd3",
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
       "execution_count": null,
       "outputs": []
     },
@@ -90,7 +106,11 @@
         "for sec in h.allsec():\n",
         "    print(\"%s: %s\" % (sec, \", \".join(sec.psection()[\"density_mechs\"].keys())))\n"
       ],
+<<<<<<< HEAD
       "id": "773ed7dc",
+=======
+      "id": "b223a342",
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
       "execution_count": null,
       "outputs": []
     },
@@ -100,7 +120,11 @@
       "source": [
         "#### Stimulus\n"
       ],
+<<<<<<< HEAD
       "id": "80b6d9f5"
+=======
+      "id": "7e97eaae"
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
     },
     {
       "cell_type": "code",
@@ -111,7 +135,11 @@
         "stim.dur = 1 #ms\n",
         "stim.amp = 0.1  # nA"
       ],
+<<<<<<< HEAD
       "id": "d446fd7e",
+=======
+      "id": "24dc6070",
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
       "execution_count": null,
       "outputs": []
     },
@@ -121,7 +149,11 @@
       "source": [
         "#### Recording soma voltage\n"
       ],
+<<<<<<< HEAD
       "id": "3dd8946b"
+=======
+      "id": "16b532d1"
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
     },
     {
       "cell_type": "code",
@@ -130,7 +162,11 @@
         "soma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)\n",
         "t = h.Vector().record(h._ref_t)"
       ],
+<<<<<<< HEAD
       "id": "ff824b38",
+=======
+      "id": "bc9f4d45",
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
       "execution_count": null,
       "outputs": []
     },
@@ -140,7 +176,11 @@
       "source": [
         "#### Initialization\n"
       ],
+<<<<<<< HEAD
       "id": "eb04c14a"
+=======
+      "id": "63de76f2"
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
     },
     {
       "cell_type": "code",
@@ -150,7 +190,11 @@
         "\n",
         "h.continuerun(25 * ms) # run until time 25 ms:\n"
       ],
+<<<<<<< HEAD
       "id": "d753ab8e",
+=======
+      "id": "16eb2edf",
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
       "execution_count": null,
       "outputs": []
     },
@@ -164,17 +208,27 @@
         "plt.ylabel(\"v (mV)\")\n",
         "plt.show()"
       ],
+<<<<<<< HEAD
       "id": "dedc0e5c",
+=======
+      "id": "ea549d6a",
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
       "execution_count": null,
       "outputs": []
     }
   ],
   "metadata": {
     "kernelspec": {
+<<<<<<< HEAD
       "name": "python3",
       "language": "python",
       "display_name": "Python 3 (ipykernel)",
       "path": "/usr/share/jupyter/kernels/python3"
+=======
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+>>>>>>> a5e57d7240e15fa0ff8b696dd368f794871f9098
     }
   },
   "nbformat": 4,

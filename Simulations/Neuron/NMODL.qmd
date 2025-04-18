@@ -8,6 +8,8 @@ Why NMODL in Neuron simulator?
 
 The purpose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. The .mod files extend NEURON's capabilities by specifying kinetic equations, state variables, and interactions with ions.
 
+Mechanisms are normally *local*. That is they do not depend on what is happening at other places on the neuron.
+
 ## Core Blocks in NMODL
 
 ## NEURON BLOCK
@@ -39,6 +41,30 @@ EXTERNAL ...
 :::
 
 The `RANGE` and `GLOABAL` names should also be declared in the normal `PARAMETER` or `ASSIGNED` statement outside of the `NEURON` block, otherwise they will be hidden from the user.
+
+## **Key Differences**
+
+## **Range Variables**
+
+-   **Definition**: Range variables can have different values in each compartment (segment) of a section.
+
+-   **Usage**: These are used for variables that vary spatially along the length of a neuron section, such as membrane potential or ion concentrations.
+
+-   **Access**: Values can be accessed at specific positions using syntax like **`section(x).variable`**, where xx is the normalized position (e.g., 0 to 1).
+
+-   **Examples**: Membrane potential (\$v\$ ), ion channel conductance ( $g_{ion}$), or local currents.
+
+## **Global Variables**
+
+-   **Definition**: Global variables have the same value across all compartments and sections.
+
+-   **Usage**: These are used for parameters or variables that do not vary spatially, such as universal constants or shared properties.
+
+-   **Access**: They are accessed directly without specifying a position, e.g., **`variable`**.
+
+-   **Examples**: Temperature, reversal potentials, or a global scaling factor.
+
+### About point process
 
 *NEURON* makes the distinction between mechanisms that are attributed to an entire section (`e.g., HH channels`) and mechanisms that are associated with a particular point in the section (`e.g., voltage clamp or synapse`). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm^2^). Point processes also differ in that you can insert several in the same segment.
 
