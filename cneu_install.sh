@@ -43,7 +43,39 @@ export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
 module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 
-module load gcc/12.2.0 pgi/23.5 bison/3.8.2 flex/2.6.4 cmake/3.28.1 python/.3.12.3
+#module load gcc/12.2.0 
+#pgi/23.5 
+
+module load bison/3.8.2 flex/2.6.4 cmake/3.28.1 python/.3.12.3
+
+# Python paths
+export PYTHONHOME=/opt/ibs_lib/apps/python/3.12.3
+export PATH=$PYTHONHOME/bin:$PATH
+export CPATH=$PYTHONHOME/include:$CPATH
+export LIBRARY_PATH=$PYTHONHOME/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$PYTHONHOME/lib:$LD_LIBRARY_PATH
+export PKG_CONFIG_PATH=$PYTHONHOME/lib/pkgconfig:$PKG_CONFIG_PATH
+export MANPATH=$PYTHONHOME/share/man:$MANPATH
+export INCLUDE_PATH=$PYTHONHOME/include:$INCLUDE_PATH
+export INCLUDE_LIBRARY_PATH=$PYTHONHOME/include:$INCLUDE_LIBRARY_PATH
+
+# flex
+export FLEXHOME=/opt/ibs_lib/apps/flex/2.6.4  # Base path
+export PATH=$FLEXHOME/bin:$PATH
+export CPATH=$FLEXHOME/include:$CPATH
+export LIBRARY_PATH=$FLEXHOME/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$FLEXHOME/lib:$LD_LIBRARY_PATH
+export MANPATH=$FLEXHOME/share/man:$MANPATH
+export INFOPATH=$FLEXHOME/share/info:$INFOPATH
+export INCLUDE_PATH=$FLEXHOME/include:$INCLUDE_PATH
+export INCLUDE_LIBRARY_PATH=$FLEXHOME/include:$INCLUDE_LIBRARY_PATH
+
+
+
+
+
+
+
 #Read lines
 export CMAKE_INCLUDE_PATH=/opt/ibs_lib/apps/readline/8.2/include:$CMAKE_INCLUDE_PATH
 export CMAKE_LIBRARY_PATH=/opt/ibs_lib/apps/readline/8.2/lib:$CMAKE_LIBRARY_PATH
