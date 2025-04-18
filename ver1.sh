@@ -1,3 +1,11 @@
+#/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+#imake[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:111: src/nrnoc/expsyn.cpp] Error 1
+#make[2]: *** Waiting for unfinished jobs....
+#/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+
+
+
+
 cd ..
 
 # Remove nrn if it is already installed
