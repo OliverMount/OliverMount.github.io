@@ -35,8 +35,13 @@ echo -e "##############\n"
 
 # Set environment variables
 module purge   
-module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
+#module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
 module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
+
+export CUDA_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/cuda/12.6/
+
+
+
 
 module load gcc/12.2.0 pgi/23.5 bison/3.8.2 flex/2.6.4 cmake/3.28.1 python/.3.12.3
 #Read lines
