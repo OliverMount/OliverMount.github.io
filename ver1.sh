@@ -1,5 +1,3 @@
-
-#homedir=/opt/ibs_lib/apps/neuron/8.2.6/GCC/1220/H100
 cd ..
 
 # Remove nrn if it is already installed
@@ -35,10 +33,10 @@ echo -e "##############\n"
 
 # Set environment variables
 module purge   
-module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
-module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 
 module load gcc/12.2.0 pgi/23.5 bison/3.8.2 flex/2.6.4 cmake/3.28.1 python/.3.12.3
+module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
+module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 #Read lines
 export CMAKE_INCLUDE_PATH=/opt/ibs_lib/apps/readline/8.2/include:$CMAKE_INCLUDE_PATH
 export CMAKE_LIBRARY_PATH=/opt/ibs_lib/apps/readline/8.2/lib:$CMAKE_LIBRARY_PATH
