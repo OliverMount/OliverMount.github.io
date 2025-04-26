@@ -326,14 +326,19 @@
         "# After installtion start running the Figure 5 and Figure 4 files\n",
         "```"
       ],
+<<<<<<< HEAD
       "id": "18bb114f"
+=======
+      "id": "1896c8cf"
+>>>>>>> 1df55c04ab661655d4e745b87d264ffe42d6adf9
     }
   ],
   "metadata": {
     "kernelspec": {
-      "display_name": "Python 3",
+      "name": "python3",
       "language": "python",
-      "name": "python3"
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/usr/share/jupyter/kernels/python3"
     }
   },
   "nbformat": 4,

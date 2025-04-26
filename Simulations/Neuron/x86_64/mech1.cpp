@@ -188,7 +188,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
   hoc_register_prop_size(_mechtype, 2, 0);
  
     hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 example /home/oli/Gitrepos/OliverMount.github.io/Simulations/Neuron/mod/mech1.mod\n");
+ 	ivoc_help("help ?1 example /media/olive/Research/Gitrepo/OliverMount.github.io/Simulations/Neuron/mod/mech1.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }
@@ -262,7 +262,7 @@ _first = 0;
 
 #if NMODL_TEXT
 static void register_nmodl_text_and_filename(int mech_type) {
-    const char* nmodl_filename = "/home/oli/Gitrepos/OliverMount.github.io/Simulations/Neuron/mod/mech1.mod";
+    const char* nmodl_filename = "/media/olive/Research/Gitrepo/OliverMount.github.io/Simulations/Neuron/mod/mech1.mod";
     const char* nmodl_file_text = 
   "NEURON {\n"
   "    SUFFIX example\n"
