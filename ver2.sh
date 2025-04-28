@@ -51,9 +51,10 @@ export MPI_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/op
 export PATH=$MPI_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
 
-export CC=nvc
-export CXX=nvc++
+#export CC=nvc
+#export CXX=nvc++
 
+export LD_LIBRARY_PATH=/opt/ibs_lib/apps/gcc/12.2.0/lib64:$LD_LIBRARY_PATH
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DNRN_ENABLE_CORENEURON=ON \
@@ -65,12 +66,12 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DCMAKE_CXX_COMPILER=nvc++ \
  -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  -DCMAKE_SHARED_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
+ -DCMAKE_CXX_FLAGS="-O3 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  -DCMAKE_CUDA_ARCHITECTURES=90 \
- -DCMAKE_C_FLAGS="-O3 -g" \
- -DCMAKE_CXX_FLAGS="-O3 -g"  \
+ #-DCMAKE_C_FLAGS="-O3 -g" \
+ #-DCMAKE_CXX_FLAGS="-O3 -g"  \
  -DCMAKE_BUILD_TYPE=Custom 
 
-#export LD_LIBRARY_PATH=/opt/ibs_lib/apps/gcc/12.2.0/lib64:$LD_LIBRARY_PATH
 #./build/bin/nocmodl
 
 #echo -e "\n##############"
