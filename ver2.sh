@@ -29,6 +29,7 @@ cd nrn
 
 mkdir build 
 cd build
+
 # module files in olaf are in /opt/ibs_lib/modulefiles/
 echo -e "\n##############"
 echo -e "Loading module files"
@@ -45,16 +46,11 @@ module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 export CMAKE_INCLUDE_PATH=/opt/ibs_lib/apps/readline/8.2/include:$CMAKE_INCLUDE_PATH
 export CMAKE_LIBRARY_PATH=/opt/ibs_lib/apps/readline/8.2/lib:$CMAKE_LIBRARY_PATH
 
-
+#MPI 
 export MPI_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5
 export PATH=$MPI_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
 
-
-
-echo -e "\n##############"
-echo -e "Cmake ..." 
-echo -e "############## \n"
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DNRN_ENABLE_CORENEURON=ON \
@@ -64,6 +60,8 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DNRN_ENABLE_RX3D=OFF \
  -DCMAKE_C_COMPILER=nvc \
  -DCMAKE_CXX_COMPILER=nvc++ \
+ -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
+ -DCMAKE_SHARED_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  -DCMAKE_CUDA_ARCHITECTURES=90 \
  -DCMAKE_C_FLAGS="-O3 -g" \
  -DCMAKE_CXX_FLAGS="-O3 -g"  \
