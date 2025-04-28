@@ -51,8 +51,8 @@ export MPI_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/op
 export PATH=$MPI_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
 
-#export CC=nvc
-#export CXX=nvc++
+export CC=nvc
+export CXX=nvc++
 
 export LD_LIBRARY_PATH=/opt/ibs_lib/apps/gcc/12.2.0/lib64:$LD_LIBRARY_PATH
 
