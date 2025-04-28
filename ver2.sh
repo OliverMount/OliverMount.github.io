@@ -6,18 +6,18 @@ cd ..
 
 # Remove nrn if it is already installed
 if [ -d nrn ]; then
-	echo -e "\n#####################"
+	echo -e "\n###########################"
 	echo -e "Removing previous nrn folder"
-	echo -e "#####################\n"
+	echo -e "###########################\n"
 
  	rm -rf nrn
 	
 fi
 
 if [ -d nrn ]; then
-	echo -e "\n#####################"
+	echo -e "\n############################"
 	echo -e "Removing previous install folder"
-	echo -e "#####################\n"
+	echo -e "############################\n"
 
  	rm -rf  install
 	
@@ -31,9 +31,9 @@ mkdir build
 cd build
 
 # module files in olaf are in /opt/ibs_lib/modulefiles/
-echo -e "\n##############"
+echo -e "\n###################"
 echo -e "Loading module files"
-echo -e "##############\n"
+echo -e "###################\n"
 
 # Set environment variables
 module purge   
@@ -50,6 +50,9 @@ export CMAKE_LIBRARY_PATH=/opt/ibs_lib/apps/readline/8.2/lib:$CMAKE_LIBRARY_PATH
 export MPI_HOME=/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5
 export PATH=$MPI_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
+
+export CC=nvc
+export CXX=nvc++
 
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
