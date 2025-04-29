@@ -39,6 +39,8 @@ echo -e "###################\n"
 module purge   
 
 module load gcc/12.2.0 pgi/23.5 bison/3.8.2 flex/2.6.4 cmake/3.28.1 python/.3.12.3
+
+# NVIDIA HPC and CUDA modules
 module load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1
 module load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1
 
@@ -55,6 +57,8 @@ export CC=nvc
 export CXX=nvc++
 
 export LD_LIBRARY_PATH=/opt/ibs_lib/apps/gcc/12.2.0/lib64:$LD_LIBRARY_PATH
+echo $LD_LIBRARY_PATH
+
 
 cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DNRN_ENABLE_CORENEURON=ON \
@@ -62,25 +66,19 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DCORENRN_ENABLE_NMODL=ON \
  -DNRN_ENABLE_INTERVIEWS=OFF \
  -DNRN_ENABLE_RX3D=OFF \
+ #-DNRN_NMODL_CXX_FLAGS="-O0 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64"
  -DCMAKE_C_COMPILER=nvc \
  -DCMAKE_CXX_COMPILER=nvc++ \
  -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  -DCMAKE_SHARED_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
- -DCMAKE_CXX_FLAGS="-O3 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
+ -DCMAKE_CXX_FLAGS="-O0 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  -DCMAKE_CUDA_ARCHITECTURES=90 \
  #-DCMAKE_C_FLAGS="-O3 -g" \
  #-DCMAKE_CXX_FLAGS="-O3 -g"  \
  -DCMAKE_BUILD_TYPE=Custom 
 
-#./build/bin/nocmodl
-
-#echo -e "\n##############"
-#echo -e "Making -j"
-#echo -e "##############"
 make -j
 
-
-echo -e "\n##############"
-echo -e "Making install step" 
-echo -e "##############"
-#make install
+if false; then
+make install
+fi
