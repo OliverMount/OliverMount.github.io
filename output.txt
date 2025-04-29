@@ -1,0 +1,1159 @@
+
+###########################
+Removing previous nrn folder
+###########################
+
+Cloning into 'nrn'...
+
+###################
+Loading module files
+###################
+
+Loading gcc/12.2.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.1 mpc/1.3.1 isl/0.24
+/opt/ibs_lib/apps/gcc/12.2.0/lib64:/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib:/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/nvshmem/lib:/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/nccl/lib:/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/math_libs/lib64:/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/lib:/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/extras/qd/lib:/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/cuda/lib64:/opt/ibs_lib/apps/python/3.12.3/GCC/1220/lib:/opt/ibs_lib/apps/flex/2.6.4/GCC/1220/lib:/opt/ibs_lib/apps/bison/3.8.2/GCC/1220/lib:/opt/ibs_lib/apps/gcc/12.2.0/lib:/opt/ibs_lib/apps/isl/0.24/lib:/opt/ibs_lib/apps/mpc/1.3.1/lib:/opt/ibs_lib/apps/mpfr/4.1.1/lib:/opt/ibs_lib/apps/gmp/6.2.1/lib:/opt/ibs_lib/apps/gcc/12.2.0/lib64:
+CMake Warning:
+  Ignoring extra path from command line:
+
+   " "
+
+
+-- The C compiler identification is NVHPC 25.1.0
+-- The CXX compiler identification is NVHPC 25.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvc++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting build type to 'RelWithDebInfo' as none was specified.
+-- The compiler /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvc++ has no support for OpenMP SIMD construct
+-- main_version 9.0
+-- third_digit 
+-- pre_type a
+-- pre_num 
+-- post_part 1382
+-- From '9.0a-1382-gfd51182b5', PEP 440 compliant version: 9.0.0a0.post1382
+-- PROJECT_VERSION 9.0.0a0.post1382
+-- Sub-module : missing external/coding-conventions : running git submodule update  --init
+Submodule 'external/coding-conventions' (https://github.com/BlueBrain/hpc-coding-conventions.git) registered for path 'external/coding-conventions'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/coding-conventions'...
+Submodule path 'external/coding-conventions': checked out '3d157f9c8ea94d196a825aaa7f523265e360dc4b'
+-- Fetching git submodule external/Random123: running git submodule update --init;--recursive;--depth;1 -- external/Random123
+Submodule 'external/Random123' (https://github.com/BlueBrain/Random123.git) registered for path 'external/Random123'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/Random123'...
+From https://github.com/BlueBrain/Random123
+ * branch            b5cb15614e8f3eb0ff316bdc50c300ddd32fa3c1 -> FETCH_HEAD
+Submodule path 'external/Random123': checked out 'b5cb15614e8f3eb0ff316bdc50c300ddd32fa3c1'
+-- 3rd party project: using Random123 from "external/Random123"
+-- Fetching git submodule external/eigen: running git submodule update --init;--recursive;--depth;1 -- external/eigen
+Submodule 'external/eigen' (https://gitlab.com/libeigen/eigen.git) registered for path 'external/eigen'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/eigen'...
+From https://gitlab.com/libeigen/eigen
+ * branch            3147391d946bb4b6c68edd901f2add6ac1f31f8c -> FETCH_HEAD
+Submodule path 'external/eigen': checked out '3147391d946bb4b6c68edd901f2add6ac1f31f8c'
+-- 3rd party project: using eigen from "external/eigen"
+-- Sub-module : missing /proj/home/ibs/ccs/olive/nrn/external/fmt : running git submodule update  --init
+Submodule 'external/fmt' (https://github.com/fmtlib/fmt) registered for path 'external/fmt'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/fmt'...
+Submodule path 'external/fmt': checked out '0c9fce2ffefecfdce794e1859584e25877b7b592'
+-- {fmt} version: 11.0.2
+-- Build type: RelWithDebInfo
+-- No python executable specified. Looking for `python3` in the PATH...
+-- Checking if /opt/ibs_lib/apps/python/3.12.3/GCC/1220/bin/python3 is a working python
+-- Found BISON: /opt/ibs_lib/apps/bison/3.8.2/GCC/1220/bin/bison (found version "3.8.2") 
+-- Found FLEX: /opt/ibs_lib/apps/flex/2.6.4/GCC/1220/bin/flex (found suitable version "2.6.4", minimum required is "2.6") 
+-- Found Readline: /opt/ibs_lib/apps/readline/8.2/include  
+-- Found MPI_C: /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so (found version "3.1") 
+-- Found MPI_CXX: /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- Detected OpenMPI 4.1.5
+-- Sub-module : missing /proj/home/ibs/ccs/olive/nrn/external/nanobind : running git submodule update --recursive;--depth;1 --init
+Submodule 'external/nanobind' (https://github.com/wjakob/nanobind) registered for path 'external/nanobind'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/nanobind'...
+From https://github.com/wjakob/nanobind
+ * branch            784efa2a0358a4dc5432c74f5685ee026e20f2b6 -> FETCH_HEAD
+Submodule path 'external/nanobind': checked out '784efa2a0358a4dc5432c74f5685ee026e20f2b6'
+Submodule 'ext/robin_map' (https://github.com/Tessil/robin-map) registered for path 'external/nanobind/ext/robin_map'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/nanobind/ext/robin_map'...
+From https://github.com/Tessil/robin-map
+ * branch            188c45569cc2a5dd768077c193830b51d33a5020 -> FETCH_HEAD
+Submodule path 'external/nanobind/ext/robin_map': checked out '188c45569cc2a5dd768077c193830b51d33a5020'
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Fetching git submodule external/CLI11: running git submodule update --init;--recursive;--depth;1 -- external/CLI11
+Submodule 'external/CLI11' (https://github.com/CLIUtils/CLI11.git) registered for path 'external/CLI11'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/CLI11'...
+From https://github.com/CLIUtils/CLI11
+ * branch            6c7b07a878ad834957b98d0f9ce1dbe0cb204fc9 -> FETCH_HEAD
+Submodule path 'external/CLI11': checked out '6c7b07a878ad834957b98d0f9ce1dbe0cb204fc9'
+-- 3rd party project: using CLI11 from "external/CLI11"
+-- Found Python module 'jinja2' with version(s): 3.1.6
+-- Found Python module 'yaml' with version(s): 6.0.2
+-- Fetching git submodule external/json: running git submodule update --init;--recursive;--depth;1 -- external/json
+Submodule 'external/json' (https://github.com/nlohmann/json.git) registered for path 'external/json'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/json'...
+From https://github.com/nlohmann/json
+ * branch            9cca280a4d0ccf0c08f47a99aa71d1b0e52f8d03 -> FETCH_HEAD
+Submodule path 'external/json': checked out '9cca280a4d0ccf0c08f47a99aa71d1b0e52f8d03'
+-- 3rd party project: using json from "external/json"
+-- Using the multi-header code from /proj/home/ibs/ccs/olive/nrn/external/json/include/
+-- Fetching git submodule external/pybind11: running git submodule update --init;--recursive;--depth;1 -- external/pybind11
+Submodule 'external/pybind11' (https://github.com/pybind/pybind11.git) registered for path 'external/pybind11'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/pybind11'...
+From https://github.com/pybind/pybind11
+ * branch            3e9dfa2866941655c56877882565e7577de6fc7b -> FETCH_HEAD
+Submodule path 'external/pybind11': checked out '3e9dfa2866941655c56877882565e7577de6fc7b'
+-- 3rd party project: using pybind11 from "external/pybind11"
+-- pybind11 v2.12.0 
+-- Found PythonInterp: /opt/ibs_lib/apps/python/3.12.3/GCC/1220/bin/python3 (found suitable version "3.12.3", minimum required is "3.6") 
+-- Found PythonLibs: /opt/ibs_lib/apps/python/3.12.3/GCC/1220/lib/libpython3.12.so
+-- Fetching git submodule external/spdlog: running git submodule update --init;--recursive;--depth;1 -- external/spdlog
+Submodule 'external/spdlog' (https://github.com/gabime/spdlog.git) registered for path 'external/spdlog'
+Cloning into '/proj/home/ibs/ccs/olive/nrn/external/spdlog'...
+From https://github.com/gabime/spdlog
+ * branch            7c02e204c92545f869e2f04edaab1f19fe8b19fd -> FETCH_HEAD
+Submodule path 'external/spdlog': checked out '7c02e204c92545f869e2f04edaab1f19fe8b19fd'
+-- 3rd party project: using spdlog from "external/spdlog"
+-- Build spdlog: 1.13.0
+-- Build type: RelWithDebInfo
+--  Adding Flex include path as : /opt/ibs_lib/apps/flex/2.6.4/GCC/1220/include/
+-- 
+-- Configured NMODL
+-- 
+-- -- NMODL is enabled with following build configuration:
+-- --------------------+--------------------------------------------------------
+--  Build option       | Status
+-- --------------------+--------------------------------------------------------
+-- CXX COMPILER        | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvc++
+-- COMPILE FLAGS       | 
+-- EXTRA FLAGS         | 
+-- Build Type          | RelWithDebInfo
+-- Python Bindings     | ON
+-- Flex                | /opt/ibs_lib/apps/flex/2.6.4/GCC/1220/bin/flex
+-- Bison               | /opt/ibs_lib/apps/bison/3.8.2/GCC/1220/bin/bison
+-- Python              | /opt/ibs_lib/apps/python/3.12.3/GCC/1220/bin/python3
+--   Linked against    | OFF
+-- --------------------+--------------------------------------------------------
+-- 
+-- Building CoreNEURON
+-- Found Git: /usr/bin/git (found version "2.39.3") 
+-- The CUDA compiler identification is NVIDIA 12.6.85
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found CUDAToolkit: /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/cuda/12.6/targets/x86_64-linux/include (found suitable version "12.6.85", minimum required is "9.0") 
+-- 
+-- CoreNEURON is enabled with following build configuration:
+-- --------------------+--------------------------------------------------------
+--  Build option       | Status
+-- --------------------+--------------------------------------------------------
+-- CXX COMPILER        | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvc++
+-- COMPILE FLAGS       | -g  -O2   --c++17 -cuda -gpu=cuda12.6,lineinfo,cc90 -acc -Mautoinline -DCORENEURON_CUDA_PROFILING -DCORENEURON_ENABLE_GPU -DCORENEURON_BUILD -DHAVE_MALLOC_H -DCORENRN_BUILD=1 -DEIGEN_DONT_PARALLELIZE -DEIGEN_DONT_VECTORIZE=1 -DNRNMPI=1 -DLAYOUT=0 -DDISABLE_HOC_EXP -DENABLE_SPLAYTREE_QUEUING
+-- Build Type          | SHARED
+-- MPI                 | ON
+--   DYNAMIC           | OFF
+--   INC               | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/include
+-- OpenMP              | OFF
+-- NMODL PATH          | /proj/home/ibs/ccs/olive/nrn/build/bin/nmodl
+-- NMODL FLAGS         | 
+-- GPU Support         | ON
+--   CUDA              | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/cuda/12.6/lib64
+--   Offload           | OpenACC
+--   Unified Memory    | OFF
+-- Auto Timeout        | ON
+-- Wrap exp()          | OFF
+-- SplayTree Queue     | ON
+-- NetReceive Buffer   | ON
+-- Caliper             | OFF
+-- Likwid              | OFF
+-- Unit Tests          | OFF
+-- Reporting           | OFF
+-- --------------------+--------------------------------------------------------
+-- 
+Extracting link flags from target 'nrngnu', beware that this can be fragile. Got: 
+Extracting link flags from target 'sparse13', beware that this can be fragile. Got: 
+Extracting link flags from target 'fmt::fmt', beware that this can be fragile. Got: 
+For 'nrnpython' going to see TARGET 'fmt::fmt' recursively.
+Extracting link flags from target 'fmt::fmt', beware that this can be fragile. Got:  /opt/ibs_lib/apps/python/3.12.3/GCC/1220/lib/libpython3.12.so;fmt::fmt;nanobind
+For 'nrnpython' going to see TARGET 'nanobind' recursively.
+Extracting link flags from target 'nanobind', beware that this can be fragile. Got:  /opt/ibs_lib/apps/python/3.12.3/GCC/1220/lib/libpython3.12.so;fmt::fmt;nanobind
+Extracting link flags from target 'nrnpython', beware that this can be fragile. Got:  /opt/ibs_lib/apps/python/3.12.3/GCC/1220/lib/libpython3.12.so;fmt::fmt;nanobind
+Extracting link flags from target 'Threads::Threads', beware that this can be fragile. Got:  /opt/ibs_lib/apps/python/3.12.3/GCC/1220/lib/libpython3.12.so;fmt::fmt;nanobind
+Generating link flags from path /opt/ibs_lib/apps/readline/8.2/lib/libreadline.so Got: /opt/ibs_lib/apps/readline/8.2/lib/libreadline.so -Wl,-rpath,/opt/ibs_lib/apps/readline/8.2/lib
+Extracting link flags from path '/usr/lib64/libcurses.so', beware that this can be fragile. Got: -lcurses
+Extracting link flags from path '/usr/lib64/libform.so', beware that this can be fragile. Got: -lform
+Generating link flags from path /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so Got: /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so -Wl,-rpath,/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib
+Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
+-- 
+-- Configured NEURON 9.0.0a0.post1382
+-- 
+-- You can now build NEURON using:
+--   cmake --build . --parallel 8 [--target TARGET]
+-- You might want to adjust the number of parallel build jobs for your system.
+-- Some non-default targets you might want to build:
+-- --------------+--------------------------------------------------------------
+--  Target       |   Description
+-- --------------+--------------------------------------------------------------
+-- install       | Will install NEURON to: /proj/home/ibs/ccs/olive/install
+--               | Change the install location of NEURON using:
+--               |   cmake <src_path> -DCMAKE_INSTALL_PREFIX=<install_path>
+-- docs          | Build full docs. Calls targets: doxygen, notebooks, sphinx, notebooks-clean
+-- uninstall     | Removes files installed by make install (todo)
+-- --------------+--------------------------------------------------------------
+--  Build option | Status
+-- --------------+--------------------------------------------------------------
+-- C COMPILER    | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvc
+-- CXX COMPILER  | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/compilers/bin/nvc++
+-- BUILD_TYPE    | RelWithDebInfo (allowed: Custom;Debug;Release;RelWithDebInfo;Fast;FastDebug)
+-- COMPILE FLAGS | -g  -O2   --diag_suppress=1,47,111,128,170,174,177,186,541,550,816,2465 -noswitcherror
+-- Shared        | ON
+-- MPI           | ON
+--   DYNAMIC     | OFF
+--   INC         | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/include
+--   LIB         | /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so
+-- Python        | ON
+--   DYNAMIC     | OFF
+--   MODULE      | ON
+--  python3.12 (default)
+--   EXE         | /opt/ibs_lib/apps/python/3.12.3/GCC/1220/bin/python3
+--   INC         | /opt/ibs_lib/apps/python/3.12.3/GCC/1220/include/python3.12
+--   LIB         | /opt/ibs_lib/apps/python/3.12.3/GCC/1220/lib/libpython3.12.so
+-- Readline      | /opt/ibs_lib/apps/readline/8.2/lib/libreadline.so
+-- Curses        | /usr/lib64/libcurses.so;/usr/lib64/libform.so
+-- RX3D          | OFF
+-- Interviews    | OFF
+-- CoreNEURON    | ON
+--   PATH        | /proj/home/ibs/ccs/olive/nrn/src/coreneuron
+--   LINK FLAGS  | -cuda -gpu=cuda12.6,lineinfo,cc90 -acc -lcorenrnmech  -lcoreneuron-cuda -Wl,-rpath,/opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib /opt/ibs_lib/apps/nvhpc/25.1/Linux_x86_64/25.1/comm_libs/12.6/openmpi4/openmpi-4.1.5/lib/libmpi.so -ldl
+-- NMODL codegen   | OFF
+-- Tests         | OFF
+-- --------------+--------------------------------------------------------------
+--  See documentation : https://www.neuron.yale.edu/neuron/
+-- --------------+--------------------------------------------------------------
+-- 
+-- Configuring done (63.6s)
+-- Generating done (0.6s)
+-- Build files have been written to: /proj/home/ibs/ccs/olive/nrn/build
+ver2.sh: line 97: -DCMAKE_C_FLAGS=-O3 -g: command not found
+[  0%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  0%] Generating ../../share/coreneuron/enginemech.cpp
+[  0%] Generating ../../share/coreneuron/coreneuron.cpp
+[  1%] Generating ../../share/modfile/svclmp.mod
+[  1%] Built target nmodl_copy_solver_files
+[  1%] Generating ../../share/modfile/pattern.mod
+[  1%] Generating ../../share/modfile/stim.mod
+[  1%] Generating ../../share/modfile/hh.mod
+[  1%] Generating ../../share/modfile/exp2syn.mod
+[  1%] Generating ../../share/modfile/passive.mod
+[  1%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  1%] Generating ../../../lib/python/neuron/nmodl/dsl.py
+[  1%] Generating ../../../lib/python/neuron/nmodl/ode.py
+[  1%] Generating share/nrn/demo/release.hoc
+[  1%] Generating ../../share/coreneuron/mod_func.c.sh
+[  1%] Generating ../../share/modfile/netstim.mod
+[  1%] Building CUDA object src/coreneuron/CMakeFiles/coreneuron-cuda.dir/permute/cellorder.cu.o
+[  1%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spfactor.cpp.o
+[  1%] Generating ../../share/modfile/expsyn.mod
+[  1%] Generating ../../../lib/python/neuron/nmodl/ast.py
+[  1%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/NrnRandom123RNG.cpp.o
+[  2%] [FLEX][nocmodllexer] Building scanner with flex 2.6.4
+[  2%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Erlang.cpp.o
+[  2%] Generating share/nrn/demo/hh.hoc
+[  2%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/HypGeom.cpp.o
+[  2%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spoutput.cpp.o
+[  2%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/LogNorm.cpp.o
+[  2%] Building CXX object src/coreneuron/CMakeFiles/corenrn_mpi.dir/mpi/lib/mpispike.cpp.o
+[  3%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spbuild.cpp.o
+[  3%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spalloc.cpp.o
+[  3%] Built target CLI11
+[  3%] Generating ../../../lib/python/neuron/nmodl/symtab.py
+[  2%] [BISON][nocmodlparser] Building parser with bison 3.8.2
+[  4%] Generating ../../../lib/python/neuron/nmodl/__init__.py
+[  3%] Building CXX object src/nrnpython/CMakeFiles/rxdmath.dir/rxdmath.cpp.o
+[  4%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Poisson.cpp.o
+[  4%] Generating ../../../lib/python/neuron/nmodl/visitor.py
+[  4%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Uniform.cpp.o
+[  4%] [BISON][nocmodlparser] Building diffeq with bison 3.8.2
+[  4%] -- NMODL : GENERATING AST CLASSES WITH PYTHON GENERATOR! --
+[  5%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/MCellRan4RNG.cpp.o
+[  5%] Generating ../oc/hocusr.h
+[  4%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/DiscUnif.cpp.o
+[  6%] Generating share/nrn/demo/dend3/dend3.nrn
+[  6%] [BISON][ocparser] Building parser with bison 3.8.2
+[  6%] Generating share/nrn/demo/dend3.ses
+[  6%] Generating share/nrn/demo/dend3/syn3.hoc
+[  7%] Generating share/nrn/lib/auditscripts/hocaudit.sh
+[  7%] Building CXX object src/nrnpython/CMakeFiles/nanobind.dir/__/__/external/nanobind/src/nb_combined.cpp.o
+[  6%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/mcran4.cpp.o
+[  7%] Generating share/nrn/demo/release/nachan.mod
+[  7%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Random.cpp.o
+[  7%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/sputils.cpp.o
+[  7%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Weibull.cpp.o
+[  6%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spsolve.cpp.o
+[  7%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/nrnran123.cpp.o
+[  6%] Generating share/nrn/demo/singhh.ses
+[  7%] Generating share/nrn/demo/release/nacaex.mod
+[  7%] Building CXX object src/coreneuron/CMakeFiles/corenrn_mpi.dir/mpi/lib/nrnmpi.cpp.o
+[  7%] Generating share/nrn/demo/testca.hoc
+[  7%] Generating share/nrn/demo/dend3/control.hoc
+[  7%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Geom.cpp.o
+[  7%] Generating share/nrn/lib/hoc/grapher.hoc
+[  8%] Generating share/nrn/demo/reconst.hoc
+[  8%] Generating share/nrn/demo/release/camchan.mod
+[  8%] Generating share/nrn/demo/demo.ses
+[  8%] Generating share/nrn/demo/release/khhchan.mod
+[  8%] Generating share/nrn/lib/hoc/mview/ncview.hoc
+[  8%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Binomial.cpp.o
+[  8%] Generating share/nrn/demo/release/release.mod
+[  8%] Generating share/nrn/demo/release/cabpump.mod
+[  8%] Generating share/nrn/lib/hoc/chanbild/ksgate.hoc
+[  8%] Generating share/nrn/demo/singhh.hoc
+[  8%] Generating share/nrn/lib/hoc/chanbild/chanbild1.hoc
+[  9%] Generating share/nrn/demo/cycle.hoc
+[  9%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/NegExp.cpp.o
+[  9%] Generating share/nrn/demo/pyramid.ses
+[  9%] Generating share/nrn/lib/shape.cm2
+[  9%] Generating share/nrn/demo/release/capmpr.mod
+[  9%] Generating share/nrn/demo/nomodel.hoc
+[  9%] Generating share/nrn/demo/release/capump.mod
+[  9%] Generating share/nrn/demo/sync/cell.hoc
+[  9%] Generating share/nrn/lib/hoc/chanbild/ksstate.hoc
+[  9%] Generating share/nrn/demo/singhhchan.hoc
+[  9%] Generating share/nrn/demo/d3init.hoc
+[  9%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Rand.cpp.o
+[  9%] Generating share/nrn/lib/hoc/binfo.hoc
+[  9%] Generating share/nrn/demo/dynclamp.hoc
+[  9%] Generating share/nrn/demo/sync/start.ses
+[  9%] Generating share/nrn/demo/sync/init.hoc
+[  9%] Generating share/nrn/demo/dynclamp.ses
+[  9%] Generating share/nrn/lib/auditscripts/notes
+[  9%] Generating share/nrn/lib/python/neuron/psection.py
+[  9%] Generating include/membdef.h
+[  9%] Generating share/nrn/lib/hoc/mulfit/protorun.hoc
+[ 10%] Generating share/nrn/lib/hoc/mulfit/e_actpot.hoc
+[ 10%] Generating share/nrn/lib/hoc/impedanx.hoc
+[ 10%] Generating share/nrn/lib/hoc/mulfit/clampfit.hoc
+[  9%] Generating share/nrn/lib/hoc/stdrun.hoc
+[ 10%] Generating share/nrn/lib/auditscripts/retrieve.sh
+[ 10%] Generating share/nrn/lib/hoc/chanbild/kstrans.hoc
+[ 10%] Generating share/nrn/lib/python/neuron/rxd/rxdException.py
+[ 10%] Generating share/nrn/lib/hoc/celbild/celgeom.hoc
+[ 10%] Generating share/nrn/demo/sync/synchronize.hoc
+[ 10%] Generating share/nrn/lib/hoc/import3d/read_nlcda3.hoc
+[ 10%] Generating share/nrn/lib/hoc/chanbild/kschanbg.hoc
+[ 10%] Generating share/nrn/lib/hoc/pointgrp.hoc
+[ 10%] Generating share/nrn/lib/python/neuron/nmodl/ext/example/exp2syn.mod
+[ 12%] Generating include/md1redef.h
+[ 12%] Generating share/nrn/lib/hoc/chanbild/exp.hoc
+[ 12%] Generating share/nrn/lib/python/neuron/neuroml/morphml.py
+[ 12%] Generating share/nrn/demo/release/invlfire.mod
+[ 12%] Generating include/cabcode.h
+[ 12%] Generating share/nrn/demo/demo.hoc
+[ 13%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Normal.cpp.o
+[ 13%] Generating share/nrn/lib/hoc/import3d/read_nlcda.hoc
+[ 13%] Generating share/nrn/lib/hoc/lincir/elmbase.hoc
+[ 13%] Generating share/nrn/demo/hh.ses
+[ 13%] Generating include/hocassrt.h
+[ 13%] Generating include/errcodes.hpp
+[ 13%] Generating share/nrn/lib/python/scripts/mkthreadsafe
+[ 13%] Generating include/hoclist.h
+[ 13%] Generating share/nrn/lib/python/neuron/gui2/__init__.py
+[ 13%] Generating share/nrn/lib/python/neuron/rxdtests/run_all.py
+[ 11%] Generating share/nrn/lib/hoc/family.hoc
+[ 13%] Generating share/nrn/lib/hoc/netbild/netdata.hoc
+[ 11%] Generating share/nrn/lib/python/neuron/rxd/rxdmath.py
+[ 13%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/triangularMesh.py
+[ 13%] Generating share/nrn/demo/sync/spkplot.hoc
+[ 13%] Generating include/ocfunc.h
+[ 13%] Generating share/nrn/demo/pyramid.nrn
+[ 13%] Generating share/nrn/demo/release/cachan1.mod
+[ 13%] Generating share/nrn/lib/hoc/celbild/celset.hoc
+[ 13%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_example.py
+[ 13%] Generating share/nrn/lib/python/neuron/rxd/rxd.py
+[ 12%] Generating share/nrn/lib/hoc/gatherv.hoc
+[ 15%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_reactions_with_v.py
+[ 15%] Generating share/nrn/lib/python/neuron/rxd/export.py
+[ 12%] Generating share/nrn/lib/hoc/celbild/celmemb.hoc
+[ 12%] Generating share/nrn/lib/hoc/shapebox.hoc
+[ 12%] Generating share/nrn/lib/hoc/mulfit/eonerun.hoc
+[ 12%] Generating share/nrn/lib/hoc/mulfit/eparmlst.hoc
+[ 15%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_before_sections.py
+[ 15%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/voxelize2.py
+[ 15%] Generating share/nrn/demo/release.ses
+[ 13%] Generating share/nrn/lib/hoc/mview/allcell.hoc
+[ 15%] Generating share/nrn/lib/hoc/impratio.hoc
+[ 15%] Generating share/nrn/lib/python/neuron/rxd/species.py
+[ 15%] Generating share/nrn/lib/hoc/stdlib.hoc
+[ 13%] Generating share/nrn/lib/python/neuron/rxdtests/tests/pure_diffusion_cvode.py
+[ 15%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/FullJoinMorph.py
+[ 15%] Generating share/nrn/lib/hoc/import3d/import3d_gui.hoc
+[ 15%] Generating include/nrniv_mf.h
+[ 15%] Generating share/nrn/lib/hoc/mview/parmvals.hoc
+[ 15%] Generating ../../include/nrnconf.h
+[ 13%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_include_flux.py
+[ 16%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/torun.txt
+[ 17%] Generating share/nrn/lib/hoc/celbild.hoc
+[ 17%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_reactions.py
+[ 17%] Generating share/nrn/lib/hoc/mulfit/optwrap.hoc
+[ 18%] Generating share/nrn/lib/hoc/mview/realcell.hoc
+../src/nocmodl/parse1.ypp: warning: 3 shift/reduce conflicts [-Wconflicts-sr]
+../src/nocmodl/parse1.ypp: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+[ 18%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/surface_a.py
+[ 18%] Generating include/ocmisc.h
+[ 19%] Generating share/nrn/lib/python/neuron/rxd/plugins.py
+[ 19%] Generating share/nrn/lib/hoc/chanbild/sigmoid.hoc
+../src/oc/parse.ypp: warning: 108 shift/reduce conflicts [-Wconflicts-sr]
+../src/oc/parse.ypp: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+[ 13%] Generating share/nrn/lib/hoc/noload.hoc
+[ 20%] Generating share/nrn/lib/nrn.defaults.in
+[ 20%] Generating share/nrn/lib/hoc/mview/allpp.hoc
+[ 21%] Generating include/cabvars.h
+[ 21%] Generating share/nrn/lib/hoc/mknrndll.hoc
+[ 21%] Generating share/nrn/lib/hoc/celbild/celtopol.hoc
+[ 21%] Generating share/nrn/lib/python/neuron/rxdtests/tests/c91662.swc
+[ 21%] Generating share/nrn/lib/python/neuron/neuroml/neuroml.py
+[ 21%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ca_pump.py
+[ 21%] Generating share/nrn/lib/python/neuron/nmodl/__init__.py
+[ 22%] Generating include/nrnmpi.h
+[ 22%] Generating include/options.h
+[ 22%] Generating share/nrn/lib/hoc/celbild/celmang.hoc
+[ 22%] Generating include/newton_struct.h
+[ 22%] Generating share/nrn/lib/python/scripts/nrnivmodl-core
+[ 22%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/bistable_hybrid.py
+[ 22%] Generating share/nrn/lib/hoc/import3d/import3d_sec.hoc
+../src/nocmodl/diffeq.ypp: warning: 5 shift/reduce conflicts [-Wconflicts-sr]
+../src/nocmodl/diffeq.ypp: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+[ 22%] Generating share/nrn/lib/python/neuron/tests/utils/checkresult.py
+[ 14%] Generating share/nrn/lib/python/neuron/gui2/rangevar.py
+[ 23%] Generating include/neuronapi.h
+[ 14%] Generating share/nrn/lib/hoc/electrod.hoc
+[ 14%] Generating share/nrn/lib/python/neuron/rxd/section1d.py
+[ 23%] Generating include/bbsavestate.h
+[ 23%] Generating include/ion_semantics.h
+[ 23%] Generating share/nrn/lib/hoc/funfit.hoc
+[ 15%] Generating include/backtrace_utils.h
+[ 23%] Generating share/nrn/lib/hoc/chanbild/table.hoc
+[ 23%] Generating share/nrn/lib/hoc/celbild/inhomofn.hoc
+[ 23%] Generating share/nrn/lib/python/neuron/gui2/utilities.py
+[ 23%] Generating include/neuron/container/generic_data_handle.hpp
+[ 23%] Generating ../../include/nrncvode/nrnneosm.h
+[ 23%] Generating share/nrn/lib/python/neuron/rxdtests/tests/nodes_update.py
+[ 23%] Generating share/nrn/lib/hoc/mview/mview1.hoc
+[ 23%] Generating share/nrn/lib/python/neuron/rxdtests/tests/reaction_null_dest.py
+[ 23%] Generating share/nrn/lib/hoc/modlunit.hoc
+[ 23%] Generating include/section_fwd.hpp
+[ 15%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/scalarField.py
+[ 23%] Generating share/nrn/lib/hoc/logax.hoc
+[ 15%] Generating share/nrn/lib/python/neuron/rxd/dimension3.py
+[ 24%] Generating share/nrn/lib/hoc/chanbild/kstgui.hoc
+[ 24%] Generating share/nrn/lib/hoc/chanbild/gategui.hoc
+[ 24%] Generating share/nrn/lib/python/neuron/nmodl/ext/example/hh.mod
+[ 24%] Generating share/nrn/lib/python/neuron/hclass3.py
+[ 15%] Generating share/nrn/lib/python/neuron/rxdtests/tests/cabuf_fixed_step.py
+[ 24%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/bistable_hybrid_cvode_change_nthread.py
+[ 24%] Generating share/nrn/lib/python/neuron/rxd/reaction.py
+[ 24%] Generating share/nrn/lib/hoc/mulfit/mulfit1.hoc
+[ 15%] Generating include/nrn_ansi.h
+[ 24%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/GeneralizedVoxelization.py
+[ 24%] Generating share/nrn/lib/python/scripts/modlunit
+[ 24%] Generating share/nrn/lib/python/neuron/rxd/rxdsection.py
+[ 15%] Generating share/nrn/lib/hoc/atoltool.hoc
+[ 15%] Generating share/nrn/lib/hoc/vplay.hoc
+[ 15%] Generating share/nrn/lib/hoc/chanbild/properties.hoc
+[ 24%] Generating share/nrn/lib/python/scripts/_binwrapper.py
+[ 24%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_include_flux_cvode.py
+[ 24%] Generating share/nrn/lib/python/scripts/sortspike
+[ 24%] Generating include/neuron/model_data_fwd.hpp
+[ 25%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/surface.py
+[ 25%] Generating share/nrn/lib/nrnunits.lib
+[ 25%] Generating include/oc_ansi.h
+[ 15%] Generating share/nrn/demo/sync/demosync.hoc
+[ 25%] Generating share/nrn/lib/hoc/import3d/read_morphml.hoc
+[ 25%] Generating ../../include/nrnconf.h
+[ 25%] Generating share/nrn/lib/hoc/corenrn.hoc
+[ 26%] Generating share/nrn/lib/python/neuron/rxdtests/tests/cabuf.py
+[ 26%] Generating ../../share/nrn/nrnmain.cpp
+[ 26%] Generating include/euler.hpp
+[ 26%] Generating share/nrn/lib/python/neuron/gui2/plotshape.py
+[ 26%] Generating share/nrn/lib/python/neuron/__init__.py
+[ 16%] Generating include/nrnran123.h
+[ 26%] Generating share/nrn/lib/hoc/mview/mviewgui.hoc
+[ 26%] Generating share/nrn/lib/hoc/celbild/celbild1.hoc
+[ 26%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_multi_example_cvode.py
+[ 26%] Generating share/nrn/lib/python/neuron/rxd/options.py
+[ 26%] Generating share/nrn/lib/hoc/netbild/edgegui.hoc
+[ 26%] Generating include/spmatrix.h
+[ 26%] Generating share/nrn/lib/python/neuron/nmodl/visitor.py
+[ 26%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree2_25_5.py
+[ 26%] Generating ../../include/nrnmpiuse.h
+[ 27%] Generating share/nrn/lib/hoc/mulfit/e_norm.hoc
+[ 27%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/circadian_rhythm.py
+[ 27%] Generating share/nrn/lib/python/neuron/tests/test_rxd.py
+[ 27%] Generating include/neuron.h
+[ 27%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_taper_125_1.py
+[ 28%] Generating share/nrn/lib/python/neuron/neuroml/rdxml.py
+[ 29%] Generating share/nrn/lib/python/neuron/tests/test_neuron.py
+[ 29%] Generating share/nrn/lib/auditscripts/gettarname
+[ 29%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/torun.txt
+[ 17%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/pure_diffusion_3d.py
+[ 29%] Generating share/nrn/lib/hoc/macload.hoc
+[ 29%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/pure_diffusion_hybrid_cvode.py
+[ 29%] Generating share/nrn/lib/hoc/netparmpi.hoc
+[ 29%] Generating share/nrn/lib/python/neuron/rxdtests/readme.txt
+[ 29%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/voxelize.py
+[ 29%] Generating share/nrn/lib/hoc/netbild/artcel.hoc
+[ 29%] Generating share/nrn/lib/hoc/varmeth1.hoc
+[ 29%] Generating share/nrn/lib/hoc/lincir.hoc
+[ 30%] Generating include/simeq.hpp
+[ 30%] Generating include/sparse.hpp
+[ 30%] Generating share/nrn/lib/python/scripts/nmodl
+[ 18%] Generating share/nrn/lib/hoc/nrngui1.hoc
+[ 30%] Generating share/nrn/lib/hoc/netbild/spkplot.hoc
+[ 30%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_cvode.py
+[ 18%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/readme.txt
+[ 30%] Generating share/nrn/lib/hoc/lincir/lingraph.hoc
+[ 30%] Generating share/nrn/lib/hoc/mkcurve.hoc
+[ 30%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/torun.txt
+[ 30%] Generating share/nrn/lib/auditscripts/saveaudit
+[ 31%] Generating share/nrn/lib/python/neuron/rxd/generalizedReaction.py
+[ 31%] Generating include/md2redef.h
+[ 31%] Generating share/nrn/lib/python/neuron/neuroml/biophysics.py
+[ 31%] Generating share/nrn/lib/python/neuron/tests/utils/coreneuron_available.py
+[ 18%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_reactions_del.py
+[ 31%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree_125_1.py
+[ 31%] Generating include/spconfig.h
+[ 31%] [FLEX][modlunitlexer] Building scanner with flex 2.6.4
+[ 31%] Generating include/hoc.h
+[ 31%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_125_1.py
+[ 31%] Generating share/nrn/lib/python/neuron/rxdtests/tests/reaction_param_test.py
+[ 31%] Generating share/nrn/lib/python/neuron/nmodl/ext/viz/index.html
+[ 18%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_mebrane_mismatch.py
+[ 31%] Generating share/nrn/lib/python/neuron/rxd/initializer.py
+[ 19%] Generating include/nmodlmutex.h
+[ 31%] Generating share/nrn/lib/prologue.id
+[ 32%] Generating share/nrn/lib/python/scripts/_README.txt
+[ 32%] Generating include/memory.hpp
+[ 33%] Generating share/nrn/lib/python/neuron/rxd/rate.py
+[ 33%] Generating include/nrnapi.h
+[ 33%] Generating share/nrn/lib/hoc/wingroup.hoc
+[ 33%] Generating share/nrn/lib/python/neuron/nmodl/ext/example/expsyn.mod
+[ 33%] Generating share/nrn/lib/python/neuron/tests/utils/__init__.py
+[ 33%] Generating include/mcran4.h
+[ 33%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_taper_25_5.py
+[ 19%] Generating share/nrn/lib/python/neuron/doc.py
+[ 36%] Generating share/nrn/lib/hoc/netbild.hoc
+[ 36%] Generating share/nrn/lib/python/neuron/gui2/setup_threejs.py
+[ 36%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/caleak.mod
+[ 36%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/pure_diffusion_hybrid.py
+[ 36%] Generating include/neuron/container/non_owning_soa_identifier.hpp
+[ 36%] Generating share/nrn/lib/hoc/mview/secanal.hoc
+[ 36%] Generating share/nrn/lib/hoc/mulfit/e_xy.hoc
+[ 37%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/include_flux3d_cvode.py
+[ 37%] Generating share/nrn/lib/hoc/import3d.hoc
+[ 37%] Generating share/nrn/lib/python/neuron/rxdtests/tests/reaction_test.py
+[ 37%] Generating ../../share/nrn/nrnmain.cpp
+[ 37%] Generating share/nrn/lib/python/neuron/nmodl/dsl.py
+[ 39%] Generating include/nrncvode.h
+[ 39%] Generating include/nrnassrt.h
+[ 43%] Generating share/nrn/lib/python/neuron/tests/utils/strtobool.py
+[ 43%] Generating share/nrn/lib/hoc/mview/rcclasses.hoc
+[ 43%] Generating share/nrn/lib/python/neuron/tests/test_vector.py
+[ 43%] Generating share/nrn/lib/hoc/prcellstate.hoc
+[ 43%] Generating share/nrn/lib/hoc/chanbild/const.hoc
+[ 20%] Generating share/nrn/lib/hoc/loadbal.hoc
+[ 20%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh.py
+[ 43%] Generating share/nrn/lib/hoc/vecwrap.hoc
+[ 43%] Generating share/nrn/lib/python/neuron/rxd/geometry.py
+[ 20%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/include_flux3d.py
+[ 44%] Generating share/nrn/lib/python/neuron/rxd/nodelist.py
+[ 44%] Generating share/nrn/lib/python/neuron/rxd/multiCompartmentReaction.py
+[ 44%] Generating include/wrap_sprintf.h
+[ 21%] Generating share/nrn/lib/python/neuron/rxdtests/tests/include_flux.py
+[ 21%] Generating share/nrn/lib/hoc/mulfit/fitparm.hoc
+[ 21%] Generating share/nrn/lib/python/neuron/coreneuron.py
+[ 21%] Generating include/crout_thread.hpp
+[ 21%] Generating share/nrn/lib/hoc/mview.hoc
+[ 21%] Generating include/nrnoc_ml.h
+[ 44%] Generating share/nrn/lib/hoc/chanbild/linoid.hoc
+[ 21%] Generating share/nrn/lib/python/neuron/rxdtests/tests/verify_no_initialization_order_issue.py
+[ 22%] Generating include/neuron/cache/mechanism_range.hpp
+[ 22%] Generating share/nrn/lib/python/neuron/neuroml/__init__.py
+[ 44%] Generating share/nrn/lib/python/neuron/rxdtests/tests/react_region_specified.py
+[ 44%] Generating share/nrn/lib/hoc/single.hoc
+[ 44%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/torun.txt
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/surfaces.pyx
+[ 22%] Generating share/nrn/lib/python/neuron/nmodl/symtab.py
+[ 46%] Generating share/nrn/lib/hoc/mview/treeview.hoc
+[ 22%] Generating share/nrn/lib/hoc/import3d/read_nts.hoc
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/bistable_hybrid_change_nthread.py
+[ 46%] Generating share/nrn/lib/hoc/mview/distinct.hoc
+[ 46%] Generating share/nrn/lib/helpdict
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/multicompartment_reactions.py
+[ 23%] Generating share/nrn/lib/python/neuron/tests/test_all.py
+[ 46%] Generating share/nrn/lib/hoc/chanbild.hoc
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/tests/include_flux_cvode.py
+[ 23%] Generating share/nrn/lib/python/neuron/rxdtests/tests/torun.txt
+[ 23%] Generating share/nrn/lib/hoc/celbild/psubset.hoc
+[ 23%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/pure_diffusion_3d_cvode.py
+[ 46%] Generating share/nrn/lib/hoc/thresh.hoc
+[ 23%] Generating share/nrn/lib/python/neuron/rxd/node.py
+[ 23%] Generating include/deflate.hpp
+[ 24%] Generating share/nrn/lib/python/neuron/rxdtests/tests/pure_diffusion.py
+[ 23%] Generating share/nrn/lib/python/neuron/tests/__init__.py
+[ 23%] Generating share/nrn/lib/python/neuron/nmodl/ext/viz/js/d3.min.js
+[ 23%] Generating help_data.dat
+[ 46%] Generating share/nrn/lib/hoc/mview/artview.hoc
+[ 24%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_25_5.py
+[ 24%] Generating share/nrn/lib/python/neuron/rxd/region.py
+[ 23%] Generating share/nrn/lib/hoc/import3d/read_swc.hoc
+[ 24%] Generating share/nrn/lib/python/scripts/idraw
+[ 24%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_param_cvode.py
+[ 24%] Generating share/nrn/lib/hoc/mview/distinctparm.hoc
+[ 24%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/ctng.pyx
+[ 24%] Generating share/nrn/lib/shape.cm1
+[ 24%] Generating share/nrn/lib/python/neuron/rxd/constants.py
+[ 24%] Generating share/nrn/lib/hoc/mview/ppanal.hoc
+[ 46%] Generating include/nrnredef.h
+[ 24%] Generating share/nrn/lib/hoc/mulfit.hoc
+[ 25%] Generating share/nrn/lib/hoc/netbild/grstrlst.hoc
+[ 25%] Generating share/nrn/lib/hoc/runfit.hoc
+[ 46%] Generating include/classreg.h
+[ 26%] Generating include/newton_thread.hpp
+[ 26%] Generating share/nrn/lib/python/neuron/gui.py
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/do_test.py
+[ 26%] Generating include/crout.hpp
+[ 26%] Generating share/nrn/lib/python/neuron/nmodl/ext/example/passive.mod
+[ 27%] Generating include/mech_api.h
+[ 26%] Generating include/ssimplic.hpp
+[ 26%] Generating share/nrn/lib/python/neuron/neuroml/xml2nrn.py
+[ 26%] Generating include/treeset.h
+[ 26%] Generating share/nrn/lib/hoc/parcom.hoc
+[ 26%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_multi_example.py
+[ 46%] Generating share/nrn/lib/hoc/subiter.hoc
+[ 27%] Generating share/nrn/lib/hoc/lincir/lincir1.hoc
+[ 27%] Generating share/nrn/lib/python/neuron/rxd/__init__.py
+[ 27%] Generating share/nrn/lib/python/neuron/neuroml/metadata.py
+[ 27%] Generating include/hocparse.h
+[ 28%] Generating share/nrn/lib/python/neuron/crxd/__init__.py
+[ 27%] Generating share/nrn/lib/hoc/inserter.hoc
+[ 27%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/simplevolume_helper.py
+[ 28%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree2_125_1.py
+[ 46%] Generating share/nrn/lib/python/neuron/nmodl/ode.py
+[ 29%] Generating share/nrn/lib/hoc/impedanc.hoc
+[ 30%] Generating share/nrn/lib/hoc/mulfit/eonefunc.hoc
+[ 29%] Generating include/hocdec.h
+[ 30%] Generating share/nrn/lib/hoc/nrngui.hoc
+[ 30%] Generating share/nrn/lib/python/neuron/rxd/rangevar.py
+[ 30%] Generating include/dimplic.hpp
+[ 29%] Generating include/nrnrandom.h
+[ 30%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/graphicsPrimitives.pyx
+[ 46%] Generating share/nrn/lib/hoc/netbild/netready.hoc
+[ 31%] Generating share/nrn/lib/python/neuron/tests/test_rxd.json
+[ 30%] Generating share/nrn/lib/hoc/pcchdir.hoc
+[ 31%] Generating share/nrn/lib/hoc/pointman.hoc
+[ 31%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_morph.py
+[ 30%] Generating share/nrn/demo/dynchan.ses
+[ 31%] Generating share/nrn/lib/hoc/mulfit/e_y.hoc
+[ 31%] Generating include/membfunc.h
+[ 31%] Generating share/nrn/lib/hoc/mview/mviewxml.hoc
+[ 31%] Generating share/nrn/lib/hoc/netbild/syntypes.hoc
+[ 31%] Generating share/nrn/lib/hoc/stdgui.hoc
+[ 32%] Generating share/nrn/lib/python/neuron/nonvint_block_supervisor.py
+[ 32%] Generating include/sparse_thread.hpp
+[ 33%] Generating share/nrn/lib/python/neuron/tests/_subclass.py
+[ 46%] Generating share/nrn/lib/hoc/mulfit/eoneprim.hoc
+[ 46%] Generating share/nrn/lib/python/neuron/tests/utils/capture_stdout.py
+[ 33%] Generating share/nrn/lib/hoc/mview/parmsets.hoc
+[ 33%] Generating share/nrn/lib/python/neuron/gui2/config.py
+[ 33%] Generating include/euler_thread.hpp
+[ 34%] Generating include/multisplit.h
+[ 33%] Generating share/nrn/lib/hoc/pointbsr.hoc
+[ 33%] Generating include/runge.hpp
+[ 33%] Generating share/nrn/lib/python/neuron/sections.py
+[ 33%] Generating include/multicore.h
+[ 35%] Generating include/neuron/container/data_handle.hpp
+[ 46%] Generating include/ssimplic_thread.hpp
+[ 46%] Generating include/nrnmpidec.h
+[ 36%] Generating share/nrn/lib/python/scripts/nrniv-core
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/tests/IraHH.py
+[ 36%] Generating share/nrn/lib/hoc/lincir/linmech.hoc
+[ 46%] Generating share/nrn/lib/python/neuron/nmodl/ast.py
+[ 37%] Generating share/nrn/lib/hoc/showmech.hoc
+[ 37%] Generating include/nrnversionmacros.h
+[ 37%] Generating share/nrn/lib/python/neuron/nmodl/ext/viz/js/tree.js
+[ 37%] Generating share/nrn/lib/python/scripts/nrniv
+[ 38%] Generating share/nrn/lib/hoc/movierun.hoc
+[ 37%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/pump.mod
+[ 46%] Generating include/row_view.hpp
+[ 40%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_param.py
+[ 39%] Generating share/nrn/lib/python/scripts/nrngui
+[ 40%] Generating ../../include/nrncvode/nrnneosm.h
+[ 43%] Generating share/nrn/lib/python/neuron/expect_hocerr.py
+[ 46%] Generating ../../include/nrnmpiuse.h
+[ 43%] Generating include/scoplib.h
+[ 43%] [BISON][modlunitparser] Building parser with bison 3.8.2
+[ 43%] Generating share/nrn/lib/python/neuron/nmodl/ext/viz/css/tree.css
+[ 43%] Generating share/nrn/lib/hoc/netbild/netgui.hoc
+[ 43%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_example_cvode.py
+[ 43%] Generating share/nrn/lib/python/neuron/units.py
+[ 46%] Generating include/hocgetsym.h
+[ 44%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/__init__.py
+[ 44%] Generating include/parse_with_deps.hpp
+[ 44%] Generating share/nrn/lib/hoc/attshape.hoc
+[ 44%] Generating share/nrn/lib/hoc/single1.hoc
+[ 46%] Generating share/nrn/lib/python/scripts/neurondemo
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/bistable_hybrid_cvode.py
+[ 46%] Generating share/nrn/lib/python/scripts/nrnivmodl
+[ 46%] Generating share/nrn/lib/python/scripts/nrnpyenv.sh
+[ 46%] Generating share/nrn/lib/python/neuron/config.py
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/gui.py
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/cal2.mod
+[ 46%] Generating include/newton.hpp
+[ 46%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree_25_5.py
+[ 46%] Built target nmodl_copy_python_files
+[ 46%] Built target coreneuron-copy-nrnivmodl-core-dependencies
+[ 46%] Built target build-time-copy-9796dc5ecdbaa7836bd91312a7cee8a246162bc45b7f72b226c1dd652cfc099c
+[ 46%] Copying /proj/home/ibs/ccs/olive/nrn/share/demo to /proj/home/ibs/ccs/olive/nrn/build/share/nrn/demo
+[ 46%] Built target nocmodl_generated_files
+[ 46%] Built target build-time-copy-75466ff2d755e848adb2b6dacd8b7e7dab119d3e54e4da22343225091914e316
+[ 46%] Built target nrnivmodl_dependency
+[ 46%] Built target build-time-copy-d67499ee523f4f8ef0965110854bafcb56d4a92d50de79c04e4fd03afab32bb4
+[ 46%] Built target oc_generated_files
+[ 46%] Copying /proj/home/ibs/ccs/olive/nrn/share/lib to /proj/home/ibs/ccs/olive/nrn/build/share/nrn/lib
+[ 46%] Built target build-time-copy-431a545f455997e745cc5235f00a648e604bdaf6d0249cba6ba6a50162a8db49
+[ 46%] Copying headers to build directory
+[ 46%] Built target copy_share_demo_to_build
+[ 46%] Built target copy_headers_to_build
+[ 46%] Built target copy_share_lib_to_build
+[ 46%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/discrete.cpp.o
+[ 46%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/deriv.cpp.o
+[ 46%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/modl.cpp.o
+[ 46%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/init.cpp.o
+[ 46%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/nocpout.cpp.o
+[ 46%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/io.cpp.o
+[ 46%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/consist.cpp.o
+[ 47%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/modlunit/units.cpp.o
+[ 47%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/parsact.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/kinetic.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/nocmodl_generated/lex.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/noccout.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/simultan.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/list.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/solve.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/nocmodl_generated/diffeq.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/netrec_discon.cpp.o
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/nocmodl_generated/parse1.cpp.o
+[ 48%] Built target generate_hocusr_header
+[ 48%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/symbol.cpp.o
+[ 48%] Built target help_data_dat
+[ 48%] Built target modlunit_generated_files
+[ 49%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/declare.cpp.o
+[ 49%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/consist.cpp.o
+[ 49%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/io.cpp.o
+[ 49%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/units.cpp.o
+[ 49%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/kinunit.cpp.o
+"/proj/home/ibs/ccs/olive/nrn/src/sparse13/spoutput.cpp", line 133: warning: variable "pImagElements" was set but never used [set_but_not_used]
+      ElementPtr pElement, pImagElements[PRINTER_WIDTH / 10 + 1];
+                           ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/modlunit_generated/lex.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/units1.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/passn.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/symbol.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/init.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/list.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/model.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/modlunit_generated/parse1.cpp.o
+[ 50%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/nrnunit.cpp.o
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+[ 50%] Built target pyastgen
+[ 50%] Linking CXX shared library ../../lib/librxdmath.so
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+[ 50%] Built target rxdmath
+[ 50%] Linking CXX static library ../../lib/libsparse13.a
+[ 50%] Built target sparse13
+[ 50%] Linking CXX static library ../../lib/libnrngnu.a
+[ 50%] Built target nrngnu
+[ 50%] Built target corenrn_mpi
+[ 50%] Built target nrnversion_h
+[ 50%] Built target generated_source_files
+/proj/home/ibs/ccs/olive/nrn/src/coreneuron/mechanism/mechanism.hpp(106): warning #177-D: variable "cannot_reallocate_on_device" was declared but never referenced
+          int cannot_reallocate_on_device = 0;
+              ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[ 50%] Linking CXX executable ../../bin/modlunit
+[ 50%] Built target modlunit
+[ 50%] Linking CUDA shared library ../../lib/libcoreneuron-cuda.so
+[ 50%] Built target coreneuron-cuda
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/gpu/nrn_acc_manager.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/apps/main1.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/apps/corenrn_parameters.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/core2nrn_data_return.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/lfp.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/global_vars.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/mem_layout_util.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/mech_report.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/mk_mech.cpp.o
+[ 50%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn_setup.cpp.o
+[ 51%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/report_configuration_parser.cpp.o
+[ 51%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn_checkpoint.cpp.o
+[ 51%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/eion.cpp.o
+[ 51%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn_filehandler.cpp.o
+[ 51%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/output_spikes.cpp.o
+[ 51%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/capac.cpp.o
+[ 51%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/phase2.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/fast_imem.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn2core_data_init.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/prcellstate.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/sonata_report_handler.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/data_layout.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/phase3.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/partrans.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/cellorder2.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/report_event.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/scopmath/abort.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/phase1.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/report_handler.cpp.o
+[ 52%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/ivocvect.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/netpar.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mpi/core/nrnmpi_def_cinc.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/multisend_setup.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/node_permute.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/nrntimeout.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/nrnreport.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/mech_mapping.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/tqueue.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/__/__/coreneuron/config/config.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/cvodestb.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/multisend.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/register_mech.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/multicore.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/balance.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/fadvance_core.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/netcvode.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/finitialize.cpp.o
+[ 53%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/nrn_stats.cpp.o
+[ 54%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/cellorder.cpp.o
+[ 54%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/treeset_core.cpp.o
+[ 54%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/progressbar/progressbar.cpp.o
+[ 54%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/setup_fornetcon.cpp.o
+[ 54%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/memory_utils.cpp.o
+[ 55%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/cellorder1.cpp.o
+[ 55%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/solve_core.cpp.o
+[ 55%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/nrnoc_aux.cpp.o
+[ 55%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/vrecord.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mpi/core/resolve.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/randoms/nrnran123.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/scopmath/newton_thread.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/utils.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/lpt.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/partrans_setup.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/memory.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/patternstim.cpp.o
+[ 56%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/string_utils.cpp.o
+"/proj/home/ibs/ccs/olive/nrn/src/coreneuron/io/nrn_filehandler.hpp", line 138: warning: variable "factor_offset" was declared but never referenced [declared_but_not_referenced]
+              int factor_offset = 0;
+                  ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/src/coreneuron/io/phase2.cpp", line 1175: warning: pointless comparison of unsigned integer with zero [unsigned_compare_with_zero]
+                  assert(index >= 0 && index < szdp);
+                  ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+[ 56%] Linking CXX static library ../../lib/libfmt.a
+[ 56%] Built target fmt
+[ 56%] Building CXX object src/nmodl/pybind/CMakeFiles/pywrapper.dir/wrapper.cpp.o
+[ 57%] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[ 57%] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+[ 57%] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+[ 57%] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+[ 57%] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+[ 57%] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o
+[ 57%] Linking CXX static library ../../lib/libnanobind.a
+[ 57%] Built target nanobind
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_utils.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrn_metaclass.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpython.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_hoc.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_extracellular.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_vol.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_marching_cubes.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_intracellular.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_llgramarea.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_nrn.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_p2h.cpp.o
+[ 58%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/grids.cpp.o
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 594: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto copy_noinline(InputIt begin, InputIt end,
+                ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 1702: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t& fill)
+  ^
+
+"/proj/home/ibs/ccs/olive/nrn/external/fmt/include/fmt/format.h", line 2207: warning: routine is both "inline" and "noinline" [inline_gnu_noinline_conflict]
+  FMT_CONSTEXPR FMT_NOINLINE auto write_int_noinline(OutputIt out,
+                ^
+
+[ 58%] Linking CXX executable ../../bin/nocmodl
+[ 58%] Built target nocmodl
+[ 58%] Built target nrnpython
+[ 58%] Generating ../nrnoc/apcount.cpp
+[ 58%] Generating ../nrnoc/feature.cpp
+[ 58%] Generating ../nrnoc/intfire1.cpp
+[ 58%] Generating ../nrnoc/expsyn.cpp
+[ 58%] Generating ../nrnoc/hh.cpp
+[ 58%] Generating ../nrnoc/oclmp.cpp
+[ 59%] Generating ../nrnoc/intfire2.cpp
+[ 59%] Generating ../nrnoc/netstim.cpp
+[ 59%] Generating ../nrnoc/intfire4.cpp
+[ 59%] Generating ../nrnoc/syn.cpp
+[ 59%] Generating ../nrnoc/passive.cpp
+[ 59%] Generating ../nrnoc/svclmp.cpp
+[ 60%] Generating ../nrnoc/pattern.cpp
+[ 60%] Generating ../nrnoc/vclmp.cpp
+[ 60%] Generating ../nrnoc/exp2syn.cpp
+[ 60%] Generating ../nrnoc/ppmark.cpp
+[ 60%] Generating ../nrnoc/stim.cpp
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:120: src/nrnoc/feature.cpp] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:138: src/nrnoc/intfire1.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:129: src/nrnoc/hh.cpp] Error 1
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:174: src/nrnoc/oclmp.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:147: src/nrnoc/intfire2.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:93: src/nrnoc/apcount.cpp] Error 1
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:111: src/nrnoc/expsyn.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:183: src/nrnoc/passive.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:156: src/nrnoc/intfire4.cpp] Error 1
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:165: src/nrnoc/netstim.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:228: src/nrnoc/syn.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:219: src/nrnoc/svclmp.cpp] Error 1
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:192: src/nrnoc/pattern.cpp] Error 1
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:237: src/nrnoc/vclmp.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:102: src/nrnoc/exp2syn.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:201: src/nrnoc/ppmark.cpp] Error 1
+/proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /proj/home/ibs/ccs/olive/nrn/build/bin/nocmodl)
+make[2]: *** [src/nrniv/CMakeFiles/nrniv_lib.dir/build.make:210: src/nrnoc/stim.cpp] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2794: src/nrniv/CMakeFiles/nrniv_lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 61%] Linking CXX shared library ../../../lib/libpywrapper.so
+[ 61%] Built target pywrapper
+[ 61%] Linking CXX static library ../../lib/libspdlog.a
+[ 61%] Built target spdlog
+[ 61%] Linking CXX static library ../../lib/libcoreneuron-core.a
+[ 61%] Built target coreneuron-core
+make: *** [Makefile:136: all] Error 2

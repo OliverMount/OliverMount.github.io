@@ -56,15 +56,20 @@ export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
 #export CC=nvc
 #export CXX=nvc++
 
-#export LD_LIBRARY_PATH=/opt/ibs_lib/apps/gcc/12.2.0/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt/ibs_lib/apps/gcc/12.2.0/lib64:$LD_LIBRARY_PATH
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ibs_lib/apps/gcc/12.2.0/lib64
 echo $LD_LIBRARY_PATH
 
+#echo -e "\n\nNVHPC_CUDA_FLAGS"
+#echo $NVHPC_CUDA_FLAGS
+#export NVHPC_CUDA_FLAGS="-gpu=cuda12.6,lineinfo,cc70,cc80,cc90"
+#echo $NVHPC_CUDA_FLAGS
 
+if false; then
 cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DNRN_ENABLE_CORENEURON=ON \
  -DCORENRN_ENABLE_GPU=ON \
- -DCORENRN_ENABLE_NMODL=ON \
+ #-DCORENRN_ENABLE_NMODL=ON \
  -DNRN_ENABLE_INTERVIEWS=OFF \
  -DNRN_ENABLE_RX3D=OFF \
  #-DNRN_NMODL_CXX_FLAGS="-O0 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64"
@@ -72,13 +77,27 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  -DCMAKE_CXX_COMPILER=nvc++ \
  #-DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  #-DCMAKE_SHARED_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
- -DCMAKE_CXX_FLAGS="-O3 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
+ #-DCMAKE_CUDA_FLAGS="-gpu=cc90" \
  #-DCMAKE_INSTALL_RPATH="/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
- -DCMAKE_CUDA_ARCHITECTURES=90 \ 
- #-DCMAKE_C_FLAGS="-O3 -g" \
- #-DCMAKE_CXX_FLAGS="-O3 -g"  \
+ -DCMAKE_CUDA_ARCHITECTURES=90 \   
+ -DCMAKE_C_FLAGS="-O3 -g" \
+ -DCMAKE_CXX_FLAGS="-O3 -g"  \
+ -DCMAKE_BUILD_TYPE=Custom 
+fi
+
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
+ -DNRN_ENABLE_CORENEURON=ON \
+ -DCORENRN_ENABLE_GPU=ON \
+ -DNRN_ENABLE_INTERVIEWS=OFF \
+ -DNRN_ENABLE_RX3D=OFF \
+ -DCMAKE_C_COMPILER=nvc \
+ -DCMAKE_CXX_COMPILER=nvc++ \
+ -DCMAKE_CUDA_ARCHITECTURES=90 \   
+ -DCMAKE_C_FLAGS="-O3 -g" \
+ -DCMAKE_CXX_FLAGS="-O3 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64"  \
  -DCMAKE_BUILD_TYPE=Custom 
 
+export LD_LIBRARY_PATH=/opt/ibs_lib/apps/gcc/12.2.0/lib64:$LD_LIBRARY_PATH
 make -j
 
 if false; then
