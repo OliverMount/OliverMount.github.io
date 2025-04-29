@@ -14,7 +14,7 @@ if [ -d nrn ]; then
 	
 fi
 
-if [ -d nrn ]; then
+if [ -d install ]; then
 	echo -e "\n############################"
 	echo -e "Removing previous install folder"
 	echo -e "############################\n"
@@ -69,8 +69,8 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/install \
  #-DNRN_NMODL_CXX_FLAGS="-O0 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64"
  -DCMAKE_C_COMPILER=nvc \
  -DCMAKE_CXX_COMPILER=nvc++ \
- -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
- -DCMAKE_SHARED_LINKER_FLAGS="-Wl,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
+ -DCMAKE_EXE_LINKER_FLAGS="-Wl,--enable-new-dtags,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
+ -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--enable-new-dtags,-rpath,/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  -DCMAKE_CXX_FLAGS="-O0 -g -L/opt/ibs_lib/apps/gcc/12.2.0/lib64" \
  -DCMAKE_CUDA_ARCHITECTURES=90 \
  #-DCMAKE_C_FLAGS="-O3 -g" \
