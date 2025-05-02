@@ -42,7 +42,7 @@ If they are not loading make sure the following files are available in `/usr/sha
 1.  openmpi
 2.  python
 3.  cmake
-4.  nvidia-hpc-sdk/25.1
+4.  nvidia-hpc-sdk/25.3
 5.  cuda
 
 For example, the content of the file in nvidia-hpc-sdk/25.1 should read as
@@ -71,7 +71,7 @@ Following compilation is `for GPU architecture of 61`
 cmake .. \
       -DNRN_ENABLE_CORENEURON=ON \
       -DCORENRN_ENABLE_GPU=ON \
-      -DNRN_ENABLE_INTERVIEWS=OFF \
+      -DNRN_ENABLE_INTERVIEWS=ON \
       -DNRN_ENABLE_RX3D=OFF \
       -DCMAKE_INSTALL_PREFIX=$HOME/install \
       -DCMAKE_C_COMPILER=nvc \
