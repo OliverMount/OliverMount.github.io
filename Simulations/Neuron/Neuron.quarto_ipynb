@@ -56,7 +56,7 @@
         "1.  openmpi\n",
         "2.  python\n",
         "3.  cmake\n",
-        "4.  nvidia-hpc-sdk/25.1\n",
+        "4.  nvidia-hpc-sdk/25.3\n",
         "5.  cuda\n",
         "\n",
         "For example, the content of the file in nvidia-hpc-sdk/25.1 should read as\n",
@@ -88,7 +88,7 @@
         "cmake .. \\\n",
         "      -DNRN_ENABLE_CORENEURON=ON \\\n",
         "      -DCORENRN_ENABLE_GPU=ON \\\n",
-        "      -DNRN_ENABLE_INTERVIEWS=OFF \\\n",
+        "      -DNRN_ENABLE_INTERVIEWS=ON \\\n",
         "      -DNRN_ENABLE_RX3D=OFF \\\n",
         "      -DCMAKE_INSTALL_PREFIX=$HOME/install \\\n",
         "      -DCMAKE_C_COMPILER=nvc \\\n",
@@ -262,6 +262,8 @@
         "\n",
         "## Installation of DeepDendrite\n",
         "\n",
+        "#### 1. Compilation of CoreNEURON first in the DeepDendrite way\n",
+        "\n",
         "\n",
         "```{bash}\n",
         "\n",
@@ -324,21 +326,41 @@
         "make install \n",
         "\n",
         "# After installtion start running the Figure 5 and Figure 4 files\n",
+        "```\n",
+        "\n",
+        "\n",
+        "#### 2. Installation of DeepDendrite\n",
+        "\n",
+        "\n",
+        "```{bash}\n",
+        "\n",
+        "\n",
+        "rm -rf build\n",
+        "mkdir build\n",
+        "cd build\n",
+        "\n",
+        "\n",
+        "# for older versions of pgi, load the moduleflie as following\n",
+        "module purge\n",
+        "module load openmpi\n",
+        "module load /usr/share/modules/modulefiles/nvhpc-hpcx-cuda12/25.1\n",
+        "\n",
+        "export CC=mpicc\n",
+        "export CXX=mpicxx\n",
+        "cmake .. -DCMAKE_C_FLAGS:STRING=\"-lrt -g -O0 -mp -mno-abm\" -DCMAKE_CXX_FLAGS:STRING=\"-lrt -std=c++11 -g -O0 -mp -mno-abm\" -DCOMPILE_LIBRARY_TYPE=STATIC -DCMAKE_INSTALL_PREFIX=\"/home/olive/DeepDendrite/install\" -DADDITIONAL_MECHPATH=\"/home/olive/DeepDendrite/src/all_mechanisms\" -DCUDA_HOST_COMPILER=`which gcc` -DCUDA_PROPAGATE_HOST_FLAGS=OFF -DENABLE_SELECTIVE_GPU_PROFILING=ON -DENABLE_OPENACC=ON -DAUTO_TEST_WITH_SLURM=OFF -DAUTO_TEST_WITH_MPIEXEC=OFF -DFUNCTIONAL_TESTS=OFF -DUNIT_TESTS=OFF\n",
+        "\n",
+        "make -j24\n",
+        "make install\n",
         "```"
       ],
-<<<<<<< HEAD
-      "id": "18bb114f"
-=======
-      "id": "1896c8cf"
->>>>>>> 1df55c04ab661655d4e745b87d264ffe42d6adf9
+      "id": "b07dd11c"
     }
   ],
   "metadata": {
     "kernelspec": {
-      "name": "python3",
+      "display_name": "Python 3",
       "language": "python",
-      "display_name": "Python 3 (ipykernel)",
-      "path": "/usr/share/jupyter/kernels/python3"
+      "name": "python3"
     }
   },
   "nbformat": 4,

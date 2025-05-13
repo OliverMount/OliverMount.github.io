@@ -230,7 +230,7 @@ mpiexec --bind-to none --map-by node \
 
 ## Installation of DeepDendrite
 
-#### 1. Compilation of CoreNEURON  first in the DeepDendrite way
+#### 1. Compilation of CoreNEURON first in the DeepDendrite way
 
 ```{bash}
 
