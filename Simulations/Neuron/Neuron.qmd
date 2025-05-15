@@ -317,3 +317,9 @@ cmake .. -DCMAKE_C_FLAGS:STRING="-lrt -g -O0 -mp -mno-abm" -DCMAKE_CXX_FLAGS:STR
 make -j24
 make install
 ```
+
+# Singularity based installation
+
+For singularity based installation of CoreNeuron please refer to
+
+<https://github.com/OliverMount/SingularityCoreNeuron>
