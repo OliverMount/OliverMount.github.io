@@ -351,9 +351,16 @@
         "\n",
         "make -j24\n",
         "make install\n",
-        "```"
+        "```\n",
+        "\n",
+        "\n",
+        "# Singularity based installation\n",
+        "\n",
+        "For singularity based installation of CoreNeuron please refer to\n",
+        "\n",
+        "<https://github.com/OliverMount/SingularityCoreNeuron>"
       ],
-      "id": "b07dd11c"
+      "id": "266fecc1"
     }
   ],
   "metadata": {
