@@ -88,11 +88,27 @@ Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)
 
 ```{bash}
 nvidia-smi --query-gpu=compute_cap --format=csv
+
+# in the cluster HPC it can be 
+
+srun --partition=@@@@ --gres=gpu:1 nvidia-smi --query-gpu=compute_cap --format=csv
+
+# Make sure to replace the partition name @@@@ with the actual partition name
+
 ```
 
 The above command works well only for the architectures above 70 (for example, starting from Tesla V100 (Volta).
 
-For older architectures, the compute_cap fiedd is not available. In such as, first search for the available
+For older architectures, the compute_cap fiedd is not available. In such as, first search for the available fields by
+
+```{bash}
+nvidia-smi --help-query-gpu  
+
+# in the cluster HPC it can be
+
+srun --partition=jepyc --gres=gpu:1 nvidia-smi --help-query-gpu
+# Make sure to replace the partition name @@@@ with the actual partition name
+```
 
 ### 7. Install (make)
 
