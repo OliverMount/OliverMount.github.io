@@ -110,6 +110,15 @@ srun --partition=jepyc --gres=gpu:1 nvidia-smi --help-query-gpu
 # Make sure to replace the partition name @@@@ with the actual partition name
 ```
 
+Get the name GPU name in such case and map it to the GPU
+
+```{bash}
+
+nvidia-smi --query-gpu=name --format=csv
+
+srun --partition=jepyc --gres=gpu:1 nvidia-smi --query-gpu=name --format=csv
+```
+
 ### 7. Install (make)
 
 ```{bash}
