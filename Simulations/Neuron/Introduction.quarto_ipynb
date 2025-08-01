@@ -4,6 +4,17 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
+        "--- \n",
+        "execute:\n",
+        "  echo: true\n",
+        "  python: \"/media/oli/Research/env_python/spy/bin/python\"\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
         "# Introduction\n",
         "\n",
         "Recently, NEURON simulator has python interface, with excellent [beginners tutorials](https://nrn.readthedocs.io/en/8.2.6/tutorials/index.html).\n",
@@ -12,7 +23,7 @@
         "\n",
         "Load the necessary modules\n"
       ],
-      "id": "98ab7f52"
+      "id": "b220fe62"
     },
     {
       "cell_type": "code",
@@ -26,7 +37,7 @@
         "  \n",
         "h.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):"
       ],
-      "id": "cc58acbe",
+      "id": "372d1ff4",
       "execution_count": null,
       "outputs": []
     },
@@ -36,7 +47,7 @@
       "source": [
         "Define one cell with soma and dendrite (with necessary parameters, morphology) using python class\n"
       ],
-      "id": "c8ba78a4"
+      "id": "f50a1da0"
     },
     {
       "cell_type": "code",
@@ -78,7 +89,7 @@
         "\n",
         "my_cell = BallAndStick(0)"
       ],
-      "id": "0d76dc15",
+      "id": "b6d9e884",
       "execution_count": null,
       "outputs": []
     },
@@ -90,7 +101,7 @@
         "for sec in h.allsec():\n",
         "    print(\"%s: %s\" % (sec, \", \".join(sec.psection()[\"density_mechs\"].keys())))\n"
       ],
-      "id": "4b687433",
+      "id": "56c614f9",
       "execution_count": null,
       "outputs": []
     },
@@ -100,7 +111,7 @@
       "source": [
         "#### Stimulus\n"
       ],
-      "id": "c0968b3c"
+      "id": "c55d75fa"
     },
     {
       "cell_type": "code",
@@ -111,7 +122,7 @@
         "stim.dur = 1 #ms\n",
         "stim.amp = 0.1  # nA"
       ],
-      "id": "2b171168",
+      "id": "63033988",
       "execution_count": null,
       "outputs": []
     },
@@ -121,7 +132,7 @@
       "source": [
         "#### Recording soma voltage\n"
       ],
-      "id": "c94f650d"
+      "id": "45725074"
     },
     {
       "cell_type": "code",
@@ -130,7 +141,7 @@
         "soma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)\n",
         "t = h.Vector().record(h._ref_t)"
       ],
-      "id": "967d9df2",
+      "id": "c1c5b88f",
       "execution_count": null,
       "outputs": []
     },
@@ -140,7 +151,7 @@
       "source": [
         "#### Initialization\n"
       ],
-      "id": "ed780dbb"
+      "id": "2bfc7d61"
     },
     {
       "cell_type": "code",
@@ -150,7 +161,7 @@
         "\n",
         "h.continuerun(25 * ms) # run until time 25 ms:\n"
       ],
-      "id": "14ec0a81",
+      "id": "e25c668b",
       "execution_count": null,
       "outputs": []
     },
@@ -164,16 +175,17 @@
         "plt.ylabel(\"v (mV)\")\n",
         "plt.show()"
       ],
-      "id": "eea65b29",
+      "id": "1d75f7f1",
       "execution_count": null,
       "outputs": []
     }
   ],
   "metadata": {
     "kernelspec": {
-      "display_name": "Python 3",
+      "name": "python3",
       "language": "python",
-      "name": "python3"
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/media/oli/Research/env_python/spy/share/jupyter/kernels/python3"
     }
   },
   "nbformat": 4,

@@ -100,9 +100,7 @@ website:
             - text: "Overview"
               file: Simulations/Neuron/Neuron.qmd 
             - text: "Introduction"
-              file: Simulations/Neuron/Introduction.qmd
-            - text: "Fundamentals"
-              file: Simulations/Neuron/Fundamentals.qmd 
+              file: Simulations/Neuron/Introduction.qmd 
             - text: "NMODL"
               file: Simulations/Neuron/NMODL.qmd 
           

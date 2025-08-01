@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d2d77a68e0dd6adabef8840a698fb36e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-23f06977a8bb8655285bfe291360254a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,6 +104,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../../Tutorials/Tutorials.html"> 
 <span class="menu-text">Tutorials</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Gleanings/Gleanings.html"> 
+<span class="menu-text">Gleanings</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -177,12 +181,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Simulations/Neuron/Fundamentals.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Fundamentals</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../Simulations/Neuron/NMODL.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NMODL</span></a>
   </div>
@@ -216,6 +214,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#batch-files-for-running-in-multi-node-gpu" id="toc-batch-files-for-running-in-multi-node-gpu" class="nav-link" data-scroll-target="#batch-files-for-running-in-multi-node-gpu">Batch files for running in multi-node GPU</a></li>
   <li><a href="#installation-of-deepdendrite" id="toc-installation-of-deepdendrite" class="nav-link" data-scroll-target="#installation-of-deepdendrite">Installation of DeepDendrite</a></li>
   </ul></li>
+  <li><a href="#singularity-based-installation" id="toc-singularity-based-installation" class="nav-link" data-scroll-target="#singularity-based-installation">Singularity based installation</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Simulations/Neuron/Neuron.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -270,7 +269,7 @@ source /etc/profile.d/modules.sh
 <li>openmpi</li>
 <li>python</li>
 <li>cmake</li>
-<li>nvidia-hpc-sdk/25.1</li>
+<li>nvidia-hpc-sdk/25.3</li>
 <li>cuda</li>
 </ol>
 <p>For example, the content of the file in nvidia-hpc-sdk/25.1 should read as</p>
@@ -292,7 +291,7 @@ prepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib
 <pre class="{bash}"><code>cmake .. \
       -DNRN_ENABLE_CORENEURON=ON \
       -DCORENRN_ENABLE_GPU=ON \
-      -DNRN_ENABLE_INTERVIEWS=OFF \
+      -DNRN_ENABLE_INTERVIEWS=ON \
       -DNRN_ENABLE_RX3D=OFF \
       -DCMAKE_INSTALL_PREFIX=$HOME/install \
       -DCMAKE_C_COMPILER=nvc \
@@ -304,7 +303,27 @@ prepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib
       -DCMAKE_C_FLAGS="-O3 -g" \
       -DCMAKE_BUILD_TYPE=Custom</code></pre>
 <p>Check the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)</p>
-<pre class="{bash}"><code>nvidia-smi --query-gpu=compute_cap --format=csv</code></pre>
+<pre class="{bash}"><code>nvidia-smi --query-gpu=compute_cap --format=csv
+
+# in the cluster HPC it can be 
+
+srun --partition=@@@@ --gres=gpu:1 nvidia-smi --query-gpu=compute_cap --format=csv
+
+# Make sure to replace the partition name @@@@ with the actual partition name
+</code></pre>
+<p>The above command works well only for the architectures above 70 (for example, starting from Tesla V100 (Volta).</p>
+<p>For older architectures, the compute_cap fiedd is not available. In such as, first search for the available fields by</p>
+<pre class="{bash}"><code>nvidia-smi --help-query-gpu  
+
+# in the cluster HPC it can be
+
+srun --partition=jepyc --gres=gpu:1 nvidia-smi --help-query-gpu
+# Make sure to replace the partition name @@@@ with the actual partition name</code></pre>
+<p>Get the name GPU name in such case and map it to the GPU architecture or compute capability</p>
+<pre class="{bash}"><code>
+nvidia-smi --query-gpu=name --format=csv
+
+srun --partition=jepyc --gres=gpu:1 nvidia-smi --query-gpu=name --format=cs</code></pre>
 </section>
 <section id="install-make" class="level3">
 <h3 class="anchored" data-anchor-id="install-make">7. Install (make)</h3>
@@ -434,6 +453,8 @@ mpiexec --bind-to none --map-by node \
 </section>
 <section id="installation-of-deepdendrite" class="level2">
 <h2 class="anchored" data-anchor-id="installation-of-deepdendrite">Installation of DeepDendrite</h2>
+<section id="compilation-of-coreneuron-first-in-the-deepdendrite-way" class="level4">
+<h4 class="anchored" data-anchor-id="compilation-of-coreneuron-first-in-the-deepdendrite-way">1. Compilation of CoreNEURON first in the DeepDendrite way</h4>
 <pre class="{bash}"><code>
 # Docker is here
 # https://deepdendrite.readthedocs.io/
@@ -494,9 +515,36 @@ export PYTHONPATH=$PYTHONPATH:/home/olive/DeepDendrite/install/lib/python
 make install 
 
 # After installtion start running the Figure 5 and Figure 4 files</code></pre>
-
-
 </section>
+<section id="installation-of-deepdendrite-1" class="level4">
+<h4 class="anchored" data-anchor-id="installation-of-deepdendrite-1">2. Installation of DeepDendrite</h4>
+<pre class="{bash}"><code>
+
+rm -rf build
+mkdir build
+cd build
+
+
+# for older versions of pgi, load the moduleflie as following
+module purge
+module load openmpi
+module load /usr/share/modules/modulefiles/nvhpc-hpcx-cuda12/25.1
+
+export CC=mpicc
+export CXX=mpicxx
+cmake .. -DCMAKE_C_FLAGS:STRING="-lrt -g -O0 -mp -mno-abm" -DCMAKE_CXX_FLAGS:STRING="-lrt -std=c++11 -g -O0 -mp -mno-abm" -DCOMPILE_LIBRARY_TYPE=STATIC -DCMAKE_INSTALL_PREFIX="/home/olive/DeepDendrite/install" -DADDITIONAL_MECHPATH="/home/olive/DeepDendrite/src/all_mechanisms" -DCUDA_HOST_COMPILER=`which gcc` -DCUDA_PROPAGATE_HOST_FLAGS=OFF -DENABLE_SELECTIVE_GPU_PROFILING=ON -DENABLE_OPENACC=ON -DAUTO_TEST_WITH_SLURM=OFF -DAUTO_TEST_WITH_MPIEXEC=OFF -DFUNCTIONAL_TESTS=OFF -DUNIT_TESTS=OFF
+
+make -j24
+make install</code></pre>
+</section>
+</section>
+</section>
+<section id="singularity-based-installation" class="level1">
+<h1>Singularity based installation</h1>
+<p>For singularity based installation of CoreNeuron please refer to</p>
+<p><a href="https://github.com/OliverMount/SingularityCoreNeuron" class="uri">https://github.com/OliverMount/SingularityCoreNeuron</a></p>
+
+
 </section>
 
 </main> <!-- /main -->
