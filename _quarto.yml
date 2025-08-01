@@ -26,6 +26,8 @@ website:
         href: Publications/Publications.qmd
       - text: "Tutorials"
         href: Tutorials/Tutorials.qmd
+      - text: "Gleanings"
+        href: Gleanings/Gleanings.qmd
     right:
       - text: "R"
         href: Simulations/R/R.qmd 
