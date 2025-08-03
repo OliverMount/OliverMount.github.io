@@ -1,0 +1,44 @@
+---
+title: "PCA"
+---
+
+## Principal Component Analysis (PCA) 
+
+## Optimization Problems
+
+### 1. Variance Maximization Formulation
+
+PCA finds a linear subspace that maximizes the variance of the projected data. Let ( X \in \mathbb{R}\^{n \times d} ) be the mean-centered data matrix, and let ( \Sigma = \frac{1}{n} X\^\top X ) be its empirical covariance matrix.
+
+\[
+
+\begin{aligned}
+\text{maximize} \quad & \operatorname{Tr}(W^\top \Sigma W) \\
+\text{subject to} \quad & W^\top W = I_k
+\end{aligned}
+
+\]
+
+-   ( W \in \mathbb{R}\^{d \times k} ) is the matrix of principal directions (orthonormal columns).
+-   ( \operatorname{Tr} ) denotes the trace of a matrix.
+
+------------------------------------------------------------------------
+
+### 2. Reconstruction Error Minimization Formulation
+
+PCA can also be seen as finding a rank-( k ) approximation of ( X ) that minimizes the reconstruction error:
+
+\[
+
+\begin{aligned}
+\text{minimize} \quad & \| X - ZW^\top \|_F^2 \\
+\text{subject to} \quad & W^\top W = I_k
+\end{aligned}
+
+\]
+
+-   ( Z \in \mathbb{R}\^{n \times k} ) are the low-dimensional projections (scores).
+-   ( W \in \mathbb{R}\^{d \times k} ) is the projection matrix with orthonormal columns.
+-   ( \| \cdot \|\_F ) is the Frobenius norm.
+
+------------------------------------------------------------------------
