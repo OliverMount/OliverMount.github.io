@@ -47,7 +47,7 @@ Lee, Y., Park, B.-Y., **James, Oliver.**, Kim, S.-G., & Park, H. (2017). Autism 
 
 ## Book Chapters
 
-Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., & **James, Oliver.** (2023). **Low Power Methodologies for FPGA—An Overview. Low Power Architectures for IoT Applications**, 85–97.
+Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., **James, O.** (2023). Low Power Methodologies for FPGA—An Overview. In: Sharma, D.K., Sharma, R., Jeon, G., Polkowski, Z. (eds) **Low Power Architectures for IoT Applications. Springer Tracts in Electrical and Electronics Engineering.** Springer, Singapore. https://doi.org/10.1007/978-981-99-0639-0_4
 
 ## Conferences
 
