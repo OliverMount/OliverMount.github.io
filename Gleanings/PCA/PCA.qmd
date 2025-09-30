@@ -2,7 +2,7 @@
 title: "PCA"
 ---
 
-## Principal Component Analysis (PCA) 
+## Principal Component Analysis (PCA)
 
 ## Optimization Problems
 
