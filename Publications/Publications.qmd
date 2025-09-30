@@ -3,11 +3,27 @@ title: "List of publications"
 bibliography: references.bib 
 ---
 
+## bio$\color{Maroon}{\chi}$*iv*
+
+**James, Oliver** and Kim, Y. J. (2025), "Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics'', Submitted, Sep. 2025 [https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1](#0)
+
+Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **James, Oliver**, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), "Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination'', **Revised to Experimental and Molecular Medicine, Sep. 2025** [https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1](#0) .
+
 ## arXiv
 
 **James, Oliver.**, & Lee, H.-N. (2025). Concise probability distributions of eigenvalues of real-valued Wishart matrices. Retrieved from <http://arxiv.org/abs/1402.6757>
 
 **James, Oliver.**, & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. Retrieved from <https://arxiv.org/abs/1410.1956>
+
+## Under Revision
+
+Lee, Y. B., \textbf{James, Oliver}, Lee, D. Y., and Kim, Y. J. (2025). \`\`Hierarchical summary statistics encoding across primary visual and posterior parietal cortices'', **Adanced Science.**
+
+## In Preparation
+
+Miguel Sanchez-Valpuesta, **James, Oliver**, Joonyeol Lee and Gunsoo Kim, \`\`Effects of locomotion on the population frequency representation in the mouse auditory midbrain'', **Writing stage**.
+
+**Oliver James** and Sung Ho Hong, (2025). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage**.
 
 ## Journals {#sec-journals}
 

@@ -68,6 +68,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -174,7 +217,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#arxiv" id="toc-arxiv" class="nav-link active" data-scroll-target="#arxiv">arXiv</a></li>
+  <li><a href="#biocolormaroonchiiv" id="toc-biocolormaroonchiiv" class="nav-link active" data-scroll-target="#biocolormaroonchiiv">bio<span class="math inline">\color{Maroon}{\chi}</span><em>iv</em></a></li>
+  <li><a href="#arxiv" id="toc-arxiv" class="nav-link" data-scroll-target="#arxiv">arXiv</a></li>
+  <li><a href="#under-revision" id="toc-under-revision" class="nav-link" data-scroll-target="#under-revision">Under Revision</a></li>
+  <li><a href="#in-preparation" id="toc-in-preparation" class="nav-link" data-scroll-target="#in-preparation">In Preparation</a></li>
   <li><a href="#sec-journals" id="toc-sec-journals" class="nav-link" data-scroll-target="#sec-journals">Journals</a></li>
   <li><a href="#book-chapters" id="toc-book-chapters" class="nav-link" data-scroll-target="#book-chapters">Book Chapters</a></li>
   <li><a href="#conferences" id="toc-conferences" class="nav-link" data-scroll-target="#conferences">Conferences</a></li>
@@ -204,10 +250,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="biocolormaroonchiiv" class="level2">
+<h2 class="anchored" data-anchor-id="biocolormaroonchiiv">bio<span class="math inline">\color{Maroon}{\chi}</span><em>iv</em></h2>
+<p><strong>James, Oliver</strong> and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep.&nbsp;2025 <a href="#0">https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1</a></p>
+<p>Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, <strong>James, Oliver</strong>, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), “Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination’’, <strong>Revised to Experimental and Molecular Medicine, Sep.&nbsp;2025</strong> <a href="#0">https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1</a> .</p>
+</section>
 <section id="arxiv" class="level2">
 <h2 class="anchored" data-anchor-id="arxiv">arXiv</h2>
 <p><strong>James, Oliver.</strong>, &amp; Lee, H.-N. (2025). Concise probability distributions of eigenvalues of real-valued Wishart matrices. Retrieved from <a href="http://arxiv.org/abs/1402.6757" class="uri">http://arxiv.org/abs/1402.6757</a></p>
 <p><strong>James, Oliver.</strong>, &amp; Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. Retrieved from <a href="https://arxiv.org/abs/1410.1956" class="uri">https://arxiv.org/abs/1410.1956</a></p>
+</section>
+<section id="under-revision" class="level2">
+<h2 class="anchored" data-anchor-id="under-revision">Under Revision</h2>
+<p>Lee, Y. B., , Lee, D. Y., and Kim, Y. J. (2025). ``Hierarchical summary statistics encoding across primary visual and posterior parietal cortices’’, <strong>Adanced Science.</strong></p>
+</section>
+<section id="in-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="in-preparation">In Preparation</h2>
+<p>Miguel Sanchez-Valpuesta, <strong>James, Oliver</strong>, Joonyeol Lee and Gunsoo Kim, ``Effects of locomotion on the population frequency representation in the mouse auditory midbrain’’, <strong>Writing stage</strong>.</p>
+<p><strong>Oliver James</strong> and Sung Ho Hong, (2025). “Container-based framework for simulating biological cerebellar neural networks”, <strong>Writing stage</strong>.</p>
 </section>
 <section id="sec-journals" class="level2">
 <h2 class="anchored" data-anchor-id="sec-journals">Journals</h2>

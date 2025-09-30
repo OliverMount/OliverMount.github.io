@@ -14,7 +14,7 @@
     "href": "Publications/Publications.html",
     "title": "List of publications",
     "section": "",
-    "text": "James, Oliver., & Lee, H.-N. (2025). Concise probability distributions of eigenvalues of real-valued Wishart matrices. Retrieved from http://arxiv.org/abs/1402.6757\nJames, Oliver., & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. Retrieved from https://arxiv.org/abs/1410.1956",
+    "text": "James, Oliver and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep. 2025 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1\nJea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, James, Oliver, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), “Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination’’, Revised to Experimental and Molecular Medicine, Sep. 2025 https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1 .",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -421,8 +421,8 @@
     "objectID": "Publications/Publications.html#arxiv",
     "href": "Publications/Publications.html#arxiv",
     "title": "List of publications",
-    "section": "",
-    "text": "James, Oliver., & Lee, H.-N. (2025). Concise probability distributions of eigenvalues of real-valued Wishart matrices. Retrieved from http://arxiv.org/abs/1402.6757\nJames, Oliver., & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. Retrieved from https://arxiv.org/abs/1410.1956",
+    "section": "arXiv",
+    "text": "arXiv\nJames, Oliver., & Lee, H.-N. (2025). Concise probability distributions of eigenvalues of real-valued Wishart matrices. Retrieved from http://arxiv.org/abs/1402.6757\nJames, Oliver., & Lee, H.-N. (2025). Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders. Retrieved from https://arxiv.org/abs/1410.1956",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -645,5 +645,38 @@
     "title": "List of gleanings",
     "section": "",
     "text": "List of gleanings"
+  },
+  {
+    "objectID": "Publications/Publications.html#biocolormaroonchiiv",
+    "href": "Publications/Publications.html#biocolormaroonchiiv",
+    "title": "List of publications",
+    "section": "",
+    "text": "James, Oliver and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep. 2025 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1\nJea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, James, Oliver, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), “Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination’’, Revised to Experimental and Molecular Medicine, Sep. 2025 https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1 .",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#under-revision",
+    "href": "Publications/Publications.html#under-revision",
+    "title": "List of publications",
+    "section": "Under Revision",
+    "text": "Under Revision\nLee, Y. B., , Lee, D. Y., and Kim, Y. J. (2025). ``Hierarchical summary statistics encoding across primary visual and posterior parietal cortices’’, Adanced Science.",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "Publications/Publications.html#in-preparation",
+    "href": "Publications/Publications.html#in-preparation",
+    "title": "List of publications",
+    "section": "In Preparation",
+    "text": "In Preparation\nMiguel Sanchez-Valpuesta, James, Oliver, Joonyeol Lee and Gunsoo Kim, ``Effects of locomotion on the population frequency representation in the mouse auditory midbrain’’, Writing stage.\nOliver James and Sung Ho Hong, (2025). “Container-based framework for simulating biological cerebellar neural networks”, Writing stage.",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
   }
 ]
