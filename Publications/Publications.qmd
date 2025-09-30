@@ -3,7 +3,7 @@ title: "List of publications"
 bibliography: references.bib 
 ---
 
-## bio$\color{Maroon}{\chi}$*iv*
+## bioR$\color{Maroon}{\chi}$*iv*
 
 **James, Oliver** and Kim, Y. J. (2025), "Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics'', Submitted, Sep. 2025 [https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1](#0)
 
