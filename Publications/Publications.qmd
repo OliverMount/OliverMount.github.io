@@ -87,8 +87,12 @@ Lee, W.-B., **James,Oliver**, Kim, S.-C., & Lee, H.-N. (2013). Random optical sc
 
 **James, Oliver**, Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.
 
-## Patents
+## International Patents
 
-Lee, H. N., Park, S. J., **James, Oliver**, & Lee, W. B. (may \# ‘ 12’, note=US Patent 9,030,662 2015). Method and apparatus for processing optical signal of spectrometer using sparse nature of signals.
+Heung-No Lee, **Oliver James**, Sang-Jun Park, and Woong-Bi Lee, Method and Apparatus for Processing Optical Signal Of Spectrometer Using Sparse Nature of Signals, US patent number: 13/711,930, date: Dec. 12, 2012. (Contribution 30%).
 
-Lee, H. N., **James, Oliver**, & Lee, W. B. (oct \# ‘ 29’, note=US Patent 10,458,843 2019). Spectrometry apparatus and spectrometry method.
+## Korean Patents
+
+Heung-No Lee, **Oliver James**, and Woong-Bi Lee, Apparatus for Improving Spectral resolution using Random Transmittance in Optical Spectrometers, No. 10-2012-0112453, registered date: Oct. 10, 2012. (Contribution 30%).
+
+Heung-No Lee, **Oliver James**, Sang-Jun Park, and Woong-Bi Lee, Method and Apparatus for Processing Optical Signal Of Spectrometer Using Sparse Nature of Signals, No. 10-2012-0079171, registered date: July. 20, 2012. (Contribution 30%).
