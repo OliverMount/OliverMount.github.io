@@ -4,7 +4,7 @@
     "href": "Research/Research.html",
     "title": "Research",
     "section": "",
-    "text": "Filters with random transmittance for improving resolution in filter-array-based spectrometers\n\n\n\n\n\n\n\n\n\n\n\n2013-02-25\n\n\nOliver James, Woongbi Lee, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nImpact of sampling rate on fMRI connectivity analysis\n\n\n\n\n\n\n\n\n\n\n\n2019-01-01\n\n\nOliver James, Hyunjin Park, Seong-Gi Kim\n\n\n\n\n\n\n\n\n\n\n\n\nImproved LS Channel Estimation in CFO\n\n\n\n\n\n\n\n\n\n\n\n2012-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nImproving resolution of miniature spectrometers by exploiting sparse nature of signals\n\n\n\n\n\n\n\n\n\n\n\n2012-03-30\n\n\nOliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nKrylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nOn the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis\n\n\n\n\n\n\n\n\n\n\n\n2015-06-01\n\n\nOliver James\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\n\nNo matching items",
+    "text": "Filters with random transmittance for improving resolution in filter-array-based spectrometers\n\n\n\n\n\n\n\n\n2013-02-25\n\n\nOliver James, Woongbi Lee, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nImpact of sampling rate on fMRI connectivity analysis\n\n\n\n\n\n\n\n\n2019-01-01\n\n\nOliver James, Hyunjin Park, Seong-Gi Kim\n\n\n\n\n\n\n\n\n\n\n\n\nImproved LS Channel Estimation in CFO\n\n\n\n\n\n\n\n\n2012-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nImproving resolution of miniature spectrometers by exploiting sparse nature of signals\n\n\n\n\n\n\n\n\n2012-03-30\n\n\nOliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nKrylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nOn the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis\n\n\n\n\n\n\n\n\n2015-06-01\n\n\nOliver James\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Research"
     ]
@@ -36,11 +36,7 @@
     "href": "Simulations/Neuron/Fundamentals.html",
     "title": "Fundamentals",
     "section": "",
-    "text": "A few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.\n\n\nParmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment",
-    "crumbs": [
-      "Neuron",
-      "Fundamentals"
-    ]
+    "text": "A few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.\n\n\nParmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment"
   },
   {
     "objectID": "Simulations/Python/Python.html",
@@ -163,7 +159,7 @@
     "href": "Simulations/Neuron/Introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "Recently, NEURON simulator has python interface, with excellent beginners tutorials.\n\nBall and stick 1: Basic cell\nLoad the necessary modules\n\nfrom neuron import h\nfrom neuron.units import ms, mV, µm \n\nimport matplotlib.pyplot as plt   # For plotting using matplotlib\n\n  \nh.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):\n\n1.0\n\n\nDefine one cell with soma and dendrite (with necessary parameters, morphology) using python class\n\nclass BallAndStick:\n    def __init__(self, gid):\n        self._gid = gid\n        self._setup_morphology()\n        self._setup_biophysics()\n\n    def _setup_morphology(self):\n        self.soma = h.Section(name=\"soma\", cell=self)\n        self.dend = h.Section(name=\"dend\", cell=self)\n        self.dend.connect(self.soma)\n        self.all = self.soma.wholetree()\n        self.soma.L = self.soma.diam = 12.6157 * µm\n        self.dend.L = 200 * µm\n        self.dend.diam = 1 * µm\n\n    def _setup_biophysics(self):\n        for sec in self.all:\n            sec.Ra = 100  # Axial resistance in Ohm * cm\n            sec.cm = 1  # Membrane capacitance in micro Farads / cm^2\n        self.soma.insert(\"hh\")\n        for seg in self.soma:\n            seg.hh.gnabar = 0.12  # Sodium conductance in S/cm2\n            seg.hh.gkbar = 0.036  # Potassium conductance in S/cm2\n            seg.hh.gl = 0.0003  # Leak conductance in S/cm2\n            seg.hh.el = -54.3 * mV  # Reversal potential \n        self.dend.insert(\"pas\")  # # Insert passive current in the dendrite  \n        for seg in self.dend:   \n            seg.pas.g = 0.001  # Passive conductance in S/cm2        \n            seg.pas.e = -65 * mV  # Leak reversal potential             \n\n    def __repr__(self):\n        return \"BallAndStick[{}]\".format(self._gid)\n\n\nmy_cell = BallAndStick(0)\n\n\n# Make sure soma is hh and dendtrite is passive membrane\nfor sec in h.allsec():\n    print(\"%s: %s\" % (sec, \", \".join(sec.psection()[\"density_mechs\"].keys())))\n\nBallAndStick[0].soma: hh\nBallAndStick[0].dend: pas\n\n\n\nStimulus\n\nstim = h.IClamp(my_cell.dend(1))  # at the origin of the dentrite\nstim.delay = 5 #ms\nstim.dur = 1 #ms\nstim.amp = 0.1  # nA\n\n\n\nRecording soma voltage\n\nsoma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)\nt = h.Vector().record(h._ref_t)\n\n\n\nInitialization\n\nh.finitialize(-65 * mV) # initialize membrane potential \n\nh.continuerun(25 * ms) # run until time 25 ms:\n\n0.0\n\n\n\nplt.figure()\nplt.plot(t, soma_v)\nplt.xlabel(\"t (ms)\")\nplt.ylabel(\"v (mV)\")\nplt.show()",
+    "text": "Introduction\nRecently, NEURON simulator has python interface, with excellent beginners tutorials.\n\n\nBall and stick 1: Basic cell\nLoad the necessary modules\n\nfrom neuron import h\nfrom neuron.units import ms, mV, µm \n\nimport matplotlib.pyplot as plt   # For plotting using matplotlib\n\n  \nh.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):\n\nDefine one cell with soma and dendrite (with necessary parameters, morphology) using python class\n\nclass BallAndStick:\n    def __init__(self, gid):\n        self._gid = gid\n        self._setup_morphology()\n        self._setup_biophysics()\n\n    def _setup_morphology(self):\n        self.soma = h.Section(name=\"soma\", cell=self)\n        self.dend = h.Section(name=\"dend\", cell=self)\n        self.dend.connect(self.soma)\n        self.all = self.soma.wholetree()\n        self.soma.L = self.soma.diam = 12.6157 * µm\n        self.dend.L = 200 * µm\n        self.dend.diam = 1 * µm\n\n    def _setup_biophysics(self):\n        for sec in self.all:\n            sec.Ra = 100  # Axial resistance in Ohm * cm\n            sec.cm = 1  # Membrane capacitance in micro Farads / cm^2\n        self.soma.insert(\"hh\")\n        for seg in self.soma:\n            seg.hh.gnabar = 0.12  # Sodium conductance in S/cm2\n            seg.hh.gkbar = 0.036  # Potassium conductance in S/cm2\n            seg.hh.gl = 0.0003  # Leak conductance in S/cm2\n            seg.hh.el = -54.3 * mV  # Reversal potential \n        self.dend.insert(\"pas\")  # # Insert passive current in the dendrite  \n        for seg in self.dend:   \n            seg.pas.g = 0.001  # Passive conductance in S/cm2        \n            seg.pas.e = -65 * mV  # Leak reversal potential             \n\n    def __repr__(self):\n        return \"BallAndStick[{}]\".format(self._gid)\n\n\nmy_cell = BallAndStick(0)\n\n\n# Make sure soma is hh and dendtrite is passive membrane\nfor sec in h.allsec():\n    print(\"%s: %s\" % (sec, \", \".join(sec.psection()[\"density_mechs\"].keys())))\n\n\nStimulus\n\nstim = h.IClamp(my_cell.dend(1))  # at the origin of the dentrite\nstim.delay = 5 #ms\nstim.dur = 1 #ms\nstim.amp = 0.1  # nA\n\n\n\nRecording soma voltage\n\nsoma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)\nt = h.Vector().record(h._ref_t)\n\n\n\nInitialization\n\nh.finitialize(-65 * mV) # initialize membrane potential \n\nh.continuerun(25 * ms) # run until time 25 ms:\n\n\nplt.figure()\nplt.plot(t, soma_v)\nplt.xlabel(\"t (ms)\")\nplt.ylabel(\"v (mV)\")\nplt.show()",
     "crumbs": [
       "Neuron",
       "Introduction"
@@ -205,11 +201,7 @@
     "href": "Simulations/Neuron/Fundamentals.html#section",
     "title": "Fundamentals",
     "section": "",
-    "text": "Parmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment",
-    "crumbs": [
-      "Neuron",
-      "Fundamentals"
-    ]
+    "text": "Parmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment"
   },
   {
     "objectID": "Simulations/Neuron/Neuron.html#installation-of-neuron-with-gpu-support-coreneuron",
@@ -441,7 +433,7 @@
     "href": "Publications/Publications.html#book-chapters",
     "title": "List of publications",
     "section": "Book Chapters",
-    "text": "Book Chapters\nUmapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., & James, Oliver. (2023). Low Power Methodologies for FPGA—An Overview. Low Power Architectures for IoT Applications, 85–97.",
+    "text": "Book Chapters\nUmapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., James, O. (2023). Low Power Methodologies for FPGA—An Overview. In: Sharma, D.K., Sharma, R., Jeon, G., Polkowski, Z. (eds) Low Power Architectures for IoT Applications. Springer Tracts in Electrical and Electronics Engineering. Springer, Singapore. https://doi.org/10.1007/978-981-99-0639-0_4",
     "crumbs": [
       "Publications",
       "List of publications"
@@ -470,7 +462,7 @@
     "href": "Simulations/Neuron/NMODL.html#neuron-block",
     "title": "NMODL",
     "section": "NEURON BLOCK",
-    "text": "NEURON BLOCK\nDeclares mechanism properties and interface variables:\n\n\n\n\n\n\nNEURON BLOCK\n\n\n\nNEURON {\nSUFFIX…\nRANGE …\nGLOBAL …\nNONSPECIFIC_CURRENT …\nUSEION … READ … WRITE … VALENCE real // Specifies ion interaction (see Nernst potential below)\nPOINT_PROCESS …\nPOINTER …\nEXTERNAL …\n}\n\n\nThe RANGE and GLOABAL names should also be declared in the normal PARAMETER or ASSIGNED statement outside of the NEURON block, otherwise they will be hidden from the user.\nNEURON makes the distinction between mechanisms that are attributed to an entire section (e.g., HH channels) and mechanisms that are associated with a particular point in the section (e.g., voltage clamp or synapse). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm2). Point processes also differ in that you can insert several in the same segment.\nThere are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the model description language.\nNernst potential\n\n\\displaystyle E={\\frac {RT}{zF}}\\ln {\\frac {[{\\text{ion outside cell}}]}{[{\\text{ion inside cell}}]}}=2.3026{\\frac {RT}{zF}}\\log _{10}{\\frac {[{\\text{ion outside cell}}]}{[{\\text{ion inside cell}}]}}.\n\nwhen finitialize() is called Nernst equation is computed.",
+    "text": "NEURON BLOCK\nDeclares mechanism properties and interface variables:\n\n\n\n\n\n\nNEURON BLOCK\n\n\n\nNEURON {\nSUFFIX…\nRANGE …\nGLOBAL …\nNONSPECIFIC_CURRENT …\nUSEION … READ … WRITE … VALENCE real // Specifies ion interaction (see Nernst potential below)\nPOINT_PROCESS …\nPOINTER …\nEXTERNAL …\n}\n\n\nThe RANGE and GLOABAL names should also be declared in the normal PARAMETER or ASSIGNED statement outside of the NEURON block, otherwise they will be hidden from the user.",
     "crumbs": [
       "Neuron",
       "NMODL"
@@ -481,7 +473,7 @@
     "href": "Simulations/Neuron/NMODL.html",
     "title": "NMODL",
     "section": "",
-    "text": "The acronym “nrnivmodl” stands for NEURON Interpreter and Model Description Language Compiler. It is part of the NEURON simulation environment and is used to compile .mod files (written in NMODL) into a specialized version of NEURON called special. This version includes user-defined mechanisms for simulating physiological neuron models.\nWhy NMODL in Neuron simulator?\nThe purpose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. The .mod files extend NEURON’s capabilities by specifying kinetic equations, state variables, and interactions with ions.",
+    "text": "The acronym “nrnivmodl” stands for NEURON Interpreter and Model Description Language Compiler. It is part of the NEURON simulation environment and is used to compile .mod files (written in NMODL) into a specialized version of NEURON called special. This version includes user-defined mechanisms for simulating physiological neuron models.\nWhy NMODL in Neuron simulator?\nThe purpose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. The .mod files extend NEURON’s capabilities by specifying kinetic equations, state variables, and interactions with ions.\nMechanisms are normally local. That is they do not depend on what is happening at other places on the neuron.",
     "crumbs": [
       "Neuron",
       "NMODL"
@@ -613,5 +605,45 @@
     "title": "Kalman Filter",
     "section": "Summary",
     "text": "Summary\nThis comprehensive list represents the major variants developed over six decades of Kalman filtering research, from Kalman’s original 1960 paper to modern machine learning hybrids. Each variant addresses specific challenges such as:\n\nNonlinearity: EKF, UKF, CKF, particle filters\nNon-Gaussian noise: Particle filters, robust variants\nComputational efficiency: Reduced-order filters, fast algorithms\nRobustness: H-infinity, maximum correntropy filters\nSpecialized applications: SLAM, attitude estimation, GPS navigation\nModern AI integration: Deep Kalman filters, differentiable filters\n\nThe Kalman filter remains one of the most successful algorithms in estimation theory, with applications spanning aerospace, robotics, autonomous vehicles, finance, signal processing, and countless other domains."
+  },
+  {
+    "objectID": "Simulations/Neuron/NMODL.html#key-differences",
+    "href": "Simulations/Neuron/NMODL.html#key-differences",
+    "title": "NMODL",
+    "section": "Key Differences",
+    "text": "Key Differences",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "Simulations/Neuron/NMODL.html#range-variables",
+    "href": "Simulations/Neuron/NMODL.html#range-variables",
+    "title": "NMODL",
+    "section": "Range Variables",
+    "text": "Range Variables\n\nDefinition: Range variables can have different values in each compartment (segment) of a section.\nUsage: These are used for variables that vary spatially along the length of a neuron section, such as membrane potential or ion concentrations.\nAccess: Values can be accessed at specific positions using syntax like section(x).variable, where xx is the normalized position (e.g., 0 to 1).\nExamples: Membrane potential ($v$ ), ion channel conductance ( g_{ion}), or local currents.",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "Simulations/Neuron/NMODL.html#global-variables",
+    "href": "Simulations/Neuron/NMODL.html#global-variables",
+    "title": "NMODL",
+    "section": "Global Variables",
+    "text": "Global Variables\n\nDefinition: Global variables have the same value across all compartments and sections.\nUsage: These are used for parameters or variables that do not vary spatially, such as universal constants or shared properties.\nAccess: They are accessed directly without specifying a position, e.g., variable.\nExamples: Temperature, reversal potentials, or a global scaling factor.\n\n\nAbout point process\nNEURON makes the distinction between mechanisms that are attributed to an entire section (e.g., HH channels) and mechanisms that are associated with a particular point in the section (e.g., voltage clamp or synapse). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm2). Point processes also differ in that you can insert several in the same segment.\nThere are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the model description language.\nNernst potential\n\n\\displaystyle E={\\frac {RT}{zF}}\\ln {\\frac {[{\\text{ion outside cell}}]}{[{\\text{ion inside cell}}]}}=2.3026{\\frac {RT}{zF}}\\log _{10}{\\frac {[{\\text{ion outside cell}}]}{[{\\text{ion inside cell}}]}}.\n\nwhen finitialize() is called Nernst equation is computed.",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "Gleanings/Gleanings.html",
+    "href": "Gleanings/Gleanings.html",
+    "title": "List of gleanings",
+    "section": "",
+    "text": "List of gleanings"
   }
 ]

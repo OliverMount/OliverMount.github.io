@@ -1,6 +1,7 @@
 --- 
 execute:
   echo: true
+  eval: false
   python: "/media/oli/Research/env_python/spy/bin/python"
 ---
 
