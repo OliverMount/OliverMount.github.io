@@ -25,7 +25,7 @@ Miguel Sanchez-Valpuesta, **James, Oliver**, Joonyeol Lee and Gunsoo Kim, "Effec
 
 **Oliver James** and Sung Ho Hong, (2025). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage**.
 
-## Journals {#sec-journals}
+## Published {#sec-journals}
 
 Bae, J., Jung, K., **James, Oliver.**, Suzuki, S., & Kim, Y. J. (2025). "Frontal engagement in perceptual integration under low subjective visibility", ***NeuroImage***, *305*, 120984.
 
