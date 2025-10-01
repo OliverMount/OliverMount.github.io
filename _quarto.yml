@@ -5,7 +5,7 @@ project:
 website:  
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
-  
+
   page-navigation: true
   search: true
   
@@ -13,123 +13,63 @@ website:
   repo-actions: [edit, source, issue] 
   
   #-----------------------------------------------------------------------------
-  ## Top navigation bar
+  #      Top navigation bar
   #-----------------------------------------------------------------------------  
   navbar: 
     background: primary
     left:
       - text: "Home"
-        href: index.qmd 
+        href: index.qmd
       - text: "Research"
-        href: Research/Research.qmd 
+        href: research/ 
       - text: "Publications"
-        href: Publications/Publications.qmd
+        href: publications/ 
       - text: "Tutorials"
-        href: Tutorials/Tutorials.qmd
+        href: tutorials/ 
       - text: "Gleanings"
-        href: Gleanings/Gleanings.qmd
+        href: gleanings/ 
+      - text: "Blogs"
+        href: blogs/ 
     right:
       - text: "R"
-        href: Simulations/R/R.qmd 
+        href: simulations/r/ 
       - text: "Python"
-        href: Simulations/Python/Python.qmd 
+        href: simulations/python/ 
       - text: "Brian2" 
-        href: Simulations/Brian2/Brian2.qmd 
+        href: simulations/brian2/ 
       - text: "Neuron" 
-        href: Simulations/Neuron/Neuron.qmd  
-        
-    #--------------------------------------------------------------------------- 
-    # Sidebar
-    #--------------------------------------------------------------------------- 
-    
-  sidebar:    
-    
-    # For left-side items
-    - title: "Research"
-      style: "docked"  # or "floated" 
-      search: true
-      background: light 
-      contents:
-        - Research/Research.qmd 
-          
-    - title: "Publications"   
-      contents:
-        - Publications/Publications.qmd
-          
-    - title: "Tutorials"   
-      contents:  
-        - text: "Tutorials"
-          file: Tutorials/Tutorials.qmd 
-        - section: "Random Processes" 
-          contents: 
-            - text: "Random Processes"
-              file: Tutorials/RandomProcess/RandomProcessIntro.qmd 
-            - text: "ARMA"
-              file: Tutorials/RandomProcess/ARMA.qmd
-            - text: "AR"
-              file: Tutorials/RandomProcess/AR.qmd 
-            - text: "MA"
-              file: Tutorials/RandomProcess/MA.qmd
-            - text: "Filtering of randomprocess"
-              file: Tutorials/RandomProcess/FilteringofRP.qmd
+        href: simulations/neuron/ 
+  #----------------------------------------------------------------------------- 
+  # Sidebar
+  #-----------------------------------------------------------------------------
+  
+  
+  
+  
+  
+  
 
-          
-        - section: "Estimation Theory"
-          contents: 
-            - text: "Estimation Theory"
-              file: Tutorials/EstimationTheory/EstimationTheoryIntro.qmd  
-            - text: "Estimation Theory"
-              file: Tutorials/EstimationTheory/PointEstimation.qmd 
-            - text: "Estimation Theory"
-              file: Tutorials/EstimationTheory/CramerRaoBound.qmd
-              
-    # For right-side  items    
-    - title: "R"
-      contents:
-        - Simulations/R/R.qmd  
-          
-    - title: "Python"
-      contents:
-        - Simulations/Python/Python.qmd   
-      
- 
-    - title: "Neuron"
-      contents: 
-        - section: "Neuron" 
-          contents:
-            - text: "Overview"
-              file: Simulations/Neuron/Neuron.qmd 
-            - text: "Introduction"
-              file: Simulations/Neuron/Introduction.qmd 
-            - text: "NMODL"
-              file: Simulations/Neuron/NMODL.qmd 
-          
-    - title: "Brian2"
-      contents:
-        - section: "Brian2"
-          contents:
-            - Simulations/Brian2/Brian2.qmd 
-            - Simulations/Brian2/Introduction.qmd 
-            - Simulations/Brian2/Fundamentals.qmd
-     
+  #-----------------------------------------------------------------------------
+  #      Page footer
+  #-----------------------------------------------------------------------------
+
   page-footer: 
     right: "Copyright Feb. 2025, Oliver" 
     left: 
       - icon: github
-        href: https://github.com/OliverMount
-        
+        href: https://github.com/OliverMount 
+
 
 format:
   html:
     theme: 
-      - cosmo
+      - cerulean
       - brand 
     css: styles.css
     toc: true 
     toc-title: Contents 
     html-math-method: katex
     #code-fold: true
-    #code-summary: "Show the code"
-
+    #code-summary: "Show the code" 
+    
 editor: visual
-

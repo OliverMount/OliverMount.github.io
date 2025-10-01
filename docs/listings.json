@@ -11,5 +11,18 @@
       "/Research/SparseChannel.html",
       "/Research/WSK.html"
     ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/Spec2.html",
+      "/research/ImpactOfSamplingRate.html",
+      "/research/ImprovedLS.html",
+      "/research/Spec1.html",
+      "/research/Krylov.html",
+      "/research/RIPofRealComplex.html",
+      "/research/SparseChannel.html",
+      "/research/WSK.html"
+    ]
   }
 ]

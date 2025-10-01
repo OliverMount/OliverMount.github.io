@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Oliver James, Woongbi Lee, and Heung-No Lee">
+<meta name="dcterms.date" content="2013-02-25">
 
-<title>List of publications – Welcome</title>
+<title>Filters with random transmittance for improving resolution in filter-array-based spectrometers – Welcome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a93740c7734634abc1dfce32a195425c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-92c118704171aa2fcb2ce5d1b52b260d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,54 +70,11 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -137,37 +96,41 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Research/Research.html"> 
+    <a class="nav-link" href="../research/"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../Publications/Publications.html" aria-current="page"> 
+    <a class="nav-link" href="../publications/"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Tutorials/Tutorials.html"> 
+    <a class="nav-link" href="../tutorials/"> 
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Gleanings/Gleanings.html"> 
+    <a class="nav-link" href="../gleanings/"> 
 <span class="menu-text">Gleanings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blogs/"> 
+<span class="menu-text">Blogs</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../Simulations/R/R.html"> 
+    <a class="nav-link" href="../simulations/r/"> 
 <span class="menu-text">R</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Simulations/Python/Python.html"> 
+    <a class="nav-link" href="../simulations/python/"> 
 <span class="menu-text">Python</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Simulations/Brian2/Brian2.html"> 
+    <a class="nav-link" href="../simulations/brian2/"> 
 <span class="menu-text">Brian2</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Simulations/Neuron/Neuron.html"> 
+    <a class="nav-link" href="../simulations/neuron/"> 
 <span class="menu-text">Neuron</span></a>
   </li>  
 </ul>
@@ -176,72 +139,39 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Publications/Publications.html">List of publications</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Publications/Publications.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">List of publications</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
-   
-  <ul>
-  <li><a href="#biorcolormaroonchiiv" id="toc-biorcolormaroonchiiv" class="nav-link active" data-scroll-target="#biorcolormaroonchiiv">bioR<span class="math inline">\color{Maroon}{\chi}</span><em>iv</em></a></li>
-  <li><a href="#arxiv" id="toc-arxiv" class="nav-link" data-scroll-target="#arxiv">arXiv</a></li>
-  <li><a href="#under-revision" id="toc-under-revision" class="nav-link" data-scroll-target="#under-revision">Under Revision</a></li>
-  <li><a href="#in-preparation" id="toc-in-preparation" class="nav-link" data-scroll-target="#in-preparation">In Preparation</a></li>
-  <li><a href="#sec-journals" id="toc-sec-journals" class="nav-link" data-scroll-target="#sec-journals">Journals</a></li>
-  <li><a href="#book-chapters" id="toc-book-chapters" class="nav-link" data-scroll-target="#book-chapters">Book Chapters</a></li>
-  <li><a href="#conferences" id="toc-conferences" class="nav-link" data-scroll-target="#conferences">Conferences</a></li>
-  <li><a href="#international-patents" id="toc-international-patents" class="nav-link" data-scroll-target="#international-patents">International Patents</a></li>
-  <li><a href="#korean-patents" id="toc-korean-patents" class="nav-link" data-scroll-target="#korean-patents">Korean Patents</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Publications/Publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Publications/Publications.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">List of publications</h1>
+<h1 class="title">Filters with random transmittance for improving resolution in filter-array-based spectrometers</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Oliver James, Woongbi Lee, and Heung-No Lee </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 25, 2013</p>
+    </div>
+  </div>
   
     
   </div>
@@ -251,73 +181,9 @@ window.Quarto = {
 </header>
 
 
-<section id="biorcolormaroonchiiv" class="level2">
-<h2 class="anchored" data-anchor-id="biorcolormaroonchiiv">bioR<span class="math inline">\color{Maroon}{\chi}</span><em>iv</em></h2>
-<p><strong>James, Oliver</strong> and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep.&nbsp;2025 <a href="https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1" class="uri">https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1</a></p>
-<p>Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, <strong>James, Oliver</strong>, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), “Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination’’, <strong>Revised to Experimental and Molecular Medicine, Sep.&nbsp;2025</strong> <a href="https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1" class="uri">https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1</a></p>
-</section>
-<section id="arxiv" class="level2">
-<h2 class="anchored" data-anchor-id="arxiv">arXiv</h2>
-<p><strong>James, Oliver.</strong>, &amp; Lee, H.-N. (2025). “Concise probability distributions of eigenvalues of real-valued Wishart matrices”, Retrieved from <a href="http://arxiv.org/abs/1402.6757" class="uri">http://arxiv.org/abs/1402.6757</a></p>
-<p><strong>James, Oliver.</strong>, &amp; Lee, H.-N. (2025). “Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders”, Retrieved from <a href="https://arxiv.org/abs/1410.1956" class="uri">https://arxiv.org/abs/1410.1956</a></p>
-</section>
-<section id="under-revision" class="level2">
-<h2 class="anchored" data-anchor-id="under-revision">Under Revision</h2>
-<p>Lee, Y. B., , Lee, D. Y., and Kim, Y. J. (2025). “Hierarchical summary statistics encoding across primary visual and posterior parietal cortices’’, <strong>Adanced Science.</strong></p>
-</section>
-<section id="in-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="in-preparation">In Preparation</h2>
-<p>Miguel Sanchez-Valpuesta, <strong>James, Oliver</strong>, Joonyeol Lee and Gunsoo Kim, “Effects of locomotion on the population frequency representation in the mouse auditory midbrain’’, <strong>Writing stage</strong>.</p>
-<p><strong>Oliver James</strong> and Sung Ho Hong, (2025). “Container-based framework for simulating biological cerebellar neural networks”, <strong>Writing stage</strong>.</p>
-</section>
-<section id="sec-journals" class="level2">
-<h2 class="anchored" data-anchor-id="sec-journals">Journals</h2>
-<p>Bae, J., Jung, K., <strong>James, Oliver.</strong>, Suzuki, S., &amp; Kim, Y. J. (2025). “Frontal engagement in perceptual integration under low subjective visibility”, <strong><em>NeuroImage</em></strong>, <em>305</em>, 120984.</p>
-<p>Do, J., <strong>James, Oliver</strong>., &amp; Kim, Y.-J. (2024). “Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain”, <strong>Iscience,</strong> 27(7).</p>
-<p>Do, J., Eo, K. Y., <strong>James, Oliver</strong>., Lee, J., &amp; Kim, Y.-J. (2022). “The representational dynamics of sequential perceptual averaging”, <strong>Journal of Neuroscience</strong>, 42(6), 1141–1153.</p>
-<p>Adalarasu, K., Jagannath, M., &amp; <strong>James, Oliver.</strong> (2020). “Assessment of techniques for teaching school children with autism”, <strong>IRBM</strong>, 41(2), 88–93.</p>
-<p><strong>James, Oliver</strong>., Park, H., &amp; Kim, S.-G. (2019). “Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis”, <strong>Human Brain Mapping</strong>, 40(11), 3321–3337.</p>
-<p>Park, B.-Y., Shim, W. M., <strong>James, Oliver.</strong>, &amp; Park, H. (2019). “Possible links between the lag structure in visual cortex and visual streams using fMRI”, <strong>Scientific Reports</strong>, 9(1), 4283.</p>
-<p>Eo, K., <strong>James, Oliver</strong>., Son, S., Kang, M.-S., Chong, S. C., &amp; Kim, Y.-J. (2018). “Representational dynamics of ensemble average of simultaneously presented objects”, <strong>Journal of Vision</strong>, 18(10), 80–80.</p>
-<p>Kwon, J., Kim, M., Park, H., Kang, B.-M., Jo, Y., Kim, J.-H., <strong>Oliver James</strong>… Others. (2017). “Label-free nanoscale optical metrology on myelinated axons in vivo”, <strong>Nature Communications</strong>, 8(1), 1832.</p>
-<p>Lee, Y., Park, B.-Y., <strong>James, Oliver.</strong>, Kim, S.-G., &amp; Park, H. (2017). “Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults”, <strong>Frontiers in Human Neuroscience</strong>, 11, 418.</p>
-<p><strong>James, Oliver</strong>. (2016). “Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework”, <strong>Wireless Personal Communications</strong>, 87(10), 513–526.</p>
-<p><strong>James, Oliver</strong>. (2015). “Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices”, <strong>International Journal of Computer Applications</strong>, 975, 8887.</p>
-<p><strong>James, Oliver</strong>, Lee, W.-B., Park, S.-J., &amp; Lee, H.-N. (2013b). “Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers”, <strong>The Journal of Korean Institute of Communications and Information Sciences</strong>, 38(6), 497–502.</p>
-<p><strong>James, Oliver</strong>, WoongBi, L., Heung-No, &amp; Lee. (2013). “Filters with random transmittance for improving resolution in filter-array-based spectrometers”, <strong>Optics Express</strong>, 21(4), 3969–3989.</p>
-<p><strong>James, Oliver</strong>., Lee, W., Park, S., &amp; Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. <strong>Optics Express</strong>, 20(3), 2613–2625.</p>
-<p><strong>Oliver, James</strong>, Aravind, R., &amp; Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. <strong>IET Signal Processing</strong>, 6(1), 45–53.</p>
-<p><strong>James, Oliver</strong>, Aravind, R., &amp; Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. <strong>Signal Processing</strong>, 90(6), 1861–1872.</p>
-<p><strong>James, Oliver</strong>., Aravind, R., &amp; Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. <strong>Electronics Letters</strong>, 44(13), 830–832.</p>
-</section>
-<section id="book-chapters" class="level2">
-<h2 class="anchored" data-anchor-id="book-chapters">Book Chapters</h2>
-<p>Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., <strong>James, O.</strong> (2023). Low Power Methodologies for FPGA—An Overview. In: Sharma, D.K., Sharma, R., Jeon, G., Polkowski, Z. (eds) <strong>Low Power Architectures for IoT Applications. Springer Tracts in Electrical and Electronics Engineering.</strong> Springer, Singapore. https://doi.org/10.1007/978-981-99-0639-0_4</p>
-</section>
-<section id="conferences" class="level2">
-<h2 class="anchored" data-anchor-id="conferences">Conferences</h2>
-<p><strong>James</strong>, <strong>Oliver</strong> and Yee Joon Kim, (2023) On the representation of objective and subjective visible/invisible stimuli in humans via EEG-based report and no- report, Cognitive Neuroscience Symposium, CNS, SFA, USA</p>
-<p>Jisub Bae, <strong>James</strong> <strong>Oliver,</strong> and Yee Joon Kim, (2023) The influence of subjective visibility on illusory contour perception: An EEG study, Cognitive Neuroscience Symposium, CNS, SFA, USA</p>
-<p><strong>James, Oliver.</strong>, Lee, W.-B., &amp; Lee, H.-N. (2013). Random Transmittance Based Filter Array Spectrometers: Sparse Spectrum Recovery And Resolution Improvement. Global Conference on Signal and Information Processing (GlobalSIP), 2013 IEEE, 615–615. IEEE.</p>
-<p><strong>James,Oliver</strong> ., Lee, W.-B., Park, S., &amp; Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.</p>
-<p>Lee, W.-B., <strong>James,Oliver</strong>, Kim, S.-C., &amp; Lee, H.-N. (2013). Random optical scatter filters for spectrometers: Implementation and Estimation. Imaging Systems and Applications, JTu4A-33. Optica Publishing Group.</p>
-<p><strong>James, Oliver</strong>, S. P., WoongBi Lee, &amp; Lee, H.-N. (2013). Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers. Korean Information and Communication Society Journal, (6), 497–502.</p>
-<p><strong>James, Oliver</strong>, &amp; Lee, H.-N. (2011). A realistic distributed compressive sensing framework for multiple wireless sensor networks. Proc. 4th Signal Process. with Adapt. Sparse Struct. Repr, 105.</p>
-<p><strong>James, Oliver</strong>., Aravind, R., &amp; Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.</p>
-<p><strong>James, Oliver</strong>., Aravind, R., &amp; Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.</p>
-<p><strong>James, Oliver</strong>, Kumari, R. S. S., &amp; Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.</p>
-</section>
-<section id="international-patents" class="level2">
-<h2 class="anchored" data-anchor-id="international-patents">International Patents</h2>
-<p>Heung-No Lee, <strong>Oliver James</strong>, Sang-Jun Park, and Woong-Bi Lee, Method and Apparatus for Processing Optical Signal Of Spectrometer Using Sparse Nature of Signals, US patent number: 13/711,930, date: Dec.&nbsp;12, 2012. (Contribution 30%).</p>
-</section>
-<section id="korean-patents" class="level2">
-<h2 class="anchored" data-anchor-id="korean-patents">Korean Patents</h2>
-<p>Heung-No Lee, <strong>Oliver James</strong>, and Woong-Bi Lee, Apparatus for Improving Spectral resolution using Random Transmittance in Optical Spectrometers, No.&nbsp;10-2012-0112453, registered date: Oct.&nbsp;10, 2012. (Contribution 30%).</p>
-<p>Heung-No Lee, <strong>Oliver James</strong>, Sang-Jun Park, and Woong-Bi Lee, Method and Apparatus for Processing Optical Signal Of Spectrometer Using Sparse Nature of Signals, No.&nbsp;10-2012-0079171, registered date: July. 20, 2012. (Contribution 30%).</p>
+<p>In this paper, we introduce a method for improving the resolution of miniature spectrometers. Our method is based on using filters with random transmittance. Such filters sense fine details of an input signal spectrum, which, when combined with a signal processing algorithm, aid in improving resolution. We also propose an approach for designing filters with random transmittance using optical thin-film technology. We demonstrate that the improvement in resolution is 7-fold when using the filters with random transmittance over what was achieved in our previous work.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -734,7 +600,7 @@ window.Quarto = {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/Publications/Publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/Publications/Publications.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/research/Spec2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/research/Spec2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Copyright Feb.&nbsp;2025, Oliver</p>
 </div>
