@@ -44,26 +44,24 @@ website:
         menu:
           - text: Overview
             href: tutorials/
-          - section: "Random Processes"
-            contents:
-              - text: Intro
-                href: tutorials/RandomProcess/RandomProcessIntro.qmd
-              - text: ARMA
-                href: tutorials/RandomProcess/ARMA.qmd
-              - text: AR
-                href: tutorials/RandomProcess/AR.qmd
-              - text: MA
-                href: tutorials/RandomProcess/MA.qmd
-              - text: Filtering
-                href: tutorials/RandomProcess/FilteringofRP.qmd
-          - section: "Estimation Theory"
-            contents:
-              - text: Intro
-                href: tutorials/EstimationTheory/EstimationTheoryIntro.qmd
-              - text: Point Estimation
-                href: tutorials/EstimationTheory/PointEstimation.qmd
-              - text: Cramer-Rao Bound
-                href: tutorials/EstimationTheory/CramerRaoBound.qmd
+          - text: "---"
+          - text: "Random Processes: Intro"
+            href: tutorials/RandomProcess/RandomProcessIntro.qmd
+          - text: "Random Processes: ARMA"
+            href: tutorials/RandomProcess/ARMA.qmd
+          - text: "Random Processes: AR"
+            href: tutorials/RandomProcess/AR.qmd
+          - text: "Random Processes: MA"
+            href: tutorials/RandomProcess/MA.qmd
+          - text: "Random Processes: Filtering"
+            href: tutorials/RandomProcess/FilteringofRP.qmd
+          - text: "---"
+          - text: "Estimation Theory: Intro"
+            href: tutorials/EstimationTheory/EstimationTheoryIntro.qmd
+          - text: "Estimation Theory: Point Estimation"
+            href: tutorials/EstimationTheory/PointEstimation.qmd
+          - text: "Estimation Theory: Cramer-Rao Bound"
+            href: tutorials/EstimationTheory/CramerRaoBound.qmd
       - text: "Gleanings"
         href: gleanings/
       - text: "Blogs"
@@ -118,14 +116,14 @@ website:
     - title: "Tutorials"
       contents:
         - tutorials/index.qmd
-        - section: "Random Processes"
+        - title: "Random Processes"
           contents:
             - tutorials/RandomProcess/RandomProcessIntro.qmd
             - tutorials/RandomProcess/ARMA.qmd
             - tutorials/RandomProcess/AR.qmd
             - tutorials/RandomProcess/MA.qmd
             - tutorials/RandomProcess/FilteringofRP.qmd
-        - section: "Estimation Theory"
+        - title: "Estimation Theory"
           contents:
             - tutorials/EstimationTheory/EstimationTheoryIntro.qmd
             - tutorials/EstimationTheory/PointEstimation.qmd

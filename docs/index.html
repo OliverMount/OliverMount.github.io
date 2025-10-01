@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-92c118704171aa2fcb2ce5d1b52b260d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-516ea1ef946b60b7c996a35c789845c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,21 +89,101 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./research/"> 
-<span class="menu-text">Research</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="./research/">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./research/ImpactOfSamplingRate.html">
+ <span class="dropdown-text">ImpactOfSamplingRate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/ImprovedLS.html">
+ <span class="dropdown-text">ImprovedLS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/Krylov.html">
+ <span class="dropdown-text">Krylov</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/RIPofRealComplex.html">
+ <span class="dropdown-text">RIPofRealComplex</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/SparseChannel.html">
+ <span class="dropdown-text">SparseChannel</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/Spec1.html">
+ <span class="dropdown-text">Spec1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/Spec2.html">
+ <span class="dropdown-text">Spec2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/WSK.html">
+ <span class="dropdown-text">WSK</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./publications/"> 
 <span class="menu-text">Publications</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./tutorials/"> 
-<span class="menu-text">Tutorials</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="./tutorials/">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="./tutorials/RandomProcess/RandomProcessIntro.html">
+ <span class="dropdown-text">Random Processes: Intro</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/RandomProcess/ARMA.html">
+ <span class="dropdown-text">Random Processes: ARMA</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/RandomProcess/AR.html">
+ <span class="dropdown-text">Random Processes: AR</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/RandomProcess/MA.html">
+ <span class="dropdown-text">Random Processes: MA</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/RandomProcess/FilteringofRP.html">
+ <span class="dropdown-text">Random Processes: Filtering</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="./tutorials/EstimationTheory/EstimationTheoryIntro.html">
+ <span class="dropdown-text">Estimation Theory: Intro</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/EstimationTheory/PointEstimation.html">
+ <span class="dropdown-text">Estimation Theory: Point Estimation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/EstimationTheory/CramerRaoBound.html">
+ <span class="dropdown-text">Estimation Theory: Cramer-Rao Bound</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./gleanings/"> 
 <span class="menu-text">Gleanings</span></a>
@@ -122,14 +202,44 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./simulations/python/"> 
 <span class="menu-text">Python</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./simulations/brian2/"> 
-<span class="menu-text">Brian2</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-brian2" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Brian2</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-brian2">    
+        <li>
+    <a class="dropdown-item" href="./simulations/brian2/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./simulations/neuron/"> 
-<span class="menu-text">Neuron</span></a>
+        <li>
+    <a class="dropdown-item" href="./simulations/brian2/Introduction.qmd">
+ <span class="dropdown-text">Introduction</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./simulations/brian2/Fundamentals.qmd">
+ <span class="dropdown-text">Fundamentals</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-neuron" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Neuron</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-neuron">    
+        <li>
+    <a class="dropdown-item" href="./simulations/neuron/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./simulations/neuron/Introduction.html">
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./simulations/neuron/NMODL.html">
+ <span class="dropdown-text">NMODL</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
