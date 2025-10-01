@@ -1238,5 +1238,15 @@
     "title": "PCA",
     "section": "Optimization Problems",
     "text": "Optimization Problems\n\n1. Variance Maximization Formulation\nPCA finds a linear subspace that maximizes the variance of the projected data. Let ( X ^{n d} ) be the mean-centered data matrix, and let ( = X^X ) be its empirical covariance matrix.\n[\n\\begin{aligned}\n\\text{maximize} \\quad & \\operatorname{Tr}(W^\\top \\Sigma W) \\\\\n\\text{subject to} \\quad & W^\\top W = I_k\n\\end{aligned}\n]\n\n( W ^{d k} ) is the matrix of principal directions (orthonormal columns).\n( ) denotes the trace of a matrix.\n\n\n\n\n2. Reconstruction Error Minimization Formulation\nPCA can also be seen as finding a rank-( k ) approximation of ( X ) that minimizes the reconstruction error:\n[\n\\begin{aligned}\n\\text{minimize} \\quad & \\| X - ZW^\\top \\|_F^2 \\\\\n\\text{subject to} \\quad & W^\\top W = I_k\n\\end{aligned}\n]\n\n( Z ^{n k} ) are the low-dimensional projections (scores).\n( W ^{d k} ) is the projection matrix with orthonormal columns.\n( | |_F ) is the Frobenius norm."
+  },
+  {
+    "objectID": "publications/index.html#arcolormaroonchiiv",
+    "href": "publications/index.html#arcolormaroonchiiv",
+    "title": "List of publications",
+    "section": "ar\\color{Maroon}{\\chi}iv",
+    "text": "ar\\color{Maroon}{\\chi}iv\nJames, Oliver., & Lee, H.-N. (2025). “Concise probability distributions of eigenvalues of real-valued Wishart matrices”, Retrieved from http://arxiv.org/abs/1402.6757\nJames, Oliver., & Lee, H.-N. (2025). “Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders”, Retrieved from https://arxiv.org/abs/1410.1956",
+    "crumbs": [
+      "List of publications"
+    ]
   }
 ]
