@@ -1251,7 +1251,7 @@
     "href": "gleanings/index.html",
     "title": "List of gleanings",
     "section": "",
-    "text": "List of gleanings"
+    "text": "List of gleanings\n\nKalman Filter and its variants"
   },
   {
     "objectID": "gleanings/PCA/PCA.html#optimization-problems",
