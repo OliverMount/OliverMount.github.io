@@ -1,0 +1,178 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Welcome"
+  description: "Oliver is aiming to become a computational neuroscientist"
+  page-navigation: true
+  search: true
+  repo-url: https://github.com/OliverMount/OliverMount.github.io
+  repo-actions: [edit, source, issue]
+
+  #----------------------------------------------------------------------------- 
+  #      Top navigation bar with dropdowns
+  #-----------------------------------------------------------------------------
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: /
+      - text: "Research"
+        menu:
+          - text: Overview
+            href: research/
+          - text: ImpactOfSamplingRate
+            href: research/ImpactOfSamplingRate.qmd
+          - text: ImprovedLS
+            href: research/ImprovedLS.qmd
+          - text: Krylov
+            href: research/Krylov.qmd
+          - text: RIPofRealComplex
+            href: research/RIPofRealComplex.qmd
+          - text: SparseChannel
+            href: research/SparseChannel.qmd
+          - text: Spec1
+            href: research/Spec1.qmd
+          - text: Spec2
+            href: research/Spec2.qmd
+          - text: WSK
+            href: research/WSK.qmd
+      - text: "Publications"
+        href: publications/
+      - text: "Tutorials"
+        menu:
+          - text: Overview
+            href: tutorials/
+          - text: "---"
+          - text: "Random Processes: Intro"
+            href: tutorials/RandomProcess/RandomProcessIntro.qmd
+          - text: "Random Processes: ARMA"
+            href: tutorials/RandomProcess/ARMA.qmd
+          - text: "Random Processes: AR"
+            href: tutorials/RandomProcess/AR.qmd
+          - text: "Random Processes: MA"
+            href: tutorials/RandomProcess/MA.qmd
+          - text: "Random Processes: Filtering"
+            href: tutorials/RandomProcess/FilteringofRP.qmd
+          - text: "---"
+          - text: "Estimation Theory: Intro"
+            href: tutorials/EstimationTheory/EstimationTheoryIntro.qmd
+          - text: "Estimation Theory: Point Estimation"
+            href: tutorials/EstimationTheory/PointEstimation.qmd
+          - text: "Estimation Theory: Cramer-Rao Bound"
+            href: tutorials/EstimationTheory/CramerRaoBound.qmd
+      - text: "Gleanings"
+        href: gleanings/
+      - text: "Blogs"
+        href: blogs/
+
+    right:
+      - text: "R"
+        href: simulations/r/
+      - text: "Python"
+        href: simulations/python/
+      - text: "Brian2"
+        menu:
+          - text: Overview
+            href: simulations/brian2/index.qmd
+          - text: Introduction
+            href: simulations/brian2/Introduction.qmd
+          - text: Fundamentals
+            href: simulations/brian2/Fundamentals.qmd
+      - text: "Neuron"
+        menu:
+          - text: Overview
+            href: simulations/neuron/index.qmd
+          - text: Introduction
+            href: simulations/neuron/Introduction.qmd
+          - text: NMODL
+            href: simulations/neuron/NMODL.qmd
+
+  #----------------------------------------------------------------------------- 
+  #      Sidebar
+  #----------------------------------------------------------------------------- 
+  sidebar:
+    # Left-side items
+    - title: "Research"
+      style: docked
+      search: true
+      background: light
+      contents:
+        - research/index.qmd
+        - research/ImpactOfSamplingRate.qmd
+        - research/ImprovedLS.qmd
+        - research/Krylov.qmd
+        - research/RIPofRealComplex.qmd
+        - research/SparseChannel.qmd
+        - research/Spec1.qmd
+        - research/Spec2.qmd
+        - research/WSK.qmd
+
+    - title: "Publications"
+      contents:
+        - publications/index.qmd
+
+    - title: "Tutorials"
+      contents:
+        - tutorials/index.qmd
+        - title: "Random Processes"
+          contents:
+            - tutorials/RandomProcess/RandomProcessIntro.qmd
+            - tutorials/RandomProcess/ARMA.qmd
+            - tutorials/RandomProcess/AR.qmd
+            - tutorials/RandomProcess/MA.qmd
+            - tutorials/RandomProcess/FilteringofRP.qmd
+        - title: "Estimation Theory"
+          contents:
+            - tutorials/EstimationTheory/EstimationTheoryIntro.qmd
+            - tutorials/EstimationTheory/PointEstimation.qmd
+            - tutorials/EstimationTheory/CramerRaoBound.qmd
+
+    # Right-side items
+    - title: "R"
+      contents:
+        - simulations/r/index.qmd
+
+    - title: "Python"
+      contents:
+        - simulations/python/index.qmd
+
+    - title: "Neuron"
+      contents:
+        - section: "Neuron"
+          contents:
+            - simulations/neuron/index.qmd
+            - simulations/neuron/Introduction.qmd
+            - simulations/neuron/NMODL.qmd
+
+    - title: "Brian2"
+      contents:
+        - section: "Brian2"
+          contents:
+            - simulations/brian2/index.qmd
+            - simulations/brian2/Introduction.qmd
+            - simulations/brian2/Fundamentals.qmd
+
+  #----------------------------------------------------------------------------- 
+  #      Page footer
+  #----------------------------------------------------------------------------- 
+  page-footer:
+    right: "Copyright Feb. 2025, Oliver"
+    left:
+      - icon: github
+        href: https://github.com/OliverMount
+
+format:
+  html:
+    theme:
+      - cerulean
+      - brand
+    css: styles.css
+    toc: true
+    toc-title: Contents
+    html-math-method: katex
+    #code-fold: true
+    #code-summary: "Show the code"
+
+editor: visual
