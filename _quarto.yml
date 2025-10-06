@@ -114,6 +114,10 @@ website:
       - icon: github
         href: https://github.com/OliverMount
 
+bibliography:
+  - /media/oli/Research/Knowledge/Books/books.bib 
+
+
 format:
   html:
     theme:
