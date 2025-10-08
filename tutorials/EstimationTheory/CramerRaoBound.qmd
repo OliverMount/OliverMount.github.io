@@ -4,4 +4,4 @@ The **Cramer-Rao Lower Bound** (CRLB) is a fundamental concept in estimation the
 
 The **Bayesian Cramér-Rao Lower Bound (BCRLB)** is an extension of the classical Cramér-Rao Lower Bound (CRLB) to Bayesian estimation problems. Unlike the classical CRLB, which applies to deterministic parameters, the BCRLB is used when the parameter being estimated is treated as a random variable with a known prior distribution.
 
-There are other bounds exists.
+There are other bounds exists. But we will try to discuss them!
