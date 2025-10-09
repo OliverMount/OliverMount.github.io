@@ -113,11 +113,7 @@ website:
     left:
       - icon: github
         href: https://github.com/OliverMount
-
-bibliography:
-  - references.bib   # This is linked to Books.bib
-
-
+ 
 format:
   html:
     theme:

@@ -935,7 +935,7 @@
     "href": "tutorials/EstimationTheory/CramerRaoBound.html",
     "title": "Cramer-Rao Lower Bound (CRLB)",
     "section": "",
-    "text": "Cramer-Rao Lower Bound (CRLB)\nThe Cramer-Rao Lower Bound (CRLB) is a fundamental concept in estimation theory. It provides a theoretical lower bound on the variance of any unbiased estimator of a deterministic parameter. This bound is derived using the Fisher information and is widely used to assess the efficiency of estimators.\nThe Bayesian Cramér-Rao Lower Bound (BCRLB) is an extension of the classical Cramér-Rao Lower Bound (CRLB) to Bayesian estimation problems. Unlike the classical CRLB, which applies to deterministic parameters, the BCRLB is used when the parameter being estimated is treated as a random variable with a known prior distribution.\n@",
+    "text": "Cramer-Rao Lower Bound (CRLB)\nThe Cramer-Rao Lower Bound (CRLB) is a fundamental concept in estimation theory. It provides a theoretical lower bound on the variance of any unbiased estimator of a deterministic parameter. This bound is derived using the Fisher information and is widely used to assess the efficiency of estimators.\nThe Bayesian Cramér-Rao Lower Bound (BCRLB) is an extension of the classical Cramér-Rao Lower Bound (CRLB) to Bayesian estimation problems. Unlike the classical CRLB, which applies to deterministic parameters, the BCRLB is used when the parameter being estimated is treated as a random variable with a known prior distribution.\nThere are other bounds exists. But we will try to discuss them!",
     "crumbs": [
       "Tutorials",
       "Estimation Theory",
@@ -1300,6 +1300,8 @@
     "section": "",
     "text": "Introduction\nGiven a set of observations (scalar or vector) \\bm{x}_1, x_2,\\cdots , x_N, find the parameter \\theta (scalar or vector) hidden in the observations.",
     "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
       "Introduction"
     ]
   },
@@ -1341,5 +1343,12 @@
       "Publications",
       "List of publications"
     ]
+  },
+  {
+    "objectID": "tutorials/RandomProcess/index.html",
+    "href": "tutorials/RandomProcess/index.html",
+    "title": "Random processes",
+    "section": "",
+    "text": "Random processes\nA list of random processes we discuss in this tutorial are\n\nARMA\nAR\nMA\nHarmonic processes\n\nExcept the harmonic processes, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function given by\n\nH(z) =\\frac{B(z)}{A(z)} =  \\frac{\\sum_{k=0}^qb(k)z^{-k}}{1+\\sum_{k=1}^pa(k)z^{-k}}"
   }
 ]
