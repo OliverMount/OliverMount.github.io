@@ -1,14 +1,14 @@
 project:
   type: website
-  output-dir: docs
-
+  output-dir: docs 
 website:
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
   page-navigation: true
   search: true
   repo-url: https://github.com/OliverMount/OliverMount.github.io
-  repo-actions: [edit, source, issue]
+  repo-actions: [edit, source, issue] 
+  
 
   #----------------------------------------------------------------------------- 
   #      Top navigation bar (no dropdowns)
