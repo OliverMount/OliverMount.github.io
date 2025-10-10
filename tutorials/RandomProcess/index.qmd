@@ -1,4 +1,4 @@
-# Random processes
+# Random processes {#rp}
 
 A list of random processes we discuss in this tutorial are
 
