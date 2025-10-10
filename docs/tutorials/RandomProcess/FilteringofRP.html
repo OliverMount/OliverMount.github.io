@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tutorials/EstimationTheory/EstimationTheoryIntro.html" rel="next">
+<link href="../../tutorials/EstimationTheory/index.html" rel="next">
 <link href="../../tutorials/RandomProcess/MA.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -187,7 +187,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Random Processes</li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/FilteringofRP.html">Filtering of random process</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/FilteringofRP.html">Filtering of random process</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -223,8 +223,11 @@ window.Quarto = {
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
- <span class="menu-text">tutorials/RandomProcess/RandomProcessIntro.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/RandomProcess/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Random processes</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tutorials/RandomProcess/ARMA.html" class="sidebar-item-text sidebar-link">
@@ -262,7 +265,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tutorials/EstimationTheory/EstimationTheoryIntro.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tutorials/EstimationTheory/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -299,7 +302,7 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/tutorials/RandomProcess/FilteringofRP.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Random Processes</li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/FilteringofRP.html">Filtering of random process</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/FilteringofRP.html">Filtering of random process</a></li></ol></nav></header>
 
 
 
@@ -329,7 +332,7 @@ y(n) = \sum_{k=-\infty}^{\infty} h(l)x(n-l)
 <p><span class="math display">
 \begin{split}
 \mathbb{E}[y(n) y^*(n-k)] &amp; = \sum_{k=-\infty}^{\infty} h(l)\mathbb{E}[ x(n-l) y^*(n-k)] \\
-r_y(k) &amp; =a  \\
+r_y(k) &amp; = \sum_{k=-\infty}^{\infty} h(l)r_{xy}(k-l)  \\
 \end{split}
 </span></p>
 
@@ -744,7 +747,7 @@ r_y(k) &amp; =a  \\
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tutorials/EstimationTheory/EstimationTheoryIntro.html" class="pagination-link" aria-label="Introduction">
+      <a href="../../tutorials/EstimationTheory/index.html" class="pagination-link" aria-label="Introduction">
         <span class="nav-page-text">Introduction</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

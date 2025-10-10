@@ -268,7 +268,7 @@
     "href": "tutorials/RandomProcess/FilteringofRP.html",
     "title": "Filtering of random process",
     "section": "",
-    "text": "Filtering of random process\nThe linear time-invariant filters are widely employed in applications ranging from modern communication system, audio processing and radar systems. The input of such systems would be usually random processes. Thus, it is of importance to study the how the statistics of the random processes change as a result of filtering. Of particular importance is the mean and autocorrelation of the input and output processes.\nConsider the input/output of an LTI system with the input process being non-zero mean \\mu_x and autocorrelation r_x(k)\n\ny(n) = \\sum_{k=-\\infty}^{\\infty} h(l)x(n-l)\n\\tag{1}\n\nMean of the output process\nThe mean of the output process is\n\n\\begin{split}\n\\mathbb{E}[y_n] & = \\sum_{k=-\\infty}^{\\infty} h(l) \\mathbb{E}[x(n-l)] \\\\\n& = \\mu \\sum_{k=-\\infty}^{\\infty} h(l)  \\\\\n& = \\mu H(e^{j0})\n\\end{split}\n\nThe mean of the output process is the product of the mean of the input process and the frequency response of the filter at w=0.\n\n\nAutocorrelation of the output\nMultiplying both sides of Equation 1 with y_{n-k} and taking expectation on both sides leads to\n\n\\begin{split}\n\\mathbb{E}[y(n) y^*(n-k)] & = \\sum_{k=-\\infty}^{\\infty} h(l)\\mathbb{E}[ x(n-l) y^*(n-k)] \\\\\nr_y(k) & =a  \\\\\n\\end{split}",
+    "text": "Filtering of random process\nThe linear time-invariant filters are widely employed in applications ranging from modern communication system, audio processing and radar systems. The input of such systems would be usually random processes. Thus, it is of importance to study the how the statistics of the random processes change as a result of filtering. Of particular importance is the mean and autocorrelation of the input and output processes.\nConsider the input/output of an LTI system with the input process being non-zero mean \\mu_x and autocorrelation r_x(k)\n\ny(n) = \\sum_{k=-\\infty}^{\\infty} h(l)x(n-l)\n\\tag{1}\n\nMean of the output process\nThe mean of the output process is\n\n\\begin{split}\n\\mathbb{E}[y_n] & = \\sum_{k=-\\infty}^{\\infty} h(l) \\mathbb{E}[x(n-l)] \\\\\n& = \\mu \\sum_{k=-\\infty}^{\\infty} h(l)  \\\\\n& = \\mu H(e^{j0})\n\\end{split}\n\nThe mean of the output process is the product of the mean of the input process and the frequency response of the filter at w=0.\n\n\nAutocorrelation of the output\nMultiplying both sides of Equation 1 with y_{n-k} and taking expectation on both sides leads to\n\n\\begin{split}\n\\mathbb{E}[y(n) y^*(n-k)] & = \\sum_{k=-\\infty}^{\\infty} h(l)\\mathbb{E}[ x(n-l) y^*(n-k)] \\\\\nr_y(k) & = \\sum_{k=-\\infty}^{\\infty} h(l)r_{xy}(k-l)  \\\\\n\\end{split}",
     "crumbs": [
       "Tutorials",
       "Random Processes",
@@ -600,7 +600,12 @@
     "href": "tutorials/RandomProcess/index.html",
     "title": "Random processes",
     "section": "",
-    "text": "Random processes\nA list of random processes we discuss in this tutorial are\n\nARMA\nAR\nMA\nHarmonic processes\n\nExcept the harmonic processes, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function given by\n\nH(z) =\\frac{B(z)}{A(z)} =  \\frac{\\sum_{k=0}^qb(k)z^{-k}}{1+\\sum_{k=1}^pa(k)z^{-k}}"
+    "text": "Random processes\nA list of random processes we discuss in this tutorial are\n\nARMA\nAR\nMA\nHarmonic processes\n\nExcept the harmonic processes, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function given by\n\nH(z) =\\frac{B(z)}{A(z)} =  \\frac{\\sum_{k=0}^qb(k)z^{-k}}{1+\\sum_{k=1}^pa(k)z^{-k}}",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "Random processes"
+    ]
   },
   {
     "objectID": "tutorials/RandomProcess/ARMA.html",
@@ -655,5 +660,17 @@
     "title": "PCA",
     "section": "Optimization Problems",
     "text": "Optimization Problems\n\n1. Variance Maximization Formulation\nPCA finds a linear subspace that maximizes the variance of the projected data. Let ( X ^{n d} ) be the mean-centered data matrix, and let ( = X^X ) be its empirical covariance matrix.\n[\n\\begin{aligned}\n\\text{maximize} \\quad & \\operatorname{Tr}(W^\\top \\Sigma W) \\\\\n\\text{subject to} \\quad & W^\\top W = I_k\n\\end{aligned}\n]\n\n( W ^{d k} ) is the matrix of principal directions (orthonormal columns).\n( ) denotes the trace of a matrix.\n\n\n\n\n2. Reconstruction Error Minimization Formulation\nPCA can also be seen as finding a rank-( k ) approximation of ( X ) that minimizes the reconstruction error:\n[\n\\begin{aligned}\n\\text{minimize} \\quad & \\| X - ZW^\\top \\|_F^2 \\\\\n\\text{subject to} \\quad & W^\\top W = I_k\n\\end{aligned}\n]\n\n( Z ^{n k} ) are the low-dimensional projections (scores).\n( W ^{d k} ) is the projection matrix with orthonormal columns.\n( | |_F ) is the Frobenius norm."
+  },
+  {
+    "objectID": "tutorials/EstimationTheory/index.html",
+    "href": "tutorials/EstimationTheory/index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nGiven a set of observations (scalar or vector) \\bm{x}_1, x_2,\\cdots , x_N, find the parameter \\theta (scalar or vector) hidden in the observations.",
+    "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
+      "Introduction"
+    ]
   }
 ]

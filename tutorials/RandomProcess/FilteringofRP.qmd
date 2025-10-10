@@ -20,7 +20,7 @@ $$
 \end{split}
 $$
 
-The mean of the output process is the product of the mean of the input process and the frequency response of the filter at $w=0$.
+The mean of the output process is given by the product of the mean of the input process and the frequency response of the filter evaluated at $w=0$. Consequently, if the mean of the input process is zero or if $H(e^{j0})$ is zero, the output process will also have zero mean.
 
 ### Autocorrelation of the output
 
@@ -29,6 +29,6 @@ Multiplying both sides of @eq-LTI with $y_{n-k}$ and taking expectation on both 
 $$
 \begin{split}
 \mathbb{E}[y(n) y^*(n-k)] & = \sum_{k=-\infty}^{\infty} h(l)\mathbb{E}[ x(n-l) y^*(n-k)] \\
-r_y(k) & =a  \\
+r_y(k) & = \sum_{k=-\infty}^{\infty} h(l)r_{xy}(k-l)  \\
 \end{split}
 $$
