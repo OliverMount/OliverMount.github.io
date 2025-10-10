@@ -70,7 +70,8 @@ website:
             - tutorials/RandomProcess/ARMA.qmd
             - tutorials/RandomProcess/AR.qmd
             - tutorials/RandomProcess/MA.qmd
-            - tutorials/RandomProcess/FilteringofRP.qmd
+            - tutorials/RandomProcess/Harmonic.qmd
+            - tutorials/RandomProcess/FilteringofRP.qmd 
         - section: "Estimation Theory"
           contents:
             - tutorials/EstimationTheory/index.qmd

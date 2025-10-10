@@ -1,3 +1,55 @@
 /* css styles */
 
+/* Reduce size of sidebar section headings (subtopics) */
+.sidebar-section .sidebar-section-item {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Style for section names - make them distinct with color */
+.sidebar nav[role="navigation"] .sidebar-section > .sidebar-section-item {
+  color: #0056b3;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+}
+
+/* Alternative: Different color for nested section headers */
+.sidebar .sidebar-section .sidebar-section .sidebar-section-item {
+  color: #6610f2;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Reduce spacing for cleaner look */
+.sidebar-section {
+  margin-bottom: 0.5rem;
+}
+
+/* Optional: Add subtle background to section headers */
+.sidebar nav[role="navigation"] .sidebar-section > .sidebar-section-item {
+  background-color: rgba(0, 86, 179, 0.08);
+  border-radius: 4px;
+  padding-left: 0.75rem;
+}
+
+/* Hover effect for section names */
+.sidebar nav[role="navigation"] .sidebar-section > .sidebar-section-item:hover {
+  background-color: rgba(0, 86, 179, 0.15);
+}
+
+/* Regular sidebar items (non-section) styling */
+.sidebar .sidebar-item {
+  font-size: 0.9rem;
+}
+
+/* Active item highlighting */
+.sidebar .sidebar-item.active {
+  font-weight: 600;
+  border-left: 3px solid #0056b3;
+}
+
   

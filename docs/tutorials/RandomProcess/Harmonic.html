@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – Welcome</title>
+<title>harmonic – Welcome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tutorials/RandomProcess/ARMA.html" rel="next">
-<link href="../../tutorials/index.html" rel="prev">
+<link href="../../tutorials/RandomProcess/FilteringofRP.html" rel="next">
+<link href="../../tutorials/RandomProcess/MA.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -70,49 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -187,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random processes</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/Harmonic.html">Harmonic process</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -224,7 +181,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tutorials/RandomProcess/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tutorials/RandomProcess/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Random processes</span></a>
   </div>
 </li>
@@ -248,7 +205,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tutorials/RandomProcess/Harmonic.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tutorials/RandomProcess/Harmonic.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Harmonic process</span></a>
   </div>
 </li>
@@ -299,29 +256,18 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#rp" id="toc-rp" class="nav-link active" data-scroll-target="#rp">Random processes</a></li>
+  <li><a href="#harmonic-process" id="toc-harmonic-process" class="nav-link active" data-scroll-target="#harmonic-process">Harmonic process</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/tutorials/RandomProcess/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/tutorials/RandomProcess/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/tutorials/RandomProcess/Harmonic.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/tutorials/RandomProcess/Harmonic.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random processes</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/index.html">Random Processes</a></li><li class="breadcrumb-item"><a href="../../tutorials/RandomProcess/Harmonic.html">Harmonic process</a></li></ol></nav></header>
 
 
 
 
-<section id="rp" class="level1">
-<h1>Random processes</h1>
-<p>A list of random processes we discuss in this tutorial are</p>
-<ol type="1">
-<li><p>ARMA</p></li>
-<li><p>AR</p></li>
-<li><p>MA</p></li>
-<li><p>Harmonic processes</p></li>
-</ol>
-<p>Except the harmonic processes, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function given by</p>
-<p><span class="math display">
-H(z) =\frac{B(z)}{A(z)} =  \frac{\sum_{k=0}^qb(k)z^{-k}}{1+\sum_{k=1}^pa(k)z^{-k}}
-</span></p>
+<section id="harmonic-process" class="level1">
+<h1>Harmonic process</h1>
 
 
 </section>
@@ -728,13 +674,13 @@ H(z) =\frac{B(z)}{A(z)} =  \frac{\sum_{k=0}^qb(k)z^{-k}}{1+\sum_{k=1}^pa(k)z^{-k
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../tutorials/index.html" class="pagination-link" aria-label="List of tutorials here">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">List of tutorials here</span>
+      <a href="../../tutorials/RandomProcess/MA.html" class="pagination-link" aria-label="Moving Average (MA) process">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Moving Average (MA) process</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tutorials/RandomProcess/ARMA.html" class="pagination-link" aria-label="Auto-regressive moving average (ARMA) processes">
-        <span class="nav-page-text">Auto-regressive moving average (ARMA) processes</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../tutorials/RandomProcess/FilteringofRP.html" class="pagination-link" aria-label="Filtering of random process">
+        <span class="nav-page-text">Filtering of random process</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -753,7 +699,7 @@ H(z) =\frac{B(z)}{A(z)} =  \frac{\sum_{k=0}^qb(k)z^{-k}}{1+\sum_{k=1}^pa(k)z^{-k
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/tutorials/RandomProcess/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/tutorials/RandomProcess/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/tutorials/RandomProcess/Harmonic.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/tutorials/RandomProcess/Harmonic.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Copyright Feb.&nbsp;2025, Oliver</p>
 </div>
