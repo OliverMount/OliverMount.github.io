@@ -1,0 +1,659 @@
+[
+  {
+    "objectID": "tutorials/EstimationTheory/CramerRaoBound.html",
+    "href": "tutorials/EstimationTheory/CramerRaoBound.html",
+    "title": "Cramer-Rao Lower Bound (CRLB)",
+    "section": "",
+    "text": "Cramer-Rao Lower Bound (CRLB)\nThe Cramer-Rao Lower Bound (CRLB) is a fundamental concept in estimation theory. It provides a theoretical lower bound on the variance of any unbiased estimator of a deterministic parameter. This bound is derived using the Fisher information and is widely used to assess the efficiency of estimators.\nThe Bayesian Cramér-Rao Lower Bound (BCRLB) is an extension of the classical Cramér-Rao Lower Bound (CRLB) to Bayesian estimation problems. Unlike the classical CRLB, which applies to deterministic parameters, the BCRLB is used when the parameter being estimated is treated as a random variable with a known prior distribution.\nThere are other bounds exists. But we will try to discuss them!",
+    "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
+      "Cramer-Rao Lower Bound (CRLB)"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "I am a computational neuroscience enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of computational neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications.\nWhile acknowledging the value of established methodologies in neuroscience, I am driven by an insatiable curiosity to push beyond the boundaries of current knowledge. My ambition is to forge new pathways of discovery, developing innovative techniques (rather than recycling techniques) and paradigms that will revolutionize our understanding of the brain.\nIf you would like to collaborate with my explorations, please contact me."
+  },
+  {
+    "objectID": "index.html#current-research-interests",
+    "href": "index.html#current-research-interests",
+    "title": "Welcome!",
+    "section": "Current Research Interests",
+    "text": "Current Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Welcome!",
+    "section": "Education",
+    "text": "Education\nPhD in Signal Processing\nMasters in Communication Engineering\nBachelors in Electronics and Communication Engineering"
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "List of publications",
+    "section": "",
+    "text": "James, Oliver and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep. 2025 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1\nJea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, James, Oliver, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), “Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination’’, Revised to Experimental and Molecular Medicine, Sep. 2025 https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#biorcolormaroonchiiv",
+    "href": "publications/index.html#biorcolormaroonchiiv",
+    "title": "List of publications",
+    "section": "",
+    "text": "James, Oliver and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep. 2025 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1\nJea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, James, Oliver, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), “Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination’’, Revised to Experimental and Molecular Medicine, Sep. 2025 https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#arcolormaroonchiiv",
+    "href": "publications/index.html#arcolormaroonchiiv",
+    "title": "List of publications",
+    "section": "ar\\color{Maroon}{\\chi}iv",
+    "text": "ar\\color{Maroon}{\\chi}iv\nJames, Oliver., & Lee, H.-N. (2025). “Concise probability distributions of eigenvalues of real-valued Wishart matrices”, Retrieved from http://arxiv.org/abs/1402.6757\nJames, Oliver., & Lee, H.-N. (2025). “Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders”, Retrieved from https://arxiv.org/abs/1410.1956",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#under-revision",
+    "href": "publications/index.html#under-revision",
+    "title": "List of publications",
+    "section": "Under Revision",
+    "text": "Under Revision\nLee, Y. B.,James, Oliver., Lee, D. Y., and Kim, Y. J. (2025). “Hierarchical summary statistics encoding across primary visual and posterior parietal cortices’’, Adanced Science.",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#in-preparation",
+    "href": "publications/index.html#in-preparation",
+    "title": "List of publications",
+    "section": "In Preparation",
+    "text": "In Preparation\nMiguel Sanchez-Valpuesta, James, Oliver, Joonyeol Lee and Gunsoo Kim, “Effects of locomotion on the population frequency representation in the mouse auditory midbrain’’, Writing stage.\nOliver James and Sung Ho Hong, (2025). “Container-based framework for simulating biological cerebellar neural networks”, Writing stage.",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#sec-journals",
+    "href": "publications/index.html#sec-journals",
+    "title": "List of publications",
+    "section": "Published",
+    "text": "Published\nBae, J., Jung, K., James, Oliver., Suzuki, S., & Kim, Y. J. (2025). “Frontal engagement in perceptual integration under low subjective visibility”, NeuroImage, 305, 120984.\nDo, J., James, Oliver., & Kim, Y.-J. (2024). “Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain”, Iscience, 27(7).\nDo, J., Eo, K. Y., James, Oliver., Lee, J., & Kim, Y.-J. (2022). “The representational dynamics of sequential perceptual averaging”, Journal of Neuroscience, 42(6), 1141–1153.\nAdalarasu, K., Jagannath, M., & James, Oliver. (2020). “Assessment of techniques for teaching school children with autism”, IRBM, 41(2), 88–93.\nJames, Oliver., Park, H., & Kim, S.-G. (2019). “Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis”, Human Brain Mapping, 40(11), 3321–3337.\nPark, B.-Y., Shim, W. M., James, Oliver., & Park, H. (2019). “Possible links between the lag structure in visual cortex and visual streams using fMRI”, Scientific Reports, 9(1), 4283.\nEo, K., James, Oliver., Son, S., Kang, M.-S., Chong, S. C., & Kim, Y.-J. (2018). “Representational dynamics of ensemble average of simultaneously presented objects”, Journal of Vision, 18(10), 80–80.\nKwon, J., Kim, M., Park, H., Kang, B.-M., Jo, Y., Kim, J.-H., Oliver James… Others. (2017). “Label-free nanoscale optical metrology on myelinated axons in vivo”, Nature Communications, 8(1), 1832.\nLee, Y., Park, B.-Y., James, Oliver., Kim, S.-G., & Park, H. (2017). “Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults”, Frontiers in Human Neuroscience, 11, 418.\nJames, Oliver. (2016). “Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework”, Wireless Personal Communications, 87(10), 513–526.\nJames, Oliver. (2015). “Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices”, International Journal of Computer Applications, 975, 8887.\nJames, Oliver, Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). “Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers”, The Journal of Korean Institute of Communications and Information Sciences, 38(6), 497–502.\nJames, Oliver, WoongBi, L., Heung-No, & Lee. (2013). “Filters with random transmittance for improving resolution in filter-array-based spectrometers”, Optics Express, 21(4), 3969–3989.\nJames, Oliver., Lee, W., Park, S., & Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. Optics Express, 20(3), 2613–2625.\nOliver, James, Aravind, R., & Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. IET Signal Processing, 6(1), 45–53.\nJames, Oliver, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. Signal Processing, 90(6), 1861–1872.\nJames, Oliver., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. Electronics Letters, 44(13), 830–832.",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#book-chapters",
+    "href": "publications/index.html#book-chapters",
+    "title": "List of publications",
+    "section": "Book Chapters",
+    "text": "Book Chapters\nUmapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., James, O. (2023). Low Power Methodologies for FPGA—An Overview. In: Sharma, D.K., Sharma, R., Jeon, G., Polkowski, Z. (eds) Low Power Architectures for IoT Applications. Springer Tracts in Electrical and Electronics Engineering. Springer, Singapore. https://doi.org/10.1007/978-981-99-0639-0_4",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#conferences",
+    "href": "publications/index.html#conferences",
+    "title": "List of publications",
+    "section": "Conferences",
+    "text": "Conferences\nJames, Oliver and Yee Joon Kim, (2023) On the representation of objective and subjective visible/invisible stimuli in humans via EEG-based report and no- report, Cognitive Neuroscience Symposium, CNS, SFA, USA\nJisub Bae, James Oliver, and Yee Joon Kim, (2023) The influence of subjective visibility on illusory contour perception: An EEG study, Cognitive Neuroscience Symposium, CNS, SFA, USA\nJames, Oliver., Lee, W.-B., & Lee, H.-N. (2013). Random Transmittance Based Filter Array Spectrometers: Sparse Spectrum Recovery And Resolution Improvement. Global Conference on Signal and Information Processing (GlobalSIP), 2013 IEEE, 615–615. IEEE.\nJames,Oliver ., Lee, W.-B., Park, S., & Lee, H.-N. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.\nLee, W.-B., James,Oliver, Kim, S.-C., & Lee, H.-N. (2013). Random optical scatter filters for spectrometers: Implementation and Estimation. Imaging Systems and Applications, JTu4A-33. Optica Publishing Group.\nJames, Oliver, S. P., WoongBi Lee, & Lee, H.-N. (2013). Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers. Korean Information and Communication Society Journal, (6), 497–502.\nJames, Oliver, & Lee, H.-N. (2011). A realistic distributed compressive sensing framework for multiple wireless sensor networks. Proc. 4th Signal Process. with Adapt. Sparse Struct. Repr, 105.\nJames, Oliver., Aravind, R., & Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.\nJames, Oliver., Aravind, R., & Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.\nJames, Oliver, Kumari, R. S. S., & Sadasivam, V. (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#international-patents",
+    "href": "publications/index.html#international-patents",
+    "title": "List of publications",
+    "section": "International Patents",
+    "text": "International Patents\nHeung-No Lee, Oliver James, Sang-Jun Park, and Woong-Bi Lee, Method and Apparatus for Processing Optical Signal Of Spectrometer Using Sparse Nature of Signals, US patent number: 13/711,930, date: Dec. 12, 2012. (Contribution 30%).",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#korean-patents",
+    "href": "publications/index.html#korean-patents",
+    "title": "List of publications",
+    "section": "Korean Patents",
+    "text": "Korean Patents\nHeung-No Lee, Oliver James, and Woong-Bi Lee, Apparatus for Improving Spectral resolution using Random Transmittance in Optical Spectrometers, No. 10-2012-0112453, registered date: Oct. 10, 2012. (Contribution 30%).\nHeung-No Lee, Oliver James, Sang-Jun Park, and Woong-Bi Lee, Method and Apparatus for Processing Optical Signal Of Spectrometer Using Sparse Nature of Signals, No. 10-2012-0079171, registered date: July. 20, 2012. (Contribution 30%).",
+    "crumbs": [
+      "Publications",
+      "List of publications"
+    ]
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#linear-variants",
+    "href": "gleanings/Kalman/Kalman.html#linear-variants",
+    "title": "Kalman Filter",
+    "section": "Linear Variants",
+    "text": "Linear Variants\n\n1. Standard/Vanilla Kalman Filter\nLinear systems with Gaussian noise - Reference: Kalman, R. E. (1960). “A New Approach to Linear Filtering and Prediction Problems.” Journal of Basic Engineering, 82(1), 35-45.\n\n\n2. Steady-State Kalman Filter\nUses constant gain after convergence - Reference: Anderson, B. D., & Moore, J. B. (1979). Optimal Filtering. Prentice-Hall.\n\n\n3. Information Filter\nInverse covariance form of KF, useful for sensor fusion - Reference: Maybeck, P. S. (1979). Stochastic Models, Estimation, and Control, Vol. 1. Academic Press.\n\n\n4. Square Root Kalman Filter\nNumerically stable using Cholesky decomposition - Reference: Bierman, G. J. (1977). Factorization Methods for Discrete Sequential Estimation. Academic Press.\n\n\n5. UD Filter\nU-D factorization for improved numerical stability - Reference: Bierman, G. J. (1977). “Factorization methods for discrete sequential estimation.” Mathematics in Science and Engineering, Vol. 128.\n\n\n6. Joseph Form Kalman Filter\nMore numerically stable covariance update - Reference: Bucy, R. S., & Joseph, P. D. (1968). Filtering for Stochastic Processes with Applications to Guidance. Wiley-Interscience."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#nonlinear-system-variants",
+    "href": "gleanings/Kalman/Kalman.html#nonlinear-system-variants",
+    "title": "Kalman Filter",
+    "section": "Nonlinear System Variants",
+    "text": "Nonlinear System Variants\n\n7. Extended Kalman Filter (EKF)\nFirst-order linearization via Jacobian matrices - Reference: Jazwinski, A. H. (1970). Stochastic Processes and Filtering Theory. Academic Press.\n\n\n8. Second-Order Extended Kalman Filter\nUses second-order Taylor expansion with Hessian matrices - Reference: Athans, M., Wishner, R. P., & Bertolini, A. (1968). “Suboptimal state estimation for continuous-time nonlinear systems.” IEEE Transactions on Automatic Control, 13(5), 504-514.\n\n\n9. Iterated Extended Kalman Filter (IEKF)\nIterative refinement of EKF measurement update - Reference: Bell, B. M., & Cathey, F. W. (1993). “The iterated Kalman filter update as a Gauss-Newton method.” IEEE Transactions on Automatic Control, 38(2), 294-297.\n\n\n10. Unscented Kalman Filter (UKF)\nSigma point method using unscented transformation - Reference: Julier, S. J., & Uhlmann, J. K. (1997). “New extension of the Kalman filter to nonlinear systems.” Signal Processing, Sensor Fusion, and Target Recognition VI, SPIE, 3068, 182-193. - Reference: Wan, E. A., & Van Der Merwe, R. (2000). “The unscented Kalman filter for nonlinear estimation.” IEEE Adaptive Systems for Signal Processing Symposium, 153-158.\n\n\n11. Central Difference Kalman Filter (CDKF)\nNumerical differentiation approach using Stirling’s interpolation - Reference: Nørgaard, M., Poulsen, N. K., & Ravn, O. (2000). “New developments in state estimation for nonlinear systems.” Automatica, 36(11), 1627-1638.\n\n\n12. Divided Difference Filter (DDF)\nUses Stirling’s interpolation formula - Reference: Nørgaard, M., Poulsen, N. K., & Ravn, O. (2000). “New developments in state estimation for nonlinear systems.” Automatica, 36(11), 1627-1638.\n\n\n13. Cubature Kalman Filter (CKF)\nSpherical-radial cubature rules for numerical integration - Reference: Arasaratnam, I., & Haykin, S. (2009). “Cubature Kalman filters.” IEEE Transactions on Automatic Control, 54(6), 1254-1269.\n\n\n14. Gauss-Hermite Kalman Filter\nGauss-Hermite quadrature integration - Reference: Ito, K., & Xiong, K. (2000). “Gaussian filters for nonlinear filtering problems.” IEEE Transactions on Automatic Control, 45(5), 910-927.\n\n\n15. Quadrature Kalman Filter (QKF)\nGeneral quadrature-based approach - Reference: Ito, K., & Xiong, K. (2000). “Gaussian filters for nonlinear filtering problems.” IEEE Transactions on Automatic Control, 45(5), 910-927."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#particlesequential-monte-carlo-variants",
+    "href": "gleanings/Kalman/Kalman.html#particlesequential-monte-carlo-variants",
+    "title": "Kalman Filter",
+    "section": "Particle/Sequential Monte Carlo Variants",
+    "text": "Particle/Sequential Monte Carlo Variants\n\n16. Particle Filter (PF)\nMonte Carlo sampling method for non-Gaussian, nonlinear systems - Reference: Gordon, N. J., Salmond, D. J., & Smith, A. F. (1993). “Novel approach to nonlinear/non-Gaussian Bayesian state estimation.” IEE Proceedings F, 140(2), 107-113.\n\n\n17. Bootstrap Filter\nBasic particle filter implementation - Reference: Gordon, N. J., Salmond, D. J., & Smith, A. F. (1993). “Novel approach to nonlinear/non-Gaussian Bayesian state estimation.” IEE Proceedings F, 140(2), 107-113.\n\n\n18. Auxiliary Particle Filter\nUses auxiliary variables for improved importance sampling - Reference: Pitt, M. K., & Shephard, N. (1999). “Filtering via simulation: Auxiliary particle filters.” Journal of the American Statistical Association, 94(446), 590-599.\n\n\n19. Regularized Particle Filter\nAdds kernel density estimation to avoid sample impoverishment - Reference: Musso, C., Oudjane, N., & Le Gland, F. (2001). “Improving regularised particle filters.” Sequential Monte Carlo Methods in Practice, Springer, 247-271.\n\n\n20. Rao-Blackwellized Particle Filter\nMarginalizes linear subspaces analytically - Reference: Doucet, A., de Freitas, N., Murphy, K., & Russell, S. (2000). “Rao-Blackwellised particle filtering for dynamic Bayesian networks.” Uncertainty in Artificial Intelligence, 176-183."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#adaptive-variants",
+    "href": "gleanings/Kalman/Kalman.html#adaptive-variants",
+    "title": "Kalman Filter",
+    "section": "Adaptive Variants",
+    "text": "Adaptive Variants\n\n21. Adaptive Kalman Filter\nAdapts noise statistics online - Reference: Mehra, R. K. (1970). “On the identification of variances and adaptive Kalman filtering.” IEEE Transactions on Automatic Control, 15(2), 175-184.\n\n\n22. Fading Memory Filter\nExponential forgetting factor for time-varying systems - Reference: Jazwinski, A. H. (1970). Stochastic Processes and Filtering Theory. Academic Press.\n\n\n23. Multiple Model Adaptive Estimation (MMAE)\nBank of parallel filters for different models - Reference: Magill, D. T. (1965). “Optimal adaptive estimation of sampled stochastic processes.” IEEE Transactions on Automatic Control, 10(4), 434-439.\n\n\n24. Interacting Multiple Model (IMM)\nSwitching between models with Markov transitions - Reference: Blom, H. A., & Bar-Shalom, Y. (1988). “The interacting multiple model algorithm for systems with Markovian switching coefficients.” IEEE Transactions on Automatic Control, 33(8), 780-783.\n\n\n25. Generalized Pseudo-Bayesian (GPB)\nMultiple hypothesis tracking - Reference: Ackerson, G. A., & Fu, K. S. (1970). “On state estimation in switching environments.” IEEE Transactions on Automatic Control, 15(1), 10-17."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#robust-variants",
+    "href": "gleanings/Kalman/Kalman.html#robust-variants",
+    "title": "Kalman Filter",
+    "section": "Robust Variants",
+    "text": "Robust Variants\n\n26. H-infinity Filter\nMinimax robust filtering for worst-case disturbances - Reference: Hassibi, B., Sayed, A. H., & Kailath, T. (1999). Indefinite-Quadratic Estimation and Control. SIAM.\n\n\n27. Robust Kalman Filter\nOutlier rejection mechanisms - Reference: Fratello, F., & Lertora, L. (2006). “Robust Kalman filtering.” IEEE International Conference on Multisensor Fusion and Integration, 155-160.\n\n\n28. Maximum Correntropy Kalman Filter\nRobust to non-Gaussian noise using correntropy - Reference: Chen, B., Liu, X., Zhao, H., & Principe, J. C. (2017). “Maximum correntropy Kalman filter.” Automatica, 76, 70-77.\n\n\n29. Huber-based Kalman Filter\nM-estimation approach for robustness - Reference: Gandhi, M. A., & Mili, L. (2010). “Robust Kalman filter based on a generalized maximum-likelihood-type estimator.” IEEE Transactions on Signal Processing, 58(5), 2509-2520.\n\n\n30. Variational Bayesian Kalman Filter\nHandles uncertain noise statistics via variational inference - Reference: Sarkka, S., & Nummenmaa, A. (2009). “Recursive noise adaptive Kalman filtering by variational Bayesian approximations.” IEEE Transactions on Automatic Control, 54(3), 596-600."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#decentralizeddistributed-variants",
+    "href": "gleanings/Kalman/Kalman.html#decentralizeddistributed-variants",
+    "title": "Kalman Filter",
+    "section": "Decentralized/Distributed Variants",
+    "text": "Decentralized/Distributed Variants\n\n31. Federated Kalman Filter\nMultiple local filters with master filter for sensor fusion - Reference: Carlson, N. A. (1988). “Federated square root filter for decentralized parallel processes.” IEEE Transactions on Aerospace and Electronic Systems, 26(3), 517-525.\n\n\n32. Distributed Kalman Filter\nConsensus-based estimation for multi-agent systems - Reference: Olfati-Saber, R. (2007). “Distributed Kalman filtering for sensor networks.” IEEE Conference on Decision and Control, 5492-5498.\n\n\n33. Covariance Intersection Filter\nConservative fusion without cross-correlation information - Reference: Julier, S. J., & Uhlmann, J. K. (1997). “A non-divergent estimation algorithm in the presence of unknown correlations.” American Control Conference, 2369-2373.\n\n\n34. Consensus Kalman Filter\nMulti-agent coordination via consensus protocols - Reference: Olfati-Saber, R., & Sandell, N. R. (2008). “Distributed tracking for mobile sensor networks with information-driven mobility.” American Control Conference, 4606-4612."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#constrained-variants",
+    "href": "gleanings/Kalman/Kalman.html#constrained-variants",
+    "title": "Kalman Filter",
+    "section": "Constrained Variants",
+    "text": "Constrained Variants\n\n35. Constrained Kalman Filter\nEnforces state constraints (equality/inequality) - Reference: Simon, D., & Chia, T. L. (2002). “Kalman filtering with state equality constraints.” IEEE Transactions on Aerospace and Electronic Systems, 38(1), 128-136.\n\n\n36. Projected Kalman Filter\nProjects estimates onto constraint surface - Reference: Simon, D. (2010). “Kalman filtering with state constraints: a survey of linear and nonlinear algorithms.” IET Control Theory & Applications, 4(8), 1303-1318.\n\n\n37. Perfect Measurement Filter\nZero-uncertainty pseudo-measurements for constraints - Reference: Simon, D., & Chia, T. L. (2002). “Kalman filtering with state equality constraints.” IEEE Transactions on Aerospace and Electronic Systems, 38(1), 128-136."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#smoother-variants-backward-processing",
+    "href": "gleanings/Kalman/Kalman.html#smoother-variants-backward-processing",
+    "title": "Kalman Filter",
+    "section": "Smoother Variants (Backward Processing)",
+    "text": "Smoother Variants (Backward Processing)\n\n38. Rauch-Tung-Striebel (RTS) Smoother\nFixed-interval smoothing (forward-backward pass) - Reference: Rauch, H. E., Tung, F., & Striebel, C. T. (1965). “Maximum likelihood estimates of linear dynamic systems.” AIAA Journal, 3(8), 1445-1450.\n\n\n39. Two-Filter Smoother\nForward and backward filters combined - Reference: Fraser, D., & Potter, J. (1969). “The optimum linear smoother as a combination of two optimum linear filters.” IEEE Transactions on Automatic Control, 14(4), 387-390.\n\n\n40. Fixed-Lag Smoother\nDelayed state estimation with fixed delay - Reference: Meditch, J. S. (1973). “A survey of data smoothing for linear and nonlinear dynamic systems.” Automatica, 9(2), 151-162.\n\n\n41. Fixed-Point Smoother\nEstimates single past state with all available data - Reference: Meditch, J. S. (1973). “A survey of data smoothing for linear and nonlinear dynamic systems.” Automatica, 9(2), 151-162."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#special-purpose-variants",
+    "href": "gleanings/Kalman/Kalman.html#special-purpose-variants",
+    "title": "Kalman Filter",
+    "section": "Special Purpose Variants",
+    "text": "Special Purpose Variants\n\n42. Ensemble Kalman Filter (EnKF)\nMonte Carlo ensemble approach for high-dimensional systems - Reference: Evensen, G. (1994). “Sequential data assimilation with a nonlinear quasi-geostrophic model using Monte Carlo methods.” Journal of Geophysical Research, 99(C5), 10143-10162.\n\n\n43. Error-State Kalman Filter (ESKF)\nEstimates error states rather than full states (common in IMU/SLAM) - Reference: Solà, J. (2017). “Quaternion kinematics for the error-state Kalman filter.” arXiv preprint arXiv:1711.02508.\n\n\n44. Invariant Extended Kalman Filter (InEKF)\nExploits system symmetries and Lie group structure - Reference: Barrau, A., & Bonnabel, S. (2017). “The invariant extended Kalman filter as a stable observer.” IEEE Transactions on Automatic Control, 62(4), 1797-1812.\n\n\n45. Sigma-Point Kalman Filter (SPKF)\nGeneral term for UKF/CKF family using sigma points - Reference: Van der Merwe, R., & Wan, E. A. (2001). “The square-root unscented Kalman filter for state and parameter-estimation.” IEEE International Conference on Acoustics, Speech, and Signal Processing, 3461-3464.\n\n\n46. Alpha-Beta Filter\nSimplified fixed-gain tracker (g-h filter) - Reference: Benedict, T. R., & Bordner, G. W. (1962). “Synthesis of an optimal set of radar track-while-scan smoothing equations.” IRE Transactions on Automatic Control, 7(4), 27-32.\n\n\n47. Alpha-Beta-Gamma Filter\nTracks position, velocity, and acceleration - Reference: Kalata, P. R. (1984). “The tracking index: A generalized parameter for α-β and α-β-γ target trackers.” IEEE Transactions on Aerospace and Electronic Systems, AES-20(2), 174-182.\n\n\n48. Schmidt-Kalman Filter\nConsiders but doesn’t estimate nuisance parameters - Reference: Schmidt, S. F. (1966). “Application of state-space methods to navigation problems.” Advances in Control Systems, 3, 293-340.\n\n\n49. Dual Kalman Filter\nSimultaneous state and parameter estimation with two filters - Reference: Wan, E. A., & Nelson, A. T. (2001). “Dual extended Kalman filter methods.” Kalman Filtering and Neural Networks, Wiley, 123-173.\n\n\n50. Joint Kalman Filter\nAugmented state vector for parameter estimation - Reference: Nelson, A. T. (2000). “Nonlinear estimation and modeling of noisy time-series by dual Kalman filtering methods.” PhD dissertation, Oregon Graduate Institute."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#suboptimalsimplified-variants",
+    "href": "gleanings/Kalman/Kalman.html#suboptimalsimplified-variants",
+    "title": "Kalman Filter",
+    "section": "Suboptimal/Simplified Variants",
+    "text": "Suboptimal/Simplified Variants\n\n51. Decoupled Kalman Filter\nSeparates estimation problems for computational efficiency - Reference: Carlson, N. A. (1973). “Fast triangular formulation of the square root filter.” AIAA Journal, 11(9), 1259-1265.\n\n\n52. Reduced-Order Kalman Filter\nLower-dimensional approximation - Reference: Bernstein, D. S., & Hyland, D. C. (1985). “The optimal projection equations for reduced-order state estimation.” IEEE Transactions on Automatic Control, 30(6), 583-585.\n\n\n53. Fast Kalman Filter\nComputational efficiency optimizations using fast algorithms - Reference: Grewal, M. S., & Andrews, A. P. (2014). Kalman Filtering: Theory and Practice Using MATLAB, 4th ed. Wiley.\n\n\n54. Chandrasekhar Kalman Filter\nRecursive gain computation for time-invariant systems - Reference: Kailath, T., Sayed, A. H., & Hassibi, B. (2000). Linear Estimation. Prentice Hall."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#modern-machine-learning-hybrids",
+    "href": "gleanings/Kalman/Kalman.html#modern-machine-learning-hybrids",
+    "title": "Kalman Filter",
+    "section": "Modern Machine Learning Hybrids",
+    "text": "Modern Machine Learning Hybrids\n\n55. Kalman Filter Network (KFN)\nNeural network implementation of Kalman filtering - Reference: Haarnoja, T., Ajay, A., Levine, S., & Abbeel, P. (2016). “Backprop KF: Learning discriminative deterministic state estimators.” Advances in Neural Information Processing Systems, 4376-4384.\n\n\n56. Differentiable Kalman Filter\nLearnable parameters via backpropagation - Reference: Kloss, A., Schaal, S., & Bohg, J. (2021). “Combining learned and analytical models for predicting action effects.” International Journal of Robotics Research, 40(8-9), 1074-1095.\n\n\n57. Deep Kalman Filter\nDeep learning state transition and observation models - Reference: Krishnan, R. G., Shalit, U., & Sontag, D. (2017). “Structured inference networks for nonlinear state space models.” AAAI Conference on Artificial Intelligence.\n\n\n58. Variational Kalman Filter\nVariational inference approach with neural networks - Reference: Fraccaro, M., Kamronn, S., Paquet, U., & Winther, O. (2017). “A disentangled recognition and nonlinear dynamics model for unsupervised learning.” Advances in Neural Information Processing Systems, 3601-3610."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#application-specific-variants",
+    "href": "gleanings/Kalman/Kalman.html#application-specific-variants",
+    "title": "Kalman Filter",
+    "section": "Application-Specific Variants",
+    "text": "Application-Specific Variants\n\n59. GPS Kalman Filter\nSpecialized for GPS navigation and positioning - Reference: Brown, R. G., & Hwang, P. Y. (1997). Introduction to Random Signals and Applied Kalman Filtering, 3rd ed. Wiley.\n\n\n60. IMU Kalman Filter\nInertial measurement unit sensor fusion - Reference: Titterton, D. H., & Weston, J. L. (2004). Strapdown Inertial Navigation Technology, 2nd ed. IET.\n\n\n61. SLAM Kalman Filter (EKF-SLAM)\nSimultaneous localization and mapping - Reference: Dissanayake, M. G., Newman, P., Clark, S., Durrant-Whyte, H. F., & Csorba, M. (2001). “A solution to the simultaneous localization and map building (SLAM) problem.” IEEE Transactions on Robotics and Automation, 17(3), 229-241.\n\n\n62. Quaternion Kalman Filter\nAttitude estimation using quaternion representation - Reference: Crassidis, J. L., & Markley, F. L. (2003). “Unscented filtering for spacecraft attitude estimation.” Journal of Guidance, Control, and Dynamics, 26(4), 536-542.\n\n\n63. Multiplicative Extended Kalman Filter (MEKF)\nAttitude estimation with multiplicative error representation - Reference: Markley, F. L. (2003). “Attitude error representations for Kalman filtering.” Journal of Guidance, Control, and Dynamics, 26(2), 311-317."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#key-textbooks-and-survey-papers",
+    "href": "gleanings/Kalman/Kalman.html#key-textbooks-and-survey-papers",
+    "title": "Kalman Filter",
+    "section": "Key Textbooks and Survey Papers",
+    "text": "Key Textbooks and Survey Papers\n\nBar-Shalom, Y., Li, X. R., & Kirubarajan, T. (2001). Estimation with Applications to Tracking and Navigation. Wiley.\nGrewal, M. S., & Andrews, A. P. (2014). Kalman Filtering: Theory and Practice Using MATLAB, 4th ed. Wiley-IEEE Press.\nSimon, D. (2006). Optimal State Estimation: Kalman, H∞, and Nonlinear Approaches. Wiley.\nSärkkä, S. (2013). Bayesian Filtering and Smoothing. Cambridge University Press.\nArulampalam, M. S., Maskell, S., Gordon, N., & Clapp, T. (2002). “A tutorial on particle filters for online nonlinear/non-Gaussian Bayesian tracking.” IEEE Transactions on Signal Processing, 50(2), 174-188."
+  },
+  {
+    "objectID": "gleanings/Kalman/Kalman.html#summary",
+    "href": "gleanings/Kalman/Kalman.html#summary",
+    "title": "Kalman Filter",
+    "section": "Summary",
+    "text": "Summary\nThis comprehensive list represents the major variants developed over six decades of Kalman filtering research, from Kalman’s original 1960 paper to modern machine learning hybrids. Each variant addresses specific challenges such as:\n\nNonlinearity: EKF, UKF, CKF, particle filters\nNon-Gaussian noise: Particle filters, robust variants\nComputational efficiency: Reduced-order filters, fast algorithms\nRobustness: H-infinity, maximum correntropy filters\nSpecialized applications: SLAM, attitude estimation, GPS navigation\nModern AI integration: Deep Kalman filters, differentiable filters\n\nThe Kalman filter remains one of the most successful algorithms in estimation theory, with applications spanning aerospace, robotics, autonomous vehicles, finance, signal processing, and countless other domains."
+  },
+  {
+    "objectID": "tutorials/index.html",
+    "href": "tutorials/index.html",
+    "title": "List of tutorials here",
+    "section": "",
+    "text": "List of tutorials here\n\nSpecial Random Processes",
+    "crumbs": [
+      "Tutorials",
+      "List of tutorials here"
+    ]
+  },
+  {
+    "objectID": "tutorials/EstimationTheory/EstimationTheoryIntro.html",
+    "href": "tutorials/EstimationTheory/EstimationTheoryIntro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nGiven a set of observations (scalar or vector) \\bm{x}_1, x_2,\\cdots , x_N, find the parameter \\theta (scalar or vector) hidden in the observations.",
+    "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "tutorials/RandomProcess/FilteringofRP.html",
+    "href": "tutorials/RandomProcess/FilteringofRP.html",
+    "title": "Filtering of random process",
+    "section": "",
+    "text": "Filtering of random process\nThe linear time-invariant filters are widely employed in applications ranging from modern communication system, audio processing and radar systems. The input of such systems would be usually random processes. Thus, it is of importance to study the how the statistics of the random processes change as a result of filtering. Of particular importance is the mean and autocorrelation of the input and output processes.\nConsider the input/output of an LTI system with the input process being non-zero mean \\mu_x and autocorrelation r_x(k)\n\ny(n) = \\sum_{k=-\\infty}^{\\infty} h(l)x(n-l)\n\\tag{1}\n\nMean of the output process\nThe mean of the output process is\n\n\\begin{split}\n\\mathbb{E}[y_n] & = \\sum_{k=-\\infty}^{\\infty} h(l) \\mathbb{E}[x(n-l)] \\\\\n& = \\mu \\sum_{k=-\\infty}^{\\infty} h(l)  \\\\\n& = \\mu H(e^{j0})\n\\end{split}\n\nThe mean of the output process is the product of the mean of the input process and the frequency response of the filter at w=0.\n\n\nAutocorrelation of the output\nMultiplying both sides of Equation 1 with y_{n-k} and taking expectation on both sides leads to\n\n\\begin{split}\n\\mathbb{E}[y(n) y^*(n-k)] & = \\sum_{k=-\\infty}^{\\infty} h(l)\\mathbb{E}[ x(n-l) y^*(n-k)] \\\\\nr_y(k) & =a  \\\\\n\\end{split}",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "Filtering of random process"
+    ]
+  },
+  {
+    "objectID": "tutorials/RandomProcess/MA.html",
+    "href": "tutorials/RandomProcess/MA.html",
+    "title": "Moving Average (MA) process",
+    "section": "",
+    "text": "Moving Average (MA) process\nThe YW equation for MA(1) process can be obtained by setting all the a(l) in YW equation to zero for ARMA(p,q) and noting that h(n)=b(n), the finite impulse response filter.\n\nC(k)  =  \\sigma_v^2 \\sum_{l=0}^{q-k} b(l+k) b^*(l)~ \\forall k\n\nSince the FIR filter is causal we have h(n)=0, n&lt;0. The above equation can be written as\n\nC(k)  =  \\sigma_v^2 \\sum_{l=0}^{q-|k|} b(l+|k|) b^*(l)~ \\forall k\n\nThen the YW equation for the MA(q) process is\n\nr_x(k)  =  \\sigma_v^2 \\sum_{l=0}^{q-|k|} b(l+|k|) b^*(l)~~~~ \\forall k\n\nbut r_x(k) is non-zero for k \\in [-q,q]. Thus, the autocorrelation of MA(q) process is totally determined by the autocorrelation of filter coefficients that generates the process.",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "Moving Average (MA) process"
+    ]
+  },
+  {
+    "objectID": "research/Spec1.html",
+    "href": "research/Spec1.html",
+    "title": "Improving resolution of miniature spectrometers by exploiting sparse nature of signals",
+    "section": "",
+    "text": "In this paper, we present a signal processing approach to improve the resolution of a spectrometer with a fixed number of low-cost, non-ideal filters. We aim to show that the resolution can be improved beyond the limit set by the number of filters by exploiting the sparse nature of a signal spectrum. We consider an underdetermined system of linear equations as a model for signal spectrum estimation. We design a non-negative L_1norm minimization algorithm for solving the system of equations. We demonstrate that the resolution can be improved multiple times by using the proposed algorithm.",
+    "crumbs": [
+      "Research",
+      "Improving resolution of miniature spectrometers by exploiting sparse nature of signals"
+    ]
+  },
+  {
+    "objectID": "research/Krylov.html",
+    "href": "research/Krylov.html",
+    "title": "Krylov Subspace-based Channel Estimation",
+    "section": "",
+    "text": "We investigate a low-rank minimum mean-square error (MMSE) channel estimator in orthogonal frequency division multiplexing (OFDM) systems. The proposed estimator is derived by using the multi-stage nested Wiener filter (MSNWF) identified in the literature as a Krylov subspace approach for rank reduction. We describe the low-rank MMSE expressions for exploiting the time correlation function of the channel path gains. The Krylov subspace technique requires neither eigenvalue decomposition (EVD) nor the inverse of the covariance matrices for parameter estimation. We show that the Krylov channel estimator can perform as well as the EVD estimator with a much smaller rank. Simulation results obtained confirm the superiority of the proposed Krylov low-rank channel estimator in approaching near full-rank MSE performance.",
+    "crumbs": [
+      "Research",
+      "Krylov Subspace-based Channel Estimation"
+    ]
+  },
+  {
+    "objectID": "research/Spec2.html",
+    "href": "research/Spec2.html",
+    "title": "Filters with random transmittance for improving resolution in filter-array-based spectrometers",
+    "section": "",
+    "text": "In this paper, we introduce a method for improving the resolution of miniature spectrometers. Our method is based on using filters with random transmittance. Such filters sense fine details of an input signal spectrum, which, when combined with a signal processing algorithm, aid in improving resolution. We also propose an approach for designing filters with random transmittance using optical thin-film technology. We demonstrate that the improvement in resolution is 7-fold when using the filters with random transmittance over what was achieved in our previous work.",
+    "crumbs": [
+      "Research",
+      "Filters with random transmittance for improving resolution in filter-array-based spectrometers"
+    ]
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "Filters with random transmittance for improving resolution in filter-array-based spectrometers\n\n\n\n\n\n\n\n\n2013-02-25\n\n\nOliver James, Woongbi Lee, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nImpact of sampling rate on fMRI connectivity analysis\n\n\n\n\n\n\n\n\n2019-01-01\n\n\nOliver James, Hyunjin Park, Seong-Gi Kim\n\n\n\n\n\n\n\n\n\n\n\n\nImproved LS Channel Estimation in CFO\n\n\n\n\n\n\n\n\n2012-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nImproving resolution of miniature spectrometers by exploiting sparse nature of signals\n\n\n\n\n\n\n\n\n2012-03-30\n\n\nOliver James, Woongbi Lee, Sangjun Park, and Heung-No Lee\n\n\n\n\n\n\n\n\n\n\n\n\nKrylov Subspace-based Channel Estimation\n\n\n\n\n\n\n\n\n2010-01-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nOn the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis\n\n\n\n\n\n\n\n\n2015-06-01\n\n\nOliver James\n\n\n\n\n\n\n\n\n\n\n\n\nSparse Channel Estimation\n\n\n\n\n\n\n\n\n2008-02-01\n\n\nOliver James, Aravind, R. ; Prabhu, K. M. M.\n\n\n\n\n\n\n\n\n\n\n\n\nWavelet Shift Keying\n\n\n\n\n\n\n\n\n2005-08-16\n\n\nOliver\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Research"
+    ]
+  },
+  {
+    "objectID": "research/ImprovedLS.html",
+    "href": "research/ImprovedLS.html",
+    "title": "Improved LS Channel Estimation in CFO",
+    "section": "",
+    "text": "The authors consider the design of pilot sequences for channel estimation in the presence of carrier frequency offset (CFO) in systems that employ orthogonal frequency division multiplexing (OFDM). The CFO introduces intercarrier interference (ICI) which degrades the accuracy of the channel estimation. In order to minimise this effect, the authors design pilot sequence that minimises the mean square error (MSE) of the modified least squares (mLS) channel estimator. Since the identical pilot sequence, which minimises this MSE, has high peak-to-average power ratio of the OFDM signal, an alternative approach is proposed for channel estimation. The authors first introduce a new estimator as an alternative to the mLS estimator and design a low PAPR pilot sequences tailored to this new estimator. They show that the proposed procedure completely eliminates the effect of the ICI on the channel estimate. They then extend their design of pilot sequences for realistic sparse channels. Both analytical and computer simulation results presented in this study demonstrate the superiority of the proposed approach over conventional methods for channel estimation in the presence of ICI.",
+    "crumbs": [
+      "Research",
+      "Improved LS Channel Estimation in CFO"
+    ]
+  },
+  {
+    "objectID": "simulations/python/index.html",
+    "href": "simulations/python/index.html",
+    "title": "Python codes",
+    "section": "",
+    "text": "Python codes",
+    "crumbs": [
+      "Python",
+      "Python codes"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/NMODL.html",
+    "href": "simulations/neuron/NMODL.html",
+    "title": "NMODL",
+    "section": "",
+    "text": "The acronym “nrnivmodl” stands for NEURON Interpreter and Model Description Language Compiler. It is part of the NEURON simulation environment and is used to compile .mod files (written in NMODL) into a specialized version of NEURON called special. This version includes user-defined mechanisms for simulating physiological neuron models.\nWhy NMODL in Neuron simulator?\nThe purpose is to define biophysical mechanisms such as ion channels, synaptic models, or custom current/voltage sources. The .mod files extend NEURON’s capabilities by specifying kinetic equations, state variables, and interactions with ions.\nMechanisms are normally local. That is they do not depend on what is happening at other places on the neuron.",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/NMODL.html#core-blocks-in-nmodl",
+    "href": "simulations/neuron/NMODL.html#core-blocks-in-nmodl",
+    "title": "NMODL",
+    "section": "Core Blocks in NMODL",
+    "text": "Core Blocks in NMODL",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/NMODL.html#neuron-block",
+    "href": "simulations/neuron/NMODL.html#neuron-block",
+    "title": "NMODL",
+    "section": "NEURON BLOCK",
+    "text": "NEURON BLOCK\nDeclares mechanism properties and interface variables:\n\n\n\n\n\n\nNEURON BLOCK\n\n\n\nNEURON {\nSUFFIX…\nRANGE …\nGLOBAL …\nNONSPECIFIC_CURRENT …\nUSEION … READ … WRITE … VALENCE real // Specifies ion interaction (see Nernst potential below)\nPOINT_PROCESS …\nPOINTER …\nEXTERNAL …\n}\n\n\nThe RANGE and GLOABAL names should also be declared in the normal PARAMETER or ASSIGNED statement outside of the NEURON block, otherwise they will be hidden from the user.",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/NMODL.html#key-differences",
+    "href": "simulations/neuron/NMODL.html#key-differences",
+    "title": "NMODL",
+    "section": "Key Differences",
+    "text": "Key Differences",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/NMODL.html#range-variables",
+    "href": "simulations/neuron/NMODL.html#range-variables",
+    "title": "NMODL",
+    "section": "Range Variables",
+    "text": "Range Variables\n\nDefinition: Range variables can have different values in each compartment (segment) of a section.\nUsage: These are used for variables that vary spatially along the length of a neuron section, such as membrane potential or ion concentrations.\nAccess: Values can be accessed at specific positions using syntax like section(x).variable, where xx is the normalized position (e.g., 0 to 1).\nExamples: Membrane potential ($v$ ), ion channel conductance ( g_{ion}), or local currents.",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/NMODL.html#global-variables",
+    "href": "simulations/neuron/NMODL.html#global-variables",
+    "title": "NMODL",
+    "section": "Global Variables",
+    "text": "Global Variables\n\nDefinition: Global variables have the same value across all compartments and sections.\nUsage: These are used for parameters or variables that do not vary spatially, such as universal constants or shared properties.\nAccess: They are accessed directly without specifying a position, e.g., variable.\nExamples: Temperature, reversal potentials, or a global scaling factor.\n\n\nAbout point process\nNEURON makes the distinction between mechanisms that are attributed to an entire section (e.g., HH channels) and mechanisms that are associated with a particular point in the section (e.g., voltage clamp or synapse). While the former are most conveniently expressed in terms of per unit area, the point processes are more conveniently expressed in absolute terms (e.g., current injection is usually expressed in terms of nA instead of nA/cm2). Point processes also differ in that you can insert several in the same segment.\nThere are several built-in point processes, including: IClamp, VClamp and ExpSyn. Additional point processes can be built into the simulator with the model description language.\nNernst potential\n\n\\displaystyle E={\\frac {RT}{zF}}\\ln {\\frac {[{\\text{ion outside cell}}]}{[{\\text{ion inside cell}}]}}=2.3026{\\frac {RT}{zF}}\\log _{10}{\\frac {[{\\text{ion outside cell}}]}{[{\\text{ion inside cell}}]}}.\n\nwhen finitialize() is called Nernst equation is computed.",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/NMODL.html#verbatim-block",
+    "href": "simulations/neuron/NMODL.html#verbatim-block",
+    "title": "NMODL",
+    "section": "VERBATIM BLOCK",
+    "text": "VERBATIM BLOCK\nSections of code surrounded by VERBATIM and ENDVERBATIM blocks are interpreted as literal C/C++ code. This feature is typically used to interface with external C/C++ libraries, or to use NEURON features (such as random number generation) that are not explicitly supported in the NMODL language.",
+    "crumbs": [
+      "Neuron",
+      "NMODL"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/Introduction.html",
+    "href": "simulations/neuron/Introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nRecently, NEURON simulator has python interface, with excellent beginners tutorials.\n\n\nBall and stick 1: Basic cell\nLoad the necessary modules\n\nfrom neuron import h\nfrom neuron.units import ms, mV, µm \n\nimport matplotlib.pyplot as plt   # For plotting using matplotlib\n\n  \nh.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):\n\nDefine one cell with soma and dendrite (with necessary parameters, morphology) using python class\n\nclass BallAndStick:\n    def __init__(self, gid):\n        self._gid = gid\n        self._setup_morphology()\n        self._setup_biophysics()\n\n    def _setup_morphology(self):\n        self.soma = h.Section(name=\"soma\", cell=self)\n        self.dend = h.Section(name=\"dend\", cell=self)\n        self.dend.connect(self.soma)\n        self.all = self.soma.wholetree()\n        self.soma.L = self.soma.diam = 12.6157 * µm\n        self.dend.L = 200 * µm\n        self.dend.diam = 1 * µm\n\n    def _setup_biophysics(self):\n        for sec in self.all:\n            sec.Ra = 100  # Axial resistance in Ohm * cm\n            sec.cm = 1  # Membrane capacitance in micro Farads / cm^2\n        self.soma.insert(\"hh\")\n        for seg in self.soma:\n            seg.hh.gnabar = 0.12  # Sodium conductance in S/cm2\n            seg.hh.gkbar = 0.036  # Potassium conductance in S/cm2\n            seg.hh.gl = 0.0003  # Leak conductance in S/cm2\n            seg.hh.el = -54.3 * mV  # Reversal potential \n        self.dend.insert(\"pas\")  # # Insert passive current in the dendrite  \n        for seg in self.dend:   \n            seg.pas.g = 0.001  # Passive conductance in S/cm2        \n            seg.pas.e = -65 * mV  # Leak reversal potential             \n\n    def __repr__(self):\n        return \"BallAndStick[{}]\".format(self._gid)\n\n\nmy_cell = BallAndStick(0)\n\n\n# Make sure soma is hh and dendtrite is passive membrane\nfor sec in h.allsec():\n    print(\"%s: %s\" % (sec, \", \".join(sec.psection()[\"density_mechs\"].keys())))\n\n\nStimulus\n\nstim = h.IClamp(my_cell.dend(1))  # at the origin of the dentrite\nstim.delay = 5 #ms\nstim.dur = 1 #ms\nstim.amp = 0.1  # nA\n\n\n\nRecording soma voltage\n\nsoma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)\nt = h.Vector().record(h._ref_t)\n\n\n\nInitialization\n\nh.finitialize(-65 * mV) # initialize membrane potential \n\nh.continuerun(25 * ms) # run until time 25 ms:\n\n\nplt.figure()\nplt.plot(t, soma_v)\nplt.xlabel(\"t (ms)\")\nplt.ylabel(\"v (mV)\")\nplt.show()",
+    "crumbs": [
+      "Neuron",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "simulations/brian2/index.html",
+    "href": "simulations/brian2/index.html",
+    "title": "Brian2",
+    "section": "",
+    "text": "Brian2\nBrian2 allows scientists to simulate spiking neural network models using simple and concise high-level descriptions. This makes it more accessible to researchers who may not have extensive programming experience.",
+    "crumbs": [
+      "Brian2"
+    ]
+  },
+  {
+    "objectID": "simulations/r/index.html",
+    "href": "simulations/r/index.html",
+    "title": "R",
+    "section": "",
+    "text": "R\nA few R packages",
+    "crumbs": [
+      "R"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/index.html",
+    "href": "simulations/neuron/index.html",
+    "title": "NEURON simulator",
+    "section": "",
+    "text": "NEURON simulator excels at simulating complex, multi-compartmental models with detailed biophysics. The NEURON simulator is widely used in the simulation of detailed neural mechanisms and networks of neurons in the neuroscience literature. The original programming language used to code the NEURON is Higher Order Calculator (HOC). NEURON may also be programmed in Python, which we will explore more in this series of writings.",
+    "crumbs": [
+      "Neuron",
+      "NEURON simulator"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/index.html#installation-of-neuron-with-gpu-support-coreneuron",
+    "href": "simulations/neuron/index.html#installation-of-neuron-with-gpu-support-coreneuron",
+    "title": "NEURON simulator",
+    "section": "Installation of NEURON with GPU support (CoreNEURON)",
+    "text": "Installation of NEURON with GPU support (CoreNEURON)\n\n1. Clone the latest version of NEURON\ngit clone https://github.com/neuronsimulator/nrn\ncd nrn\n\n\n2. Build\nmkdir build\ncd build\n\n\n3. Load the modules\nIn normal Linux systems, the modules are in the path /usr/share/modules/modulefiles. If the directory does not exists, then install using\n\nsudo apt-get install environment-modules\n\n# and configure the ~/.bashrc with \nsource /etc/profile.d/modules.sh\n\nLoad the following modules\nmodule load  openmpi python cmake nvidia-hpc-sdk/25.1 cuda  \nIf they are not loading make sure the following files are available in /usr/share/modules/modulefiles\n\nopenmpi\npython\ncmake\nnvidia-hpc-sdk/25.3\ncuda\n\nFor example, the content of the file in nvidia-hpc-sdk/25.1 should read as\n#%Module1.0 \n\nproc ModulesHelp { } { puts stderr \"NVIDIA HPC SDK 25.1\" } \nmodule-whatis \"NVIDIA HPC SDK 25.1\"\n\nset HPC_SDK /opt/nvidia/hpc_sdk/Linux_x86_64/25.1 \nprepend-path PATH $HPC_SDK/compilers/bin \nprepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib\n\n#%Module1.0 proc ModulesHelp { } { puts stderr “NVIDIA HPC SDK 25.1” } module-whatis “NVIDIA HPC SDK 25.1”\nset HPC_SDK /opt/nvidia/hpc_sdk/Linux_x86_64/25.1 prepend-path PATH $HPC_SDK/compilers/bin prepend-path LD_LIBRARY_PATH $HPC_SDK/compilers/lib\n\n\n4. Compile\nFollowing compilation is for GPU architecture of 61\ncmake .. \\\n      -DNRN_ENABLE_CORENEURON=ON \\\n      -DCORENRN_ENABLE_GPU=ON \\\n      -DNRN_ENABLE_INTERVIEWS=ON \\\n      -DNRN_ENABLE_RX3D=OFF \\\n      -DCMAKE_INSTALL_PREFIX=$HOME/install \\\n      -DCMAKE_C_COMPILER=nvc \\\n      -DCMAKE_CXX_COMPILER=nvc++ \\\n      -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu \\\n      -DCMAKE_CUDA_ARCHITECTURES=\"61\" \\  # need to know this\n      -DCMAKE_EXE_LINKER_FLAGS: \"-cuda -gpu=cuda12.6,lineinfo,cc61 -acc\" # not necessary\n      -DCMAKE_CXX_FLAGS=\"-O3 -g\" \\\n      -DCMAKE_C_FLAGS=\"-O3 -g\" \\\n      -DCMAKE_BUILD_TYPE=Custom\nCheck the CUDA_ARCHITECTURES via (nvidia-smi; assuming it is installed)\nnvidia-smi --query-gpu=compute_cap --format=csv\n\n# in the cluster HPC it can be \n\nsrun --partition=@@@@ --gres=gpu:1 nvidia-smi --query-gpu=compute_cap --format=csv\n\n# Make sure to replace the partition name @@@@ with the actual partition name\n\nThe above command works well only for the architectures above 70 (for example, starting from Tesla V100 (Volta).\nFor older architectures, the compute_cap fiedd is not available. In such as, first search for the available fields by\nnvidia-smi --help-query-gpu  \n\n# in the cluster HPC it can be\n\nsrun --partition=jepyc --gres=gpu:1 nvidia-smi --help-query-gpu\n# Make sure to replace the partition name @@@@ with the actual partition name\nGet the name GPU name in such case and map it to the GPU architecture or compute capability\n\nnvidia-smi --query-gpu=name --format=csv\n\nsrun --partition=jepyc --gres=gpu:1 nvidia-smi --query-gpu=name --format=cs\n\n\n7. Install (make)\n\nmake -j \nmake install\n\n\n8. Export Python PATH variables to ~/.bashrc\n  \nexport PATH=$HOME/install/bin:$PATH  # assuming $HOME/install is the cmake installtion directory (see 5-th line of cmake in Step 4.)\n\nexport PYTHONPATH=$HOME/install/lib/python:$PYTHONPATH\n\n\n9. Ringtest\nBest way to check if the installation is working properly is by running the ring test as in\ngit clone https://github.com/nrnhines/ringtest.git\ncd ringtest\n\nnrnivmodl -coreneuron mod\n\n# in any NEURON code add the following lines for CoreNEURON support (python files only)\n\nh.cvode.cache_efficient(1)\nif use_coreneuron:\n    from neuron import coreneuron\n    coreneuron.enable = True\n    coreneuron.gpu = coreneuron_gpu\n    \n    \n#run the three performance test \n\n# NEURON CPU Run\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64\n\n# CoreNEURON CPU Run\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron\n\n# CoreNEURON GPU Run\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu",
+    "crumbs": [
+      "Neuron",
+      "NEURON simulator"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/index.html#batch-files-for-running-in-cpu",
+    "href": "simulations/neuron/index.html#batch-files-for-running-in-cpu",
+    "title": "NEURON simulator",
+    "section": "Batch files for running in cpu",
+    "text": "Batch files for running in cpu\n#!/bin/bash\n#SBATCH --job-name=rt_cpu       # Job name\n#SBATCH --output=rt_cpu.out     # Standard output and error log\n#SBATCH --error=rt_cpu.err      # Error log file                                                                                                     \n#SBATCH --ntasks=1                # Number of MPI processes\n#SBATCH --time=00:20:00           # Time limit (HH:MM:SS)\n#SBATCH --partition=olaf_c_core       # Partition name (adjust as needed)\n\nmodule purge\nmodule load gcc/12.2.0 openmpi/4.1.1-Rocky python/.3.12.3\n\nmodule load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1\nmodule load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1\n\n# Run the MPI program\n\n#mpiexec -n 2 ./x86_64/special -mpi -python ringtest.py -tstop 100\n#mpiexec -n 2 ./x86_64/special -mpi -python ringtest.py -tstop 100 -coreneuron\n\n# NEURON CPU Run ( in partition olaf_c_core ) \n#mpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64\n\n# CoreNEURON CPU Run ( in partition olaf_c_core ) \nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron",
+    "crumbs": [
+      "Neuron",
+      "NEURON simulator"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/index.html#batch-files-for-running-in-gpu",
+    "href": "simulations/neuron/index.html#batch-files-for-running-in-gpu",
+    "title": "NEURON simulator",
+    "section": "Batch files for running in GPU",
+    "text": "Batch files for running in GPU\n#!/bin/bash\n#SBATCH --job-name=ringtest_gpu\n#SBATCH --output=ringtest_gpu.out\n#SBATCH --error=ringtest_gpu.err\n#SBATCH --partition=AIP\n#SBATCH --gpus-per-node=1\n#SBATCH --ntasks=1\n#SBATCH --time=01:00:00\n\n# Load necessary modules (adjust as needed for your system)\nmodule purge\nmodule load gcc/12.2.0 openmpi/4.1.1-Rocky python/.3.12.3\n\nmodule load /opt/ibs_lib/modulefiles/libraries/.cuda/25.1\nmodule load /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1\n\n# Run the CoreNEURON simulation\nmpiexec -n 1 ./x86_64/special -mpi -python ringtest.py -tstop 10 -nring 128 -ncell 128 -branch 32 64 -coreneuron -gpu",
+    "crumbs": [
+      "Neuron",
+      "NEURON simulator"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/index.html#batch-files-for-running-in-multi-node-gpu",
+    "href": "simulations/neuron/index.html#batch-files-for-running-in-multi-node-gpu",
+    "title": "NEURON simulator",
+    "section": "Batch files for running in multi-node GPU",
+    "text": "Batch files for running in multi-node GPU\n#!/bin/bash\n#SBATCH --job-name=ringtest_multi_gpu\n#SBATCH --output=ringtest_multi_gpu_%j.out\n#SBATCH --error=ringtest_multi_gpu_%j.err\n#SBATCH --partition=AIP\n#SBATCH --nodes=2               # Number of nodes\n#SBATCH --gpus-per-node=2       # GPUs per node (adjust based on node GPU capacity)\n#SBATCH --ntasks-per-node=2     # MPI tasks per node (matches GPUs-per-node)\n#SBATCH --time=01:00:00\n#SBATCH --exclusive             # Request exclusive node access\n\n# Load modules (confirm paths match your cluster's setup)\nmodule purge\nmodule load gcc/12.2.0 \\\n            openmpi/4.1.1-Rocky \\\n            python/3.12.3 \\\n            /opt/ibs_lib/modulefiles/libraries/cuda/25.1 \\\n            /opt/ibs_lib/apps/nvhpc/25.1/modulefiles/nvhpc/25.1\n\n# Ensure CUDA and MPI are visible\nexport CUDA_VISIBLE_DEVICES=0,1  # Map GPUs per node (adjust if needed)\nexport OMP_NUM_THREADS=1         # Disable threading unless required\n\n# Run with MPI across nodes\nmpiexec --bind-to none --map-by node \\\n    -n $((SLURM_NNODES * SLURM_NTASKS_PER_NODE)) \\\n    ./x86_64/special -mpi -python ringtest.py \\\n    -tstop 10 -nring 128 -ncell 128 -branch 32 64 \\\n    -coreneuron -gpu",
+    "crumbs": [
+      "Neuron",
+      "NEURON simulator"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/index.html#installation-of-deepdendrite",
+    "href": "simulations/neuron/index.html#installation-of-deepdendrite",
+    "title": "NEURON simulator",
+    "section": "Installation of DeepDendrite",
+    "text": "Installation of DeepDendrite\n\n1. Compilation of CoreNEURON first in the DeepDendrite way\n\n# Docker is here\n# https://deepdendrite.readthedocs.io/\n# docker run --gpus '\"device=0\"' -itd --user $(id -u):$(id -g) --volume $(pwd):/workdir deepdendrite_docker:1.0 \n# If you use the Docker version, please change the settings inside the Docker file such as ARG HPCSDK_VER=\"25.1\", ARG CUDA_VER=\"12.6\", ARG UBUNTU_VER=\"24.04\" according to your sister version\n# coredat folder is the data folder (gen_data.py for Fig5)\n# If it is generated already, you can simply run the run.py inside the Fig5 folder\n\n\n\n# Manual installation \n\nDIR=\"/home/olive/DeepDendrite\"\n\n# Check if the directory exists\nif [ -d \"$DIR\" ]; then \n    rm -rf \"$DIR\"\n    echo \"Directory removed: $DIR\"  \nfi\n    \necho \"Cloing in to : $DIR\" \ngit clone https://github.com/pkuzyc/DeepDendrite.git\ncd $DIR/src/nrn_modify \n \n#chmod +x configure\n\n\n# you may set the variables before this command as well\n\n# before configuration\n\n# make sure that the \n# AM_INIT_AUTOMAKE([foreign]) in configure.ac to AM_INIT_AUTOMAKE([1.16 foreign])\n# if your systerm automake version is 1.16\n# check it via automake --version\n\n\necho \"######################################################\"\necho \"Configure\"\necho \"######################################################\" \n  \n  \n# Locate the python library flags\n#python3-config --ldflags\n#python3-config --libs\n\n# the flags during configure should be inaccordance with your system ldflags and libs. Check them via the above command\n\n./configure --prefix ~/DeepDendrite/install --without-iv --with-paranrn --with-nrnpython=`which python3` PYLIB=\"-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12\" PYLIBDIR=\"/usr/lib/x86_64-linux-gnu\" PYLIBLINK=\"-L/usr/lib/python3.12/config-3.12-x86_64-linux-gnu -lpython3.12\"\n\nautoreconf -f -i  # this will correct for any version mismatch during the configure\n\n# This will make \nmake -j8  \n\nexport PYTHONPATH=$PYTHONPATH:/home/olive/DeepDendrite/install/lib/python\n\nmake install \n\n# After installtion start running the Figure 5 and Figure 4 files\n\n\n2. Installation of DeepDendrite\n\n\nrm -rf build\nmkdir build\ncd build\n\n\n# for older versions of pgi, load the moduleflie as following\nmodule purge\nmodule load openmpi\nmodule load /usr/share/modules/modulefiles/nvhpc-hpcx-cuda12/25.1\n\nexport CC=mpicc\nexport CXX=mpicxx\ncmake .. -DCMAKE_C_FLAGS:STRING=\"-lrt -g -O0 -mp -mno-abm\" -DCMAKE_CXX_FLAGS:STRING=\"-lrt -std=c++11 -g -O0 -mp -mno-abm\" -DCOMPILE_LIBRARY_TYPE=STATIC -DCMAKE_INSTALL_PREFIX=\"/home/olive/DeepDendrite/install\" -DADDITIONAL_MECHPATH=\"/home/olive/DeepDendrite/src/all_mechanisms\" -DCUDA_HOST_COMPILER=`which gcc` -DCUDA_PROPAGATE_HOST_FLAGS=OFF -DENABLE_SELECTIVE_GPU_PROFILING=ON -DENABLE_OPENACC=ON -DAUTO_TEST_WITH_SLURM=OFF -DAUTO_TEST_WITH_MPIEXEC=OFF -DFUNCTIONAL_TESTS=OFF -DUNIT_TESTS=OFF\n\nmake -j24\nmake install",
+    "crumbs": [
+      "Neuron",
+      "NEURON simulator"
+    ]
+  },
+  {
+    "objectID": "simulations/neuron/Fundamentals.html",
+    "href": "simulations/neuron/Fundamentals.html",
+    "title": "Fundamentals",
+    "section": "",
+    "text": "A few fundamentals would help the beginners aiming to use the NEURON simulator via python interface.\n\n\nParmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment"
+  },
+  {
+    "objectID": "simulations/neuron/Fundamentals.html#section",
+    "href": "simulations/neuron/Fundamentals.html#section",
+    "title": "Fundamentals",
+    "section": "",
+    "text": "Parmeters: L - L is the length of the entire section in microns),\nnseg - (L/nseg)\ndiam -\nRa (Axial resistivity in ohm-cm -\nconnectivity -\nSection vs segment"
+  },
+  {
+    "objectID": "blogs/index.html",
+    "href": "blogs/index.html",
+    "title": "blogs will be updated soon",
+    "section": "",
+    "text": "blogs will be updated soon",
+    "crumbs": [
+      "Blogs",
+      "blogs will be updated soon"
+    ]
+  },
+  {
+    "objectID": "research/WSK.html",
+    "href": "research/WSK.html",
+    "title": "Wavelet Shift Keying",
+    "section": "",
+    "text": "Wavelet-based schemes enhance digital communication spectral efficiency through two main methods: pulse shaping and wavelet shift keying (WSK) modulation. In pulse shaping, orthonormal wavelets and their dyadic expansions serve as baseband pulses, enabling single-sideband transmission for higher data rates (1.12 b/s/Hz) compared to raised-cosine systems (0.83 b/s/Hz) while satisfying Nyquist criteria. The wavelet approach also provides coding gains without bandwidth penalties by using optimized waveforms. For modulation, WSK encodes data streams as scaled versions of mother wavelets, improving spectral efficiency as user numbers increase while maintaining consistent power efficiency. Both methods leverage wavelets’ time-frequency localization and orthogonality to outperform traditional communication techniques in bandwidth-constrained scenarios",
+    "crumbs": [
+      "Research",
+      "Wavelet Shift Keying"
+    ]
+  },
+  {
+    "objectID": "research/ImpactOfSamplingRate.html",
+    "href": "research/ImpactOfSamplingRate.html",
+    "title": "Impact of sampling rate on fMRI connectivity analysis",
+    "section": "",
+    "text": "A typical time series in functional magnetic resonance imaging (fMRI) exhibits autocorrelation, that is, the samples of the time series are dependent. In addition, temporal filtering, one of the crucial steps in preprocessing of functional magnetic resonance images, induces its own autocorrelation. While performing connectivity analysis in fMRI, the impact of the autocorrelation is largely ignored. Recently, autocorrelation has been addressed by variance correction approaches, which are sensitive to the sampling rate. In this article, we aim to investigate the impact of the sampling rate on the variance correction approaches. Toward this end, we first derived a generalized expression for the variance of the sample Pearson correlation coefficient (SPCC) in terms of the sampling rate and the filter cutoff frequency, in addition to the autocorrelation and cross-covariance functions of the time series. Through simulations, we illustrated the importance of the variance correction for a fixed sampling rate. Using the real resting state fMRI data sets, we demonstrated that the data sets with higher sampling rates were more prone to false positives, in agreement with the existing empirical reports. We further demonstrated with single subject results that for the data sets with higher sampling rates, the variance correction strategy restored the integrity of true connectivity.",
+    "crumbs": [
+      "Research",
+      "Impact of sampling rate on fMRI connectivity analysis"
+    ]
+  },
+  {
+    "objectID": "research/RIPofRealComplex.html",
+    "href": "research/RIPofRealComplex.html",
+    "title": "On the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis",
+    "section": "",
+    "text": "In this paper, we aim to revisit the restricted isometry property (RIP) of real and complex Gaussian sensing matrices. We do this reconsideration via the recently introduced restricted isometry random variable (RIV) framework for the real Gaussian sensing matrices. We first generalize the RIV framework to the complex settings and illustrate that the restricted isometry constants (RICs) of complex Gaussian sensing matrices are smaller than their real-valued counterpart. The reasons behind the better RIC nature of complex sensing matrices over their real-valued counterpart is delineated. We also demonstrate via critical functions, upper bounds on the RICs, that complex Gaussian matrices with prescribed RICs exist for larger number of problem sizes than the real Gaussian matrices.",
+    "crumbs": [
+      "Research",
+      "On the RIP of real and complex Gaussian sensing matrices via RIV framework in sparse signal recovery analysis"
+    ]
+  },
+  {
+    "objectID": "research/SparseChannel.html",
+    "href": "research/SparseChannel.html",
+    "title": "Sparse Channel Estimation",
+    "section": "",
+    "text": "A threshold-based procedure to estimate sparse channels in an orthogonal frequency division multiplexing (OFDM) system is proposed. An optimal threshold is derived by maximising the probability of correct detection between significant and zero-valued taps estimated by the least squares (LS) estimator. Improved LS estimates are obtained by pruning the LS estimates with the statistically derived threshold.",
+    "crumbs": [
+      "Research",
+      "Sparse Channel Estimation"
+    ]
+  },
+  {
+    "objectID": "tutorials/RandomProcess/index.html",
+    "href": "tutorials/RandomProcess/index.html",
+    "title": "Random processes",
+    "section": "",
+    "text": "Random processes\nA list of random processes we discuss in this tutorial are\n\nARMA\nAR\nMA\nHarmonic processes\n\nExcept the harmonic processes, the random processes are obtained by filtering white noise via linear time-invariant filter with rational transfer function given by\n\nH(z) =\\frac{B(z)}{A(z)} =  \\frac{\\sum_{k=0}^qb(k)z^{-k}}{1+\\sum_{k=1}^pa(k)z^{-k}}"
+  },
+  {
+    "objectID": "tutorials/RandomProcess/ARMA.html",
+    "href": "tutorials/RandomProcess/ARMA.html",
+    "title": "Auto-regressive moving average (ARMA) processes",
+    "section": "",
+    "text": "Auto-regressive moving average (ARMA) processes\nLet x(n) and v(n) are stationary random processes. If they are related by the linear constant coefficient differential equations\n\nx(n) + \\sum_{l=1}^{p} a(l) x(n-l)  = \\sum_{l=0}^q b(l)v(n-l)\n\nthen x(n) is called an ARMA(p,q) process.\n\nAutocorrelation\nOn both sides, multiplying by x^*(n-k) and taking the expectation \\mathbb{E} leads to\n\n\\begin{split}\n\\mathbb{E}[x(n)x^*(n-k)] + \\sum_{l=1}^{p} a(l) \\mathbb{E}[x(n-l) x^*(n-k)] & = \\sum_{l=0}^q b(l)\\mathbb{E}[v(n-l)x^*(n-k)] \\\\\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l) & = \\sum_{l=0}^q b(l)r_{vx}(k-l)\n\\end{split}\n\\tag{1}\nIn the present form, Equation 1 is not useful. It would be nice to relate the cross-correlation term r_{vx}(k) on the RHS of Equation 1 to the autocorrelation term r_x(k) by invoking the linear filter theory (that is convolution). Since\n\nx(n) = \\sum_{m={-\\infty}}^{\\infty} v(m) h^*(n-m)\n\nwhere h(n) is the impulse response of LTI system.\n\n\\begin{split}\nr_{vx}(k) &= \\mathbb{E}[v(n)x^*(n-k)]  \\\\\n& =  \\sum_{m=-\\infty}^{\\infty} \\mathbb{E}[v(n)v^*(m)  h^*(n-m-k)] \\\\\n  & = \\sigma_v^2 h^*(-k)\n\\end{split}\n\nThe above simplification is due to the assumption that v(n) is white noise. Now,\n\nr_{vx}(k-l) =  \\sigma_v^2 h^*(l-k)  \n\\tag{2}\nSubstituting Equation 2 in to Equation 1\n\n\\begin{split}\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l) & = \\sum_{l=0}^q b(l)r_{vx}(k-l) \\\\\n& = \\sigma_v^2\\sum_{l=0}^q b(l)  h^*(l-k) \\\\\n& = \\sigma_v^2\\sum_{l=0}^{q-k} b(l+k)  h^*(l)\n\\end{split}\n\nThe last step is due to the assumption of causal h(n).\nThe equation\n\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l)  = \\sigma_v^2\\sum_{l=0}^{q-k} b(l+k)  h^*(l)\n\\tag{3}\nis called Yule-Walker equation. Let the RHS be\n  \nC_q(k)  = \\sigma_v^2\\sum_{l=0}^{q-k} b(l+k)  h^*(l)  \n\n\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l) =\\left\\{ \\begin{array}{ c l }\n     C_q(k) & k  \\leq q \\\\\n    0                 &   k &gt;q\n  \\end{array}\\right.\n\nThe above YW equations can be written (for k=0,\\cdots,p+q) as\n\n\\begin{split}\nr_x(0) +   a(1) r_x(-1)  + a(2) r_x(-2) + \\cdots + a(p) r_x(-p) &= C_q(0)\\\\\nr_x(1) +   a(1) r_x(0)  + a(2) r_x(-1) + \\cdots + a(p) r_x(-(p-1)) &= C_q(1)\\\\\n\\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\\\\nr_x(q) +   a(1) r_x(q-1)  + a(2) r_x(q-2) + \\cdots + a(p) r_x(-(p-q)) &= C_q(q)\\\\\n---------------------------\\\\\nr_x(q+1) +   a(1) r_x(q)  + a(2) r_x(q-1) + \\cdots + a(p) r_x(-(p-(q+1)) &= 0\\\\\nr_x(q+2) +   a(1) r_x(q+1)  + a(2) r_x(q) + \\cdots + a(p) r_x(-(p-(q+2))) &= 0\\\\\n\\vdots ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\\\\nr_x(q+p) +   a(1) r_x(q+p-1)  + a(2) r_x(q-1) + \\cdots + a(p) r_x(q) &= 0\\\\\n\\end{split}\n\nIn matrix form,\n\n\\begin{bmatrix}\nr_x(0) &     r_x(-1)  &   r_x(-2) & \\cdots &  r_x(-p)  \\\\\nr_x(1) &     r_x(0)  &    r_x(-1) &  \\cdots &  r_x(-(p-1)) \\\\  \n\\vdots &     \\ddots  &    \\ddots &  \\vdots &  \\vdots  \\\\   \nr_x(q) &    r_x(q-1)  &  r_x(q-2) & \\cdots & r_x(-(p-q)) \\\\\n---- &     ----   &    ----  &  ----  & ----   \\\\   \nr_x(q+1) &    r_x(q)  &  r_x(q-1) & \\cdots &   r_x(-(p-(q+1)) \\\\\nr_x(q+2) &  r_x(q+1)  & r_x(q) & \\cdots &   r_x(-(p-(q+2)))  \\\\\n\\vdots &     \\ddots  &    \\ddots &  \\vdots &  \\vdots  \\\\   \nr_x(q+p) &    r_x(q+p-1)  & r_x(q-1) & \\cdots &  r_x(q)  \n\\end{bmatrix}\n\\begin{bmatrix}  1 \\\\ a(1) \\\\ a(2)  \\\\ \\vdots \\\\ a(p) \\\\\n\\end{bmatrix}\n= \\sigma_v^2 \\begin{bmatrix}  C_q(0) \\\\ C_q(1) \\\\ C_q(2)  \\\\ \\vdots \\\\ C_q(q)\\\\ ---- \\\\ 0 \\\\ 0 \\\\ \\vdots \\\\ 0\n\\end{bmatrix}\n\nThe YW equations can be used\n\nTo find the (AR) filter coefficients a(i) given autocorrelation values.\nRecurrence relationship for autocorrelation sequence for extrapolation.\nYW equations can be used to extrapolate the\n\n\n\nRecurrence for autocorrelation sequence for extrapolation\nFrom\n\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l) =\\left\\{ \\begin{array}{ c l }\n     C_q(k) & k  \\leq q \\\\\n    0                 &   k &gt;q\n  \\end{array}\\right.\n\nfor k&gt;q,\n\nr_x(k) =- \\sum_{l=1}^{p} a(l) r_x(k-l)   \n\nIn the case of ARMA(1,1) process where p=q=1, we have for k&gt;1\n\nr_x(k) =-  a(1) r_x(k-1)   \n\nIf r_x(0) and r_x(1) are known, then the r_x(k), \\forall k&gt;1 can be obtained from the above recurrence.\nIn the case of ARMA(3,1) process where p=3,q=1, we have for k&gt;1\n\nr_x(k) =-  a(1) r_x(k-1)   -  a(2) r_x(k-2) -  a(1) r_x(k-3)\n\nIf r_x(0),r_x(1) are known, then the r_x(k), \\forall k&gt;1 can be obtained from the above recurrence.\nIn the case of ARMA(1,3) process where p=1,q=3, we have for k&gt;3\n\nr_x(k) =-  a(1) r_x(k-1)     \n\nIf r_x(0),r_x(1),r_x(2),r_x(3) are known, then the r_x(k), \\forall k&gt;3 can be obtained from the above recurrence.\nAlso, if p \\geq q and if r_x(0), \\cdots, r_x(p-1) are known, the for any k \\geq p, one can obtain \nr_x(k) =- \\sum_{l=1}^{p} a(l) r_x(k-l)",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "Auto-regressive moving average (ARMA) processes"
+    ]
+  },
+  {
+    "objectID": "tutorials/RandomProcess/AR.html",
+    "href": "tutorials/RandomProcess/AR.html",
+    "title": "Auto-regressive (AR) processes",
+    "section": "",
+    "text": "Auto-regressive (AR) processes\nThe YW equation for AR(p) process can be obtained by setting q=0 in YW equation for ARMA(p,q) that results in\n\nr_x(k) + \\sum_{l=1}^{p} a(l) r_x(k-l)  = \\sigma_v^2  b(0)  h^*(0) \\delta(k)~~;~~ k\\geq0\n\nFor a stable, causal filter with rational transfer function, we have (using intial value of z-transform, that is, h(0) = \\lim_{z-&gt;\\infty} H(z) results in h^*(0)=b(0), then, the RHS becomes \\sigma_v^2 |b(0)|^2.\nIn the matrix form, this would be for k=0,1,\\cdots,p\n\n\\begin{bmatrix}\nr_x(0) &     r_x(-1)  &   r_x(-2) & \\cdots &  r_x(-p)  \\\\\nr_x(1) &     r_x(0)  &    r_x(-1) &  \\cdots &  r_x(-(p-1)) \\\\  \n\\vdots &     \\ddots  &    \\ddots &  \\vdots &  \\vdots  \\\\   \nr_x(p) &    r_x(p-1)  &  r_x(p-2) & \\cdots & r_x(0)  \n\\end{bmatrix}\n\\begin{bmatrix}  1 \\\\ a(1) \\\\ a(2)  \\\\ \\vdots \\\\ a(p) \\\\\n\\end{bmatrix}\n= \\sigma_v^2 |b(0)|^2  \\begin{bmatrix}  1 \\\\ 0 \\\\ 0  \\\\ \\vdots \\\\ 0  \n\\end{bmatrix}\n\nThe filter coefficients are linear in autocorrelation and thence it would be easy to find them give autocorrelation sequence.\nConsider for example AR(1) process (p=1),\n\n\\begin{bmatrix}\nr_x(0) &     r_x(-1)   \\\\\nr_x(1) &     r_x(0)   \n\\end{bmatrix}\n\\begin{bmatrix}  1 \\\\ a(1)   \n\\end{bmatrix}\n= \\sigma_v^2 |b(0)|^2\\begin{bmatrix}  1 \\\\ 0  \n\\end{bmatrix}\n\nSince, r_x(k)=r_x(-k), we have\n\n\\begin{split}\nr_x(0) +     r_x(1) a(1)  & =\\sigma_v^2 |b(0)|^2 \\\\\nr_x(1) +     a(1) r_x(0) &= 0  \n\\end{split}\n\nthat leads to\n\n     a(1)   = -\\frac{r_x(1)} {r_x(0)}   \n\nIn a similar vein, it is also possible to find the autocorrelation sequence given the filter coefficients a(i)s.",
+    "crumbs": [
+      "Tutorials",
+      "Random Processes",
+      "Auto-regressive (AR) processes"
+    ]
+  },
+  {
+    "objectID": "tutorials/EstimationTheory/PointEstimation.html",
+    "href": "tutorials/EstimationTheory/PointEstimation.html",
+    "title": "Point Estimation",
+    "section": "",
+    "text": "Point Estimation",
+    "crumbs": [
+      "Tutorials",
+      "Estimation Theory",
+      "Point Estimation"
+    ]
+  },
+  {
+    "objectID": "gleanings/index.html",
+    "href": "gleanings/index.html",
+    "title": "List of gleanings",
+    "section": "",
+    "text": "List of gleanings\n\nKalman Filter and its variants",
+    "crumbs": [
+      "Gleanings",
+      "List of gleanings"
+    ]
+  },
+  {
+    "objectID": "gleanings/PCA/PCA.html#optimization-problems",
+    "href": "gleanings/PCA/PCA.html#optimization-problems",
+    "title": "PCA",
+    "section": "Optimization Problems",
+    "text": "Optimization Problems\n\n1. Variance Maximization Formulation\nPCA finds a linear subspace that maximizes the variance of the projected data. Let ( X ^{n d} ) be the mean-centered data matrix, and let ( = X^X ) be its empirical covariance matrix.\n[\n\\begin{aligned}\n\\text{maximize} \\quad & \\operatorname{Tr}(W^\\top \\Sigma W) \\\\\n\\text{subject to} \\quad & W^\\top W = I_k\n\\end{aligned}\n]\n\n( W ^{d k} ) is the matrix of principal directions (orthonormal columns).\n( ) denotes the trace of a matrix.\n\n\n\n\n2. Reconstruction Error Minimization Formulation\nPCA can also be seen as finding a rank-( k ) approximation of ( X ) that minimizes the reconstruction error:\n[\n\\begin{aligned}\n\\text{minimize} \\quad & \\| X - ZW^\\top \\|_F^2 \\\\\n\\text{subject to} \\quad & W^\\top W = I_k\n\\end{aligned}\n]\n\n( Z ^{n k} ) are the low-dimensional projections (scores).\n( W ^{d k} ) is the projection matrix with orthonormal columns.\n( | |_F ) is the Frobenius norm."
+  }
+]
