@@ -1,3 +1,7 @@
 # Introduction
 
-Given a set of observations $x_1, x_2,\cdots , x_N$, find the parameter(s) $\theta_1, \theta_2,\cdots, \theta_N$, hidden in the observations.
+The central problem in estimation theory is that given a set of observations $\{y_1, y_2,\cdots , y_N \}$ that depends on the parameter(s) $\bm{\theta} = \theta_1, \theta_2,\cdots, \theta_N$, determine the parameters as a function of the functions. Mathematically,
+
+$$
+\bm{\hat{\theta}} = g(y_1, y_2,\cdots , y_N)
+$$
