@@ -244,7 +244,7 @@
     "href": "tutorials/EstimationTheory/index.html",
     "title": "Introduction",
     "section": "",
-    "text": "Introduction\nGiven a set of observations (scalar or vector) \\bm{x}_1, x_2,\\cdots , x_N, find the parameter \\theta (scalar or vector) hidden in the observations.",
+    "text": "Introduction\nThe central problem in estimation theory is that given a vector of observations \\bm{y} = [y_1, y_2,\\cdots , y_N] that depends on the parameter vector\\bm{\\theta} = [\\theta_1, \\theta_2,\\cdots, \\theta_N], determine \\bm{\\theta} using some function of \\bm{y}. Mathematically,\n\n\\bm{\\hat{\\theta}} = g(\\bm{y} )",
     "crumbs": [
       "Tutorials",
       "Estimation Theory",
