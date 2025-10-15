@@ -2,7 +2,7 @@
 
 The **Cramer-Rao Lower Bound** (CRLB) is a fundamental concept in estimation theory. It provides a theoretical lower bound on the variance of any `unbiased estimator of a deterministic parameter.` The ability to determine a lower bound for the variance of any unbiased estimator is extremely useful in practical situations. It allows us to assert that an estimator is MUV or provides a benchmark against which we can compare the performance of any unbiased estimator. This bound is derived using the Fisher information and is widely used to assess the efficiency of estimators.
 
-Importantly, the bound readily helps us to determine an estimator that attains the bound.
+Importantly, the bound readily helps us to determine an estimator that attains the bound. So it is a way of finding the UB estimator.
 
 The **Bayesian Cramér-Rao Lower Bound (BCRLB)** is an extension of the classical Cramér-Rao Lower Bound (CRLB) to Bayesian estimation problems. Unlike the classical CRLB, which applies to deterministic parameters, the BCRLB is used when the parameter being estimated is treated as a random variable with a known prior distribution.
 
