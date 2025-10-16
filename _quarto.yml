@@ -28,6 +28,8 @@ website:
         href: gleanings/index.qmd
       - text: "Blogs"
         href: blogs/index.qmd
+      - text: "JournalClub"
+        href: journalclub/index.qmd
     right:
       - text: "R"
         href: simulations/r/index.qmd

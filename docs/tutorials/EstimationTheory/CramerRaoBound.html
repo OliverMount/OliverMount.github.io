@@ -114,6 +114,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../blogs/index.html"> 
 <span class="menu-text">Blogs</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../journalclub/index.html"> 
+<span class="menu-text">JournalClub</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -204,6 +208,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tutorials/RandomProcess/Harmonic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Harmonic process</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tutorials/RandomProcess/FilteringofRP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Filtering of random process</span></a>
   </div>
@@ -261,7 +271,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="cramer-rao-lower-bound-crlb" class="level1">
 <h1>Cramer-Rao Lower Bound (CRLB)</h1>
-<p>The <strong>Cramer-Rao Lower Bound</strong> (CRLB) is a fundamental concept in estimation theory. It provides a theoretical lower bound on the variance of any <code>unbiased estimator of a deterministic parameter.</code> This bound is derived using the Fisher information and is widely used to assess the efficiency of estimators.</p>
+<p>The <strong>Cramer-Rao Lower Bound</strong> (CRLB) is a fundamental concept in estimation theory. It provides a theoretical lower bound on the variance of any <code>unbiased estimator of a deterministic parameter.</code> The ability to determine a lower bound for the variance of any unbiased estimator is extremely useful in practical situations. It allows us to assert that an estimator is MUV or provides a benchmark against which we can compare the performance of any unbiased estimator. This bound is derived using the Fisher information and is widely used to assess the efficiency of estimators.</p>
+<p>Importantly, the bound readily helps us to determine an estimator that attains the bound. So it is a way of finding the UB estimator.</p>
 <p>The <strong>Bayesian Cramér-Rao Lower Bound (BCRLB)</strong> is an extension of the classical Cramér-Rao Lower Bound (CRLB) to Bayesian estimation problems. Unlike the classical CRLB, which applies to deterministic parameters, the BCRLB is used when the parameter being estimated is treated as a random variable with a known prior distribution.</p>
 <p>There are other bounds exists. But we will try to discuss them!</p>
 
