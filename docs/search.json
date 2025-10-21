@@ -700,5 +700,68 @@
     "title": "Laws",
     "section": "Pareto law",
     "text": "Pareto law\nWhat is the 80 20 rule in psychology?\nIt is also known as the Pareto law, and as the principle of least effort. It states that a surprisingly small proportion of efforts and inputs (20%) lead to 80% of our results. In other words, there is an extremely lopsided distribution of inputs and outcomes."
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html",
+    "href": "gleanings/OUprocess/index.html",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "",
+    "text": "The Ornstein-Uhlenbeck (OU) process is a stochastic process that describes the velocity of a massive Brownian particle under friction. It’s widely used in physics, finance, and biology as a mean-reverting process."
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#introduction",
+    "href": "gleanings/OUprocess/index.html#introduction",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "",
+    "text": "The Ornstein-Uhlenbeck (OU) process is a stochastic process that describes the velocity of a massive Brownian particle under friction. It’s widely used in physics, finance, and biology as a mean-reverting process."
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#mathematical-definition",
+    "href": "gleanings/OUprocess/index.html#mathematical-definition",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "Mathematical Definition",
+    "text": "Mathematical Definition\nThe OU process is defined by the stochastic differential equation (SDE):\ndX_t = \\theta(\\mu - X_t)dt + \\sigma dW_t\nwhere:\n\nX_t is the process value at time t\n\\theta &gt; 0 is the mean reversion rate (speed of reversion)\n\\mu is the long-term mean (equilibrium level)\n\\sigma &gt; 0 is the volatility (diffusion coefficient)\nW_t is a Wiener process (standard Brownian motion)\ndW_t \\sim N(0, dt)\n\n\nParameters Explained\n\nθ (theta): Mean reversion speed\n\nHigher θ → faster reversion to mean\nLower θ → slower reversion (more persistent deviations)\n\nμ (mu): Long-term mean\n\nThe level around which the process oscillates\nThe expected value as t \\to \\infty\n\nσ (sigma): Volatility\n\nControls the magnitude of random fluctuations\nHigher σ → more noisy process"
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#discrete-time-approximation",
+    "href": "gleanings/OUprocess/index.html#discrete-time-approximation",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "Discrete-Time Approximation",
+    "text": "Discrete-Time Approximation\nUsing the Euler-Maruyama method:\nX_{t+\\Delta t} = X_t + \\theta(\\mu - X_t)\\Delta t + \\sigma\\sqrt{\\Delta t}\\,Z_t\nwhere Z_t \\sim N(0,1) are independent standard normal variables."
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#simulation-in-r",
+    "href": "gleanings/OUprocess/index.html#simulation-in-r",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "Simulation in R",
+    "text": "Simulation in R\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\n# Set seed for reproducibility\nset.seed(123)\n\n\nBasic OU Process Simulation\n\nsimulate_ou &lt;- function(n, dt, x0, theta, mu, sigma) {\n  # n: number of time steps\n  # dt: time increment\n  # x0: initial value\n  # theta: mean reversion rate\n  # mu: long-term mean\n  # sigma: volatility\n  \n  x &lt;- numeric(n)\n  x[1] &lt;- x0\n  \n  for (i in 2:n) {\n    dW &lt;- rnorm(1, mean = 0, sd = sqrt(dt))\n    x[i] &lt;- x[i-1] + theta * (mu - x[i-1]) * dt + sigma * dW\n  }\n  \n  return(x)\n}\n\n\n\nSingle Trajectory Example\n\n# Parameters\nn &lt;- 1000\ndt &lt;- 0.01\nx0 &lt;- 0\ntheta &lt;- 1.5\nmu &lt;- 5\nsigma &lt;- 2\n\n# Simulate\ntime &lt;- seq(0, (n-1)*dt, by = dt)\ntrajectory &lt;- simulate_ou(n, dt, x0, theta, mu, sigma)\n\n# Create data frame\ndf_single &lt;- data.frame(time = time, value = trajectory)\n\n# Plot\nggplot(df_single, aes(x = time, y = value)) +\n  geom_line(color = \"steelblue\", linewidth = 0.8) +\n  geom_hline(yintercept = mu, linetype = \"dashed\", color = \"red\", linewidth = 1) +\n  annotate(\"text\", x = max(time)*0.9, y = mu + 0.5, \n           label = paste0(\"μ = \", mu), color = \"red\") +\n  labs(title = \"Ornstein-Uhlenbeck Process: Single Trajectory\",\n       subtitle = paste0(\"θ = \", theta, \", μ = \", mu, \", σ = \", sigma),\n       x = \"Time\", y = \"X(t)\") +\n  theme_minimal() +\n  theme(plot.title = element_text(face = \"bold\"))\n\n\n\n\n\n\n\n\n\n\nMultiple Trajectories\n\n# Simulate multiple paths\nn_paths &lt;- 10\ntrajectories &lt;- matrix(0, nrow = n, ncol = n_paths)\n\nfor (i in 1:n_paths) {\n  trajectories[, i] &lt;- simulate_ou(n, dt, x0, theta, mu, sigma)\n}\n\n# Create data frame\ndf_multi &lt;- data.frame(time = time, trajectories) %&gt;%\n  pivot_longer(cols = -time, names_to = \"path\", values_to = \"value\")\n\n# Plot\nggplot(df_multi, aes(x = time, y = value, color = path)) +\n  geom_line(alpha = 0.6, linewidth = 0.6) +\n  geom_hline(yintercept = mu, linetype = \"dashed\", color = \"black\", linewidth = 1) +\n  labs(title = \"Multiple OU Process Trajectories\",\n       subtitle = paste0(\"θ = \", theta, \", μ = \", mu, \", σ = \", sigma),\n       x = \"Time\", y = \"X(t)\") +\n  theme_minimal() +\n  theme(legend.position = \"none\",\n        plot.title = element_text(face = \"bold\"))"
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#effect-of-parameters",
+    "href": "gleanings/OUprocess/index.html#effect-of-parameters",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "Effect of Parameters",
+    "text": "Effect of Parameters\n\nVarying Mean Reversion Rate (θ)\n\ntheta_values &lt;- c(0.5, 1.5, 3.0)\ndf_theta &lt;- data.frame()\n\nfor (theta_val in theta_values) {\n  traj &lt;- simulate_ou(n, dt, x0, theta_val, mu, sigma)\n  df_temp &lt;- data.frame(\n    time = time,\n    value = traj,\n    theta = paste0(\"θ = \", theta_val)\n  )\n  df_theta &lt;- rbind(df_theta, df_temp)\n}\n\nggplot(df_theta, aes(x = time, y = value, color = theta)) +\n  geom_line(linewidth = 0.8) +\n  geom_hline(yintercept = mu, linetype = \"dashed\", color = \"black\") +\n  facet_wrap(~theta, ncol = 1) +\n  labs(title = \"Effect of Mean Reversion Rate (θ)\",\n       subtitle = paste0(\"μ = \", mu, \", σ = \", sigma),\n       x = \"Time\", y = \"X(t)\") +\n  theme_minimal() +\n  theme(legend.position = \"none\",\n        plot.title = element_text(face = \"bold\"))\n\n\n\n\n\n\n\n\n\n\nVarying Volatility (σ)\n\nsigma_values &lt;- c(0.5, 1.5, 3.0)\ndf_sigma &lt;- data.frame()\n\nfor (sigma_val in sigma_values) {\n  traj &lt;- simulate_ou(n, dt, x0, theta, mu, sigma_val)\n  df_temp &lt;- data.frame(\n    time = time,\n    value = traj,\n    sigma = paste0(\"σ = \", sigma_val)\n  )\n  df_sigma &lt;- rbind(df_sigma, df_temp)\n}\n\nggplot(df_sigma, aes(x = time, y = value, color = sigma)) +\n  geom_line(linewidth = 0.8) +\n  geom_hline(yintercept = mu, linetype = \"dashed\", color = \"black\") +\n  facet_wrap(~sigma, ncol = 1) +\n  labs(title = \"Effect of Volatility (σ)\",\n       subtitle = paste0(\"θ = \", theta, \", μ = \", mu),\n       x = \"Time\", y = \"X(t)\") +\n  theme_minimal() +\n  theme(legend.position = \"none\",\n        plot.title = element_text(face = \"bold\"))"
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#statistical-properties",
+    "href": "gleanings/OUprocess/index.html#statistical-properties",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "Statistical Properties",
+    "text": "Statistical Properties\n\nStationary Distribution\nFor large t, the OU process has a stationary distribution:\nX_\\infty \\sim N\\left(\\mu, \\frac{\\sigma^2}{2\\theta}\\right)\n\n# Simulate long trajectory to reach stationarity\nn_long &lt;- 50000\ntraj_long &lt;- simulate_ou(n_long, dt, x0, theta, mu, sigma)\n\n# Take last 10000 points (should be stationary)\nstationary_sample &lt;- tail(traj_long, 10000)\n\n# Theoretical stationary variance\nvar_theoretical &lt;- sigma^2 / (2 * theta)\nsd_theoretical &lt;- sqrt(var_theoretical)\n\n# Plot histogram\ndf_hist &lt;- data.frame(value = stationary_sample)\n\nggplot(df_hist, aes(x = value)) +\n  geom_histogram(aes(y = after_stat(density)), bins = 50, \n                 fill = \"steelblue\", alpha = 0.7) +\n  stat_function(fun = dnorm, \n                args = list(mean = mu, sd = sd_theoretical),\n                color = \"red\", linewidth = 1.2) +\n  labs(title = \"Stationary Distribution of OU Process\",\n       subtitle = paste0(\"Theoretical: N(\", mu, \", \", round(var_theoretical, 3), \")\"),\n       x = \"X\", y = \"Density\") +\n  theme_minimal() +\n  theme(plot.title = element_text(face = \"bold\"))\n\n\n\n\n\n\n\n# Print statistics\ncat(\"Empirical mean:\", mean(stationary_sample), \"\\n\")\n\nEmpirical mean: 5.119992 \n\ncat(\"Theoretical mean:\", mu, \"\\n\")\n\nTheoretical mean: 5 \n\ncat(\"Empirical variance:\", var(stationary_sample), \"\\n\")\n\nEmpirical variance: 1.19043 \n\ncat(\"Theoretical variance:\", var_theoretical, \"\\n\")\n\nTheoretical variance: 1.333333"
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#applications",
+    "href": "gleanings/OUprocess/index.html#applications",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "Applications",
+    "text": "Applications\nThe OU process is used in:\n\nPhysics: Modeling particle motion with friction\nFinance: Interest rate models (Vasicek model), pairs trading\nBiology: Neural membrane potential, population dynamics\nNeuroscience: Spike train analysis\nClimate Science: Temperature anomalies"
+  },
+  {
+    "objectID": "gleanings/OUprocess/index.html#conclusion",
+    "href": "gleanings/OUprocess/index.html#conclusion",
+    "title": "Ornstein-Uhlenbeck Process: Theory and Simulation",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe Ornstein-Uhlenbeck process is a fundamental mean-reverting stochastic process with three key parameters:\n\nθ: Controls reversion speed\nμ: Determines the equilibrium level\nσ: Sets the noise magnitude\n\nIts mathematical tractability and realistic behavior make it invaluable across multiple scientific domains."
   }
 ]
