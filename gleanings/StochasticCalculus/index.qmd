@@ -7,17 +7,15 @@ tags:
 - Stratonovich Calculus 
 ---
 
-# **Introduction to Stochastic Calculus**
+# **Fundamentals of Stochastic Calculus**
 
-Notation and code for generating visuals are presented in the [Appendix](#appendix).
+### **1. Introduction**
 
-### **0. Introduction**
+Calculus underlies differential equations by providing tools to handle derivatives and integrals. Stochastic calculus plays a similar role for stochastic differential equations, extending calculus concepts to include randomness and stochastic behavior, enabling analysis and solution of SDEs.
 
-This document is a brief introduction to stochastic calculus. Like, an actual introduction. Not the textbook "introductions" which immediately blast you with graduate-level probability theory axioms and definitions.
+The goal of this short post is more to focus on the conceptual understanding rather than the mathematical rigor. I discuss Brownian motion, which is the foundation of stochastic calculus. The technical jargons such as probability spaces, measure theory, filtrations, are dealt in another post (refeence).
 
-The goal of this blog post is more to focus on the physical intuition and derivation of Brownian motion, which is the foundation of stochastic calculus. I will avoid very technical formalisms such as probability spaces, measure theory, filtrations, etc. in favor of a more informal approach by considering only well-behaved cases. I also try to avoid introducing too many new concepts and vocabulary.
-
-I hope that a wider audience can feel inspired as to how stochastic calculus emerges naturally from the physical world. Then, hopefully, more people can appreciate the beauty and meaning of the mathematics behind it, and decide to dig deeper into the subject.
+I desinged this post to inspire people and to see the beauty and meaning of the mathematics behind it, and decide to dig deeper into the subject.
 
 #### Applications
 
