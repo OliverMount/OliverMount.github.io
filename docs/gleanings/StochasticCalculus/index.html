@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Stochastic Calculus - Fundamentals – Welcome</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-516ea1ef946b60b7c996a35c789845c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Welcome</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tutorials/index.html"> 
+<span class="menu-text">Tutorials</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../gleanings/index.html"> 
+<span class="menu-text">Gleanings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blogs/index.html"> 
+<span class="menu-text">Blogs</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../simulations/r/index.html"> 
+<span class="menu-text">R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../simulations/python/index.html"> 
+<span class="menu-text">Python</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../simulations/brian2/index.html"> 
+<span class="menu-text">Brian2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../simulations/neuron/index.html"> 
+<span class="menu-text">Neuron</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-stochastic-calculus" id="toc-introduction-to-stochastic-calculus" class="nav-link active" data-scroll-target="#introduction-to-stochastic-calculus"><strong>Introduction to Stochastic Calculus</strong></a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>0. Introduction</strong></a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><strong>1. Motivation</strong></a></li>
+  <li><a href="#from-discrete-steps-to-continuous-limits" id="toc-from-discrete-steps-to-continuous-limits" class="nav-link" data-scroll-target="#from-discrete-steps-to-continuous-limits"><strong>2. From Discrete Steps to Continuous Limits</strong></a></li>
+  <li><a href="#defining-brownian-motion-wiener-process" id="toc-defining-brownian-motion-wiener-process" class="nav-link" data-scroll-target="#defining-brownian-motion-wiener-process"><strong>3. Defining Brownian motion (Wiener process)</strong></a></li>
+  <li><a href="#itô-calculus" id="toc-itô-calculus" class="nav-link" data-scroll-target="#itô-calculus"><strong>4. Itô Calculus</strong></a></li>
+  <li><a href="#stochastic-differential-equations" id="toc-stochastic-differential-equations" class="nav-link" data-scroll-target="#stochastic-differential-equations"><strong>5. Stochastic Differential Equations</strong></a></li>
+  <li><a href="#stratonovich-calculus" id="toc-stratonovich-calculus" class="nav-link" data-scroll-target="#stratonovich-calculus"><strong>6. Stratonovich Calculus</strong></a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#a.0.-further-reading" id="toc-a.0.-further-reading" class="nav-link" data-scroll-target="#a.0.-further-reading">A.0. Further Reading</a></li>
+  <li><a href="#a.1.-notation" id="toc-a.1.-notation" class="nav-link" data-scroll-target="#a.1.-notation">A.1. Notation</a></li>
+  <li><a href="#b.1.-python-code-for-binomial-plots" id="toc-b.1.-python-code-for-binomial-plots" class="nav-link" data-scroll-target="#b.1.-python-code-for-binomial-plots">B.1. Python code for binomial plots</a></li>
+  <li><a href="#b2.-python-code-for-brownian-motion-plot" id="toc-b2.-python-code-for-brownian-motion-plot" class="nav-link" data-scroll-target="#b2.-python-code-for-brownian-motion-plot"><strong>B2. Python Code for Brownian Motion Plot</strong></a></li>
+  <li><a href="#b3.-python-code-for-basic-sde-simulation" id="toc-b3.-python-code-for-basic-sde-simulation" class="nav-link" data-scroll-target="#b3.-python-code-for-basic-sde-simulation"><strong>B3. Python Code for Basic SDE Simulation</strong></a></li>
+  <li><a href="#b4.-python-code-for-geometric-brownian-motion-simulation" id="toc-b4.-python-code-for-geometric-brownian-motion-simulation" class="nav-link" data-scroll-target="#b4.-python-code-for-geometric-brownian-motion-simulation"><strong>B4. Python Code for Geometric Brownian Motion Simulation</strong></a></li>
+  <li><a href="#b5.-latex-code-for-tikz-diagram-of-paths-in-pascals-triangle" id="toc-b5.-latex-code-for-tikz-diagram-of-paths-in-pascals-triangle" class="nav-link" data-scroll-target="#b5.-latex-code-for-tikz-diagram-of-paths-in-pascals-triangle">B5. LaTeX Code for Tikz Diagram of Paths in Pascal’s Triangle</a></li>
+  <li><a href="#d-visualizations" id="toc-d-visualizations" class="nav-link" data-scroll-target="#d-visualizations">3D Visualizations</a></li>
+  <li><a href="#c2.-3d-animation-of-brownian-motion" id="toc-c2.-3d-animation-of-brownian-motion" class="nav-link" data-scroll-target="#c2.-3d-animation-of-brownian-motion">C2. 3D Animation of Brownian Motion</a></li>
+  <li><a href="#c3.-3d-animation-of-geometric-brownian-motion" id="toc-c3.-3d-animation-of-geometric-brownian-motion" class="nav-link" data-scroll-target="#c3.-3d-animation-of-geometric-brownian-motion">C3. 3D Animation of Geometric Brownian Motion</a></li>
+  <li><a href="#c4.-python-code-for-normal-distribution-approximation-by-random-walks" id="toc-c4.-python-code-for-normal-distribution-approximation-by-random-walks" class="nav-link" data-scroll-target="#c4.-python-code-for-normal-distribution-approximation-by-random-walks">C4. Python Code for Normal Distribution Approximation by Random Walks</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/gleanings/StochasticCalculus/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/gleanings/StochasticCalculus/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Stochastic Calculus - Fundamentals</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction-to-stochastic-calculus" class="level1">
+<h1><strong>Introduction to Stochastic Calculus</strong></h1>
+<p>Notation and code for generating visuals are presented in the <a href="#appendix">Appendix</a>.</p>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction"><strong>0. Introduction</strong></h3>
+<p>This document is a brief introduction to stochastic calculus. Like, an actual introduction. Not the textbook “introductions” which immediately blast you with graduate-level probability theory axioms and definitions.</p>
+<p>The goal of this blog post is more to focus on the physical intuition and derivation of Brownian motion, which is the foundation of stochastic calculus. I will avoid very technical formalisms such as probability spaces, measure theory, filtrations, etc. in favor of a more informal approach by considering only well-behaved cases. I also try to avoid introducing too many new concepts and vocabulary.</p>
+<p>I hope that a wider audience can feel inspired as to how stochastic calculus emerges naturally from the physical world. Then, hopefully, more people can appreciate the beauty and meaning of the mathematics behind it, and decide to dig deeper into the subject.</p>
+<section id="applications" class="level4">
+<h4 class="anchored" data-anchor-id="applications">Applications</h4>
+<p>Brownian motion and Itô calculus are notable examples of fairly high-level mathematics that are applied to model the real world. Stock prices jiggle erratically, molecules bounce in fluids, and noise partially corrupts signals. Stochastic calculus gives us tools to predict, optimize, and understand these messy systems in a simpified model.</p>
+<ul>
+<li><strong>Physics</strong>: Einstein used Brownian motion to prove atoms exist—its jittering matched molecular collisions.</li>
+<li><strong>Finance</strong>: Option pricing (e.g., the famous Black-Scholes equation) relies on stochastic differential equations like <span class="math display">dS = \mu S dt + \sigma S dW</span>.</li>
+<li><strong>Biology</strong>: Random walks model how species spread or neurons fire.</li>
+</ul>
+<p>This is just the tip of the iceberg. More and more applications are emerging, notably in machine learning, as <a href="https://arxiv.org/abs/2011.13456">Song et al.&nbsp;(2021)</a> have shown in their great paper “Score-Based Generative Modeling through Stochastic Differential Equations”.</p>
+<p>They precisely use a stochastic differential equation using Itô calculus to model the evolution of noise over time, which they can then reverse in time to generate new samples. This framework generalizes previous ones and improves performance, allowing for new paths of innovation to be explored.</p>
+</section>
+</section>
+<section id="motivation" class="level3">
+<h3 class="anchored" data-anchor-id="motivation"><strong>1. Motivation</strong></h3>
+<p>Pascal’s triangle gives the number of paths that go either left or right at each step, up to a certain point:</p>
+<p><span class="math display">
+\begin{array}{cccccc}
+&amp; &amp; &amp; 1 &amp; &amp; &amp; \\
+&amp; &amp; 1 &amp; &amp; 1 &amp; &amp; \\
+&amp; 1 &amp; &amp; 2 &amp; &amp; 1 &amp; \\
+1 &amp; &amp; 3 &amp; &amp; 3 &amp; &amp; 1
+\end{array}
+</span></p>
+<p>Using 0-indexing, the number of ways to reach the <span class="math display">k</span>-th spot in the <span class="math display">n</span>-th row is <span class="math display">\binom{n}{k} = \frac{n!}{k!(n-k)!}</span>. For example, in row 3, there are <span class="math display">\binom{3}{2} = 3</span> ways to hit position 2.</p>
+<p><img src="binom_3_2_paths_pascal.svg" class="img-fluid" alt="Pascal’s Triangle Paths for 3 choose 2"> <a href="#b5-latex-code-for-tikz-diagram-of-paths-in-pascals-triangle"><em>Code</em></a> <em>2D image: All 3 paths for the 2nd position in the 3rd row of Pascal’s triangle</em></p>
+<p>Why care? This setup powers the binomial distribution, which models repeated trials with two outcomes—win or lose, heads or tails. Think of: - A basketball player shooting free throws with probability <span class="math display">p</span> of success and <span class="math display">q = 1 - p</span> of failure. - A gambler betting on dice rolls.</p>
+<p>Pascal’s triangle tells us there are <span class="math display">\binom{n}{k}</span> ways to get <span class="math display">k</span> wins in <span class="math display">n</span> trials. If the trials are <strong>independent</strong>, we can use the multiplication rule for probabilities:</p>
+<blockquote class="blockquote">
+<p>Note that the independence assumption is <strong>strong</strong>. Real life isn’t always so clean—winning streaks in games often tie to mentality or momentum, not just chance. Keep in mind that this model can and will be inaccurate, especially visibile for very long streaks in phenomena like stock prices or sports. However, in more common scenarios, it usually approximates reality well.</p>
+</blockquote>
+<p><span class="math display">
+P(A \text{ and } B \text{ and } C \dots) = P(A) P(B) P(C) \dots
+</span></p>
+<p>For one sequence with <span class="math display">k</span> wins (probability <span class="math display">p</span> each) and <span class="math display">n - k</span> losses (probability <span class="math display">q</span> each), the probability is <span class="math display">p^k q^{n-k}</span>. Multiply by the number of ways to arrange those wins, and we get:</p>
+<p><span class="math display">
+P(k \text{ wins in } n \text{ trials}) = \binom{n}{k} p^k q^{n-k}
+</span></p>
+<p>This is the binomial distribution—great for discrete setups. Now, let’s zoom out. The real world often involves <strong>continuous</strong> processes, like: - The motion of a falling object, - Gas diffusing through a room, - Stock prices jumping around, - Molecules colliding in a liquid.</p>
+<p>For these, the binomial model gets messy as trials pile up. Calculus, with its focus on continuous change, feels more natural. In the continuous case:</p>
+<blockquote class="blockquote">
+<p>Points and sums (discrete tools) lead to infinities. We need <strong>intervals</strong> and <strong>integrals</strong> instead.</p>
+</blockquote>
+</section>
+<section id="from-discrete-steps-to-continuous-limits" class="level3">
+<h3 class="anchored" data-anchor-id="from-discrete-steps-to-continuous-limits"><strong>2. From Discrete Steps to Continuous Limits</strong></h3>
+<p>It’s actually known what happens to the binomial distribution as it becomes continuous. But what does that conversion mean mathematically? Let’s dig in with examples and then formalize it.</p>
+<p>In calculus, going from discrete to continuous means shrinking step sizes and cranking up the number of steps. For an interval <span class="math display">[a, b]</span>, we: 1. Split it into <span class="math display">n</span> chunks of size <span class="math display">h = \frac{b - a}{n}</span>, 2. Sum up contributions (like a Riemann sum), 3. Let <span class="math display">n \to \infty</span> and <span class="math display">h \to 0</span>, landing on an integral.</p>
+<p>Can we adapt this to the binomial distribution? Let’s try.</p>
+<p>Picture the <span class="math display">n</span>-th row of Pascal’s triangle as a random walk: at each of <span class="math display">n</span> steps, we move <span class="math display">+1</span> (a win) or <span class="math display">-1</span> (a loss).</p>
+<p>We’ll set the probabability of winning as <span class="math display">p = 0.5</span> as a first example since it’s symmetric, making each direction equally likely and simpler to work with.</p>
+<p>The number of ways to get <span class="math display">k</span> wins (and <span class="math display">n - k</span> losses) is <span class="math display">\binom{n}{k}</span>. Let’s try to plot this for a different values <span class="math display">n</span> over <span class="math display">k</span>. (The code can be found in the <a href="#b1-python-code-for-binomial-plots">Appendix</a>.)</p>
+<p><img src="random_walk_combined.png" class="img-fluid" alt="Plots for n=5,10,25,50,100"> <a href="#b1-python-code-for-binomial-plots"><em>Code</em></a> <em>2D image: Binomial distribution plots for n=5,10,25,50,100</em></p>
+<p>That looks awfully familiar, doesn’t it? It’s a bell curve, so naturally, we might guess that the limit is a <strong>normal distribution</strong> (aka Gaussian distribution).</p>
+<p>Where does such a normal distribution arise from? The answer lies in the <strong>Central Limit Theorem</strong>, which states that the sum of a large number of independent random variables will be approximately normally distributed. So where’s the sum happening here? Let’s proceed to formalizing our intuition.</p>
+<p>To accomplish this, let’s define a random variable for a single step as:</p>
+<p><span class="math display">
+X(t) = \begin{cases}
+    1 &amp; \text{with probability } \frac{1}{2} \\
+    -1 &amp; \text{with probability } \frac{1}{2} \\
+\end{cases}
+</span></p>
+<p>Here, <span class="math display">X(t)</span> will encode our displacement at the <span class="math display">t</span>-th step where <span class="math display">t \in \{1,\dots,n\}</span> is an indexing parameter. As before, we assume that <span class="math display">X(t_1)</span> is independent of <span class="math display">X(t_2)</span> for <span class="math display">t_1 \ne t_2 </span>. At each step <span class="math display">t</span>, <span class="math display">X(t)</span> has mean <span class="math display">0</span> and variance <span class="math display">1</span>.</p>
+<p>Then, the overall displacement <span class="math display">S(n)</span> is:</p>
+<p><span class="math display">
+S(n) = X(1) + X(2) + \dots + X(n) = \sum_{t=1}^n X(t)
+</span></p>
+<p>So there it is! The central limit theorem states more precisely that given <span class="math display">n</span> independent and identically distributed random variables <span class="math display">X_1, X_2, \dots, X_n</span> with mean <span class="math display">\mu</span> and variance <span class="math display">\sigma^2</span>, we have:</p>
+<p><span class="math display">
+X_1 + \dots + X_n \sim N(n\mu, n\sigma^2) \text{ as } n \to \infty
+</span></p>
+<p>This is precisely what we need. As we take <span class="math display">n \to \infty</span>, we have that</p>
+<p><span class="math display">
+S(n) \sim N(0, n)
+</span></p>
+<p>such that</p>
+<p><span class="math display">
+\lim_{n \to \infty} \frac{1}{\sqrt{n}} \cdot S(n) = N(0, 1)
+</span></p>
+<p>which is our desired limit. We have shown that a “continuous binomial distribution” is in fact a normal distribution.</p>
+<p>Here are some very nice 3D animations of sample paths with the distribution evolving over the number of steps:</p>
+<p><img src="discrete_binomial.gif" class="img-fluid" alt="Discrete Random Walk, 15 steps"> <a href="#c1-3d-plot-of-discrete-random-walks"><em>Code</em></a> <em>3D animation: Discrete Random Walk, 15 steps</em></p>
+<p><img src="discrete_binomial_normalizing.gif" class="img-fluid" alt="Discrete Random Walk, 100 steps"> <a href="#c1-3d-plot-of-discrete-random-walks"><em>Code</em></a> <em>3D Animation: Discrete Random Walk, 100 steps over 5 seconds</em></p>
+<p><img src="discrete_random_walk.gif" class="img-fluid" alt="Normal Distribution Approximation by Random Walks"> <a href="#c4-python-code-for-normal-distribution-approximation-by-random-walks"><em>Code</em></a> <em>2D animation: Normal distribution approximation by discrete random walks</em></p>
+</section>
+<section id="defining-brownian-motion-wiener-process" class="level3">
+<h3 class="anchored" data-anchor-id="defining-brownian-motion-wiener-process"><strong>3. Defining Brownian motion (Wiener process)</strong></h3>
+<p>Let’s consider a scenario faced by Scottish botanist <strong>Robert Brown</strong> in the 1820s. Imagine a small particle, like dust or pollen, floating on a body of water.</p>
+<p>Brown realized that its movement was surprisingly erratic. It seemed like the small-scale nature of the setup resulted in such sensitivity to fluctuations, so much is that the real movement from external forces would completely overtake the previous one. Hence, in a simplified mathematical model we scale consider the events at different times as <em>independent</em>.</p>
+<p>In addition, there is positional symmetry: the average position of the particle at time <span class="math display">t</span> seemed to float approximately around the origin.</p>
+<p>Motivated by these observations as well as our previous intuition on continuous random walks, let’s first think about a simplified model for 1-dimensional discrete case. We’ll list some properties that a continuous random walk should have.</p>
+<ol type="1">
+<li><strong>Starting Point</strong>: As a mathematical convenience, we position our coordinate system to set the starting point of the walk to be zero.</li>
+<li><strong>Positional Symmetry</strong>: The walk has no directional bias. For each step, the expected displacement is zero, such that the overall expected displacement is also zero.</li>
+<li><strong>Independence</strong>: Steps at different times are independent. The displacement between two different intervals of time is independent.</li>
+<li><strong>Continuity</strong>: The walk is continuous, with no jumps or gaps.</li>
+<li><strong>Normality</strong>: As we established by taking discrete random walks in the continuous limit, the distribution of positions at any given time should be normal.</li>
+</ol>
+<p>So let’s write this mathematically. Such a random variable is usually denoted either by <span class="math display">B_t</span> for “Brownian motion”, which is the physical phenomenon, or <span class="math display">W_t</span> for “Wiener process”, in honor of the mathematician <strong>Norbert Wiener</strong> who developed a lot of its early theory.</p>
+<p>I will use <span class="math display">W(t)</span> to emphasize its dependence on <span class="math display">t</span>.</p>
+<p>Let <span class="math display">W(t)</span> be the position of the Brownian motion at time <span class="math display">t</span>, and let <span class="math display">\Delta W(t_1,t_2)</span> be the displacement of the Brownian motion from time <span class="math display">t_1</span> to time <span class="math display">t_2</span>.</p>
+<blockquote class="blockquote">
+<p>Note that, unlike the discrete case, we cannot consider a single increment and have a single index <span class="math display">t</span> for displacements as we did with <span class="math display">X(t)</span>. As mentioned, the continuous case requires considering intervals instead of single steps.</p>
+</blockquote>
+<p>Then, we write some properties of Brownian motion:</p>
+<ol type="1">
+<li><span class="math display">W(0)=0</span> almost surely</li>
+<li>$<span class="math inline">W(t)\sim N(0,t)</span>$
+<ul>
+<li>With the first condition, this is often written equivalently as <span class="math display">\Delta W(s,t)\sim N(0,t-s)</span> for all <span class="math display">s \ne t</span></li>
+</ul></li>
+<li><span class="math display">\Delta W(t_1,t_2)</span> is independent of <span class="math display">\Delta W(t_2,t_3)</span> for arbitrary distinct <span class="math display">t_1 &lt; t_2 \le t_3</span></li>
+</ol>
+<p>We can straightforwardly use these conditions are enough to find</p>
+<ol type="1">
+<li><span class="math display">E[W(t)]=0</span> for all <span class="math display">t</span></li>
+<li><span class="math display">Var(W(t))=t</span> for all <span class="math display">t</span></li>
+</ol>
+<p>This is analogous to the discrete case.</p>
+<p>But it also turns out that these conditions are sufficient to prove continuity, although it’s more involved:</p>
+<ol type="1">
+<li>The sample path <span class="math display">t \mapsto W(t) </span> is almost surely uniformly Hölder continuous for each exponent <span class="math display">\gamma &lt; \frac{1}{2}</span>, but is nowhere Hölder continuous for <span class="math display">\gamma &gt;= \frac{1}{2}</span>. <a href="https://math.nyu.edu/~bourgade/SA2010/StochasticAnalysis.pdf#page30">p.30,33 of source</a>
+<ul>
+<li>In particular, a sample path <span class="math display">t \mapsto W(t)</span> is almost surely nowhere differentiable.</li>
+</ul></li>
+</ol>
+<p>So, <span class="math display">W(t)</span> is our mathematical model for Brownian motion: a continuous, random, zero-mean process with variance proportional to time. It’s wild—it’s globally somewhat predictable yet locally completely unpredictable. A plot of W(t) looks like a jagged mess, but it’s got structure under the hood. (You can generate one yourself with the code in <a href="#b2-python-code-for-brownian-motion-plot">Appendix</a>.)</p>
+<p><img src="sample_brownian_motion.png" class="img-fluid" alt="Sample Brownian Motion Path"> <a href="#b2-python-code-for-brownian-motion-plot"><em>Code</em></a> <em>2D image: Sample Brownian motion path</em></p>
+<p><img src="continuous_brownian_3d_smooth.gif" class="img-fluid" alt="3D Animation Continuous Brownian Motion"> <a href="#c2-3d-animation-of-brownian-motion"><em>Code</em></a> <em>3D animation: Brownian motion with evolving distribution</em></p>
+<p>Now, let’s take this beast and do something useful with it.</p>
+<hr>
+</section>
+<section id="itô-calculus" class="level3">
+<h3 class="anchored" data-anchor-id="itô-calculus"><strong>4. Itô Calculus</strong></h3>
+<p>Brownian motion <span class="math display">W(t)</span> is continuous but so irregular that it’s nowhere differentiable. To see why, consider the rate of change over a small interval <span class="math display">dt</span>:</p>
+<p><span class="math display">
+\lim_{dt \to 0} \frac{W(t + dt) - W(t)}{dt} = \lim_{dt \to 0} \frac{\Delta W(t, t + dt)}{dt}
+</span></p>
+<p>Since <span class="math display">\Delta W(t, t + dt) \sim N(0, dt) = \sqrt{dt} \, N(0, 1)</span>:</p>
+<p><span class="math display">
+\frac{\Delta W(t, t + dt)}{dt} = \frac{\sqrt{dt} \, N(0, 1)}{dt} = \frac{1}{\sqrt{dt}} N(0, 1)
+</span></p>
+<p>As <span class="math display">dt \to 0</span>, <span class="math display">\frac{1}{\sqrt{dt}}</span> grows without bound, and the expression becomes dominated by random fluctuations—it doesn’t converge to a finite derivative. This rules out standard calculus for handling Brownian motion, but we still need a way to work with processes driven by it, like stock prices or particle diffusion.</p>
+<p>In the 1940s, Kiyosi Itô developed a framework to address this: <strong>Itô calculus</strong>. Rather than forcing Brownian motion into the rules of regular calculus, Itô built a new system tailored to its random nature, forming the foundation of stochastic calculus.</p>
+<section id="the-increment-dw-and-its-properties" class="level4">
+<h4 class="anchored" data-anchor-id="the-increment-dw-and-its-properties"><strong>The Increment</strong> <span class="math display">dW</span> and Its Properties</h4>
+<p>Define the small change in Brownian motion over an interval <span class="math display">dt</span>:</p>
+<p><span class="math display">
+dW := W(t + dt) - W(t) = \Delta W(t, t + dt)
+</span></p>
+<p>From Section 3, <span class="math display">W(t + dt) - W(t) \sim N(0, dt)</span>, so:</p>
+<p><span class="math display">
+dW = \sqrt{dt} \, N(0, 1)
+</span></p>
+<p>Unlike the deterministic <span class="math display">dx</span> in regular calculus, <span class="math display">dW</span> is random—its magnitude scales with <span class="math display">\sqrt{dt}</span>, and its sign depends on a standard normal distribution <span class="math display">N(0, 1)</span>. It’s a small but erratic step, with: - <span class="math display">E[dW] = 0</span>, - <span class="math display">Var(dW) = E[(dW)^2] = dt</span>.</p>
+<p>Now consider <span class="math display">(dW)^2</span>. Its expected value is <span class="math display">dt</span>, but what about its variability? The variance is <span class="math display">Var[(dW)^2] = 2 dt^2</span>, which becomes negligible as <span class="math display">dt \to 0</span>. This stability allows us to treat <span class="math display">(dW)^2 \approx dt</span> in Itô calculus (formally, in the mean-square sense—see the <a href="#a1-notation">Appendix</a> for details). In contrast to regular calculus, where <span class="math display">(dx)^2</span> is too small to matter, <span class="math display">(dW)^2</span> is on the same scale as <span class="math display">dt</span>, which changes how we handle calculations.</p>
+</section>
+<section id="the-itô-integral-integrating-against-randomness" class="level4">
+<h4 class="anchored" data-anchor-id="the-itô-integral-integrating-against-randomness"><strong>The Itô Integral: Integrating Against Randomness</strong></h4>
+<p>In regular calculus, <span class="math display">\int_a^b f(x) \, dx</span> approximates the area under a curve by summing rectangles, <span class="math display">\sum f(x_i) \Delta x</span>, and taking the limit as <span class="math display">\Delta x \to 0</span>. For Brownian motion, we want something like <span class="math display">\int_0^t f(s) \, dW(s)</span>, where <span class="math display">dW(s)</span> replaces <span class="math display">dx</span>. Here, the steps are random: <span class="math display">\Delta W(s_i, s_{i+1}) \sim \sqrt{\Delta s} \, N(0, 1)</span>. We approximate:</p>
+<p><span class="math display">
+\int_0^t f(s) \, dW(s) \approx \sum_{i=0}^{n-1} f(s_i) [\Delta W(s_i, s_{i+1})]
+</span></p>
+<p>over a partition <span class="math display">s_0, s_1, \dots, s_n</span> of <span class="math display">[0, t]</span>, then let <span class="math display">n \to \infty</span>. Unlike a deterministic integral, the result is a random variable, reflecting <span class="math display">W(t)’s</span> randomness. Using <span class="math display">f(s_i)</span> from the left endpoint keeps the integral “non-anticipating”—we only use information up to time <span class="math display">s_i</span>, which aligns with the forward-evolving nature of stochastic processes.</p>
+</section>
+<section id="itôs-lemma-a-chain-rule-for-randomness" class="level4">
+<h4 class="anchored" data-anchor-id="itôs-lemma-a-chain-rule-for-randomness"><strong>Itô’s Lemma: A Chain Rule for Randomness</strong></h4>
+<p>For a function <span class="math display">f(t, W(t))</span>, regular calculus gives:</p>
+<p><span class="math display">
+df = \frac{\partial f}{\partial t} dt + \frac{\partial f}{\partial W} dW
+</span></p>
+<p>But Brownian motion’s roughness requires a second-order term. Taylor-expand <span class="math display">f(t, W(t))</span>:</p>
+<p><span class="math display">
+df = \frac{\partial f}{\partial t} dt + \frac{\partial f}{\partial W} dW + \frac{1}{2} \frac{\partial^2 f}{\partial W^2} (dW)^2 + \text{smaller terms}
+</span></p>
+<p>As <span class="math display">dt \to 0</span>: - <span class="math display">dt^2</span> and <span class="math display">dt \, dW</span> vanish, - <span class="math display">(dW)^2 \approx dt</span> stays significant.</p>
+<p>This leaves:</p>
+<p><span class="math display">
+df = \frac{\partial f}{\partial t} dt + \frac{\partial f}{\partial W} dW + \frac{1}{2} \frac{\partial^2 f}{\partial W^2} dt
+</span></p>
+<p>This is <strong>Itô’s Lemma</strong>. The extra <span class="math display">\frac{1}{2} \frac{\partial^2 f}{\partial W^2} dt</span> arises because <span class="math display">(dW)^2</span> contributes at the <span class="math display">dt</span> scale, capturing the effect of Brownian motion’s curvature.</p>
+<p>Since we have the algebraic heuristic <span class="math display">dW^2 = dt</span>, we could in some define everything in terms of powers <span class="math display">dW</span> to expand things algebraically and implicitly compute derivative rules.</p>
+<p>This is precisely the idea behind my blog post on <a href="../../posts/automatic-stochastic-differentiation/index.html">Automatic Stochastic Differentiation</a>, where we use <span class="math display">\mathbb{R}[\epsilon]/\epsilon^3</span> in a similar fashion to dual numbers <span class="math display">\mathbb{R}[\epsilon]/\epsilon^2</span> for automatic differentiation in deterministic calculus.</p>
+<p>If you haven’t already, I highly recommend checking it out.</p>
+</section>
+<section id="example-fw-w2" class="level4">
+<h4 class="anchored" data-anchor-id="example-fw-w2"><strong>Example:</strong> <span class="math display">f(W) = W^2</span></h4>
+<p>Take <span class="math display">f(t, W(t)) = W^2</span>: - <span class="math display">\frac{\partial f}{\partial t} = 0</span>, - <span class="math display">\frac{\partial f}{\partial W} = 2W</span>, - <span class="math display">\frac{\partial^2 f}{\partial W^2} = 2</span>.</p>
+<p>Then:</p>
+<p><span class="math display">
+d(W^2) = 0 \cdot dt + 2W \, dW + \frac{1}{2} \cdot 2 \cdot dt = 2W \, dW + dt
+</span></p>
+<p>Integrate from 0 to <span class="math display">t</span> (with <span class="math display">W(0) = 0</span>):</p>
+<p><span class="math display">
+W(t)^2 = \int_0^t 2W(s) \, dW(s) + t
+</span></p>
+<p>The <span class="math display">t</span> term matches <span class="math display">E[W(t)^2] = t</span>, and the integral is a random component with mean 0, consistent with Brownian motion’s properties.</p>
+<hr>
+</section>
+</section>
+<section id="stochastic-differential-equations" class="level3">
+<h3 class="anchored" data-anchor-id="stochastic-differential-equations"><strong>5. Stochastic Differential Equations</strong></h3>
+<p>Itô calculus gives us tools—integrals and a chain rule—to handle Brownian motion. Now we can model systems where randomness and trends coexist, using <strong>stochastic differential equations (SDEs)</strong>. Unlike regular differential equations (e.g., <span class="math display">\frac{dx}{dt} = -kx</span>) that describe smooth dynamics, SDEs blend deterministic behavior with stochastic noise, fitting phenomena like stock prices or diffusing particles.</p>
+<section id="defining-an-sde" class="level4">
+<h4 class="anchored" data-anchor-id="defining-an-sde"><strong>Defining an SDE</strong></h4>
+<p>Consider a process influenced by both a predictable trend and random fluctuations:</p>
+<p><span class="math display">
+dX(t) = a(t, X(t)) \, dt + b(t, X(t)) \, dW(t)
+</span></p>
+<ul>
+<li><span class="math display">X(t)</span>: The evolving quantity (e.g., position or price).</li>
+<li><span class="math display">a(t, X(t)) \, dt</span>: The “drift”—the systematic part, scaled by <span class="math display">dt</span>.</li>
+<li><span class="math display">b(t, X(t)) \, dW(t)</span>: The “diffusion”—random perturbations from Brownian motion.</li>
+</ul>
+<p>Here, <span class="math display">a</span> and <span class="math display">b</span> are functions of time and state, and <span class="math display">dW(t) = \sqrt{dt} \, N(0, 1)</span> brings the noise. Solutions to SDEs aren’t fixed curves but random paths, each run producing a different trajectory with statistical patterns we can study.</p>
+</section>
+<section id="itôs-lemma-revisited" class="level4">
+<h4 class="anchored" data-anchor-id="itôs-lemma-revisited"><strong>Itô’s Lemma Revisited</strong></h4>
+<p>Itô’s lemma actually applies to a function <span class="math display">f(t, X(t))</span> and its stochastic derivative <span class="math display">df(t, X(t))</span> for a general <span class="math display">dX(t) = b(t,X(t))dt+\sigma(t,X(t))dW</span>, and this is done through the linearity of the Itô differential (as seen using the <span class="math display">\mathbb{R}[\epsilon]/\epsilon^3</span> formulation).</p>
+<p>Considering that <span class="math display">dX=O(dW)</span>, we consider terms up to <span class="math display">dX^2=O(dW^2)</span>:</p>
+<p><span class="math display">
+\begin{aligned}
+df &amp;= f_t \, dt + f_X \, dX + \frac{1}{2}f_{XX} dX^2 \\
+&amp;= f_t \, dt + f_X \, (b \, dt+\sigma \, dW) + \frac{1}{2}f_{XX} (b \, dt+\sigma \, dW)^2 \\
+&amp;= (f_t + bf_X+\frac{1}{2}\sigma^2 f_{XX}) \, dt + \sigma f_X \, dW
+\end{aligned}
+</span></p>
+<p>which is the general form typically presented.</p>
+</section>
+<section id="drift-and-diffusion" class="level4">
+<h4 class="anchored" data-anchor-id="drift-and-diffusion"><strong>Drift and Diffusion</strong></h4>
+<p>The drift <span class="math display">a(t, X)</span> sets the average direction, like a current pushing a particle. The diffusion <span class="math display">b(t, X)</span> determines the random jitter’s strength. If <span class="math display">b = 0</span>, we get a standard ODE; if <span class="math display">a = 0</span>, it’s just scaled Brownian motion. Together, they model systems with both structure and uncertainty.</p>
+<p>Take a simple case:</p>
+<p><span class="math display">
+dX(t) = \mu \, dt + \sigma \, dW(t)
+</span></p>
+<ul>
+<li><span class="math display">\mu</span>: Constant drift.</li>
+<li><span class="math display">\sigma</span>: Constant noise amplitude.</li>
+</ul>
+<p>Starting at <span class="math display">X(0) = 0</span>, integrate:</p>
+<p><span class="math display">
+X(t) = \int_0^t \mu \, ds + \int_0^t \sigma \, dW(s) = \mu t + \sigma W(t)
+</span></p>
+<p>Since <span class="math display">W(t) \sim N(0, t)</span>, we have <span class="math display">X(t) \sim N(\mu t, \sigma^2 t)</span>—a process drifting linearly with noise spreading over time. It’s a basic model for things like a stock with steady growth and volatility.</p>
+<p><img src="sample_SDE.png" class="img-fluid" alt="Sample SDE Path"> <a href="#b3-python-code-for-basic-sde-simulation"><em>Code</em></a> <em>2D image: Sample SDE path with mu=1.0, sigma=0.5</em></p>
+</section>
+<section id="geometric-brownian-motion" class="level4">
+<h4 class="anchored" data-anchor-id="geometric-brownian-motion"><strong>Geometric Brownian Motion</strong></h4>
+<p>For systems where changes scale with size—like stock prices or certain physical processes—consider <strong>geometric Brownian motion (GBM)</strong>:</p>
+<p><span class="math display">
+dS(t) = \mu S(t) \, dt + \sigma S(t) \, dW(t)
+</span></p>
+<ul>
+<li><span class="math display">S(t)</span>: The state (e.g., stock price).</li>
+<li><span class="math display">\mu S(t)</span>: Proportional drift.</li>
+<li><span class="math display">\sigma S(t)</span>: Proportional noise.</li>
+</ul>
+<p>The percentage change <span class="math display">\frac{dS}{S} = \mu \, dt + \sigma \, dW</span> has a trend and randomness. To solve, let <span class="math display">f = \ln S</span>: - <span class="math display">\frac{\partial f}{\partial t} = 0</span>, - <span class="math display">\frac{\partial f}{\partial S} = \frac{1}{S}</span>, - <span class="math display">\frac{\partial^2 f}{\partial S^2} = -\frac{1}{S^2}</span>.</p>
+<p>Using Itô’s lemma:</p>
+<p><span class="math display">
+d(\ln S) = \frac{1}{S} (\mu S \, dt + \sigma S \, dW) + \frac{1}{2} \left( -\frac{1}{S^2} \right) (\sigma^2 S^2 dt)
+</span></p>
+<p><span class="math display">
+= \left( \mu - \frac{1}{2} \sigma^2 \right) dt + \sigma \, dW
+</span></p>
+<p>Integrate from <span class="math display">0</span> to <span class="math display">t</span>:</p>
+<p><span class="math display">
+\ln S(t) - \ln S(0) = \left( \mu - \frac{1}{2} \sigma^2 \right) t + \sigma W(t)
+</span></p>
+<p><span class="math display">
+S(t) = S(0) \exp\left( \left( \mu - \frac{1}{2} \sigma^2 \right) t + \sigma W(t) \right)
+</span></p>
+<p>The drift is adjusted by <span class="math display">-\frac{1}{2} \sigma^2</span> due to the second-order effect of noise, and <span class="math display">\sigma W(t)</span> adds random fluctuations. This form underlies the Black-Scholes model in finance.</p>
+<p><img src="gbm_path.png" class="img-fluid" alt="Sample Geometric Brownian Motion Path"> <a href="#b4-python-code-for-geometric-brownian-motion-simulation"><em>Code</em></a> <em>2D image: A sample path of a geometric Brownian motion with parameters μ = 0.15 and σ = 0.2</em></p>
+<p><img src="geometric_brownian_drifted_3d.gif" class="img-fluid" alt="Geometric Brownian Motion drifting over time"> <a href="#c3-3d-animation-of-geometric-brownian-motion"><em>Code</em></a> <em>3D animation: Geometric Brownian Motion drifting over time</em></p>
+</section>
+<section id="beyond-analytics" class="level4">
+<h4 class="anchored" data-anchor-id="beyond-analytics"><strong>Beyond Analytics</strong></h4>
+<p>Analytical solutions like GBM’s are exceptions. Most SDEs require numerical simulation (e.g., stepping <span class="math display">X(t + \Delta t) = X(t) + \mu \Delta t + \sigma \sqrt{\Delta t} \, N(0, 1)</span>) or statistical analysis via equations like Fokker-Planck. See the <a href="#b3-python-code-for-basic-sde-simulation">appendix</a> for simulation code.</p>
+<hr>
+</section>
+</section>
+<section id="stratonovich-calculus" class="level3">
+<h3 class="anchored" data-anchor-id="stratonovich-calculus"><strong>6. Stratonovich Calculus</strong></h3>
+<p>Recall Itô’s lemma:</p>
+<p><span class="math display">
+df = \left(\frac{\partial f}{\partial t} + \frac{1}{2} \frac{\partial^2 f}{\partial X^2}\right) dt + \frac{\partial f}{\partial X} dX
+</span></p>
+<p>That second derivative term is pretty annoying to deal with in calculations. Is there a way we can simplify it to the familiar chain rule in regular calculus?</p>
+<p><span class="math display">
+df = \frac{\partial f}{\partial t} dt + \frac{\partial f}{\partial X} dX
+</span></p>
+<p>The answer is yes, and it’s called <strong>Stratonovich calculus</strong>. Let’s explore a bit. First, the deterministic part clearly satisfies the regular chain rule, since we can directly apply it using linearity. The trouble arises in the stochastic part, which we need to analyze. This means we only need to consider a function <span class="math display">f(X(t))</span>.</p>
+<p>Remember, for the Itô form, we chose to define the integral by choosing the left endpoint of each interval. In other words, it is this stochastic part that will vary. To delete this second order term, we need to somehow absorb it into the stochastic part by defining some Stratonovich differential, typically denoted by <span class="math display">\circ dW</span>.</p>
+<p>Going back to our Riemann sum definitions, our degrees of freedom lie in the choice of the evaluation point for each interval:</p>
+<p><span class="math display">
+\int_{0}^{T} f(X(t)) \diamond dW = \lim_{n \to \infty} \sum_{i=0}^{n-1} f(X(t_i) + \lambda \Delta X(t_i,t_{i+1})) \Delta W(t_i, t_{i+1})
+</span></p>
+<p>where <span class="math display">\lambda \in [0,1]</span> is a constant that linearly interpolates between the left and right endpoints of each interval giving a corresponding differential <span class="math display">\diamond dW</span>, and <span class="math display">\Delta X(t_i,t_{i+1}):=X(t_{i+1})-X(t_i)</span>.</p>
+<p>In the deterministic case, since we always have <span class="math display">O(dX^2) \to 0</span>, it doesn’t matter where we choose the evaluation point. However, in the stochastic case, remember that <span class="math display">O(dW^2) \to O(dt)</span>, so we need a more careful choice of evaluation point.</p>
+<p>Mathematically, our goal is to define a new stochastic integral that preserves the standard chain rule:</p>
+<p><span class="math display">
+df = f_X \circ dX
+</span></p>
+<p>In the limiting discrete form, let’s try setting every term equal to each other:</p>
+<p><span class="math display">
+f(X+\Delta X) - f(X) = f_X(X+\lambda \Delta X) \Delta X
+</span></p>
+<p>In other words, our newly defined differential should result in the derivative being a linear approximation of the original function instead of quadratic:</p>
+<p><span class="math display">
+\frac{f(X+\Delta X)-f(X)}{\Delta X} = f_X(X+\lambda \Delta X)
+</span></p>
+<p>But watch what happens as we take the Taylor expansion on both sides about <span class="math display">X</span> (recalling that <span class="math display">o(\Delta X^2)\to 0</span>):</p>
+<p><span class="math display">
+f_X + \frac{1}{2}f_{XX}\Delta X = f_X + \lambda f_{XX}\Delta X
+</span></p>
+<p>Comparing coefficients, we wish to set <span class="math display">\lambda = 1/2</span> to preserve the chain rule. So Stratonovich integrals are defined by the midpoint evaluation rule:</p>
+<p><span class="math display">
+\begin{aligned}
+\int_{0}^{T} f(X(t)) \circ dW &amp;= \lim_{n \to \infty} \sum_{i=0}^{n-1} f(X(t_i) + \frac{1}{2} \Delta X(t_i,t_{i+1})) \Delta W(t_i, t_{i+1}) \\
+&amp;= \lim_{n \to \infty} \sum_{i=0}^{n-1} f\left(\frac{X(t_i)+X(t_{i+1})}{2}\right) \Delta W(t_i, t_{i+1}) \\
+\end{aligned}
+</span></p>
+<section id="conversion-formula-between-itô-and-stratonovich" class="level4">
+<h4 class="anchored" data-anchor-id="conversion-formula-between-itô-and-stratonovich">Conversion Formula between Itô and Stratonovich</h4>
+<p>There is a formula to convert the Stratonovich differential into a corresponding Itô SDE that depends on the Itô differential as well as the volatility function <span class="math display">\sigma</span>.</p>
+<p>Recall that Itô’s lemma states that for <span class="math display">dX = a dt + b dW</span>:</p>
+<p><span class="math display">
+df = f_t dt + f_X dX + \frac{1}{2}f_{XX} dX^2 = (af_t + \frac{1}{2} b^2 f_{XX}) dt + bf_X dW
+</span></p>
+<p>In parallel, we defined Stratonovich’s chain rule to satisfy for <span class="math display">dX = \tilde a dt + \tilde b \circ dW</span>:</p>
+<p><span class="math display">
+df = f_t dt + f_X \circ dX = (f_t + \tilde a f_X) dt + \tilde b f_X \circ dW
+</span></p>
+<p>Hence, between Itô and Stratonovich SDEs, we have in both cases that the differential is scaled by the volatility function of <span class="math display">X</span> and <span class="math display">f_X</span>, but the drift function changes. Let’s find a conversion formula between the two.</p>
+<p>Suppose we have:</p>
+<p><span class="math display">
+dX = a dt + b dW = \tilde a dt + b \circ dW
+</span></p>
+<p>Then, our objective is to find <span class="math display">\tilde a</span> in terms of <span class="math display">a</span>.</p>
+<p>Recall from the integral definition that <span class="math display">b(X) \circ dW = b(X+\frac{1}{2}dX) dW</span>. If we Taylor expand around <span class="math display">X</span>, we have:</p>
+<p><span class="math display">
+b(X+\frac{1}{2}dX) dW = b(X)dW + b_X(X)\frac{1}{2}dX dW + o(dt)
+</span></p>
+<p>Now, if we plug in <span class="math display">dX=a dt + b dW</span>, the first term vanishes, leaving <span class="math display">b_X b \frac{1}{2}dW^2 \sim \frac{1}{2}b_X b dt</span> (where the arguments <span class="math display">X</span> are left implicit).</p>
+<p>Hence:</p>
+<p><span class="math display">
+a = \tilde a + \frac{1}{2} b_X b.
+</span></p>
+</section>
+<section id="applications-of-stratonovich-calculus" class="level4">
+<h4 class="anchored" data-anchor-id="applications-of-stratonovich-calculus"><strong>Applications of Stratonovich Calculus</strong></h4>
+<p>Stratonovich calculus, with its midpoint evaluation rule, adjusts how we handle stochastic integrals compared to Itô’s left-endpoint approach. This shift makes it valuable in certain fields where its properties align with physical systems or simplify calculations. Below are some practical applications, each with a concrete mathematical example.</p>
+<ul>
+<li><p><strong>Physics with Multiplicative Noise</strong>: In physical systems, noise often scales with the state—like a particle in a fluid where random kicks depend on its position. Consider a damped oscillator with position <span class="math display">X(t)</span> under state-dependent noise:</p>
+<p><span class="math display">
+dX = -k X \, dt + \sigma X \circ dW
+</span></p>
+<p>Here, <span class="math display">k &gt; 0</span> is the damping constant, <span class="math display">\sigma</span> is the noise strength, and <span class="math display">\circ dW</span> denotes the Stratonovich differential. Using Stratonovich’s chain rule, for <span class="math display">f(X) = \ln X</span>:</p>
+<p><span class="math display">
+d(\ln X) = \frac{1}{X} (-k X \, dt + \sigma X \circ dW) = -k \, dt + \sigma \circ dW
+</span></p>
+<p>This integrates to <span class="math display">X(t) = X(0) e^{-kt + \sigma W(t)}</span>, matching the expected exponential decay with noise. Stratonovich fits here because it preserves symmetries in continuous physical processes, unlike Itô, which adds a <span class="math display">\frac{1}{2} \sigma^2 X \, dt</span> drift term.</p></li>
+<li><p><strong>Wong-Zakai Theorem and Smooth Noise</strong>: Real-world noise isn’t perfectly white (uncorrelated like <span class="math display">dW</span>)—it’s often smoother. The Wong-Zakai theorem shows that approximating smooth noise (e.g., <span class="math display">\eta(t)</span> with correlation time <span class="math display">\epsilon</span>) as <span class="math display">\epsilon \to 0</span> yields a Stratonovich SDE. Take a simple system:</p>
+<p><span class="math display">
+\dot{x} = a x + b x \eta(t)
+</span></p>
+<p>As <span class="math display">\eta(t) \to</span> white noise, this becomes <span class="math display">dX = a X \, dt + b X \circ dW</span>. In Stratonovich form, the solution is <span class="math display">X(t) = X(0) e^{a t + b W(t)}</span>. This is useful in engineering, like modeling voltage in a circuit with thermal fluctuations, where noise has slight smoothness.</p></li>
+<li><p><strong>Stochastic Control</strong>: In control problems, Stratonovich can simplify dynamics under feedback. Consider a system with control input <span class="math display">u(t)</span> and noise:</p>
+<p><span class="math display">
+dX = (a X + u) \, dt + \sigma X \circ dW
+</span></p>
+<p>For <span class="math display">f(X) = X^2</span>, the Stratonovich rule gives:</p>
+<p><span class="math display">
+d(X^2) = 2X (a X + u) \, dt + 2X \cdot \sigma X \circ dW = (2a X^2 + 2X u) \, dt + 2\sigma X^2 \circ dW
+</span></p>
+<p>The lack of a second-derivative term (unlike Itô’s <span class="math display">+ \sigma^2 X^2 dt</span>) aligns with classical control intuition, making it easier to design <span class="math display">u(t)</span> for, say, stabilizing a noisy pendulum or a drone in wind.</p></li>
+<li><p><strong>Biological Diffusion</strong>: In biology, noise can depend on spatial gradients, like protein diffusion across a cell. Model this as:</p>
+<p><span class="math display">
+dX = \mu \, dt + \sigma(X) \circ dW, \quad \sigma(X) = \sqrt{2D (1 + k X^2)}
+</span></p>
+<p>where <span class="math display">D</span> is diffusivity and <span class="math display">k</span> adjusts noise with position. Stratonovich ensures the diffusion term reflects physical conservation laws, matching experimental data in systems like bacterial motility better than Itô, which alters the drift.</p></li>
+<li><p><strong>Numerical Stability</strong>: For simulations, Stratonovich pairs well with midpoint methods. Take <span class="math display">dX = -a X \, dt + \sigma \circ dW</span>. A Stratonovich discretization might use:</p>
+<p><span class="math display">
+X_{n+1} = X_n - a \left(\frac{X_n + X_{n+1}}{2}\right) \Delta t + \sigma \Delta W_n
+</span></p>
+<p>This implicit scheme leverages the midpoint rule, reducing numerical artifacts in models like chemical kinetics compared to Itô’s explicit steps.</p></li>
+</ul>
+<p>The choice between Stratonovich and Itô depends on context. Stratonovich suits systems where noise is tied to physical continuity or symmetry, while Itô dominates in finance for its non-anticipating properties. The conversion <span class="math display">a = \tilde{a} + \frac{1}{2} b b_X</span> lets you switch forms as needed.</p>
+</section>
+</section>
+<section id="appendix" class="level2">
+<h2 class="anchored" data-anchor-id="appendix">Appendix</h2>
+<section id="a.0.-further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="a.0.-further-reading">A.0. Further Reading</h3>
+<ul>
+<li><a href="https://www.chrisrackauckas.com/assets/Papers/ChrisRackauckas-IntuitiveSDEs.pdf">An Intuitive Introduction For Understanding and Solving Stochastic Differential Equations - Chris Rackauckas (2017)</a></li>
+<li><a href="https://math.nyu.edu/~bourgade/SA2010/StochasticAnalysis.pdf">Stochastic analysis - Paul Bourgade (2010)</a></li>
+<li><a href="https://www.cmor-faculty.rice.edu/~cox/stoch/SDE.course.pdf">AN INTRODUCTION TO STOCHASTIC DIFFERENTIAL EQUATIONS VERSION 1.2 - Lawrence C. Evans (2013)</a></li>
+<li>Stochastic differential equations An introduction with applications - Bernt K. Øksendal (2003)</li>
+<li><a href="https://en.wikipedia.org/wiki/Stochastic_calculus">Wikipedia: Stochastic calculus</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Stochastic_differential_equation">Wikipedia: Stochastic differential equation</a></li>
+</ul>
+</section>
+<section id="a.1.-notation" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-notation">A.1. Notation</h3>
+<p>Here is a list of notation used in this document:</p>
+<ul>
+<li><span class="math display">\binom{n}{k}=\frac{n!}{k!(n-k)!}</span> is the binomial coefficient</li>
+<li><span class="math display">X: \Omega \to \mathbb{R}</span> is a random variable from a sample space <span class="math display">\Omega</span> to a real number</li>
+<li><span class="math display">P(A)</span> is the probability of event <span class="math display">A</span></li>
+<li><span class="math display">E[X]=\int_{\omega \in \Omega} X(\omega) dP(\omega)</span> is the expected value of <span class="math display">X</span></li>
+<li><span class="math display">N(\mu, \sigma^2)</span> is a normal distribution with mean <span class="math display">\mu</span> and variance <span class="math display">\sigma^2</span></li>
+<li><span class="math display">W(t)</span> is the position of a Brownian motion at time <span class="math display">t</span></li>
+<li><span class="math display">\Delta W(t_1,t_2)</span> is the displacement of a Brownian motion from time <span class="math display">t_1</span> to time <span class="math display">t_2</span></li>
+<li><span class="math display">dt</span> is an infinitesimal time increment</li>
+<li><span class="math display">dW := \Delta W(t,t+dt)</span> is an infinitesimal increment of Brownian motion over time</li>
+<li><span class="math display">(dW)^2 \sim dt</span> denotes that <span class="math display">(dW^2) = dt + o(dt)</span> where <span class="math display">\lim_{t \to 0} \frac{o(dt)}{dt} = 0</span>, such that <span class="math display">(dW)^2</span> is asymptotically equal to <span class="math display">dt</span> in the mean-square limit:</li>
+</ul>
+<p><span class="math display">
+\lim_{dt \to 0} \frac{E[(dW)^2-dt]^2}{dt}=0
+</span></p>
+<ul>
+<li><span class="math display">f_t:=\frac{\partial f}{\partial t}</span> is the partial derivative of <span class="math display">f</span> with respect to <span class="math display">t</span></li>
+<li><span class="math display">f_xx:=\frac{\partial^2 f}{\partial x^2}</span> is the second order partial derivative of <span class="math display">f</span> with respect to <span class="math display">x</span></li>
+</ul>
+</section>
+<section id="b.1.-python-code-for-binomial-plots" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-python-code-for-binomial-plots">B.1. Python code for binomial plots</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> binom</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> [<span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">100</span>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Individual plots</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> n_values:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> np.arange(<span class="dv">0</span>, n <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    positions <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> k <span class="op">-</span> n</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    probs <span class="op">=</span> binom.pmf(k, n, p)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">4</span>))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    plt.bar(positions, probs, width<span class="op">=</span><span class="fl">1.0</span>, color<span class="op">=</span><span class="st">'skyblue'</span>, edgecolor<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="ss">f'n = </span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">'Position (# wins - # losses)'</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">'Probability'</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    plt.ylim(<span class="dv">0</span>, <span class="bu">max</span>(probs) <span class="op">*</span> <span class="fl">1.2</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    plt.savefig(<span class="ss">f'random_walk_n_</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">.png'</span>, dpi<span class="op">=</span><span class="dv">300</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Combined plot</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">5</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">12</span>), sharex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, n <span class="kw">in</span> <span class="bu">enumerate</span>(n_values):</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> np.arange(<span class="dv">0</span>, n <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    positions <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> k <span class="op">-</span> n</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    probs <span class="op">=</span> binom.pmf(k, n, p)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    axes[i].bar(positions, probs, width<span class="op">=</span><span class="fl">1.0</span>, color<span class="op">=</span><span class="st">'skyblue'</span>, edgecolor<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    axes[i].set_title(<span class="ss">f'n = </span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    axes[i].set_ylabel(<span class="st">'Probability'</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    axes[i].set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(probs) <span class="op">*</span> <span class="fl">1.2</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>axes[<span class="op">-</span><span class="dv">1</span>].set_xlabel(<span class="st">'Position (# wins - # losses)'</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'random_walk_combined.png'</span>, dpi<span class="op">=</span><span class="dv">300</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>plt.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="b2.-python-code-for-brownian-motion-plot" class="level3">
+<h3 class="anchored" data-anchor-id="b2.-python-code-for-brownian-motion-plot"><strong>B2. Python Code for Brownian Motion Plot</strong></h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate Brownian motion</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1000</span>)  <span class="co"># Time from 0 to 1</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> t[<span class="dv">1</span>] <span class="op">-</span> t[<span class="dv">0</span>]</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>dW <span class="op">=</span> np.sqrt(dt) <span class="op">*</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, size<span class="op">=</span><span class="bu">len</span>(t)<span class="op">-</span><span class="dv">1</span>)  <span class="co"># Increments</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>W <span class="op">=</span> np.concatenate([[<span class="dv">0</span>], np.cumsum(dW)])  <span class="co"># Cumulative sum starts at 0</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>plt.plot(t, W)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Sample Brownian Motion Path"</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Time t"</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"W(t)"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="b3.-python-code-for-basic-sde-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="b3.-python-code-for-basic-sde-simulation"><strong>B3. Python Code for Basic SDE Simulation</strong></h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate simple SDE: dX = mu dt + sigma dW</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> T <span class="op">/</span> N</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, T, N<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>mu, sigma <span class="op">=</span> <span class="fl">1.0</span>, <span class="fl">0.5</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.zeros(N<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    dW <span class="op">=</span> np.sqrt(dt) <span class="op">*</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    X[i<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> X[i] <span class="op">+</span> mu <span class="op">*</span> dt <span class="op">+</span> sigma <span class="op">*</span> dW</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>plt.plot(t, X, label<span class="op">=</span><span class="ss">f"μ=</span><span class="sc">{</span>mu<span class="sc">}</span><span class="ss">, σ=</span><span class="sc">{</span>sigma<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Sample Path of dX = μ dt + σ dW"</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Time t"</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"X(t)"</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="b4.-python-code-for-geometric-brownian-motion-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="b4.-python-code-for-geometric-brownian-motion-simulation"><strong>B4. Python Code for Geometric Brownian Motion Simulation</strong></h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate simple SDE: dX = mu dt + sigma dW</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate Geometric Brownian Motion (exact solution)</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>T_gbm <span class="op">=</span> <span class="fl">10.0</span>  <span class="co"># Longer time to show exponential nature</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>N_gbm <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>t_gbm <span class="op">=</span> np.linspace(<span class="dv">0</span>, T_gbm, N_gbm<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>S0 <span class="op">=</span> <span class="fl">100.0</span>  <span class="co"># Initial stock price</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>mu, sigma <span class="op">=</span> <span class="fl">0.15</span>, <span class="fl">0.2</span>  <span class="co"># Slightly larger for visibility</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>S <span class="op">=</span> S0 <span class="op">*</span> np.exp((mu <span class="op">-</span> <span class="fl">0.5</span> <span class="op">*</span> sigma<span class="op">**</span><span class="dv">2</span>) <span class="op">*</span> t_gbm <span class="op">+</span> sigma <span class="op">*</span> np.sqrt(t_gbm) <span class="op">*</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, N_gbm<span class="op">+</span><span class="dv">1</span>))</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">4</span>))</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>plt.plot(t_gbm, S, label<span class="op">=</span><span class="ss">f"μ=</span><span class="sc">{</span>mu<span class="sc">}</span><span class="ss">, σ=</span><span class="sc">{</span>sigma<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Sample Path: Geometric Brownian Motion"</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Time t"</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"S(t)"</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"gbm_path.png"</span>, dpi<span class="op">=</span><span class="dv">300</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="b5.-latex-code-for-tikz-diagram-of-paths-in-pascals-triangle" class="level3">
+<h3 class="anchored" data-anchor-id="b5.-latex-code-for-tikz-diagram-of-paths-in-pascals-triangle">B5. LaTeX Code for Tikz Diagram of Paths in Pascal’s Triangle</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">\documentclass</span>{<span class="ex">standalone</span>}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">\usepackage</span>{<span class="ex">tikz</span>}</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[scale=0.8]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">% Add a white background rectangle</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\fill</span>[white] (-12, 1) rectangle (10, -5);</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">% Row labels (only once, to the left of the first diagram)</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span>[align=right] at (-11, 0) {Row 0};</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span>[align=right] at (-11, -1) {Row 1};</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span>[align=right] at (-11, -2) {Row 2};</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span>[align=right] at (-11, -3) {Row 3};</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="co">% Diagram 1: Path RRL</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-6, 0) {1}; <span class="co">% Row 0</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-7, -1) {1}; <span class="co">% Row 1</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-5, -1) {1};</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-8, -2) {1}; <span class="co">% Row 2</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-6, -2) {2};</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-4, -2) {1};</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-9, -3) {1}; <span class="co">% Row 3</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-7, -3) {3};</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-5, -3) {3};</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-3, -3) {1};</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\draw</span>[-&gt;, red, thick] (-6, 0) -- (-5, -1) -- (-4, -2) -- (-5, -3); <span class="co">% RRL</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-6, -4) {Right-Right-Left};</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="co">% Diagram 2: Path RLR</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (0, 0) {1}; <span class="co">% Row 0</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-1, -1) {1}; <span class="co">% Row 1</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (1, -1) {1};</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-2, -2) {1}; <span class="co">% Row 2</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (0, -2) {2};</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (2, -2) {1};</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-3, -3) {1}; <span class="co">% Row 3</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (-1, -3) {3};</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (1, -3) {3};</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (3, -3) {1};</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\draw</span>[-&gt;, blue, thick] (0, 0) -- (1, -1) -- (0, -2) -- (1, -3); <span class="co">% RLR</span></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (0, -4) {Right-Left-Right};</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>  <span class="co">% Diagram 3: Path LRR</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (6, 0) {1}; <span class="co">% Row 0</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (5, -1) {1}; <span class="co">% Row 1</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (7, -1) {1};</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (4, -2) {1}; <span class="co">% Row 2</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (6, -2) {2};</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (8, -2) {1};</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (3, -3) {1}; <span class="co">% Row 3</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (5, -3) {3};</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (7, -3) {3};</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (9, -3) {1};</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\draw</span>[-&gt;, green, thick] (6, 0) -- (5, -1) -- (6, -2) -- (7, -3); <span class="co">% LRR</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\node</span> at (6, -4) {Left-Right-Right};</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tikzpicture</span>}</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="d-visualizations" class="level3">
+<h3 class="anchored" data-anchor-id="d-visualizations">3D Visualizations</h3>
+<section id="c1.-3d-plot-of-discrete-random-walks" class="level4">
+<h4 class="anchored" data-anchor-id="c1.-3d-plot-of-discrete-random-walks">C1. 3D Plot of Discrete Random Walks</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits.mplot3d <span class="im">import</span> Axes3D  <span class="co"># for 3D plotting</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> imageio.v3 <span class="im">as</span> imageio  <span class="co"># using modern imageio v3 API</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.special <span class="im">import</span> comb</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a directory for frames</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>os.makedirs(<span class="st">'gif_frames'</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">##############################################</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 1: Discrete Binomial Random Walk (N = 15)</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">##############################################</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">15</span>  <span class="co"># total number of steps (kept small for clear discreteness)</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>num_sample_paths <span class="op">=</span> <span class="dv">5</span>  <span class="co"># number of sample paths to overlay</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate a few discrete random walk sample paths</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>sample_paths <span class="op">=</span> []</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_sample_paths):</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    steps <span class="op">=</span> np.random.choice([<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>], size<span class="op">=</span>N)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> np.concatenate(([<span class="dv">0</span>], np.cumsum(steps)))</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    sample_paths.append(path)</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>sample_paths <span class="op">=</span> np.array(sample_paths)  <span class="co"># shape: (num_sample_paths, N+1)</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>frames <span class="op">=</span> []</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t_step <span class="kw">in</span> <span class="bu">range</span>(N <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">7</span>))</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> fig.add_subplot(<span class="dv">111</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># For each discrete time slice up to the current time, plot the PMF</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(t_step <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>        <span class="co"># For a random walk starting at 0, possible positions are -t, -t+2, ..., t</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>        x_values <span class="op">=</span> np.arange(<span class="op">-</span>t, t <span class="op">+</span> <span class="dv">1</span>, <span class="dv">2</span>)</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> t <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>            p_values <span class="op">=</span> np.array([<span class="fl">1.0</span>])</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>            <span class="co"># k = (x + t)/2 gives the number of +1 steps</span></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>            k <span class="op">=</span> (x_values <span class="op">+</span> t) <span class="op">//</span> <span class="dv">2</span>  </span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>            p_values <span class="op">=</span> comb(t, k) <span class="op">*</span> (<span class="fl">0.5</span> <span class="op">**</span> t)</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Plot the discrete PMF as blue markers (and connect them with a line)</span></span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>        ax.scatter(x_values, [t]<span class="op">*</span><span class="bu">len</span>(x_values), p_values, color<span class="op">=</span><span class="st">'blue'</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>        ax.plot(x_values, [t]<span class="op">*</span><span class="bu">len</span>(x_values), p_values, color<span class="op">=</span><span class="st">'blue'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Overlay the sample random walk paths (projected at z=0)</span></span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> sp <span class="kw">in</span> sample_paths:</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>        ax.plot(sp[:t_step <span class="op">+</span> <span class="dv">1</span>], np.arange(t_step <span class="op">+</span> <span class="dv">1</span>), np.zeros(t_step <span class="op">+</span> <span class="dv">1</span>),</span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>                <span class="st">'r-o'</span>, markersize<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">'Sample Path'</span> <span class="cf">if</span> t_step <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">""</span>)</span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">'Position (x)'</span>)</span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="st">'Time (steps)'</span>)</span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>    ax.set_zlabel(<span class="st">'Probability'</span>)</span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f'Discrete Binomial Random Walk: Step </span><span class="sc">{</span>t_step<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>    ax.set_zlim(<span class="dv">0</span>, <span class="fl">1.0</span>)</span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>    ax.view_init(elev<span class="op">=</span><span class="dv">30</span>, azim<span class="op">=-</span><span class="dv">60</span>)</span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>    frame_path <span class="op">=</span> <span class="ss">f'gif_frames/discrete_binomial_</span><span class="sc">{</span>t_step<span class="sc">:02d}</span><span class="ss">.png'</span></span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>    plt.savefig(frame_path)</span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>    frames.append(imageio.imread(frame_path))</span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute per-frame durations: 0.25 sec for all frames except the last one (2 sec)</span></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a>durations <span class="op">=</span> [<span class="fl">0.25</span>] <span class="op">*</span> (<span class="bu">len</span>(frames) <span class="op">-</span> <span class="dv">1</span>) <span class="op">+</span> [<span class="fl">2.0</span>]</span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a><span class="co"># Write the GIF with variable durations and infinite looping</span></span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>imageio.imwrite(<span class="st">'discrete_binomial.gif'</span>, frames, duration<span class="op">=</span>durations, loop<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a><span class="co">##############################################</span></span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 2: Discrete Random Walk Normalizing (N = 50)</span></span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a><span class="co">##############################################</span></span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">50</span>  <span class="co"># total number of steps (increased to show gradual convergence)</span></span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a>num_sample_paths <span class="op">=</span> <span class="dv">5</span>  <span class="co"># number of sample paths to overlay</span></span>
+<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate a few discrete random walk sample paths</span></span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a>sample_paths <span class="op">=</span> []</span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_sample_paths):</span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>    steps <span class="op">=</span> np.random.choice([<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>], size<span class="op">=</span>N)</span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> np.concatenate(([<span class="dv">0</span>], np.cumsum(steps)))</span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a>    sample_paths.append(path)</span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>sample_paths <span class="op">=</span> np.array(sample_paths)  <span class="co"># shape: (num_sample_paths, N+1)</span></span>
+<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a>frames <span class="op">=</span> []</span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t_step <span class="kw">in</span> <span class="bu">range</span>(N <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>    fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">7</span>))</span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> fig.add_subplot(<span class="dv">111</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the PMFs for all time slices from 0 to the current step</span></span>
+<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(t_step <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a>        <span class="co"># For a random walk starting at 0, possible positions are -t, -t+2, ..., t</span></span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a>        x_values <span class="op">=</span> np.arange(<span class="op">-</span>t, t <span class="op">+</span> <span class="dv">1</span>, <span class="dv">2</span>)</span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> t <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a>            p_values <span class="op">=</span> np.array([<span class="fl">1.0</span>])</span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a>            <span class="co"># For each x, number of +1 steps is (x+t)/2</span></span>
+<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a>            k <span class="op">=</span> (x_values <span class="op">+</span> t) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a>            p_values <span class="op">=</span> comb(t, k) <span class="op">*</span> (<span class="fl">0.5</span> <span class="op">**</span> t)</span>
+<span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Plot the discrete PMF as blue markers and lines</span></span>
+<span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a>        ax.scatter(x_values, [t]<span class="op">*</span><span class="bu">len</span>(x_values), p_values, color<span class="op">=</span><span class="st">'blue'</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a>        ax.plot(x_values, [t]<span class="op">*</span><span class="bu">len</span>(x_values), p_values, color<span class="op">=</span><span class="st">'blue'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb6-103"><a href="#cb6-103" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a>        <span class="co"># For the current time slice, overlay the normal approximation in red</span></span>
+<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> t <span class="op">==</span> t_step <span class="kw">and</span> t <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb6-106"><a href="#cb6-106" aria-hidden="true" tabindex="-1"></a>            x_cont <span class="op">=</span> np.linspace(<span class="op">-</span>t, t, <span class="dv">200</span>)</span>
+<span id="cb6-107"><a href="#cb6-107" aria-hidden="true" tabindex="-1"></a>            normal_pdf <span class="op">=</span> norm.pdf(x_cont, <span class="dv">0</span>, np.sqrt(t))</span>
+<span id="cb6-108"><a href="#cb6-108" aria-hidden="true" tabindex="-1"></a>            ax.plot(x_cont, [t]<span class="op">*</span><span class="bu">len</span>(x_cont), normal_pdf, <span class="st">'r-'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Normal Approx.'</span>)</span>
+<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Overlay the sample random walk paths (projected along the z=0 plane)</span></span>
+<span id="cb6-111"><a href="#cb6-111" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> sp <span class="kw">in</span> sample_paths:</span>
+<span id="cb6-112"><a href="#cb6-112" aria-hidden="true" tabindex="-1"></a>        ax.plot(sp[:t_step <span class="op">+</span> <span class="dv">1</span>], np.arange(t_step <span class="op">+</span> <span class="dv">1</span>), np.zeros(t_step <span class="op">+</span> <span class="dv">1</span>),</span>
+<span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a>                <span class="st">'g-o'</span>, markersize<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">'Sample Path'</span> <span class="cf">if</span> t_step <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">""</span>)</span>
+<span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-115"><a href="#cb6-115" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">'Position (x)'</span>)</span>
+<span id="cb6-116"><a href="#cb6-116" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="st">'Time (steps)'</span>)</span>
+<span id="cb6-117"><a href="#cb6-117" aria-hidden="true" tabindex="-1"></a>    ax.set_zlabel(<span class="st">'Probability'</span>)</span>
+<span id="cb6-118"><a href="#cb6-118" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f'Discrete Binomial Random Walk at Step </span><span class="sc">{</span>t_step<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb6-119"><a href="#cb6-119" aria-hidden="true" tabindex="-1"></a>    ax.set_zlim(<span class="dv">0</span>, <span class="fl">1.0</span>)</span>
+<span id="cb6-120"><a href="#cb6-120" aria-hidden="true" tabindex="-1"></a>    ax.view_init(elev<span class="op">=</span><span class="dv">30</span>, azim<span class="op">=-</span><span class="dv">60</span>)</span>
+<span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a>    frame_path <span class="op">=</span> <span class="ss">f'gif_frames/discrete_binomial_</span><span class="sc">{</span>t_step<span class="sc">:02d}</span><span class="ss">.png'</span></span>
+<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a>    plt.savefig(frame_path)</span>
+<span id="cb6-124"><a href="#cb6-124" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
+<span id="cb6-125"><a href="#cb6-125" aria-hidden="true" tabindex="-1"></a>    frames.append(imageio.imread(frame_path))</span>
+<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute per-frame durations: 0.25 sec for all frames except the last one (2 sec)</span></span>
+<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a>durations <span class="op">=</span> [<span class="fl">0.25</span>] <span class="op">*</span> (<span class="bu">len</span>(frames) <span class="op">-</span> <span class="dv">1</span>) <span class="op">+</span> [<span class="fl">2.0</span>]</span>
+<span id="cb6-129"><a href="#cb6-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-130"><a href="#cb6-130" aria-hidden="true" tabindex="-1"></a><span class="co"># Write the GIF with variable durations and infinite looping</span></span>
+<span id="cb6-131"><a href="#cb6-131" aria-hidden="true" tabindex="-1"></a>imageio.imwrite(<span class="st">'discrete_binomial_normalizing.gif'</span>, frames, duration<span class="op">=</span>durations, loop<span class="op">=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="c2.-3d-animation-of-brownian-motion" class="level3">
+<h3 class="anchored" data-anchor-id="c2.-3d-animation-of-brownian-motion">C2. 3D Animation of Brownian Motion</h3>
+<p>Normal distribution sweeping and evolving across time according Brownian motion</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits.mplot3d <span class="im">import</span> Axes3D  <span class="co"># for 3D plotting</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> imageio.v3 <span class="im">as</span> imageio  <span class="co"># using modern API</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>os.makedirs(<span class="st">'gif_frames'</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters for continuous Brownian motion</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>num_frames <span class="op">=</span> <span class="dv">100</span>  <span class="co"># more frames for smoother animation</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>t_values <span class="op">=</span> np.linspace(<span class="fl">0.1</span>, <span class="dv">5</span>, num_frames)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">200</span>)  <span class="co"># increased resolution</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>num_sample_paths <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>sample_paths <span class="op">=</span> np.zeros((num_sample_paths, <span class="bu">len</span>(t_values)))</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>dt_cont <span class="op">=</span> t_values[<span class="dv">1</span>] <span class="op">-</span> t_values[<span class="dv">0</span>]</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_sample_paths):</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    increments <span class="op">=</span> np.random.normal(<span class="dv">0</span>, np.sqrt(dt_cont), size<span class="op">=</span><span class="bu">len</span>(t_values)<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    sample_paths[i, <span class="dv">1</span>:] <span class="op">=</span> np.cumsum(increments)</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>frames <span class="op">=</span> []</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, t <span class="kw">in</span> <span class="bu">enumerate</span>(t_values):</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">7</span>))</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> fig.add_subplot(<span class="dv">111</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> t_values <span class="op">&lt;=</span> t</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    T_sub, X_sub <span class="op">=</span> np.meshgrid(t_values[mask], x)</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    P_sub <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> np.sqrt(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> T_sub)) <span class="op">*</span> np.exp(<span class="op">-</span>X_sub<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> T_sub))</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    ax.plot_surface(X_sub, T_sub, P_sub, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, edgecolor<span class="op">=</span><span class="st">'none'</span>)</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> sp <span class="kw">in</span> sample_paths:</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>        ax.plot(sp[:i<span class="op">+</span><span class="dv">1</span>], t_values[:i<span class="op">+</span><span class="dv">1</span>], np.zeros(i<span class="op">+</span><span class="dv">1</span>), <span class="st">'r-'</span>, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">'Position (x)'</span>)</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="st">'Time (t)'</span>)</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>    ax.set_zlabel(<span class="st">'Density'</span>)</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f'Continuous Brownian Motion at t = </span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>    ax.view_init(elev<span class="op">=</span><span class="dv">30</span>, azim<span class="op">=-</span><span class="dv">60</span>)</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    frame_path <span class="op">=</span> <span class="ss">f'gif_frames/continuous_3d_smooth_t_</span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">.png'</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>    plt.savefig(frame_path)</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>    frames.append(imageio.imread(frame_path))</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>imageio.imwrite(<span class="st">'continuous_brownian_3d_smooth.gif'</span>, frames, duration<span class="op">=</span><span class="fl">0.1</span>, loop<span class="op">=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="c3.-3d-animation-of-geometric-brownian-motion" class="level3">
+<h3 class="anchored" data-anchor-id="c3.-3d-animation-of-geometric-brownian-motion">C3. 3D Animation of Geometric Brownian Motion</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits.mplot3d <span class="im">import</span> Axes3D  <span class="co"># for 3D plotting</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> imageio.v3 <span class="im">as</span> imageio  <span class="co"># modern API</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>os.makedirs(<span class="st">'gif_frames'</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters for geometric Brownian motion (GBM)</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>S0 <span class="op">=</span> <span class="fl">1.0</span>    <span class="co"># initial stock price</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>mu <span class="op">=</span> <span class="fl">0.2</span>    <span class="co"># drift rate (increased for noticeable drift)</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>sigma <span class="op">=</span> <span class="fl">0.2</span> <span class="co"># volatility</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>num_frames <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>t_values <span class="op">=</span> np.linspace(<span class="fl">0.1</span>, <span class="dv">5</span>, num_frames)  <span class="co"># avoid t=0 to prevent singularity in density</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>S_range <span class="op">=</span> np.linspace(<span class="fl">0.01</span>, <span class="dv">5</span>, <span class="dv">200</span>)         <span class="co"># price range</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate GBM sample paths</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>num_sample_paths <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>sample_paths <span class="op">=</span> np.zeros((num_sample_paths, <span class="bu">len</span>(t_values)))</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> t_values[<span class="dv">1</span>] <span class="op">-</span> t_values[<span class="dv">0</span>]</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_sample_paths):</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    increments <span class="op">=</span> np.random.normal(<span class="dv">0</span>, np.sqrt(dt), size<span class="op">=</span><span class="bu">len</span>(t_values)<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    W <span class="op">=</span> np.concatenate(([<span class="dv">0</span>], np.cumsum(increments)))</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    sample_paths[i] <span class="op">=</span> S0 <span class="op">*</span> np.exp((mu <span class="op">-</span> <span class="fl">0.5</span> <span class="op">*</span> sigma<span class="op">**</span><span class="dv">2</span>) <span class="op">*</span> t_values <span class="op">+</span> sigma <span class="op">*</span> W)</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>frames <span class="op">=</span> []</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, t <span class="kw">in</span> <span class="bu">enumerate</span>(t_values):</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">7</span>))</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> fig.add_subplot(<span class="dv">111</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> t_values <span class="op">&lt;=</span> t</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    T_sub, S_sub <span class="op">=</span> np.meshgrid(t_values[mask], S_range)</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    P_sub <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> (S_sub <span class="op">*</span> sigma <span class="op">*</span> np.sqrt(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> T_sub))) <span class="op">*</span> <span class="op">\</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>            np.exp(<span class="op">-</span> (np.log(S_sub <span class="op">/</span> S0) <span class="op">-</span> (mu <span class="op">-</span> <span class="fl">0.5</span> <span class="op">*</span> sigma<span class="op">**</span><span class="dv">2</span>) <span class="op">*</span> T_sub)<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> sigma<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> T_sub))</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>    ax.plot_surface(S_sub, T_sub, P_sub, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, edgecolor<span class="op">=</span><span class="st">'none'</span>)</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> sp <span class="kw">in</span> sample_paths:</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>        ax.plot(sp[:i<span class="op">+</span><span class="dv">1</span>], t_values[:i<span class="op">+</span><span class="dv">1</span>], np.zeros(i<span class="op">+</span><span class="dv">1</span>), <span class="st">'r-'</span>, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">'Stock Price S'</span>)</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="st">'Time t'</span>)</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>    ax.set_zlabel(<span class="st">'Density'</span>)</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f'Geometric Brownian Motion at t = </span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>    ax.view_init(elev<span class="op">=</span><span class="dv">30</span>, azim<span class="op">=-</span><span class="dv">60</span>)</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>    frame_path <span class="op">=</span> <span class="ss">f'gif_frames/geometric_brownian_drifted_3d_t_</span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">.png'</span></span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>    plt.savefig(frame_path)</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>    frames.append(imageio.imread(frame_path))</span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>imageio.imwrite(<span class="st">'geometric_brownian_drifted_3d.gif'</span>, frames, duration<span class="op">=</span><span class="fl">0.1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="c4.-python-code-for-normal-distribution-approximation-by-random-walks" class="level3">
+<h3 class="anchored" data-anchor-id="c4.-python-code-for-normal-distribution-approximation-by-random-walks">C4. Python Code for Normal Distribution Approximation by Random Walks</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> imageio.v3 <span class="im">as</span> imageio  <span class="co"># modern ImageIO v3 API</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.special <span class="im">import</span> comb</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a directory for frames</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>os.makedirs(<span class="st">'gif_frames'</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Continuous Brownian Motion with Sample Paths</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Define time values and x range for density</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>t_values <span class="op">=</span> np.linspace(<span class="fl">0.1</span>, <span class="dv">5</span>, <span class="dv">50</span>)  <span class="co"># Times from 0.1 to 5</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">100</span>)          <span class="co"># Range of x values</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate a few sample Brownian motion paths</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>num_sample_paths <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>dt_cont <span class="op">=</span> t_values[<span class="dv">1</span>] <span class="op">-</span> t_values[<span class="dv">0</span>]  <span class="co"># constant time step (~0.1)</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>sample_paths <span class="op">=</span> np.zeros((num_sample_paths, <span class="bu">len</span>(t_values)))</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>sample_paths[:, <span class="dv">0</span>] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>increments <span class="op">=</span> np.random.normal(<span class="dv">0</span>, np.sqrt(dt_cont), size<span class="op">=</span>(num_sample_paths, <span class="bu">len</span>(t_values)<span class="op">-</span><span class="dv">1</span>))</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>sample_paths[:, <span class="dv">1</span>:] <span class="op">=</span> np.cumsum(increments, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>frames <span class="op">=</span> []</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, t <span class="kw">in</span> <span class="bu">enumerate</span>(t_values):</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> np.sqrt(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> t)) <span class="op">*</span> np.exp(<span class="op">-</span>x<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> t))</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">4</span>))</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    plt.plot(x, p, <span class="st">'b-'</span>, label<span class="op">=</span><span class="ss">f't = </span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">'Brownian Motion Distribution'</span>)</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">'x'</span>)</span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">'Density p(x,t)'</span>)</span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>    plt.ylim(<span class="dv">0</span>, <span class="fl">0.8</span>)</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    plt.legend()</span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    plt.grid(<span class="va">True</span>)</span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> sp <span class="kw">in</span> sample_paths:</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>        plt.plot(t_values[:i<span class="op">+</span><span class="dv">1</span>], sp[:i<span class="op">+</span><span class="dv">1</span>], <span class="st">'-o'</span>, markersize<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">'Sample Brownian Paths'</span>)</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">'Time'</span>)</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">'Position'</span>)</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>    plt.xlim(<span class="dv">0</span>, <span class="dv">5</span>)</span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>    plt.grid(<span class="va">True</span>)</span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>    frame_path <span class="op">=</span> <span class="ss">f'gif_frames/continuous_t_</span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">.png'</span></span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>    plt.savefig(frame_path)</span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>    frames.append(imageio.imread(frame_path))</span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the continuous Brownian motion GIF</span></span>
+<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a><span class="co"># (duration in seconds per frame; adjust as desired)</span></span>
+<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>imageio.imwrite(<span class="st">'continuous_brownian.gif'</span>, frames, duration<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Discrete Random Walk with Sample Paths</span></span>
+<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate_random_walk(dt, T, num_paths):</span>
+<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Simulate random walk paths with step size sqrt(dt)."""</span></span>
+<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>    n_steps <span class="op">=</span> <span class="bu">int</span>(T <span class="op">/</span> dt)</span>
+<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>    positions <span class="op">=</span> np.zeros((num_paths, n_steps <span class="op">+</span> <span class="dv">1</span>))</span>
+<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_paths):</span>
+<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>        increments <span class="op">=</span> np.random.choice([<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>], size<span class="op">=</span>n_steps) <span class="op">*</span> np.sqrt(dt)</span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>        positions[i, <span class="dv">1</span>:] <span class="op">=</span> np.cumsum(increments)</span>
+<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> positions</span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> <span class="fl">0.01</span>  <span class="co"># Step size</span></span>
+<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="fl">5.0</span>    <span class="co"># Total time</span></span>
+<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a>num_paths <span class="op">=</span> <span class="dv">10000</span>  <span class="co"># For histogram</span></span>
+<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a>times <span class="op">=</span> np.arange(<span class="dv">0</span>, T <span class="op">+</span> dt, dt)</span>
+<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> simulate_random_walk(dt, T, num_paths)</span>
+<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>sample_indices <span class="op">=</span> np.arange(<span class="dv">5</span>)</span>
+<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>frames <span class="op">=</span> []</span>
+<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, t <span class="kw">in</span> <span class="bu">enumerate</span>(times):</span>
+<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">%</span> <span class="dv">10</span> <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># Use every 10th frame for the GIF</span></span>
+<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>        current_positions <span class="op">=</span> positions[:, i]</span>
+<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>        x_vals <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">100</span>)</span>
+<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>        p_theoretical <span class="op">=</span> norm.pdf(x_vals, <span class="dv">0</span>, np.sqrt(t) <span class="cf">if</span> t <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="fl">1e-5</span>)</span>
+<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>        plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">4</span>))</span>
+<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a>        plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>        plt.hist(current_positions, bins<span class="op">=</span><span class="dv">50</span>, density<span class="op">=</span><span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, label<span class="op">=</span><span class="ss">f't = </span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>        plt.plot(x_vals, p_theoretical, <span class="st">'r-'</span>, label<span class="op">=</span><span class="st">'N(0,t)'</span>)</span>
+<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>        plt.title(<span class="st">'Discrete Random Walk Distribution'</span>)</span>
+<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>        plt.xlabel(<span class="st">'Position'</span>)</span>
+<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>        plt.ylabel(<span class="st">'Density'</span>)</span>
+<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>        plt.ylim(<span class="dv">0</span>, <span class="fl">0.8</span>)</span>
+<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>        plt.legend()</span>
+<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>        plt.grid(<span class="va">True</span>)</span>
+<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>        plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> idx <span class="kw">in</span> sample_indices:</span>
+<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a>            plt.plot(times[:i<span class="op">+</span><span class="dv">1</span>], positions[idx, :i<span class="op">+</span><span class="dv">1</span>], <span class="st">'-o'</span>, markersize<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a>        plt.title(<span class="st">'Sample Random Walk Paths'</span>)</span>
+<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a>        plt.xlabel(<span class="st">'Time'</span>)</span>
+<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>        plt.ylabel(<span class="st">'Position'</span>)</span>
+<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a>        plt.xlim(<span class="dv">0</span>, T)</span>
+<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>        plt.grid(<span class="va">True</span>)</span>
+<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a>        frame_path <span class="op">=</span> <span class="ss">f'gif_frames/discrete_t_</span><span class="sc">{</span>t<span class="sc">:.2f}</span><span class="ss">.png'</span></span>
+<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>        plt.tight_layout()</span>
+<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a>        plt.savefig(frame_path)</span>
+<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a>        plt.close()</span>
+<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a>        frames.append(imageio.imread(frame_path))</span>
+<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the discrete random walk GIF with infinite looping</span></span>
+<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a>imageio.imwrite(<span class="st">'discrete_random_walk.gif'</span>, frames, duration<span class="op">=</span><span class="fl">0.1</span>, loop<span class="op">=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/OliverMount">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OliverMount/OliverMount.github.io/edit/main/gleanings/StochasticCalculus/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/blob/main/gleanings/StochasticCalculus/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/OliverMount/OliverMount.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Copyright Feb.&nbsp;2025, Oliver</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
