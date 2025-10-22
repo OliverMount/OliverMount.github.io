@@ -11,7 +11,7 @@ tags:
 
 ### **1. Introduction**
 
-Calculus underlies differential equations by providing tools to handle derivatives and integrals. Stochastic calculus plays a similar role for stochastic differential equations, extending calculus concepts to include randomness and stochastic behavior, enabling analysis and solution of SDEs.
+Calculus underlies differential equations by providing tools to handle derivatives and integrals. Stochastic calculus plays a similar role for stochastic differential equations, extending calculus concepts to include randomness and stochastic behavior, enabling analysis and solution of SDEs. So the analogy is essentially: Calculus relates to differential equations as Stochastic calculus relates to stochastic differential equations
 
 The goal of this short post is more to focus on the conceptual understanding rather than the mathematical rigor. I discuss Brownian motion, which is the foundation of stochastic calculus. The technical jargons such as probability spaces, measure theory, filtrations, are dealt in another post (refeence).
 

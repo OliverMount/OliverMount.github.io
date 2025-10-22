@@ -225,9 +225,9 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#introduction-to-stochastic-calculus" id="toc-introduction-to-stochastic-calculus" class="nav-link active" data-scroll-target="#introduction-to-stochastic-calculus"><strong>Introduction to Stochastic Calculus</strong></a>
+  <li><a href="#fundamentals-of-stochastic-calculus" id="toc-fundamentals-of-stochastic-calculus" class="nav-link active" data-scroll-target="#fundamentals-of-stochastic-calculus"><strong>Fundamentals of Stochastic Calculus</strong></a>
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>0. Introduction</strong></a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>1. Introduction</strong></a></li>
   <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><strong>1. Motivation</strong></a></li>
   <li><a href="#from-discrete-steps-to-continuous-limits" id="toc-from-discrete-steps-to-continuous-limits" class="nav-link" data-scroll-target="#from-discrete-steps-to-continuous-limits"><strong>2. From Discrete Steps to Continuous Limits</strong></a></li>
   <li><a href="#defining-brownian-motion-wiener-process" id="toc-defining-brownian-motion-wiener-process" class="nav-link" data-scroll-target="#defining-brownian-motion-wiener-process"><strong>3. Defining Brownian motion (Wiener process)</strong></a></li>
@@ -274,14 +274,13 @@ window.Quarto = {
 </header>
 
 
-<section id="introduction-to-stochastic-calculus" class="level1">
-<h1><strong>Introduction to Stochastic Calculus</strong></h1>
-<p>Notation and code for generating visuals are presented in the <a href="#appendix">Appendix</a>.</p>
+<section id="fundamentals-of-stochastic-calculus" class="level1">
+<h1><strong>Fundamentals of Stochastic Calculus</strong></h1>
 <section id="introduction" class="level3">
-<h3 class="anchored" data-anchor-id="introduction"><strong>0. Introduction</strong></h3>
-<p>This document is a brief introduction to stochastic calculus. Like, an actual introduction. Not the textbook “introductions” which immediately blast you with graduate-level probability theory axioms and definitions.</p>
-<p>The goal of this blog post is more to focus on the physical intuition and derivation of Brownian motion, which is the foundation of stochastic calculus. I will avoid very technical formalisms such as probability spaces, measure theory, filtrations, etc. in favor of a more informal approach by considering only well-behaved cases. I also try to avoid introducing too many new concepts and vocabulary.</p>
-<p>I hope that a wider audience can feel inspired as to how stochastic calculus emerges naturally from the physical world. Then, hopefully, more people can appreciate the beauty and meaning of the mathematics behind it, and decide to dig deeper into the subject.</p>
+<h3 class="anchored" data-anchor-id="introduction"><strong>1. Introduction</strong></h3>
+<p>Calculus underlies differential equations by providing tools to handle derivatives and integrals. Stochastic calculus plays a similar role for stochastic differential equations, extending calculus concepts to include randomness and stochastic behavior, enabling analysis and solution of SDEs. So the analogy is essentially: Calculus relates to differential equations as Stochastic calculus relates to stochastic differential equations</p>
+<p>The goal of this short post is more to focus on the conceptual understanding rather than the mathematical rigor. I discuss Brownian motion, which is the foundation of stochastic calculus. The technical jargons such as probability spaces, measure theory, filtrations, are dealt in another post (refeence).</p>
+<p>I desinged this post to inspire people and to see the beauty and meaning of the mathematics behind it, and decide to dig deeper into the subject.</p>
 <section id="applications" class="level4">
 <h4 class="anchored" data-anchor-id="applications">Applications</h4>
 <p>Brownian motion and Itô calculus are notable examples of fairly high-level mathematics that are applied to model the real world. Stock prices jiggle erratically, molecules bounce in fluids, and noise partially corrupts signals. Stochastic calculus gives us tools to predict, optimize, and understand these messy systems in a simpified model.</p>

@@ -21,7 +21,7 @@
         "\n",
         "Load the necessary modules"
       ],
-      "id": "40a5b38c"
+      "id": "a4b6c3f2"
     },
     {
       "cell_type": "code",
@@ -35,7 +35,7 @@
         "  \n",
         "h.load_file(\"stdrun.hoc\") #load the standard run library to give us high-level simulation control functions (e.g. running a simulation for a given period of time):"
       ],
-      "id": "12a6794e",
+      "id": "bddcfa76",
       "execution_count": null,
       "outputs": []
     },
@@ -45,7 +45,7 @@
       "source": [
         "Define one cell with soma and dendrite (with necessary parameters, morphology) using python class"
       ],
-      "id": "e93fa26f"
+      "id": "047d296e"
     },
     {
       "cell_type": "code",
@@ -87,7 +87,7 @@
         "\n",
         "my_cell = BallAndStick(0)"
       ],
-      "id": "809ade05",
+      "id": "6f58da3e",
       "execution_count": null,
       "outputs": []
     },
@@ -99,7 +99,7 @@
         "for sec in h.allsec():\n",
         "    print(\"%s: %s\" % (sec, \", \".join(sec.psection()[\"density_mechs\"].keys())))\n"
       ],
-      "id": "ec215ca8",
+      "id": "5e9fee66",
       "execution_count": null,
       "outputs": []
     },
@@ -109,7 +109,7 @@
       "source": [
         "#### Stimulus"
       ],
-      "id": "7bcff0be"
+      "id": "ea5d898c"
     },
     {
       "cell_type": "code",
@@ -120,7 +120,7 @@
         "stim.dur = 1 #ms\n",
         "stim.amp = 0.1  # nA"
       ],
-      "id": "3c627f67",
+      "id": "ab2637a0",
       "execution_count": null,
       "outputs": []
     },
@@ -130,7 +130,7 @@
       "source": [
         "#### Recording soma voltage"
       ],
-      "id": "51d7e9c1"
+      "id": "857d6cc6"
     },
     {
       "cell_type": "code",
@@ -139,7 +139,7 @@
         "soma_v = h.Vector().record(my_cell.soma(0.5)._ref_v)\n",
         "t = h.Vector().record(h._ref_t)"
       ],
-      "id": "bf1dfd73",
+      "id": "ec975d7b",
       "execution_count": null,
       "outputs": []
     },
@@ -149,7 +149,7 @@
       "source": [
         "#### Initialization"
       ],
-      "id": "5dd924a5"
+      "id": "8b67430c"
     },
     {
       "cell_type": "code",
@@ -159,7 +159,7 @@
         "\n",
         "h.continuerun(25 * ms) # run until time 25 ms:\n"
       ],
-      "id": "a76286d9",
+      "id": "991026ac",
       "execution_count": null,
       "outputs": []
     },
@@ -173,7 +173,7 @@
         "plt.ylabel(\"v (mV)\")\n",
         "plt.show()"
       ],
-      "id": "30fdaa18",
+      "id": "3d4d2f66",
       "execution_count": null,
       "outputs": []
     }
