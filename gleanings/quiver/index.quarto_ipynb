@@ -1,0 +1,134 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Quiver plots in Python\"\n",
+        "---\n",
+        "\n",
+        "##  \n",
+        "\n",
+        "# Slope field \n",
+        "\n",
+        "Let us frist start with a first-order differential equation (DE),\n",
+        "\n",
+        "$$\n",
+        "\\frac{dy}{dx} = f(x,y)\n",
+        "$$\n",
+        "\n",
+        "A **slope or direction field** for the DE is a collection of line segments (or arrows) where the slope of the line segment at a point equals the derivative at that point. For example if you have the DE $dy/dx = x — y$ then the segment drawn at (1,2) would have slope -1; the segment drawn at the origin would have slope 0; and so on. This is what the direction field looks like for this particular DE if you drew segments at various points for *x* and *y* between -5 and 5:"
+      ],
+      "id": "65d49f5b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "# Slope function dy/dx = f(x, y)\n",
+        "def f(x, y):\n",
+        "    return x - y\n",
+        "\n",
+        "# Create grid\n",
+        "x = np.linspace(-5, 5, 20)\n",
+        "y = np.linspace(-5, 5, 20)\n",
+        "X, Y = np.meshgrid(x, y)\n",
+        "\n",
+        "# Compute slope at each point\n",
+        "S = f(X, Y)  # Slope \n",
+        "\n",
+        "# Convert slope to direction vectors (dx, dy)\n",
+        "U = 0.5                  # dx\n",
+        "V = S * U                   # dy = slope * dx\n",
+        "\n",
+        "# Normalize for better visualization\n",
+        "N = np.sqrt(U**2 + V**2)\n",
+        "U, V = U/N, V/N\n",
+        "\n",
+        "# Plot slope field\n",
+        "\n",
+        "fig, ax = plt.subplots(figsize=(6, 6)) \n",
+        "ax.quiver(X, Y, U, V, color='purple', angles='xy')\n",
+        "ax.set_xlabel(\"x\", fontsize=14)\n",
+        "ax.set_ylabel(\"y\", fontsize=14)\n",
+        "ax.set_title(\"Slope Field for dy/dx = x - y\", fontsize=14)  \n",
+        "ax.tick_params(axis='both', labelsize=12) \n",
+        "plt.show()\n"
+      ],
+      "id": "a7fed65b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "# Phase field ( for 2D system)"
+      ],
+      "id": "994fb75a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "# Define vector field\n",
+        "def f(x, y):\n",
+        "    return y, -x  # Example: rotation field\n",
+        "\n",
+        "# Create grid\n",
+        "x = np.linspace(-3, 3, 30)\n",
+        "y = np.linspace(-3, 3, 30)\n",
+        "X, Y = np.meshgrid(x, y)\n",
+        "\n",
+        "# Compute vector components\n",
+        "U, V = f(X, Y)\n",
+        "\n",
+        "# Normalize arrows\n",
+        "N = np.sqrt(U**2 + V**2)\n",
+        "U, V = U/N, V/N\n",
+        "\n",
+        "# Plot phase field\n",
+        "fig, ax = plt.subplots(figsize=(6, 6)) \n",
+        "ax.quiver(X, Y, U, V, color='red', angles='xy')\n",
+        "ax.set_xlabel(\"x\", fontsize=14)\n",
+        "ax.set_ylabel(\"y\", fontsize=14)\n",
+        "ax.set_title(\"Phase Field for dx/dt = y, dy/dt = -x\", fontsize=14)  \n",
+        "ax.tick_params(axis='both', labelsize=12) \n",
+        "plt.show() "
+      ],
+      "id": "51625f8f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### Quick Summary\n",
+        "\n",
+        "| Type | Equation Form |    Plot | Direction vector |\n",
+        "|-------------|------------------------|------------------|-----------------|\n",
+        "| **Slope Field** | $\\frac{dy}{dx} = f(x, y)$ |   Direction of tangent lines |$(1,f(x,y))$ |\n",
+        "| **Phase Field** | $\\dot{x} = f(x, y), \\dot{y} = g(x, y)$  | Flow of the dynamical system |$(f(x,y),g(x,y))$ | "
+      ],
+      "id": "9f36c877"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/media/oli/Research/env_python/spy/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
