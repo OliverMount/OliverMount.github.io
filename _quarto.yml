@@ -28,10 +28,12 @@ website:
   #----------------------------------------------------------------------------- 
   #      Sidebar (appears based on which section you're in)
   #-----------------------------------------------------------------------------
-  sidebar: 
-    - title: "Publications"
+  sidebar:  
+    - id: publications
+      title: "Publications"
+      style: "docked"
       contents:
-        - publications/index.qmd  
+        - publications/index.qmd 
   #----------------------------------------------------------------------------- 
   #      Page footer
   #-----------------------------------------------------------------------------
@@ -50,5 +52,8 @@ format:
     html-math-method: katex
     date-modified: last-modified            
     date-format: "MMMM D, YYYY"   
+    
+    grid:
+      margin-width: 0px
      
 editor: visual

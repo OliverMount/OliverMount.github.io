@@ -4,18 +4,18 @@
     "href": "publications/index.html",
     "title": "List of Publications",
     "section": "",
-    "text": "Oliver James and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep. 2025 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1",
+    "text": "Oliver James and Yee Joon Kim, “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Mar. 2026 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1",
     "crumbs": [
       "Publications",
       "List of Publications"
     ]
   },
   {
-    "objectID": "publications/index.html#submitted-available-in-biorcolormaroonchiiv",
-    "href": "publications/index.html#submitted-available-in-biorcolormaroonchiiv",
+    "objectID": "publications/index.html#submitted",
+    "href": "publications/index.html#submitted",
     "title": "List of Publications",
     "section": "",
-    "text": "Oliver James and Kim, Y. J. (2025), “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Sep. 2025 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1",
+    "text": "Oliver James and Yee Joon Kim, “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Mar. 2026 https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1",
     "crumbs": [
       "Publications",
       "List of Publications"
@@ -26,7 +26,7 @@
     "href": "publications/index.html#arcolormaroonchiiv",
     "title": "List of Publications",
     "section": "ar\\color{Maroon}{\\chi}iv",
-    "text": "ar\\color{Maroon}{\\chi}iv\nOliver James, and Heung-No Lee. (2025). “Concise probability distributions of eigenvalues of real-valued Wishart matrices”, Retrieved from http://arxiv.org/abs/1402.6757\nOliver James, and Heung-No Lee. (2025). “Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders”, Retrieved from https://arxiv.org/abs/1410.1956",
+    "text": "ar\\color{Maroon}{\\chi}iv\n\nOliver James, and Heung-No Lee. (2025). “Concise probability distributions of eigenvalues of real-valued Wishart matrices”, Retrieved from http://arxiv.org/abs/1402.6757\nOliver James, and Heung-No Lee. (2025). “Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders”, Retrieved from https://arxiv.org/abs/1410.1956",
     "crumbs": [
       "Publications",
       "List of Publications"
@@ -37,7 +37,7 @@
     "href": "publications/index.html#in-preparation",
     "title": "List of Publications",
     "section": "In Preparation",
-    "text": "In Preparation\nMiguel Sanchez-Valpuesta, Oliver James, Joonyeol Lee and Gunsoo Kim, “Effects of locomotion on the population frequency representation in the mouse auditory midbrain’’, Writing stage, 2026.\nOliver James and Sung Ho Hong, (2026). “Container-based framework for simulating biological cerebellar neural networks”, Writing stage, 2026.",
+    "text": "In Preparation\n\nMiguel Sanchez-Valpuesta, Oliver James, Joonyeol Lee and Gunsoo Kim, “Effects of locomotion on the population frequency representation in the mouse auditory midbrain’’, Writing stage, 2026.\n\n\n\nOliver James and Sung Ho Hong, (2026). “Container-based framework for simulating biological cerebellar neural networks”, Writing stage, 2026.",
     "crumbs": [
       "Publications",
       "List of Publications"
@@ -88,6 +88,13 @@
     ]
   },
   {
+    "objectID": "simulations/r/index.html",
+    "href": "simulations/r/index.html",
+    "title": "R",
+    "section": "",
+    "text": "R\nA few R packages"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome!",
@@ -107,12 +114,5 @@
     "title": "Welcome!",
     "section": "Education",
     "text": "Education\nPhD in Signal Processing\nMasters in Communication Engineering\nBachelors in Electronics and Communication Engineering"
-  },
-  {
-    "objectID": "simulations/r/index.html",
-    "href": "simulations/r/index.html",
-    "title": "R",
-    "section": "",
-    "text": "R\nA few R packages"
   }
 ]
