@@ -1,68 +1,63 @@
 ---
-title: "List of publications"
-bibliography: references.bib
-nocite: |
-  @*
+title: "List of Publications" 
 ---
 
-## bioR$\color{Maroon}{\chi}$*iv*
+## Submitted (available in bioR$\color{Maroon}{\chi}$*iv*)
 
-**James, Oliver** and Kim, Y. J. (2025), "Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics'', Submitted, Sep. 2025 <https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1>
-
-Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **James, Oliver**, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2025), "Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination'', **Revised to Experimental and Molecular Medicine, Sep. 2025** <https://www.biorxiv.org/content/10.1101/2024.05.30.596563v1>
+**James, Oliver** and Kim, Y. J. (2025), "Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics'', Submitted, Sep. 2025 <https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1> 
+ 
 
 ## ar$\color{Maroon}{\chi}$iv
 
 **James, Oliver.**, & Lee, H.-N. (2025). "Concise probability distributions of eigenvalues of real-valued Wishart matrices", Retrieved from <http://arxiv.org/abs/1402.6757>
 
 **James, Oliver.**, & Lee, H.-N. (2025). "Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders", Retrieved from <https://arxiv.org/abs/1410.1956>
-
-## Under Revision
-
-Lee, Y. B.,**James, Oliver.**, Lee, D. Y., and Kim, Y. J. (2025). "Hierarchical summary statistics encoding across primary visual and posterior parietal cortices'', **Adanced Science.**
+ 
 
 ## In Preparation
 
-Miguel Sanchez-Valpuesta, **James, Oliver**, Joonyeol Lee and Gunsoo Kim, "Effects of locomotion on the population frequency representation in the mouse auditory midbrain'', **Writing stage**.
+Miguel Sanchez-Valpuesta, **James, Oliver**, Joonyeol Lee and Gunsoo Kim, "Effects of locomotion on the population frequency representation in the mouse auditory midbrain'', **Writing stage, 2026**.
 
-**Oliver James** and Sung Ho Hong, (2025). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage**.
+**Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage, 2026.**
 
 ## Published {#sec-journals}
 
-Bae, J., Jung, K., **James, Oliver.**, Suzuki, S., & Kim, Y. J. (2025). "Frontal engagement in perceptual integration under low subjective visibility", ***NeuroImage***, *305*, 120984.
+ Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **Oliver James**, Erik De Schutter, Sungho Hong, and C. Justin Lee, (2026), ``Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination'', **Experimental and Molecular Medicine**.\\ (Online: https://doi.org/10.1038/s12276-026-01657-8), 18. Feb. **2026**.
 
-Do, J., **James, Oliver**., & Kim, Y.-J. (2024). "Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain", **Iscience,** 27(7).
+ Jisub Bae, Koeun Jung, **Oliver James**, Satoru Suzuki, and  Yee Joon Kim. ``Frontal engagement in perceptual integration under low subjective visibility'', **NeuroImage**, 305, 120984, Feb. **2025**.
+ 
+ Jongrok Do, **Oliver James**, and  Yee Joon Kim. ``Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain'',  **iScience**, 27(7), 110173, 19 July **2024**.
+ 
+ Jongrok Do, Kang Yong Eo,  **Oliver James**, Joonyeol Lee, and  Yee Joon Kim. ``The representational dynamics of sequential perceptual averaging'', **Journal of Neuroscience**, 42(6), 1141–1153, 09 Mar. 2022.
+ 
+ Adalarasu, K., Jagannath, M., and  **Oliver James**.. ``Assessment of techniques for teaching school children with autism'', **Innovation and Research in BioMedical engineering**, 41(2), 88–93, 1 Apr. 2020.
+ 
+ **Oliver James**, HyunJin Park, and  SeongGi Kim. ``Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis'', **Human Brain Mapping**, 40(11), 3321–3337, 1 Aug. 2019.
+ 
+ Bo-yong Park, Won Mok Shim, **Oliver James**, and Hyunjin Park. ``Possible links between the lag structure in visual cortex and visual streams using fMRI'', **Scientific Reports**, 9(1), 4283, 12 Mar. 2019.
+ 
+ Kang Yong Eo, **Oliver James**, Sangkyu Son, Min-Suk Kang, Sang Chul Chong, Yee-Joon Kim. ``Representational dynamics of ensemble average of simultaneously presented objects'', **Journal of Vision**, 18(10), 80–80, 18 May **2018**.
+ 
+ Junhwan Kwon, Moonseok Kim, Hyejin Park, Bok-Man Kang, Yongjae Jo, Jae-Hwan Kim, **Oliver James**, Seok-Hyun Yun, Seong-Gi Kim, Minah Suh \& Myunghwan Choi, ``Label-free nanoscale optical metrology on myelinated axons in vivo'', **Nature Communications**, 8(1), 1832, 28 Nov. **2017**.
+ 
+ Yubu Lee, Bo-Yong Park, **Oliver James**, Seong-Gi Kim, Hyunjin Park. ``Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults'', **Frontiers in Human Neuroscience**, 11, 418, 18 Aug. **2017**.
+ 
+ **Oliver James**. ``Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework'', **Wireless Personal Communications**, 87(10), 513–526, 12 Oct. **2015**.
+ 
+ **Oliver James**. ``Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices'', **International Journal of Computer Applications**, 975, 8887, 1 May **2015**.
+ 
+ **Oliver James**, Woong-Bi Lee, Sang-Jun Park, and Heung-No Lee. ``Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers'', **The J
+ ournal of Korean Institute of Communications and Information Sciences**, 38(6), 497–502, 30 June **2013**.
+ 
+ **Oliver James**, Woong-Bi Lee  and Heung-No Lee, ``Filters with random transmittance for improving resolution of filter-array-based spectrometers",  **Optics Express**, vol. 21, no. 4, pp. 3969-3989, 11 Feb.  **2013**.  
 
-Do, J., Eo, K. Y., **James, Oliver**., Lee, J., & Kim, Y.-J. (2022). "The representational dynamics of sequential perceptual averaging", **Journal of Neuroscience**, 42(6), 1141–1153.
-
-Adalarasu, K., Jagannath, M., & **James, Oliver.** (2020). "Assessment of techniques for teaching school children with autism", **IRBM**, 41(2), 88–93.
-
-**James, Oliver**., Park, H., & Kim, S.-G. (2019). "Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis", **Human Brain Mapping**, 40(11), 3321–3337.
-
-Park, B.-Y., Shim, W. M., **James, Oliver.**, & Park, H. (2019). "Possible links between the lag structure in visual cortex and visual streams using fMRI", **Scientific Reports**, 9(1), 4283.
-
-Eo, K., **James, Oliver**., Son, S., Kang, M.-S., Chong, S. C., & Kim, Y.-J. (2018). "Representational dynamics of ensemble average of simultaneously presented objects", **Journal of Vision**, 18(10), 80–80.
-
-Kwon, J., Kim, M., Park, H., Kang, B.-M., Jo, Y., Kim, J.-H., **Oliver James**… Others. (2017). "Label-free nanoscale optical metrology on myelinated axons in vivo", **Nature Communications**, 8(1), 1832.
-
-Lee, Y., Park, B.-Y., **James, Oliver.**, Kim, S.-G., & Park, H. (2017). "Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults", **Frontiers in Human Neuroscience**, 11, 418.
-
-**James, Oliver**. (2016). "Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework", **Wireless Personal Communications**, 87(10), 513–526.
-
-**James, Oliver**. (2015). "Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices", **International Journal of Computer Applications**, 975, 8887.
-
-**James, Oliver**, Lee, W.-B., Park, S.-J., & Lee, H.-N. (2013b). "Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers", **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), 497–502.
-
-**James, Oliver**, WoongBi, L., Heung-No, & Lee. (2013). "Filters with random transmittance for improving resolution in filter-array-based spectrometers", **Optics Express**, 21(4), 3969–3989.
-
-**James, Oliver**., Lee, W., Park, S., & Lee, H.-N. (2012). Improving resolution of miniature spectrometers by exploiting sparse nature of signals. **Optics Express**, 20(3), 2613–2625.
-
-**Oliver, James**, Aravind, R., & Prabhu, K. M. M. (2012). Improved least squares channel estimation for orthogonal frequency division multiplexing. **IET Signal Processing**, 6(1), 45–53.
-
-**James, Oliver**, Aravind, R., & Prabhu, K. M. M. (2010). A Krylov subspace based low-rank channel estimation in OFDM systems. **Signal Processing**, 90(6), 1861–1872.
-
-**James, Oliver**., Aravind, R., & Prabhu, K. M. M. (2008). Sparse channel estimation in OFDM systems by threshold-based pruning. **Electronics Letters**, 44(13), 830–832.
-
+  **Oliver James**, R. Aravind and K.M.M. Prabhu, ``Improved least squares channel estimation for orthogonal frequency division multiplexing", **IEE Signal Processing**, vol.6, no.1, pp. 45-53, 03 Feb. **2012**.
+  
+ **Oliver James**, Woong-Bi Lee, Sang-Jun Park and Heung-No Lee, ``Improving resolution of miniature spectrometers by exploiting sparse nature of signals", **Optics Express**, vol. 20, no. 3, pp. 2613-2625, 12 Jan. **2012**.
+  **Oliver James**, R. Aravind and K.M.M. Prabhu, ``Krylov subspace-based low-rank channel estimation in OFDM systems", **Signal Processing**, vol. 90, no. 6, pp. 1861-1872, 16 Dec. **2009**.
+  
+ **Oliver James**, R. Aravind and K.M.M. Prabhu, ``Sparse channel estimation in OFDM systems by threshold-based pruning",  **IEE Electronics letters**, vol. 44, no. 13, pp. 830-832, 19 June **2008**.
+ 
 ## Book Chapters
 
 Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., **James, O.** (2023). Low Power Methodologies for FPGA—An Overview. In: Sharma, D.K., Sharma, R., Jeon, G., Polkowski, Z. (eds) **Low Power Architectures for IoT Applications. Springer Tracts in Electrical and Electronics Engineering.** Springer, Singapore. https://doi.org/10.1007/978-981-99-0639-0_4
@@ -98,3 +93,9 @@ Heung-No Lee, **Oliver James**, Sang-Jun Park, and Woong-Bi Lee, Method and Appa
 Heung-No Lee, **Oliver James**, and Woong-Bi Lee, Apparatus for Improving Spectral resolution using Random Transmittance in Optical Spectrometers, No. 10-2012-0112453, registered date: Oct. 10, 2012. (Contribution 30%).
 
 Heung-No Lee, **Oliver James**, Sang-Jun Park, and Woong-Bi Lee, Method and Apparatus for Processing Optical Signal Of Spectrometer Using Sparse Nature of Signals, No. 10-2012-0079171, registered date: July. 20, 2012. (Contribution 30%).
+
+
+
+
+
+ 

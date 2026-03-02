@@ -51,7 +51,6 @@ format:
     toc-title: Contents
     html-math-method: katex
     date-modified: last-modified            
-    date-format: "MMMM D, YYYY"    
-    
-
+    date-format: "MMMM D, YYYY"   
+     
 editor: visual
