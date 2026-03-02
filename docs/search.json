@@ -86,5 +86,33 @@
       "Publications",
       "List of Publications"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "I am a computational sciences enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of analytic neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications.\nWhile acknowledging the value of established methodologies in neuroscience, I am driven by an insatiable curiosity to push beyond the boundaries of current knowledge. My goal is to pioneer new avenues of discovery by developing innovative techniques (rather than recycling old methods) and paradigms that will revolutionize our understanding of the brain.\nIf you would like to collaborate with my explorations, please contact me."
+  },
+  {
+    "objectID": "index.html#current-research-interests",
+    "href": "index.html#current-research-interests",
+    "title": "Welcome!",
+    "section": "Current Research Interests",
+    "text": "Current Research Interests\n\nComputational Neuroscience\nSignal Processing\nStatistics and Probability"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Welcome!",
+    "section": "Education",
+    "text": "Education\nPhD in Signal Processing\nMasters in Communication Engineering\nBachelors in Electronics and Communication Engineering"
+  },
+  {
+    "objectID": "simulations/r/index.html",
+    "href": "simulations/r/index.html",
+    "title": "R",
+    "section": "",
+    "text": "R\nA few R packages"
   }
 ]
