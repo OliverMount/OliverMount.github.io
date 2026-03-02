@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: docs 
+website:
+  title: "Welcome"
+  description: "Oliver is aiming to become a computational neuroscientist"
+  page-navigation: true
+  search: true
+  repo-url: https://github.com/OliverMount/OliverMount.github.io
+  repo-actions: [edit, source, issue] 
+  
+
+  #----------------------------------------------------------------------------- 
+  #      Top navigation bar (no dropdowns)
+  #-----------------------------------------------------------------------------
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd 
+      - text: "Publications"
+        href: publications/index.qmd 
+    right:
+      - text: "Codes"
+        href: simulations/r/index.qmd 
+
+  #----------------------------------------------------------------------------- 
+  #      Sidebar (appears based on which section you're in)
+  #-----------------------------------------------------------------------------
+  sidebar: 
+    - title: "Publications"
+      contents:
+        - publications/index.qmd  
+  #----------------------------------------------------------------------------- 
+  #      Page footer
+  #-----------------------------------------------------------------------------
+  page-footer:
+    right: "Copyright Feb. 2025, Oliver"
+    left:
+      - icon: github
+        href: https://github.com/OliverMount
+ 
+format:
+  html:
+    theme:
+      - cerulean
+      - brand
+    css: styles.css
+    toc: true
+    toc-title: Contents
+    html-math-method: katex
+
+editor: visual
