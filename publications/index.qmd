@@ -4,19 +4,20 @@ title: "List of Publications"
 
 ## Submitted (available in bioR$\color{Maroon}{\chi}$*iv*)
 
-**Oliver James** and Kim, Y. J. (2025), "Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics'', Submitted, Sep. 2025 <https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1>
+1.  **Oliver James** and Kim, Y. J. (2025), "Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics'', Submitted, Sep. 2025 <https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1>
 
 ## ar$\color{Maroon}{\chi}$iv
 
-**Oliver James**, and Heung-No Lee. (2025). "Concise probability distributions of eigenvalues of real-valued Wishart matrices", Retrieved from <http://arxiv.org/abs/1402.6757>
-
-**Oliver James**, and Heung-No Lee. (2025). "Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders", Retrieved from <https://arxiv.org/abs/1410.1956>
+1.  **Oliver James**, and Heung-No Lee. (2025). "Concise probability distributions of eigenvalues of real-valued Wishart matrices", Retrieved from <http://arxiv.org/abs/1402.6757>
+2.  **Oliver James**, and Heung-No Lee. (2025). "Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders", Retrieved from <https://arxiv.org/abs/1410.1956>
 
 ## In Preparation
 
-Miguel Sanchez-Valpuesta, **Oliver James**, Joonyeol Lee and Gunsoo Kim, "Effects of locomotion on the population frequency representation in the mouse auditory midbrain'', **Writing stage, 2026**.
+1.  Miguel Sanchez-Valpuesta, **Oliver James**, Joonyeol Lee and Gunsoo Kim, "Effects of locomotion on the population frequency representation in the mouse auditory midbrain'', **Writing stage, 2026**.
 
-**Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage, 2026.**
+<!-- -->
+
+1.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage, 2026.**
 
 ## Published {#sec-journals}
 
