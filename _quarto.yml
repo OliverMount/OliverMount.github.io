@@ -1,6 +1,7 @@
 project:
   type: website
-  output-dir: docs 
+  output-dir: docs  
+  
 website:
   title: "Welcome"
   description: "Oliver is aiming to become a computational neuroscientist"
@@ -8,7 +9,7 @@ website:
   search: true
   repo-url: https://github.com/OliverMount/OliverMount.github.io
   repo-actions: [edit, source, issue] 
-  
+
 
   #----------------------------------------------------------------------------- 
   #      Top navigation bar (no dropdowns)
@@ -35,7 +36,7 @@ website:
   #      Page footer
   #-----------------------------------------------------------------------------
   page-footer:
-    right: "Copyright Mar. 2026, Oliver"
+    right: "Last modified: {{< meta date-modified >}}"
     left:
       - icon: github
         href: https://github.com/OliverMount
@@ -49,5 +50,8 @@ format:
     toc: true
     toc-title: Contents
     html-math-method: katex
+    date-modified: last-modified            
+    date-format: "MMMM D, YYYY"    
+    
 
 editor: visual
