@@ -35,7 +35,7 @@ website:
   #      Page footer
   #-----------------------------------------------------------------------------
   page-footer:
-    right: "Copyright Feb. 2025, Oliver"
+    right: "Copyright Mar. 2026, Oliver"
     left:
       - icon: github
         href: https://github.com/OliverMount
