@@ -2,7 +2,10 @@
 title: Welcome!
 image: images/Profile.jpeg
 about:
-  template: solana 
+  template: solana  
+page-layout: full
+sidebar: false
+toc: false
 ---
 
 I am a computational sciences enthusiast with signal processing expertise, currently studying about brain. A passionate explorer of analytic neuroscience methods, my diverse interests span from analyzing neural signals (spikes/fMRI/EEG/DTI) to developing cutting-edge dynamic models for neuroscientific applications.
