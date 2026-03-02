@@ -17,95 +17,20 @@ website:
     background: primary
     left:
       - text: "Home"
-        href: index.qmd
-      - text: "Research"
-        href: research/index.qmd
+        href: index.qmd 
       - text: "Publications"
-        href: publications/index.qmd
-      - text: "Tutorials"
-        href: tutorials/index.qmd
-      - text: "Gleanings"
-        href: gleanings/index.qmd
-      - text: "Blogs"
-        href: blogs/index.qmd 
+        href: publications/index.qmd 
     right:
-      - text: "R"
-        href: simulations/r/index.qmd
-      - text: "Python"
-        href: simulations/python/index.qmd
-      - text: "Brian2"
-        href: simulations/brian2/index.qmd
-      - text: "Neuron"
-        href: simulations/neuron/index.qmd
+      - text: "Codes"
+        href: simulations/r/index.qmd 
 
   #----------------------------------------------------------------------------- 
   #      Sidebar (appears based on which section you're in)
   #-----------------------------------------------------------------------------
-  sidebar:
-    - title: "Research"
-      style: docked
-      search: true
-      background: light
-      contents:
-        - research/index.qmd
-        - research/ImpactOfSamplingRate.qmd
-        - research/ImprovedLS.qmd
-        - research/Krylov.qmd
-        - research/RIPofRealComplex.qmd
-        - research/SparseChannel.qmd
-        - research/Spec1.qmd
-        - research/Spec2.qmd
-        - research/WSK.qmd
-
+  sidebar: 
     - title: "Publications"
       contents:
-        - publications/index.qmd
-
-    - title: "Tutorials"
-      contents:
-        - tutorials/index.qmd
-        - section: "Random Processes"
-          contents:
-            - tutorials/RandomProcess/index.qmd
-            - tutorials/RandomProcess/ARMA.qmd
-            - tutorials/RandomProcess/AR.qmd
-            - tutorials/RandomProcess/MA.qmd
-            - tutorials/RandomProcess/Harmonic.qmd
-            - tutorials/RandomProcess/FilteringofRP.qmd 
-        - section: "Estimation Theory"
-          contents:
-            - tutorials/EstimationTheory/index.qmd
-            - tutorials/EstimationTheory/PointEstimation.qmd
-            - tutorials/EstimationTheory/CramerRaoBound.qmd
-
-    - title: "Gleanings"
-      contents:
-        - gleanings/index.qmd
-
-    - title: "Blogs"
-      contents:
-        - blogs/index.qmd
-
-    - title: "R"
-      contents:
-        - simulations/r/index.qmd
-
-    - title: "Python"
-      contents:
-        - simulations/python/index.qmd
-
-    - title: "Neuron"
-      contents:
-        - simulations/neuron/index.qmd
-        - simulations/neuron/Introduction.qmd
-        - simulations/neuron/NMODL.qmd
-
-    - title: "Brian2"
-      contents:
-        - simulations/brian2/index.qmd
-        - simulations/brian2/Introduction.qmd
-        - simulations/brian2/Fundamentals.qmd
-
+        - publications/index.qmd  
   #----------------------------------------------------------------------------- 
   #      Page footer
   #-----------------------------------------------------------------------------
