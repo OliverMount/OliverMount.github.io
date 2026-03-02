@@ -46,9 +46,7 @@ format:
     theme:
       - cerulean
       - brand
-    css: styles.css
-    toc: true
-    toc-title: Contents
+    css: styles.css 
     html-math-method: katex
     date-modified: last-modified            
     date-format: "MMMM D, YYYY"   
