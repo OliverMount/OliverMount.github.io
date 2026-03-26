@@ -6,7 +6,7 @@ toc-location: left
 toc-depth: 2
 ---
 
-## Submitted 
+## Submitted
 
 ### (available in bioR$\color{Maroon}{\chi}$*iv*)
 
@@ -27,7 +27,7 @@ toc-depth: 2
 
 ## Published {#sec-journals}
 
-1.  Youngbeom Lee, **Oliver James**, Koeun Jung, Doyun Lee, and Yee Joon Kim. “Hierarchical summary statistics encoding across primary visual and posterior parietal cortices”, Accepted in **Advanced Science**: Feb. 27, **2026**.
+1.  Youngbeom Lee, **Oliver James**, Koeun Jung, Doyun Lee, and Yee Joon Kim. *Hierarchical summary statistics encoding across primary visual and posterior parietal cortices*, **Advanced Science**: Mar. 22, **2026**.
 
 2.  Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **Oliver James**, Erik De Schutter, Sungho Hong, and C. Justin Lee, \`\`Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination'', **Experimental and Molecular Medicine**. (Online: https://doi.org/10.1038/s12276-026-01657-8), 18. Feb. **2026**.
 
