@@ -31,9 +31,9 @@ toc-depth: 2
 
 2.  Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **Oliver James**, Erik De Schutter, Sungho Hong, and C. Justin Lee, "[*Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination*](https://doi.org/10.1038/s12276-026-01657-8 "Cerebellum modeling")", **Experimental and Molecular Medicine**, 58, pp. 579–590, 18. Feb. **2026**.
 
-3.  Jisub Bae, Koeun Jung, **Oliver James**, Satoru Suzuki, and Yee Joon Kim. "[Frontal engagement in perceptual integration under low subjective visibility"](https://doi.org/10.1016/j.neuroimage.2024.120984 "Kanizsa Project"), **NeuroImage**, 305, 120984, 12 Feb. 2025.
+3.  Jisub Bae, Koeun Jung, **Oliver James**, Satoru Suzuki, and Yee Joon Kim. "[Frontal engagement in perceptual integration under low subjective visibility"](https://doi.org/10.1016/j.neuroimage.2024.120984 "Kanizsa Project"), **NeuroImage**, 305, pp. 120984, 5 Jan. 2025.
 
-4.  Jongrok Do, **Oliver James**, and Yee Joon Kim. \`\`Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain'', **iScience**, 27(7), pp. 110173, 19 July **2024**.
+4.  Jongrok Do, **Oliver James**, and Yee Joon Kim. "[Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain'](https://doi.org/10.1016/j.isci.2024.110173 "DPCA")', **iScience**, 27(7), pp. 110173, 19 July **2024**.
 
 5.  Jongrok Do, Kang Yong Eo, **Oliver James**, Joonyeol Lee, and Yee Joon Kim. \`\`The representational dynamics of sequential perceptual averaging'', **Journal of Neuroscience**, 42(6), pp. 1141–1153, 09 Mar. **2022**.
 
