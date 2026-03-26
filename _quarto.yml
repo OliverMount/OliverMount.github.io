@@ -1,10 +1,11 @@
+# current working yml file 
 project:
   type: website
   output-dir: docs  
   
 website:
   title: "Welcome"
-  description: "Oliver is aiming to become a computational neuroscientist"
+  description: "Brain's compuatational principles"
   page-navigation: true
   search: true
   repo-url: https://github.com/OliverMount/OliverMount.github.io
