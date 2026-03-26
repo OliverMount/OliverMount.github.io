@@ -10,12 +10,12 @@ toc-depth: 2
 
 ### (available in bioR$\color{Maroon}{\chi}$*iv*)
 
-1.  **Oliver James** and Yee Joon Kim, "Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics'', Submitted, Mar. **2026** <https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1>
+1.  **Oliver James** and Yee Joon Kim, "[Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics](https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1)'', Submitted, Mar. **2026**
 
 ## ar$\color{Maroon}{\chi}$iv
 
-1.  **Oliver James**, and Heung-No Lee. (2025). "Concise probability distributions of eigenvalues of real-valued Wishart matrices", Retrieved from <http://arxiv.org/abs/1402.6757>
-2.  **Oliver James**, and Heung-No Lee. (2025). "Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders", Retrieved from <https://arxiv.org/abs/1410.1956>
+1.  **Oliver James**, and Heung-No Lee. (2025). "[Concise probability distributions of eigenvalues of real-valued Wishart matrices](http://arxiv.org/abs/1402.6757)"
+2.  **Oliver James**, and Heung-No Lee. (2025). "[Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders](https://arxiv.org/abs/1410.1956)".
 
 ## In Preparation
 
@@ -51,23 +51,23 @@ toc-depth: 2
 
 12. **Oliver James**, "[Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework](https://doi.org/10.1007/s11277-015-3083-x "Complex Gaussian")'', **Wireless Personal Communications**, 87(10), pp. 513–526, 12 Mar. **2016**.
 
-13. **Oliver James**, "Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices'', **International Journal of Computer Applications**, 975, pp. 8887, 1 May **2015**.
+13. **Oliver James**, "[Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices](https://www.ijcaonline.org/proceedings/icctac2015/number2/20924-2020/)'', **International Journal of Computer Applications**, 2, pp. 1-5, 1 May **2015**.
 
-14. **Oliver James**, Woong-Bi Lee, Sang-Jun Park, and Heung-No Lee, "Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers'', **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), pp. 497–502, 30 June **2013**.
+14. **Oliver James**, Woong-Bi Lee, Sang-Jun Park, and Heung-No Lee, "[Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers](https://doi.org/10.7840/kics.2013.38C.6.497)'', **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), pp. 497–502, 30 June **2013**.
 
-15. **Oliver James**, Woong-Bi Lee and Heung-No Lee, "Filters with random transmittance for improving resolution of filter-array-based spectrometers", **Optics Express**, 21 (4), pp. 3969-3989, 11 Feb. **2013**.
+15. **Oliver James**, Woong-Bi Lee and Heung-No Lee, "[Filters with random transmittance for improving resolution of filter-array-based spectrometers](https://doi.org/10.1364/OE.21.003969)", **Optics Express**, 21 (4), pp. 3969-3989, 11 Feb. **2013**.
 
-16. **Oliver James**, R. Aravind and K.M.M. Prabhu, \`\`Improved least squares channel estimation for orthogonal frequency division multiplexing", **IEE Signal Processing**, 6 (1), pp. 45-53, 03 Feb. **2012**.
+16. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Improved least squares channel estimation for orthogonal frequency division multiplexing](doi.org/10.1049/iet-spr.2010.019)", **IEE Signal Processing**, 6 (1), pp. 45-53, 03 Feb. **2012**.
 
-17. **Oliver James**, Woong-Bi Lee, Sang-Jun Park and Heung-No Lee, \`\`Improving resolution of miniature spectrometers by exploiting sparse nature of signals", **Optics Express**, 20 (3), pp. 2613-2625, 12 Jan. **2012**.
+17. **Oliver James**, Woong-Bi Lee, Sang-Jun Park and Heung-No Lee, "[Improving resolution of miniature spectrometers by exploiting sparse nature of signals](https://doi.org/10.1364/OE.20.002613)", **Optics Express**, 20 (3), pp. 2613-2625, 12 Jan. **2012**.
 
-18. **Oliver James**, R. Aravind and K.M.M. Prabhu, \`\`Krylov subspace-based low-rank channel estimation in OFDM systems", **Signal Processing**, 90 (6), pp. 1861-1872, 16 Dec. **2009**.
+18. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Krylov subspace-based low-rank channel estimation in OFDM systems](https://doi.org/10.1016/j.sigpro.2009.12.004)", **Signal Processing**, 90 (6), pp. 1861-1872, 16 Dec. **2009**.
 
-19. **Oliver James**, R. Aravind and K.M.M. Prabhu, \`\`Sparse channel estimation in OFDM systems by threshold-based pruning", **IEE Electronics letters**, 44(13), pp. 830-832, 19 June **2008**.
+19. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Sparse channel estimation in OFDM systems by threshold-based pruning](https://doi.org/10.1049/el:20081089)", **IEE Electronics letters**, 44(13), pp. 830-832, 19 June **2008**.
 
 ## Book Chapters
 
-1.  Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., **Oliver James** (2023). Low Power Methodologies for FPGA—An Overview. In: Sharma, D.K., Sharma, R., Jeon, G., Polkowski, Z. (eds) **Low Power Architectures for IoT Applications. Springer Tracts in Electrical and Electronics Engineering.** Springer, Singapore. https://doi.org/10.1007/978-981-99-0639-0_4
+1.  Umapathy, K., Muthukumaran, D., Chandramohan, S., Sivakumar, M., **Oliver James**, [Low Power Methodologies for FPGA—An Overview](https://doi.org/10.1007/978-981-99-0639-0_4). In **Low Power Architectures for IoT Applications. Springer Tracts in Electrical and Electronics Engineering.** Springer, Singapore. Editors: Sharma, D.K., Sharma, R., Jeon, G., Polkowski, Z. pp. 85-97, Apr. 05, **2023.**
 
 ## Conferences
 
