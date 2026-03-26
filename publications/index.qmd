@@ -45,11 +45,11 @@ toc-depth: 2
 
 9.  Kang Yong Eo, **Oliver James**, Sangkyu Son, Min-Suk Kang, Sang Chul Chong, Yee-Joon Kim, "[Representational dynamics of ensemble average of simultaneously presented objects](https://doi.org/10.1167/18.10.80 "IEM")", **Journal of Vision**, 18(10), pp. 80–80, 18 May **2018**.
 
-10. Junhwan Kwon, Moonseok Kim, Hyejin Park, Bok-Man Kang, Yongjae Jo, Jae-Hwan Kim, **Oliver James**, Seok-Hyun Yun, Seong-Gi Kim, Minah Suh and Myunghwan Choi, "Label-free nanoscale optical metrology on myelinated axons in vivo", **Nature Communications**, 8(1), pp. 1832, 28 Nov. **2017**.
+10. Junhwan Kwon, Moonseok Kim, Hyejin Park, Bok-Man Kang, Yongjae Jo, Jae-Hwan Kim, **Oliver James**, Seok-Hyun Yun, Seong-Gi Kim, Minah Suh and Myunghwan Choi, "[Label-free nanoscale optical metrology on myelinated axons in vivo](https://doi.org/10.1038/s41467-017-01979-2 "Empirical mode decomposition")", **Nature Communications**, 8(1), pp. 1832, 28 Nov. **2017**.
 
-11. Yubu Lee, Bo-Yong Park, **Oliver James**, Seong-Gi Kim, Hyunjin Park, "Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults'', **Frontiers in Human Neuroscience**, 11, pp. 418, 18 Aug. **2017**.
+11. Yubu Lee, Bo-Yong Park, **Oliver James**, Seong-Gi Kim, Hyunjin Park, "[Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults](10.3389/fnhum.2017.00418 "fMRI Autism")'', **Frontiers in Human Neuroscience**, 11, pp. 418, 18 Aug. **2017**.
 
-12. **Oliver James**, "Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework'', **Wireless Personal Communications**, 87(10), pp. 513–526, 12 Oct. **2015**.
+12. **Oliver James**, "[Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework](https://doi.org/10.1007/s11277-015-3083-x "Complex Gaussian")'', **Wireless Personal Communications**, 87(10), pp. 513–526, 12 Mar. **2016**.
 
 13. **Oliver James**, "Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices'', **International Journal of Computer Applications**, 975, pp. 8887, 1 May **2015**.
 
