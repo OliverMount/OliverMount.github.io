@@ -28,11 +28,11 @@ toc-depth: 2
 
 4.  Jongrok Do, **Oliver James**, and Yee Joon Kim, "[Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain'](https://doi.org/10.1016/j.isci.2024.110173 "DPCA")', **iScience**, 27(7), pp. 110173, 19 July **2024**.
 
-5.  Jongrok Do, Kang Yong Eo, **Oliver James**, Joonyeol Lee, and Yee Joon Kim, "[The representational dynamics of sequential perceptual averaging](10.1523/JNEUROSCI.0628-21.2021 "IEM decoding")'', **Journal of Neuroscience**, 42(6), pp. 1141–1153, 09 Mar. **2022**.
+5.  Jongrok Do, Kang Yong Eo, **Oliver James**, Joonyeol Lee, and Yee Joon Kim, "[The representational dynamics of sequential perceptual averaging](https://doi.org/10.1523/JNEUROSCI.0628-21.2021 "IEM decoding"), **Journal of Neuroscience**, 42(6), pp. 1141–1153, 09 Mar. **2022**.
 
 6.  Adalarasu, K., Jagannath, M., and **Oliver James**, "[Assessment of techniques for teaching school children with autism](https://doi.org/10.1016/j.irbm.2019.10.003 "Autism")'', **Innovation and Research in BioMedical engineering**, 41(2), pp. 88–93, 1 Apr. **2020**.
 
-7.  **Oliver James**, HyunJin Park, and SeongGi Kim, "[Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis](10.1002/hbm.24600 "Variance correction")", **Human Brain Mapping**, 40(11), pp. 3321–3337, 1 Aug. **2019**.
+7.  **Oliver James**, HyunJin Park, and SeongGi Kim, "[Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis](https://doi.org/10.1002/hbm.24600 "Variance correction")", **Human Brain Mapping**, 40(11), pp. 3321–3337, 1 Aug. **2019**.
 
 8.  Bo-yong Park, Won Mok Shim, **Oliver James**, and Hyunjin Park, "[Possible links between the lag structure in visual cortex and visual streams using fMRI](https://doi.org/10.1038/s41598-019-40728-x "Lag structure")", **Scientific Reports**, 9(3), pp. 4283, 12 Mar. **2019**.
 
@@ -40,7 +40,7 @@ toc-depth: 2
 
 10. Junhwan Kwon, Moonseok Kim, Hyejin Park, Bok-Man Kang, Yongjae Jo, Jae-Hwan Kim, **Oliver James**, Seok-Hyun Yun, Seong-Gi Kim, Minah Suh and Myunghwan Choi, "[Label-free nanoscale optical metrology on myelinated axons in vivo](https://doi.org/10.1038/s41467-017-01979-2 "Empirical mode decomposition")", **Nature Communications**, 8(1), pp. 1832, 28 Nov. **2017**.
 
-11. Yubu Lee, Bo-Yong Park, **Oliver James**, Seong-Gi Kim, Hyunjin Park, "[Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults](10.3389/fnhum.2017.00418 "fMRI Autism")'', **Frontiers in Human Neuroscience**, 11, pp. 418, 18 Aug. **2017**.
+11. Yubu Lee, Bo-Yong Park, **Oliver James**, Seong-Gi Kim, Hyunjin Park, "[Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults](https://doi.org/10.3389/fnhum.2017.00418 "fMRI Autism")'', **Frontiers in Human Neuroscience**, 11, pp. 418, 18 Aug. **2017**.
 
 12. **Oliver James**, "[Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework](https://doi.org/10.1007/s11277-015-3083-x "Complex Gaussian")'', **Wireless Personal Communications**, 87(10), pp. 513–526, 12 Mar. **2016**.
 
@@ -50,7 +50,7 @@ toc-depth: 2
 
 15. **Oliver James**, Woong-Bi Lee and Heung-No Lee, "[Filters with random transmittance for improving resolution of filter-array-based spectrometers](https://doi.org/10.1364/OE.21.003969)", **Optics Express**, 21 (4), pp. 3969-3989, 11 Feb. **2013**.
 
-16. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Improved least squares channel estimation for orthogonal frequency division multiplexing](doi.org/10.1049/iet-spr.2010.019)", **IEE Signal Processing**, 6 (1), pp. 45-53, 03 Feb. **2012**.
+16. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Improved least squares channel estimation for orthogonal frequency division multiplexing](https://doi.org/10.1049/iet-spr.2010.019)", **IEE Signal Processing**, 6 (1), pp. 45-53, 03 Feb. **2012**.
 
 17. **Oliver James**, Woong-Bi Lee, Sang-Jun Park and Heung-No Lee, "[Improving resolution of miniature spectrometers by exploiting sparse nature of signals](https://doi.org/10.1364/OE.20.002613)", **Optics Express**, 20 (3), pp. 2613-2625, 12 Jan. **2012**.
 
