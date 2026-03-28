@@ -15,8 +15,7 @@ toc-depth: 2
 ## In Preparation
 
 1.  Miguel Sanchez-Valpuesta, **Oliver James**, Joonyeol Lee and Gunsoo Kim, "Effects of locomotion on the population frequency representation in the mouse auditory midbrain'', **Writing stage, 2026**.
-2.  
-3.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage, 2026.**
+2.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage, 2026.**
 
 ## Published {#sec-journals}
 
@@ -78,7 +77,7 @@ toc-depth: 2
 7.  **Oliver James**, and Heung-No Lee. (2011). A realistic distributed compressive sensing framework for multiple wireless sensor networks. Proc. 4th Signal Process. with Adapt. Sparse Struct. Repr, 105.
 8.  **Oliver James**., Aravind, R., and Prabhu, K. M. M. (2010). Pilot sequence design for improving OFDM channel estimation in the presence of CFO. 2010 International Conference on Signal Processing and Communications (SPCOM), 1–5. IEEE.
 9.  **Oliver James**., Aravind, R., and Prabhu, K. M. M. (2009). Improved channel estimation in OFDM systems in the presence of CFO. 2009 15th Asia-Pacific Conference on Communications, 398–401. IEEE.
-10. **Oliver James**, R. Shantha Selva Kumari, and V. Sadasivam, (2005). Wavelets for improving spectral efficiency in a digital communication system. Sixth International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), 198–203. IEEE.
+10. **Oliver James**, R. Shantha Selva Kumari, and V. Sadasivam, [Wavelets for improving spectral efficiency in a digital communication system](https://doi.org/10.1109/ICCIMA.2005.60 "WSK"). 6-th International Conference on Computational Intelligence and Multimedia Applications (ICCIMA’05), pp. 198–203. IEEE, **2005**
 
 ## Patents
 
