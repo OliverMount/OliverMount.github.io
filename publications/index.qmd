@@ -68,10 +68,10 @@ toc-depth: 2
 
 ## Conferences
 
-1.  **Oliver James** and Yee Joon Kim, (2023) On the representation of objective and subjective visible/invisible stimuli in humans via EEG-based report and no- report, Cognitive Neuroscience Symposium, CNS, SFA, USA
-2.  Jisub Bae, **Oliver James,** and Yee Joon Kim, (2023) The influence of subjective visibility on illusory contour perception: An EEG study, Cognitive Neuroscience Symposium, CNS, SFA, USA
-3.  **Oliver James**, WoongBi Lee, and Heung-No Lee. (2013). Random Transmittance Based Filter Array Spectrometers: Sparse Spectrum Recovery And Resolution Improvement. Global Conference on Signal and Information Processing (GlobalSIP), 2013 IEEE, 615–615. IEEE.
-4.  **Oliver James**, WoongBi Lee, Sangjun Park, and Heung-No Lee. (2013a). A new signal processing technique for improving resolution of spectrometers. 한국통신학회 학술대회논문집, 62–63.
+1.  **Oliver James** and Yee Joon Kim, (2023) [On the representation of objective and subjective visible/invisible stimuli in humans via EEG-based report and no- report](https://www.cogneurosociety.org/wp-content/uploads/2023/03/CNS-2023-Program-Booklet.pdf), Cognitive Neuroscience Symposium, Poster: E87, CNS, SFA, USA, Mar. **2023**.
+2.  Jisub Bae, **Oliver James,** and Yee Joon Kim, (2023) [The influence of subjective visibility on illusory contour perception: An EEG study](https://www.cogneurosociety.org/wp-content/uploads/2023/03/CNS-2023-Program-Booklet.pdf), Cognitive Neuroscience Symposium, Poster: A96, CNS, SFA, USA, Mar. **2023**.
+3.  **Oliver James**, WoongBi Lee, and Heung-No Lee, [Random Transmittance Based Filter Array Spectrometers: Sparse Spectrum Recovery And Resolution Improvement](https://www.doi.org/10.1109/GlobalSIP.2013.6736953), IEEE Global Conference on Signal and Information Processing (GlobalSIP), 615–615. Dec. 04, **2013**.
+4.  **Oliver James**, WoongBi Lee, Sangjun Park, and Heung-No Lee, [A new signal processing technique for improving resolution of spectrometers](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02135897), 한국통신학회 학술대회논문집, 62–63, **2013**.
 5.  WoongBi Lee, **Oliver James**, Sangjun Park, and Heung-No Lee, [Random optical scatter filters for spectrometers: Implementation and Estimation](https://doi.org/10.1364/AOPT.2013.JTu4A.33). Imaging Systems and Applications, JTu4A-33, Optica Publishing Group, 2013
 6.  **Oliver James**, Sangjun Park, WoongBi Lee, and Heung-No Lee. (2013). [Evaluation of resolution improvement capability of a DSP technique for filter-array-based spectrometers](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001785022). Korean Information and Communication Society Journal, (6), 497–502.
 7.  **Oliver James**, and Heung-No Lee, A realistic distributed compressive sensing framework for multiple wireless sensor networks. Proc. 4th Signal Process. with Adapt. Sparse Struct. Repr, 105, **2011**.
