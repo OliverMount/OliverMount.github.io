@@ -10,12 +10,13 @@ toc-depth: 2
 
 ### (available in bioR$\color{Maroon}{\chi}$*iv*)
 
-1.  **Oliver James** and Yee Joon Kim, "[Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics](https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1)'', Submitted, Mar. **2026**
+1.  **Oliver James** and Yee Joon Kim, "[Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics](https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1)'', **Submitted, Mar. 2026**
+
+2.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Submitted, May 2026.**
 
 ## In Preparation
 
 1.  Miguel Sanchez-Valpuesta, **Oliver James**, Joonyeol Lee and Gunsoo Kim, "Effects of locomotion on the population frequency representation in the mouse auditory midbrain'', **Writing stage, 2026**.
-2.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Writing stage, 2026.**
 
 ## Published {#sec-journals}
 
