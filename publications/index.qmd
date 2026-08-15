@@ -20,7 +20,7 @@ toc-depth: 2
 
 ## Published {#sec-journals}
 
-1.  Youngbeom Lee, **Oliver James**, Koeun Jung, Doyun Lee, and Yee Joon Kim, "[Hierarchical summary statistics encoding across primary visual and posterior parietal cortices](https://doi.org/10.1002/advs.202512369 "Population Response Curve")*"*, **Advanced Science**, (tba), pp. e12369, Mar. 22, **2026**.
+1.  Youngbeom Lee, **Oliver James**, Koeun Jung, Doyun Lee, and Yee Joon Kim, "[Hierarchical summary statistics encoding across primary visual and posterior parietal cortices](https://doi.org/10.1002/advs.202512369 "Population Response Curve")*"*, **Advanced Science**, 13(27), pp. e12369, Mar. 22, **2026**.
 
 2.  Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **Oliver James**, Erik De Schutter, Sungho Hong, and C. Justin Lee, "[Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination](https://doi.org/10.1038/s12276-026-01657-8 "Cerebellum modeling")", **Experimental and Molecular Medicine**, 58, pp. 579–590, 18. Feb. **2026**.
 
