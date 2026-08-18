@@ -4,7 +4,7 @@
     "href": "publications/index.html",
     "title": "List of Publications",
     "section": "",
-    "text": "Oliver James and Yee Joon Kim, “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Mar. 2026",
+    "text": "(available in bioR\\color{Maroon}{\\chi}iv)\n\nOliver James and Yee Joon Kim, “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Mar. 2026",
     "crumbs": [
       "Publications",
       "List of Publications"
@@ -15,7 +15,7 @@
     "href": "publications/index.html#submitted",
     "title": "List of Publications",
     "section": "",
-    "text": "Oliver James and Yee Joon Kim, “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Mar. 2026",
+    "text": "(available in bioR\\color{Maroon}{\\chi}iv)\n\nOliver James and Yee Joon Kim, “Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics’’, Submitted, Mar. 2026",
     "crumbs": [
       "Publications",
       "List of Publications"
@@ -114,5 +114,27 @@
     "title": "Welcome!",
     "section": "Education",
     "text": "Education\nPhD in Signal Processing\nMasters in Communication Engineering\nBachelors in Electronics and Communication Engineering"
+  },
+  {
+    "objectID": "publications/index.html#arcolormaroonchicolormaroonchiiv",
+    "href": "publications/index.html#arcolormaroonchicolormaroonchiiv",
+    "title": "List of Publications",
+    "section": "ar\\color{Maroon}{\\chi}$\\color{Maroon}{\\chi}$iv",
+    "text": "ar\\color{Maroon}{\\chi}$\\color{Maroon}{\\chi}$iv\n\nOliver James, and Heung-No Lee. (2025). “Concise probability distributions of eigenvalues of real-valued Wishart matrices”\nOliver James, and Heung-No Lee. (2025). “Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders”.",
+    "crumbs": [
+      "Publications",
+      "List of Publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#arcolormaroonchicolormaroonchicolormaroonchiiv",
+    "href": "publications/index.html#arcolormaroonchicolormaroonchicolormaroonchiiv",
+    "title": "List of Publications",
+    "section": "ar\\color{Maroon}{\\chi}$\\color{Maroon}{\\chi}$$\\color{Maroon}{\\chi}$iv",
+    "text": "ar\\color{Maroon}{\\chi}$\\color{Maroon}{\\chi}$$\\color{Maroon}{\\chi}$iv\n\nOliver James, and Heung-No Lee. (2025). “Concise probability distributions of eigenvalues of real-valued Wishart matrices”\nOliver James, and Heung-No Lee. (2025). “Restricted isometry random variables: probability distributions, RIC prediction and phase transition analysis for Gaussian encoders”.",
+    "crumbs": [
+      "Publications",
+      "List of Publications"
+    ]
   }
 ]

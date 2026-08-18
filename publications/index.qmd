@@ -7,8 +7,7 @@ toc-depth: 2
 ---
 
 ## Submitted
-
-<!-- ### (available in bioR$\color{Maroon}{\chi}$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$*iv*) -->
+(available in bioR$\color{Maroon}{\chi}$iv)
 
 1.  **Oliver James** and Yee Joon Kim, "[Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics](https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1)'', **Submitted, Mar. 2026**
 
@@ -36,7 +35,7 @@ toc-depth: 2
 
 9.  Bo-yong Park, Won Mok Shim, **Oliver James**, and Hyunjin Park, "[Possible links between the lag structure in visual cortex and visual streams using fMRI](https://doi.org/10.1038/s41598-019-40728-x "Lag structure")", **Scientific Reports**, 9(3), pp. 4283, 12 Mar. **2019**.
 
-10.  Kang Yong Eo, **Oliver James**, Sangkyu Son, Min-Suk Kang, Sang Chul Chong, Yee-Joon Kim, "[Representational dynamics of ensemble average of simultaneously presented objects](https://doi.org/10.1167/18.10.80 "IEM")", **Journal of Vision**, 18(10), pp. 80–80, 18 May **2018**.
+10. Kang Yong Eo, **Oliver James**, Sangkyu Son, Min-Suk Kang, Sang Chul Chong, Yee-Joon Kim, "[Representational dynamics of ensemble average of simultaneously presented objects](https://doi.org/10.1167/18.10.80 "IEM")", **Journal of Vision**, 18(10), pp. 80–80, 18 May **2018**.
 
 11. Junhwan Kwon, Moonseok Kim, Hyejin Park, Bok-Man Kang, Yongjae Jo, Jae-Hwan Kim, **Oliver James**, Seok-Hyun Yun, Seong-Gi Kim, Minah Suh and Myunghwan Choi, "[Label-free nanoscale optical metrology on myelinated axons in vivo](https://doi.org/10.1038/s41467-017-01979-2 "Empirical mode decomposition")", **Nature Communications**, 8(1), pp. 1832, 28 Nov. **2017**.
 
