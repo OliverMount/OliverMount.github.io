@@ -17,7 +17,7 @@ toc-depth: 2
 
 ## Published {#sec-journals}
 
-1.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Accepted for publication in Frontiers in Neuroscience, Aug. 17. 2026.**
+1.  **Oliver James** and Sung Ho Hong, "[Container-based framework for simulating biological cerebellar neural networks](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1893064/abstract)", **Accepted for publication in Frontiers in Neuroscience, Aug. 17. 2026.**
 
 2.  Youngbeom Lee, **Oliver James**, Koeun Jung, Doyun Lee, and Yee Joon Kim, "[Hierarchical summary statistics encoding across primary visual and posterior parietal cortices](https://doi.org/10.1002/advs.202512369 "Population Response Curve")*"*, **Advanced Science**, 13(27), pp. e12369, Mar. 22, **2026**.
 
