@@ -8,11 +8,9 @@ toc-depth: 2
 
 ## Submitted
 
-### (available in bioR$\color{Maroon}{\chi}$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$*iv*)
+<!-- ### (available in bioR$\color{Maroon}{\chi}$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$\$\\color{Maroon}{\\chi}\$*iv*) -->
 
 1.  **Oliver James** and Yee Joon Kim, "[Gain-controlled reconfiguration of long-range coupling explains visibility-dependent spatiotemporal neural coding dynamics](https://www.biorxiv.org/content/10.1101/2025.09.24.677967v1)'', **Submitted, Mar. 2026**
-
-2.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Submitted, May 2026.**
 
 ## In Preparation
 
@@ -20,43 +18,45 @@ toc-depth: 2
 
 ## Published {#sec-journals}
 
-1.  Youngbeom Lee, **Oliver James**, Koeun Jung, Doyun Lee, and Yee Joon Kim, "[Hierarchical summary statistics encoding across primary visual and posterior parietal cortices](https://doi.org/10.1002/advs.202512369 "Population Response Curve")*"*, **Advanced Science**, 13(27), pp. e12369, Mar. 22, **2026**.
+1.  **Oliver James** and Sung Ho Hong, (2026). "Container-based framework for simulating biological cerebellar neural networks", **Accepted for publication in Frontiers in Neuroscience, Aug. 17. 2026.**
 
-2.  Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **Oliver James**, Erik De Schutter, Sungho Hong, and C. Justin Lee, "[Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination](https://doi.org/10.1038/s12276-026-01657-8 "Cerebellum modeling")", **Experimental and Molecular Medicine**, 58, pp. 579–590, 18. Feb. **2026**.
+2.  Youngbeom Lee, **Oliver James**, Koeun Jung, Doyun Lee, and Yee Joon Kim, "[Hierarchical summary statistics encoding across primary visual and posterior parietal cortices](https://doi.org/10.1002/advs.202512369 "Population Response Curve")*"*, **Advanced Science**, 13(27), pp. e12369, Mar. 22, **2026**.
 
-3.  Jisub Bae, Koeun Jung, **Oliver James**, Satoru Suzuki, and Yee Joon Kim, "[Frontal engagement in perceptual integration under low subjective visibility"](https://doi.org/10.1016/j.neuroimage.2024.120984 "Kanizsa Project"), **NeuroImage**, 305, pp. 120984, 5 Jan. 2025.
+3.  Jea Kwon, Sunpil Kim, Junsung Woo, Keiko Tanaka-Yamamoto, **Oliver James**, Erik De Schutter, Sungho Hong, and C. Justin Lee, "[Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination](https://doi.org/10.1038/s12276-026-01657-8 "Cerebellum modeling")", **Experimental and Molecular Medicine**, 58, pp. 579–590, 18. Feb. **2026**.
 
-4.  Jongrok Do, **Oliver James**, and Yee Joon Kim, "[Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain'](https://doi.org/10.1016/j.isci.2024.110173 "DPCA")', **iScience**, 27(7), pp. 110173, 19 July **2024**.
+4.  Jisub Bae, Koeun Jung, **Oliver James**, Satoru Suzuki, and Yee Joon Kim, "[Frontal engagement in perceptual integration under low subjective visibility"](https://doi.org/10.1016/j.neuroimage.2024.120984 "Kanizsa Project"), **NeuroImage**, 305, pp. 120984, 5 Jan. 2025.
 
-5.  Jongrok Do, Kang Yong Eo, **Oliver James**, Joonyeol Lee, and Yee Joon Kim, "[The representational dynamics of sequential perceptual averaging](https://doi.org/10.1523/JNEUROSCI.0628-21.2021 "IEM decoding"), **Journal of Neuroscience**, 42(6), pp. 1141–1153, 09 Mar. **2022**.
+5.  Jongrok Do, **Oliver James**, and Yee Joon Kim, "[Choice-dependent delta-band neural trajectory during semantic category decision making in the human brain'](https://doi.org/10.1016/j.isci.2024.110173 "DPCA")', **iScience**, 27(7), pp. 110173, 19 July **2024**.
 
-6.  Adalarasu, K., Jagannath, M., and **Oliver James**, "[Assessment of techniques for teaching school children with autism](https://doi.org/10.1016/j.irbm.2019.10.003 "Autism")'', **Innovation and Research in BioMedical engineering**, 41(2), pp. 88–93, 1 Apr. **2020**.
+6.  Jongrok Do, Kang Yong Eo, **Oliver James**, Joonyeol Lee, and Yee Joon Kim, "[The representational dynamics of sequential perceptual averaging](https://doi.org/10.1523/JNEUROSCI.0628-21.2021 "IEM decoding"), **Journal of Neuroscience**, 42(6), pp. 1141–1153, 09 Mar. **2022**.
 
-7.  **Oliver James**, HyunJin Park, and SeongGi Kim, "[Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis](https://doi.org/10.1002/hbm.24600 "Variance correction")", **Human Brain Mapping**, 40(11), pp. 3321–3337, 1 Aug. **2019**.
+7.  Adalarasu, K., Jagannath, M., and **Oliver James**, "[Assessment of techniques for teaching school children with autism](https://doi.org/10.1016/j.irbm.2019.10.003 "Autism")'', **Innovation and Research in BioMedical engineering**, 41(2), pp. 88–93, 1 Apr. **2020**.
 
-8.  Bo-yong Park, Won Mok Shim, **Oliver James**, and Hyunjin Park, "[Possible links between the lag structure in visual cortex and visual streams using fMRI](https://doi.org/10.1038/s41598-019-40728-x "Lag structure")", **Scientific Reports**, 9(3), pp. 4283, 12 Mar. **2019**.
+8.  **Oliver James**, HyunJin Park, and SeongGi Kim, "[Impact of sampling rate on statistical significance for single subject fMRI connectivity analysis](https://doi.org/10.1002/hbm.24600 "Variance correction")", **Human Brain Mapping**, 40(11), pp. 3321–3337, 1 Aug. **2019**.
 
-9.  Kang Yong Eo, **Oliver James**, Sangkyu Son, Min-Suk Kang, Sang Chul Chong, Yee-Joon Kim, "[Representational dynamics of ensemble average of simultaneously presented objects](https://doi.org/10.1167/18.10.80 "IEM")", **Journal of Vision**, 18(10), pp. 80–80, 18 May **2018**.
+9.  Bo-yong Park, Won Mok Shim, **Oliver James**, and Hyunjin Park, "[Possible links between the lag structure in visual cortex and visual streams using fMRI](https://doi.org/10.1038/s41598-019-40728-x "Lag structure")", **Scientific Reports**, 9(3), pp. 4283, 12 Mar. **2019**.
 
-10. Junhwan Kwon, Moonseok Kim, Hyejin Park, Bok-Man Kang, Yongjae Jo, Jae-Hwan Kim, **Oliver James**, Seok-Hyun Yun, Seong-Gi Kim, Minah Suh and Myunghwan Choi, "[Label-free nanoscale optical metrology on myelinated axons in vivo](https://doi.org/10.1038/s41467-017-01979-2 "Empirical mode decomposition")", **Nature Communications**, 8(1), pp. 1832, 28 Nov. **2017**.
+10.  Kang Yong Eo, **Oliver James**, Sangkyu Son, Min-Suk Kang, Sang Chul Chong, Yee-Joon Kim, "[Representational dynamics of ensemble average of simultaneously presented objects](https://doi.org/10.1167/18.10.80 "IEM")", **Journal of Vision**, 18(10), pp. 80–80, 18 May **2018**.
 
-11. Yubu Lee, Bo-Yong Park, **Oliver James**, Seong-Gi Kim, Hyunjin Park, "[Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults](https://doi.org/10.3389/fnhum.2017.00418 "fMRI Autism")'', **Frontiers in Human Neuroscience**, 11, pp. 418, 18 Aug. **2017**.
+11. Junhwan Kwon, Moonseok Kim, Hyejin Park, Bok-Man Kang, Yongjae Jo, Jae-Hwan Kim, **Oliver James**, Seok-Hyun Yun, Seong-Gi Kim, Minah Suh and Myunghwan Choi, "[Label-free nanoscale optical metrology on myelinated axons in vivo](https://doi.org/10.1038/s41467-017-01979-2 "Empirical mode decomposition")", **Nature Communications**, 8(1), pp. 1832, 28 Nov. **2017**.
 
-12. **Oliver James**, "[Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework](https://doi.org/10.1007/s11277-015-3083-x "Complex Gaussian")'', **Wireless Personal Communications**, 87(10), pp. 513–526, 12 Mar. **2016**.
+12. Yubu Lee, Bo-Yong Park, **Oliver James**, Seong-Gi Kim, Hyunjin Park, "[Autism spectrum disorder related functional connectivity changes in the language network in children, adolescents and adults](https://doi.org/10.3389/fnhum.2017.00418 "fMRI Autism")'', **Frontiers in Human Neuroscience**, 11, pp. 418, 18 Aug. **2017**.
 
-13. **Oliver James**, "[Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices](https://www.ijcaonline.org/proceedings/icctac2015/number2/20924-2020/)'', **International Journal of Computer Applications**, 2, pp. 1-5, 1 May **2015**.
+13. **Oliver James**, "[Revisiting the RIP of Real and Complex Gaussian Sensing Matrices Through RIV Framework](https://doi.org/10.1007/s11277-015-3083-x "Complex Gaussian")'', **Wireless Personal Communications**, 87(10), pp. 513–526, 12 Mar. **2016**.
 
-14. **Oliver James**, Woong-Bi Lee, Sang-Jun Park, and Heung-No Lee, "[Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers](https://doi.org/10.7840/kics.2013.38C.6.497)'', **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), pp. 497–502, 30 June **2013**.
+14. **Oliver James**, "[Stability Analysis of LASSO and Dantzig Selector via Constrained Minimal Singular Value of Gaussian Sensing Matrices](https://www.ijcaonline.org/proceedings/icctac2015/number2/20924-2020/)'', **International Journal of Computer Applications**, 2, pp. 1-5, 1 May **2015**.
 
-15. **Oliver James**, Woong-Bi Lee and Heung-No Lee, "[Filters with random transmittance for improving resolution of filter-array-based spectrometers](https://doi.org/10.1364/OE.21.003969)", **Optics Express**, 21 (4), pp. 3969-3989, 11 Feb. **2013**.
+15. **Oliver James**, Woong-Bi Lee, Sang-Jun Park, and Heung-No Lee, "[Evaluation of Resolution Improvement Ability of a DSP Technique for Filter-Array-Based Spectrometers](https://doi.org/10.7840/kics.2013.38C.6.497)'', **The Journal of Korean Institute of Communications and Information Sciences**, 38(6), pp. 497–502, 30 June **2013**.
 
-16. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Improved least squares channel estimation for orthogonal frequency division multiplexing](https://doi.org/10.1049/iet-spr.2010.019)", **IEE Signal Processing**, 6 (1), pp. 45-53, 03 Feb. **2012**.
+16. **Oliver James**, Woong-Bi Lee and Heung-No Lee, "[Filters with random transmittance for improving resolution of filter-array-based spectrometers](https://doi.org/10.1364/OE.21.003969)", **Optics Express**, 21 (4), pp. 3969-3989, 11 Feb. **2013**.
 
-17. **Oliver James**, Woong-Bi Lee, Sang-Jun Park and Heung-No Lee, "[Improving resolution of miniature spectrometers by exploiting sparse nature of signals](https://doi.org/10.1364/OE.20.002613)", **Optics Express**, 20 (3), pp. 2613-2625, 12 Jan. **2012**.
+17. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Improved least squares channel estimation for orthogonal frequency division multiplexing](https://doi.org/10.1049/iet-spr.2010.019)", **IEE Signal Processing**, 6 (1), pp. 45-53, 03 Feb. **2012**.
 
-18. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Krylov subspace-based low-rank channel estimation in OFDM systems](https://doi.org/10.1016/j.sigpro.2009.12.004)", **Signal Processing**, 90 (6), pp. 1861-1872, 16 Dec. **2009**.
+18. **Oliver James**, Woong-Bi Lee, Sang-Jun Park and Heung-No Lee, "[Improving resolution of miniature spectrometers by exploiting sparse nature of signals](https://doi.org/10.1364/OE.20.002613)", **Optics Express**, 20 (3), pp. 2613-2625, 12 Jan. **2012**.
 
-19. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Sparse channel estimation in OFDM systems by threshold-based pruning](https://doi.org/10.1049/el:20081089)", **IEE Electronics letters**, 44(13), pp. 830-832, 19 June **2008**.
+19. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Krylov subspace-based low-rank channel estimation in OFDM systems](https://doi.org/10.1016/j.sigpro.2009.12.004)", **Signal Processing**, 90 (6), pp. 1861-1872, 16 Dec. **2009**.
+
+20. **Oliver James**, R. Aravind and K.M.M. Prabhu, "[Sparse channel estimation in OFDM systems by threshold-based pruning](https://doi.org/10.1049/el:20081089)", **IEE Electronics letters**, 44(13), pp. 830-832, 19 June **2008**.
 
 ## ar$\color{Maroon}{\chi}$iv
 
